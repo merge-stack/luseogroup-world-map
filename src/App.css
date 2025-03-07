@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.content-container {
+  width: 1600px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  margin: auto;
+}
+
+.filters-container {
+  max-width: 720px;
+}
+
+.filters label {
+  margin-top: 5px;
+  margin-right: 8px;
+  font-weight: 500;
+  color: black;
+}
+
+.projects-container {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  border: 1px solid #e0e0e0;
+}
+
+.locations-list {
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.no-project-text {
+  color: black;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.map-container {
+  /* flex: 1; */
+  height: 100%;
+  width: 70%;
+}
+
+.location-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.location-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.location-card-content {
+  padding: 5px 20px;
+}
+
+.location-card-section {
+  margin-bottom: 10px;
+}
+
+.location-card-section:last-child {
+  margin-bottom: 0;
+}
+
+.location-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.location-card-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.location-card-text:last-child {
+  margin-bottom: 0;
+}
+
+.mapboxgl-map {
+  width: 100%;
+  height: 100%;
+}
+
+.mapboxgl-popup {
+  max-width: 622px !important;
+  margin-top: -35px;
+}
+
+.mapboxgl-popup-content {
+  width: 550px;
+  background-color: #2C3E50 !important;
+  .mapboxgl-popup-close-button {
+    background-color: #333;
+  }
+}
+
+.mapboxgl-popup-tip{
+  border-top-color: #2C3E50 !important;
+  border-bottom-color: #2C3E50 !important;
+}
+.filters {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-dropdown {
+  padding: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+  flex: 1;
+  cursor: pointer;
+}
+
+.filter-dropdown:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.filter-dropdown option {
+  padding: 8px;
+}
