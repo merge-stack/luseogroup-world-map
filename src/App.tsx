@@ -2,13 +2,16 @@ import { useState, useMemo } from "react";
 import Filters from "./components/Filters.jsx";
 import { mapPins } from "./data/mapPins.js";
 import "./App.css";
+import MapView from "./components/MapView";
+import ListView from "./components/ListView";
+import { IProject } from "./interfaces/index.js";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLocation, setSelectedLocation] = useState("all");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [toggleView, setToggleView] = useState("map");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
+  const [toggleView, setToggleView] = useState<string>("map");
 
   const filteredPins = useMemo(() => {
     return mapPins.filter((pin) => {
@@ -23,7 +26,7 @@ function App() {
         pin.name.toLowerCase().includes(searchQuery.toLowerCase());
 
       return matchCategory && matchLocation && matchSearch;
-    });
+    }) as IProject[];
   }, [selectedCategory, selectedLocation, searchQuery]);
 
   return (
