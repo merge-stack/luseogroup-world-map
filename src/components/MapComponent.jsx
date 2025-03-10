@@ -18,7 +18,7 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",
       center: [-28.006, 36.7128],
-      zoom: 2,
+      zoom: 1.9,
     });
   }, []);
 
@@ -34,7 +34,6 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
         "admin-0-boundary-disputed",
         "admin-1-boundary-bg",
         "admin-0-boundary-bg",
-        "country-label",
       ];
 
       adminLayers.forEach((layerName) => {
@@ -48,6 +47,13 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
           ]);
         }
       });
+
+      map.setPaintProperty("country-label", "text-opacity", [
+        "case",
+        ["==", ["get", "name_en"], "Western Sahara"],
+        0, // Hide this label
+        1, // Keep others visible
+      ]);
 
       // Remove any existing markers
       const existingMarkers =
