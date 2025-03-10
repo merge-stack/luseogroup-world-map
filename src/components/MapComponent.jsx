@@ -60,8 +60,15 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
         document.getElementsByClassName("mapboxgl-marker");
       Array.from(existingMarkers).forEach((marker) => marker.remove());
 
+      if (pins.length === 0) return;
+
+      // Create a bounding box
+      const bounds = new mapboxgl.LngLatBounds();
+
       // Add markers for each pin
       pins.forEach((pin) => {
+        bounds.extend(pin.coordinates); // Extend bounds to include this pin
+
         // Create a DOM element for each marker
         const el = document.createElement("div");
         el.className = "custom-marker";
@@ -81,10 +88,20 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
           };
           flyToProject(mapRef, project);
         });
-
         // Add marker to map
         new mapboxgl.Marker(el).setLngLat(pin.coordinates).addTo(map);
       });
+
+      // Fit map to markers
+      if (pins.length > 1) {
+        map.fitBounds(bounds, {
+          padding: 50, // Padding around the edges
+          maxZoom: 12, // Prevent zooming in too much
+        });
+      } else if (pins.length === 1) {
+        // If only one pin, zoom into it
+        map.flyTo({ center: pins[0].coordinates, zoom: 12 });
+      }
     };
 
     if (map.loaded()) {

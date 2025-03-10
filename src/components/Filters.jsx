@@ -8,6 +8,10 @@ const Filters = ({
   setSelectedCategory,
   selectedLocation,
   setSelectedLocation,
+  searchQuery,
+  setSearchQuery,
+  toggleView,
+  setToggleView,
 }) => {
   const locations = useMemo(
     () => ["all", ...new Set(mapPins.map((pin) => pin.projectDetails.region))],
@@ -24,13 +28,22 @@ const Filters = ({
 
   return (
     <div className="filters">
+      <label htmlFor="search-input">Search:</label>
+      <input
+        id="search-input"
+        type="text"
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="filter-search"
+        placeholder="Search by project name..."
+      />
+
       <label htmlFor="category-select">Category:</label>
       <select
         id="category-select"
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
-        className="filter-dropdown"
-      >
+        className="filter-dropdown">
         {categories.map((category) => (
           <option key={category} value={category}>
             {category === "all" ? "All Categories" : category}
@@ -42,14 +55,26 @@ const Filters = ({
         id="location-select"
         value={selectedLocation}
         onChange={(e) => setSelectedLocation(e.target.value)}
-        className="filter-dropdown"
-      >
+        className="filter-dropdown">
         {locations.map((location) => (
           <option key={location} value={location}>
             {location === "all" ? "All Locations" : location}
           </option>
         ))}
       </select>
+
+      <div className="toggle-container">
+        <button
+          className={toggleView === "map" ? "active" : ""}
+          onClick={() => setToggleView("map")}>
+          Map View
+        </button>
+        <button
+          className={toggleView === "list" ? "active" : ""}
+          onClick={() => setToggleView("list")}>
+          List View
+        </button>
+      </div>
     </div>
   );
 };
@@ -59,6 +84,8 @@ Filters.propTypes = {
   setSelectedCategory: PropTypes.func.isRequired,
   selectedLocation: PropTypes.string.isRequired,
   setSelectedLocation: PropTypes.func.isRequired,
+  searchQuery: PropTypes.string.isRequired,
+  setSearchQuery: PropTypes.func.isRequired,
 };
 
 export default Filters;

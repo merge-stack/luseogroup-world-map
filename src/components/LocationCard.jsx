@@ -17,8 +17,7 @@ const LocationCard = ({ location, setSelectedProject }) => {
   return (
     <div
       className="location-card"
-      onClick={() => setSelectedProject(location.id)}
-    >
+      onClick={() => setSelectedProject(location.id)}>
       <img
         src={location.image}
         alt="Location View"
@@ -26,6 +25,7 @@ const LocationCard = ({ location, setSelectedProject }) => {
       />
       <div className="location-card-content">
         <div className="location-card-section">
+          <h3 className="location-card-title">{location.name}</h3>
           <h3 className="location-card-title">SCOPE</h3>
           <p className="location-card-text">{location.scope}</p>
         </div>
