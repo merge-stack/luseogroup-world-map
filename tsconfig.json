@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    // Code Handling and Compatibility
+    "allowJs": true, // Allows JS files (for mixed TS/JS projects)
+    "allowSyntheticDefaultImports": true, // Helps with default import syntax
+    "isolatedModules": true, // Improves module compatibility (needed for Vite)
+    "noEmit": true, // Only type-checks without outputting files
+
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true, // Adds safety with optional properties
+    "baseUrl": ".", // Root directory for resolving paths
+    "paths": {
+      "@src/*": ["src/*"], // Aliases to make imports more readable
+      "@components/*": ["src/components/*"],
+      "@assets/*": ["src/assets/*"],
+      "@config/*": ["src/config/*"],
+      "@constants/*": ["src/constants/*"]
+    }
+  },
+  "include": ["src"]
+}

@@ -1,14 +1,15 @@
 import { useState, useMemo } from "react";
-import MapComponent from "./components/MapComponent";
+import MapComponent from "./components/MapComponent.jsx";
 import Filters from "./components/Filters.jsx";
-import ProjectsList from "./components/ProjectsList";
+import ProjectsList from "./components/ProjectsList.jsx";
 import { mapPins } from "./data/mapPins.js";
 import "./App.css";
+import { IProject } from "./constants/index.js";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLocation, setSelectedLocation] = useState("all");
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
 
   const filteredPins = useMemo(() => {
     return mapPins.filter((pin) => {
