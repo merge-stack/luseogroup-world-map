@@ -1,5 +1,7 @@
 export type IProject = {
-  id: string | number;
+  id: number;
+  name: string;
+  coordinates: [number, number];
   scope: string;
   image: string;
   projectDetails: {

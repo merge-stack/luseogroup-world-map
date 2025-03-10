@@ -20,7 +20,7 @@ function App() {
       const matchLocation =
         selectedLocation === "all" || region === selectedLocation;
       return matchCategory && matchLocation;
-    });
+    }) as IProject[];
   }, [selectedCategory, selectedLocation]);
 
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import boraBoraImage from "../assets/bora-bora.jpg";
 import canadaImage from "../assets/canada.jpg";
 import polandImage from "../assets/poland.jpg";
