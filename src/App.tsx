@@ -1,14 +1,15 @@
 import { useState, useMemo } from "react";
-import MapComponent from "./components/MapComponent";
-import Filters from "./components/Filters.jsx";
-import ProjectsList from "./components/ProjectsList";
-import { mapPins } from "./data/mapPins.js";
+import { IProject } from "@interfaces";
+import { mapPins } from "@data/mapPins";
+import Filters from "@components/Filters";
+import ProjectsList from "@components/ProjectsList";
+import MapComponent from "@components/MapComponent";
 import "./App.css";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLocation, setSelectedLocation] = useState("all");
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
 
   const filteredPins = useMemo(() => {
     return mapPins.filter((pin) => {
@@ -19,7 +20,7 @@ function App() {
       const matchLocation =
         selectedLocation === "all" || region === selectedLocation;
       return matchCategory && matchLocation;
-    });
+    }) as IProject[];
   }, [selectedCategory, selectedLocation]);
 
   return (

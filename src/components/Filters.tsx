@@ -1,24 +1,26 @@
 import { useMemo } from "react";
-import PropTypes from "prop-types";
+import { mapPins } from "@data/mapPins";
 
-import { mapPins } from "../data/mapPins.js";
+interface IFilters {
+  selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
+  selectedLocation: string;
+  setSelectedLocation: (location: string) => void;
+}
 
-const Filters = ({
+const Filters: React.FC<IFilters> = ({
   selectedCategory,
   setSelectedCategory,
   selectedLocation,
   setSelectedLocation,
 }) => {
-  const locations = useMemo(
+  const locations = useMemo<string[]>(
     () => ["all", ...new Set(mapPins.map((pin) => pin.projectDetails.region))],
     []
   );
 
-  const categories = useMemo(
-    () => [
-      "all",
-      ...new Set(mapPins.map((pin) => pin.projectDetails.category)),
-    ],
+  const categories = useMemo<string[]>(
+    () => ["all", ...new Set(mapPins.map((pin) => pin.projectDetails.category))],
     []
   );
 
@@ -37,6 +39,7 @@ const Filters = ({
           </option>
         ))}
       </select>
+
       <label htmlFor="location-select">Location:</label>
       <select
         id="location-select"
@@ -52,13 +55,6 @@ const Filters = ({
       </select>
     </div>
   );
-};
-
-Filters.propTypes = {
-  selectedCategory: PropTypes.string.isRequired,
-  setSelectedCategory: PropTypes.func.isRequired,
-  selectedLocation: PropTypes.string.isRequired,
-  setSelectedLocation: PropTypes.func.isRequired,
 };
 
 export default Filters;
