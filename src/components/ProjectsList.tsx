@@ -1,13 +1,13 @@
 import React from "react";
-import { IProject } from "@src/constants";
+import { IProject } from "@src/interfaces";
 import ProjectCard from "./ProjectCard";
 
-type ProjectsListProps = {
+interface IProjectsList {
   pins: IProject[],
   setSelectedProject: (project: IProject) => void,
 };
 
-const ProjectsList: React.FC<ProjectsListProps> = ({
+const ProjectsList: React.FC<IProjectsList> = ({
   pins,
   setSelectedProject,
 }) => {

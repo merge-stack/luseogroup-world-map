@@ -1,10 +1,10 @@
 import { useState, useMemo } from "react";
-import MapComponent from "./components/MapComponent.jsx";
-import Filters from "./components/Filters.jsx";
-import ProjectsList from "./components/ProjectsList.jsx";
-import { mapPins } from "./data/mapPins.js";
+import { IProject } from "@interfaces/index";
+import { mapPins } from "./data/mapPins";
+import Filters from "./components/Filters";
+import ProjectsList from "./components/ProjectsList";
+import MapComponent from "./components/MapComponent";
 import "./App.css";
-import { IProject } from "./constants/index.js";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");

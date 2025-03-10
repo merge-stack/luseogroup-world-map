@@ -1,11 +1,11 @@
-import { IProject } from "@src/constants";
+import { IProject } from "@src/interfaces";
 
-interface ProjectCardProps {
+interface IProjectCard {
   project: IProject;
   setSelectedProject: (project: IProject) => void;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ project, setSelectedProject }) => {
+const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) => {
   return (
     <div className="location-card" onClick={() => setSelectedProject(project)}>
       <img src={project.image} alt="Location View" className="location-card-image" />

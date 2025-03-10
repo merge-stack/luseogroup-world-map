@@ -1,14 +1,14 @@
 import { useMemo } from "react";
-import { mapPins } from "../data/mapPins.js";
+import { mapPins } from "../data/mapPins";
 
-interface FiltersProps {
+interface IFilters {
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
 }
 
-const Filters: React.FC<FiltersProps> = ({
+const Filters: React.FC<IFilters> = ({
   selectedCategory,
   setSelectedCategory,
   selectedLocation,

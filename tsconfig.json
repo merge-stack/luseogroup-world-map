@@ -11,7 +11,7 @@
     "resolveJsonModule": true,
 
     // Code Handling and Compatibility
-    "allowJs": true, // Allows JS files (for mixed TS/JS projects)
+    "allowJs": false,
     "allowSyntheticDefaultImports": true, // Helps with default import syntax
     "isolatedModules": true, // Improves module compatibility (needed for Vite)
     "noEmit": true, // Only type-checks without outputting files
@@ -26,7 +26,7 @@
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
       "@config/*": ["src/config/*"],
-      "@constants/*": ["src/constants/*"]
+      "@interfaces/*": ["src/interfaces/*"]
     }
   },
   "include": ["src"]

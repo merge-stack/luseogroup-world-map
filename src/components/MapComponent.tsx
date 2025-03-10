@@ -1,18 +1,18 @@
 import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { IProject } from "@src/interfaces";
 import luseoFlagMarker from "../assets/luseoFlag.png";
-import { IProject } from "@src/constants";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
-interface MapComponentProps {
+interface IMapComponent {
   pins: IProject[];
   selectedProject?: IProject | null;
   setSelectedProject: (project: IProject) => void;
 }
 
-const MapComponent: React.FC<MapComponentProps> = ({ pins, selectedProject, setSelectedProject }) => {
+const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject }) => {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const WORLD_VIEW = "MA"; // Morocco's ISO code for worldview filtering
