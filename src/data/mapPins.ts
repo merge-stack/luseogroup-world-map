@@ -1,6 +1,6 @@
-import boraBoraImage from "../assets/bora-bora.jpg";
-import canadaImage from "../assets/canada.jpg";
-import polandImage from "../assets/poland.jpg";
+import boraBoraImage from "@assets/bora-bora.jpg";
+import canadaImage from "@assets/canada.jpg";
+import polandImage from "@assets/poland.jpg";
 
 export const mapPins = [
   {

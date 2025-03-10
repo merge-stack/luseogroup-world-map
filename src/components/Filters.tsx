@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { mapPins } from "../data/mapPins";
+import { mapPins } from "@data/mapPins";
 
 interface IFilters {
   selectedCategory: string;

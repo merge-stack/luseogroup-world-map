@@ -1,9 +1,9 @@
 import { useState, useMemo } from "react";
-import { IProject } from "@interfaces/index";
-import { mapPins } from "./data/mapPins";
-import Filters from "./components/Filters";
-import ProjectsList from "./components/ProjectsList";
-import MapComponent from "./components/MapComponent";
+import { IProject } from "@interfaces";
+import { mapPins } from "@data/mapPins";
+import Filters from "@components/Filters";
+import ProjectsList from "@components/ProjectsList";
+import MapComponent from "@components/MapComponent";
 import "./App.css";
 
 function App() {

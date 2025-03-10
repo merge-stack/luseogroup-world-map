@@ -1,5 +1,5 @@
 import React from "react";
-import { IProject } from "@src/interfaces";
+import { IProject } from "@interfaces";
 import ProjectCard from "./ProjectCard";
 
 interface IProjectsList {

@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { IProject } from "@src/interfaces";
-import luseoFlagMarker from "../assets/luseoFlag.png";
+import { IProject } from "@interfaces";
+import luseoFlagMarker from "@assets/luseoFlag.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
