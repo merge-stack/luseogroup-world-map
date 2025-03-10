@@ -1,11 +1,7 @@
 import { useState, useMemo } from "react";
-import MapComponent from "./components/MapComponent";
 import Filters from "./components/Filters.jsx";
-import ProjectsList from "./components/ProjectsList";
 import { mapPins } from "./data/mapPins.js";
 import "./App.css";
-import MapView from "./components/MapView.jsx";
-import ListView from "./components/ListView.jsx";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -68,7 +64,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
