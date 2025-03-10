@@ -24,7 +24,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ pins, selectedProject, setS
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",
       center: [-28.006, 36.7128],
-      zoom: 2,
+      zoom: 1.9,
     });
   }, []);
 
@@ -39,7 +39,6 @@ const MapComponent: React.FC<MapComponentProps> = ({ pins, selectedProject, setS
         "admin-0-boundary-disputed",
         "admin-1-boundary-bg",
         "admin-0-boundary-bg",
-        "country-label",
       ];
 
       adminLayers.forEach((layerName) => {
@@ -53,6 +52,13 @@ const MapComponent: React.FC<MapComponentProps> = ({ pins, selectedProject, setS
           ]);
         }
       });
+
+      map.setPaintProperty("country-label", "text-opacity", [
+        "case",
+        ["==", ["get", "name_en"], "Western Sahara"],
+        0, // Hide this label
+        1, // Keep others visible
+      ]);
 
       document.querySelectorAll(".mapboxgl-marker").forEach(marker => marker.remove());
 
