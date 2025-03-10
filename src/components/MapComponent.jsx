@@ -2,12 +2,14 @@ import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import PropTypes from "prop-types";
+import luseoFlagMarker from "../assets/luseoFlag.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
 const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
   const mapContainer = useRef(null);
   const mapRef = useRef(null);
+  const WORLD_VIEW = "MA"; // Morocco's ISO code for worldview filtering
 
   useEffect(() => {
     if (mapRef.current) return;
@@ -16,16 +18,43 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
       container: mapContainer.current,
       style: "mapbox://styles/mapbox/streets-v11",
       center: [-28.006, 36.7128],
-      zoom: 2,
+      zoom: 1.9,
     });
   }, []);
 
   useEffect(() => {
     if (!mapRef.current) return;
-
     const map = mapRef.current;
 
     const initializeMap = () => {
+      // Apply worldview filter to admin boundaries
+      const adminLayers = [
+        "admin-0-boundary",
+        "admin-1-boundary",
+        "admin-0-boundary-disputed",
+        "admin-1-boundary-bg",
+        "admin-0-boundary-bg",
+      ];
+
+      adminLayers.forEach((layerName) => {
+        if (map.getLayer(layerName)) {
+          map.setFilter(layerName, [
+            "match",
+            ["get", "worldview"],
+            ["all", WORLD_VIEW], // Show only features matching Morocco' worldview
+            true,
+            false,
+          ]);
+        }
+      });
+
+      map.setPaintProperty("country-label", "text-opacity", [
+        "case",
+        ["==", ["get", "name_en"], "Western Sahara"],
+        0, // Hide this label
+        1, // Keep others visible
+      ]);
+
       // Remove any existing markers
       const existingMarkers =
         document.getElementsByClassName("mapboxgl-marker");
@@ -33,18 +62,28 @@ const MapComponent = ({ pins, selectedProject, setSelectedProject }) => {
 
       // Add markers for each pin
       pins.forEach((pin) => {
-        const marker = new mapboxgl.Marker()
-          .setLngLat(pin.coordinates)
-          .addTo(map);
+        // Create a DOM element for each marker
+        const el = document.createElement("div");
+        el.className = "custom-marker";
+        el.style.backgroundImage = `url(${luseoFlagMarker})`; // Use the imported image
+        el.style.width = "60px";
+        el.style.height = "120px";
+        el.style.backgroundSize = "100%";
+        el.style.backgroundRepeat = "no-repeat";
+        el.style.backgroundPosition = "center";
+        el.style.cursor = "pointer";
 
         // Add click event to marker
-        marker.getElement().addEventListener("click", () => {
+        el.addEventListener("click", () => {
           const project = {
             geometry: { coordinates: pin.coordinates },
             properties: { ...pin, projectDetails: pin.projectDetails },
           };
           flyToProject(mapRef, project);
         });
+
+        // Add marker to map
+        new mapboxgl.Marker(el).setLngLat(pin.coordinates).addTo(map);
       });
     };
 
