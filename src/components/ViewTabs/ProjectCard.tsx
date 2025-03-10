@@ -1,4 +1,4 @@
-import { IProject } from "@src/interfaces";
+import { IProject } from "@interfaces";
 
 interface IProjectCard {
   project: IProject;

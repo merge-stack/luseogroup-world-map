@@ -1,4 +1,4 @@
-import { IProject } from "@src/interfaces";
+import { IProject } from "@interfaces";
 import ProjectCard from "./ProjectCard";
 
 interface IListViewProps {

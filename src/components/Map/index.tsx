@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { IProject } from "@src/interfaces";
-import luseoFlagMarker from "../assets/luseoFlag.png";
+import { IProject } from "@interfaces";
+import luseoFlagMarker from "@assets/luseoFlag.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
@@ -86,7 +86,12 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
           flyToProject(mapRef.current, pin);
         });
 
-        new mapboxgl.Marker(el).setLngLat(pin.coordinates).addTo(map);
+        new mapboxgl.Marker(el, {
+          anchor: "bottom", // Ensures tip stays at the location
+          offset: [20, 10], // Moves the marker tip stays in place
+        })
+          .setLngLat(pin.coordinates)
+          .addTo(map);
       });
 
       if (pins.length > 1) {

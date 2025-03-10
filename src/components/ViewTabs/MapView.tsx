@@ -1,5 +1,5 @@
-import { IProject } from "@src/interfaces";
-import MapComponent from "./MapComponent";
+import { IProject } from "@interfaces";
+import MapComponent from "@components/Map";
 import ProjectsList from "./ProjectsList";
 
 interface IMapViewProps {

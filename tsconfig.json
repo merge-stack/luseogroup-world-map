@@ -9,7 +9,6 @@
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-
     // Code Handling and Compatibility
     "allowJs": false,
     "allowSyntheticDefaultImports": true, // Helps with default import syntax
@@ -26,7 +25,8 @@
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
       "@config/*": ["src/config/*"],
-      "@interfaces/*": ["src/interfaces/*"]
+      "@interfaces": ["src/interfaces/index"], // Directly point to the index file
+      "@constants": ["src/constants/index"]
     }
   },
   "include": ["src"]

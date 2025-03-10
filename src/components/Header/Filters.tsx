@@ -1,5 +1,6 @@
 import { useMemo } from "react";
-import { mapPins } from "../data/mapPins";
+import { mapPins } from "@src/data/mapPins";
+import { ViewType } from "@constants";
 
 interface IFilters {
   selectedCategory: string;
@@ -34,7 +35,6 @@ const Filters: React.FC<IFilters> = ({
 
   return (
     <div className="filters">
-      <label htmlFor="search-input">Search:</label>
       <input
         id="search-input"
         type="text"
@@ -44,7 +44,6 @@ const Filters: React.FC<IFilters> = ({
         placeholder="Search by project name..."
       />
 
-      <label htmlFor="category-select">Category:</label>
       <select
         id="category-select"
         value={selectedCategory}
@@ -57,7 +56,6 @@ const Filters: React.FC<IFilters> = ({
         ))}
       </select>
 
-      <label htmlFor="location-select">Location:</label>
       <select
         id="location-select"
         value={selectedLocation}
@@ -72,13 +70,13 @@ const Filters: React.FC<IFilters> = ({
 
       <div className="toggle-container">
         <button
-          className={toggleView === "map" ? "active" : ""}
-          onClick={() => setToggleView("map")}>
+          className={toggleView === ViewType.MAP ? "active" : ""}
+          onClick={() => setToggleView(ViewType.MAP)}>
           Map View
         </button>
         <button
-          className={toggleView === "list" ? "active" : ""}
-          onClick={() => setToggleView("list")}>
+          className={toggleView === ViewType.LIST ? "active" : ""}
+          onClick={() => setToggleView(ViewType.LIST)}>
           List View
         </button>
       </div>
