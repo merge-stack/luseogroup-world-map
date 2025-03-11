@@ -1,5 +1,6 @@
 import { IProject } from "@interfaces";
 import ProjectCard from "./ProjectCard";
+import "./index.css";
 
 interface IListViewProps {
   pins: IProject[];
