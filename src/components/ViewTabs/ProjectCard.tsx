@@ -1,4 +1,5 @@
 import { IProject } from "@interfaces";
+import "./index.css";
 
 interface IProjectCard {
   project: IProject;
@@ -12,19 +13,19 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) =>
       <div className="location-card-content">
         <div className="location-card-section">
           <h3 className="location-card-title">{project.name}</h3>
-          <h3 className="location-card-title">SCOPE</h3>
+          <h3 className="location-card-subtitle">SCOPE</h3>
           <p className="location-card-text">{project.scope}</p>
         </div>
         <div className="location-card-section">
-          <h3 className="location-card-title">PROJECT DETAILS</h3>
+          <h3 className="location-card-subtitle">PROJECT DETAILS</h3>
           <p className="location-card-text">
-            <strong>ARCHITECT:</strong> {project.projectDetails.architect}
+            <h5 className="location-card-text-detail">ARCHITECT: </h5> {project.projectDetails.architect}
           </p>
           <p className="location-card-text">
-            <strong>SIZE:</strong> {project.projectDetails.size}
+            <h5 className="location-card-text-detail">SIZE:</h5> {project.projectDetails.size}
           </p>
           <p className="location-card-text">
-            <strong>CATEGORY:</strong> {project.projectDetails.category}
+            <h5 className="location-card-text-detail">CATEGORY:</h5> {project.projectDetails.category}
           </p>
         </div>
       </div>

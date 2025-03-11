@@ -1,6 +1,7 @@
 import { IProject } from "@interfaces";
 import MapComponent from "@components/Map";
 import ProjectsList from "./ProjectsList";
+import "./index.css";
 
 interface IMapViewProps {
   pins: IProject[];
