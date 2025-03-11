@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import mapboxgl from "mapbox-gl";
+import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/luseoFlag.png";
@@ -26,13 +26,16 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       center: [-28.006, 36.7128],
       zoom: 1.9,
     });
+
+    // Add Fullscreen Control
+    mapRef.current.addControl(new FullscreenControl(), "top-left");
   }, []);
 
   useEffect(() => {
     if (!mapRef.current) return;
     const map = mapRef.current;
 
-    const initializeMap = () => {
+    const initializeStyles = () => {
       const adminLayers = [
         "admin-0-boundary",
         "admin-1-boundary",
@@ -41,6 +44,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
         "admin-0-boundary-bg",
       ];
 
+      //set boundaries according to the moroccan worldview
       adminLayers.forEach((layerName) => {
         if (map.getLayer(layerName)) {
           map.setFilter(layerName, [
@@ -53,6 +57,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
         }
       });
 
+      //hide western sahara label
       map.setPaintProperty("country-label", "text-opacity", [
         "case",
         ["==", ["get", "name_en"], "Western Sahara"],
@@ -60,6 +65,25 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
         1, // Keep others visible
       ]);
 
+      //change label names to french
+      const labelLayers = [
+        "country-label",
+        "state-label",
+        "place-label",
+        "settlement-label",
+        "settlement-subdivision-label",
+        "water-point-label",
+      ];
+
+      labelLayers.forEach(layer => {
+        if (map.getLayer(layer)) {
+          map.setLayoutProperty(layer, "text-field", ["get", "name_fr"]);
+        }
+      });
+    }
+
+    const initializeMap = () => {
+      //remove existing markers
       document.querySelectorAll(".mapboxgl-marker").forEach(marker => marker.remove());
 
       if (pins.length === 0) return;
@@ -109,6 +133,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       initializeMap();
     } else {
       map.on("load", initializeMap);
+      map.on("styledata", initializeStyles)
     }
   }, [pins, setSelectedProject]);
 
