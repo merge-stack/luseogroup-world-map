@@ -27,8 +27,21 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       zoom: 1.9,
     });
 
+    // Add Geolocation Control
+    mapRef.current.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: { enableHighAccuracy: true },
+        trackUserLocation: true,
+        showUserHeading: true,
+      }),
+      "top-left"
+    );
+
     // Add Fullscreen Control
     mapRef.current.addControl(new FullscreenControl(), "top-left");
+
+    // Add Zoom and Rotation Controls
+    mapRef.current.addControl(new mapboxgl.NavigationControl(), "top-left");
   }, []);
 
   useEffect(() => {
