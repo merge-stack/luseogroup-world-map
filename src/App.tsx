@@ -7,7 +7,7 @@ import ListView from "@components/ViewTabs/ListView";
 import { IProject } from "@interfaces";
 import { ViewType } from "@constants";
 
-import { mapPins } from "./data/mapPins.js";
+import { mapPins } from "@data/mapPins";
 import "./App.css";
 
 function App() {

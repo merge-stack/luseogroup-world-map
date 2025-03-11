@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { mapPins } from "@src/data/mapPins";
+import { mapPins } from "@data/mapPins";
 import { ViewType } from "@constants";
 
 interface IFilters {

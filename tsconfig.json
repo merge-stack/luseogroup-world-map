@@ -26,7 +26,8 @@
       "@assets/*": ["src/assets/*"],
       "@config/*": ["src/config/*"],
       "@interfaces": ["src/interfaces/index"], // Directly point to the index file
-      "@constants": ["src/constants/index"]
+      "@constants": ["src/constants/index"],
+      "@data/*": ["src/data/*"]
     }
   },
   "include": ["src"]
