@@ -1,9 +1,11 @@
 import { useState, useMemo, useCallback, useEffect } from "react";
 import { debounce } from "lodash";
 
-import Filters from "@components/Header/Filters";
 import MapView from "@components/ViewTabs/MapView";
 import ListView from "@components/ViewTabs/ListView";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
+
 import { IProject } from "@interfaces";
 import { ViewType } from "@constants";
 
@@ -46,28 +48,32 @@ function App() {
     }) as IProject[];
   }, [selectedCategory, selectedLocation, debouncedSearchQuery]);
 
+  const resetFilters = () => {
+    setSelectedCategory("all");
+    setSelectedLocation("all");
+    setSearchQuery("");
+    setSelectedProject(null);
+  };
   return (
     <div className="app-container">
       <div className="content-container">
-        <div className="filters-container">
-          <Filters
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
-            selectedLocation={selectedLocation}
-            setSelectedLocation={setSelectedLocation}
-            searchQuery={searchQuery}
-            setSearchQuery={setSearchQuery}
-            toggleView={toggleView}
-            setToggleView={setToggleView}
-          />
-        </div>
+        <Header
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          selectedLocation={selectedLocation}
+          setSelectedLocation={setSelectedLocation}
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          toggleView={toggleView}
+          setToggleView={setToggleView}
+        />
         <div
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}>
-          <div style={{ width: "1200px" }}>
+          <div style={{ width: "1400px" }}>
             {toggleView === ViewType.MAP ? (
               <MapView
                 pins={filteredPins}
@@ -83,6 +89,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Footer resetFilters={resetFilters} />
     </div>
   )
 }
