@@ -1,5 +1,8 @@
 import { IProject } from "@interfaces";
 import "./index.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface IProjectCard {
   project: IProject;
@@ -7,9 +10,23 @@ interface IProjectCard {
 }
 
 const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) => {
+  const settings = {
+    dots: true, // Show dots below images
+    infinite: true, // Loop images
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true, // Show left/right arrows
+  };
   return (
     <div className="location-card" onClick={() => setSelectedProject(project)}>
-      <img src={project.image} alt="Location View" className="location-card-image" />
+      <Slider {...settings} className="location-card-slider">
+        {[...Array(3)].map((_, index) => (
+          <div key={index}>
+            <img src={project.image} alt={`Slide ${index}`} className="location-card-image" />
+          </div>
+        ))}
+      </Slider>
       <div className="location-card-content">
         <div className="location-card-section">
           <h3 className="location-card-title">{project.name}</h3>
