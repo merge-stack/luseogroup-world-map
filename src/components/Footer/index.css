@@ -1,27 +1,45 @@
 .footer {
-  padding: 20px;
-  justify-content: end;
-  display: flex;
-  gap: 20px; /* Space between buttons */
-}
-
-.footer-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #4a4a4a;
-  text-decoration: none;
-  font-size: 15px;
+  padding: 40px;
+  background-color: #f8f9fa;
+  height: "800px";
 }
 
-.footer-item:hover {
-  color: #000;
+.footer-logo img {
+  width: auto;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-divider {
+  width: 80%;
+  margin: 10px 0;
+  border: 0;
+  height: 1px;
+  background: #ccc;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-item {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .footer-button {
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
+  margin-top: 0.5px;
 }

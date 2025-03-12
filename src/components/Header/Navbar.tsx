@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@assets/logo.png"; // Update path if needed
+import logo from "@assets/logo.png";
 import "./index.css";
 
 const Navbar: React.FC = () => {

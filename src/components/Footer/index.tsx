@@ -1,3 +1,4 @@
+import logo from "@assets/logo.png";
 import "./index.css";
 
 interface FooterProps {
@@ -6,22 +7,30 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ resetFilters }) => {
   return (
-    <div className="footer">
-      {/* Contact */}
-      <a href="/contact" target="_blank" rel="noopener noreferrer" className="footer-item">
-        <span>Contact</span>
-      </a>
-
-      {/* About the Company */}
-      <a href="" target="_blank" rel="noopener noreferrer" className="footer-item" style={{ marginRight: "4px" }}>
-        <span>About</span>
-      </a>
-
-      {/* Reset Filters */}
-      <div onClick={resetFilters} className="footer-item footer-button" >
-        <span>Reset Filters</span>
+    <footer className="footer">
+      {/* Logo */}
+      <div className="footer-logo">
+        <img src={logo} alt="Company Logo" />
       </div>
-    </div>
+
+      {/* Divider */}
+      <hr className="footer-divider" />
+
+      {/* Footer Links */}
+      <div className="footer-links">
+        <a href="/contact" target="_blank" rel="noopener noreferrer" className="footer-item">
+          Contact
+        </a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer" className="footer-item">
+          About
+        </a>
+
+        <div onClick={resetFilters} className="footer-item footer-button">
+          Reset Filters
+        </div>
+      </div>
+    </footer>
   );
 };
 
