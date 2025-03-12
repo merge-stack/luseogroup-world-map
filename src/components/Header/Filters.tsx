@@ -1,4 +1,6 @@
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
+import { debounce } from "lodash";
+
 import { mapPins } from "@data/mapPins";
 import { ViewType } from "@constants";
 
@@ -7,7 +9,6 @@ interface IFilters {
   setSelectedCategory: (category: string) => void;
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
-  searchQuery: string;
   setSearchQuery: (query: string) => void;
   toggleView: string
   setToggleView: (view: string) => void;
@@ -18,7 +19,6 @@ const Filters: React.FC<IFilters> = ({
   setSelectedCategory,
   selectedLocation,
   setSelectedLocation,
-  searchQuery,
   setSearchQuery,
   toggleView,
   setToggleView,
@@ -33,13 +33,16 @@ const Filters: React.FC<IFilters> = ({
     []
   );
 
+  const debouncedSetSearchQuery = useCallback(
+    debounce((query) => setSearchQuery(query), 300),
+    []
+  );
   return (
     <div className="filters">
       <input
         id="search-input"
         type="text"
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+        onChange={(e) => debouncedSetSearchQuery(e.target.value)}
         className="filter-search"
         placeholder="Search by project name..."
       />

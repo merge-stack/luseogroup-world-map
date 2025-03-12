@@ -74,6 +74,13 @@
   height: 100%;
   width: 70%;
   padding: 10px;
+  height: 1000px;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .location-card {
   background: #fff;
