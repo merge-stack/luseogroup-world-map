@@ -63,11 +63,11 @@ function App() {
               selectedProject={selectedProject}
               setSelectedProject={setSelectedProject}
               isListView={toggleView === ViewType.LIST}
+              resetFilters={resetFilters}
             />
           </div>
         </div>
       </div>
-      <Footer resetFilters={resetFilters} />
     </div>
   )
 }

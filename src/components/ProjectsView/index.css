@@ -3,6 +3,7 @@
   min-height: 100%;
   display: flex;
   border: 1px solid #e0e0e0;
+  margin-bottom: 40px;
 }
 
 .locations-list {
@@ -22,15 +23,21 @@
 
 .map-container {
   /* flex: 1; */
-  height: 100%;
   width: 70%;
   padding: 10px;
+  height: 1000px;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .location-card {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  cursor: pointer;
   overflow: hidden;
 }
 

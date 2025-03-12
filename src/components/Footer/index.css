@@ -1,16 +1,8 @@
 .footer {
-  position: fixed;
-  bottom: 1px;
-  left: 50%;
-  width: 100%;
-  transform: translateX(-50%);
+  padding: 20px;
+  justify-content: end;
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  background: #fdb82dd8;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  gap: 20px; /* Space between buttons */
 }
 
 .footer-item {
@@ -19,15 +11,17 @@
   align-items: center;
   color: #4a4a4a;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .footer-item:hover {
-  color: #000; /* Darken color on hover */
+  color: #000;
 }
 
 .footer-button {
   border: none;
   background: none;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
 }
