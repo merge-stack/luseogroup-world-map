@@ -1,8 +1,6 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
-import { debounce } from "lodash";
+import { useState, useMemo } from "react";
 
-import MapView from "@components/ViewTabs/MapView";
-import ListView from "@components/ViewTabs/ListView";
+import ProjectsView from "@src/components/ProjectsView";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 
@@ -19,19 +17,6 @@ function App() {
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
   const [toggleView, setToggleView] = useState<string>(ViewType.MAP);
 
-  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(searchQuery);
-
-  // Debounce the search query update
-  const debouncedSetSearchQuery = useCallback(
-    debounce((query) => setDebouncedSearchQuery(query), 300),
-    []
-  );
-
-  // Update the debounced query when searchQuery changes
-  useEffect(() => {
-    debouncedSetSearchQuery(searchQuery);
-  }, [searchQuery, debouncedSetSearchQuery]);
-
   const filteredPins = useMemo(() => {
     return mapPins.filter((pin) => {
       const matchCategory =
@@ -46,7 +31,7 @@ function App() {
 
       return matchCategory && matchLocation && matchSearch;
     }) as IProject[];
-  }, [selectedCategory, selectedLocation, debouncedSearchQuery]);
+  }, [selectedCategory, selectedLocation, searchQuery]);
 
   const resetFilters = () => {
     setSelectedCategory("all");
@@ -62,7 +47,6 @@ function App() {
           setSelectedCategory={setSelectedCategory}
           selectedLocation={selectedLocation}
           setSelectedLocation={setSelectedLocation}
-          searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
           toggleView={toggleView}
           setToggleView={setToggleView}
@@ -74,18 +58,12 @@ function App() {
             justifyContent: "center",
           }}>
           <div style={{ width: "1400px" }}>
-            {toggleView === ViewType.MAP ? (
-              <MapView
-                pins={filteredPins}
-                selectedProject={selectedProject}
-                setSelectedProject={setSelectedProject}
-              />
-            ) : (
-              <ListView
-                pins={filteredPins}
-                setSelectedProject={setSelectedProject}
-              />
-            )}
+            <ProjectsView
+              pins={filteredPins}
+              selectedProject={selectedProject}
+              setSelectedProject={setSelectedProject}
+              isListView={toggleView === ViewType.LIST}
+            />
           </div>
         </div>
       </div>

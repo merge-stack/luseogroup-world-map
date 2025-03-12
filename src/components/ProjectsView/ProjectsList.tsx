@@ -1,17 +1,23 @@
+import React from "react";
 import { IProject } from "@interfaces";
 import ProjectCard from "./ProjectCard";
 import "./index.css";
 
-interface IListViewProps {
-  pins: IProject[];
-  setSelectedProject: (project: IProject) => void;
-}
+interface IProjectsList {
+  pins: IProject[],
+  setSelectedProject: (project: IProject) => void,
+  isListView: boolean
+};
 
-const ListView: React.FC<IListViewProps> = ({ pins, setSelectedProject }) => {
+const ProjectsList: React.FC<IProjectsList> = ({
+  pins,
+  setSelectedProject,
+  isListView
+}) => {
   return (
-    <div className="list-view-container">
+    <div className={!isListView ? "locations-list" : ""}>
       {pins.length ? (
-        <div className="grid-container">
+        <div className={isListView ? "grid-container" : ""}>
           {pins.map((project) => (
             <ProjectCard
               key={project.id}
@@ -27,4 +33,4 @@ const ListView: React.FC<IListViewProps> = ({ pins, setSelectedProject }) => {
   );
 };
 
-export default ListView;
+export default ProjectsList;

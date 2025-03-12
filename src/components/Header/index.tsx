@@ -8,7 +8,6 @@ interface HeaderProps {
   setSelectedCategory: (category: string) => void;
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
-  searchQuery: string;
   setSearchQuery: (query: string) => void;
   toggleView: string;
   setToggleView: (view: string) => void;
@@ -19,7 +18,6 @@ const Header: React.FC<HeaderProps> = ({
   setSelectedCategory,
   selectedLocation,
   setSelectedLocation,
-  searchQuery,
   setSearchQuery,
   toggleView,
   setToggleView,
@@ -36,7 +34,6 @@ const Header: React.FC<HeaderProps> = ({
           setSelectedCategory={setSelectedCategory}
           selectedLocation={selectedLocation}
           setSelectedLocation={setSelectedLocation}
-          searchQuery={searchQuery}
           setSearchQuery={setSearchQuery}
           toggleView={toggleView}
           setToggleView={setToggleView}

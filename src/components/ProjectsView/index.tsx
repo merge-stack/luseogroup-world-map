@@ -3,17 +3,18 @@ import MapComponent from "@components/Map";
 import ProjectsList from "./ProjectsList";
 import "./index.css";
 
-interface IMapViewProps {
+interface IProjectsViewProps {
   pins: IProject[];
   selectedProject: IProject | null;
   setSelectedProject: (project: IProject) => void;
+  isListView: boolean
 }
 
-const MapView: React.FC<IMapViewProps> = ({ pins, selectedProject, setSelectedProject }) => {
+const ProjectsView: React.FC<IProjectsViewProps> = ({ pins, selectedProject, setSelectedProject, isListView }) => {
   return (
-    <div className="projects-container">
-      <ProjectsList pins={pins} setSelectedProject={setSelectedProject} />
-      <div className="map-container" style={{ width: "70%", height: "1000px" }}>
+    <div className={isListView ? "list-view-container" : "projects-container"}>
+      <ProjectsList pins={pins} setSelectedProject={setSelectedProject} isListView={isListView} />
+      <div className={`map-container ${isListView ? "hidden" : ""}`}>
         <MapComponent
           pins={pins}
           selectedProject={selectedProject}
@@ -24,4 +25,4 @@ const MapView: React.FC<IMapViewProps> = ({ pins, selectedProject, setSelectedPr
   );
 };
 
-export default MapView;
+export default ProjectsView;
