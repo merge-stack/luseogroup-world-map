@@ -62,7 +62,15 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
       document.querySelectorAll(".mapboxgl-marker").forEach(marker => marker.remove());
 
+      if (pins.length === 0) return;
+
+      // Create a bounding box
+      const bounds = new mapboxgl.LngLatBounds();
+
+      // Add markers for each pin
       pins.forEach((pin) => {
+        bounds.extend(pin.coordinates); // Extend bounds to include this pin
+
         const el = document.createElement("div");
         el.className = "custom-marker";
         el.style.backgroundImage = `url(${luseoFlagMarker})`;
@@ -78,8 +86,23 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
           flyToProject(mapRef.current, pin);
         });
 
-        new mapboxgl.Marker(el).setLngLat(pin.coordinates).addTo(map);
+        new mapboxgl.Marker(el, {
+          anchor: "bottom", // Ensures tip stays at the location
+          offset: [20, 10], // Moves the marker tip stays in place
+        })
+          .setLngLat(pin.coordinates)
+          .addTo(map);
       });
+
+      if (pins.length > 1) {
+        map.fitBounds(bounds, {
+          padding: 50, // Padding around the edges
+          maxZoom: 12, // Prevent zooming in too much
+        });
+      } else if (pins.length === 1) {
+        // If only one pin, zoom into it
+        map.flyTo({ center: pins[0]?.coordinates, zoom: 12 });
+      }
     };
 
     if (map.loaded()) {

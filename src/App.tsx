@@ -1,27 +1,35 @@
 import { useState, useMemo } from "react";
+
+import Filters from "@components/Header/Filters";
+import ProjectsView from "@src/components/ProjectsView";
 import { IProject } from "@interfaces";
+import { ViewType } from "@constants";
+
 import { mapPins } from "@data/mapPins";
-import Filters from "@components/Filters";
-import ProjectsList from "@components/ProjectsList";
-import MapComponent from "@components/MapComponent";
 import "./App.css";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedLocation, setSelectedLocation] = useState("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
+  const [toggleView, setToggleView] = useState<string>(ViewType.MAP);
 
   const filteredPins = useMemo(() => {
     return mapPins.filter((pin) => {
       const matchCategory =
         selectedCategory === "all" ||
         pin.projectDetails.category === selectedCategory;
-      const region = pin.projectDetails.region;
       const matchLocation =
-        selectedLocation === "all" || region === selectedLocation;
-      return matchCategory && matchLocation;
+        selectedLocation === "all" ||
+        pin.projectDetails.region === selectedLocation;
+      const matchSearch =
+        searchQuery === "" ||
+        pin.name.toLowerCase().includes(searchQuery.toLowerCase());
+
+      return matchCategory && matchLocation && matchSearch;
     }) as IProject[];
-  }, [selectedCategory, selectedLocation]);
+  }, [selectedCategory, selectedLocation, searchQuery]);
 
   return (
     <div className="app-container">
@@ -32,24 +40,29 @@ function App() {
             setSelectedCategory={setSelectedCategory}
             selectedLocation={selectedLocation}
             setSelectedLocation={setSelectedLocation}
+            setSearchQuery={setSearchQuery}
+            toggleView={toggleView}
+            setToggleView={setToggleView}
           />
         </div>
-        <div className="projects-container">
-          <ProjectsList
-            pins={filteredPins}
-            setSelectedProject={setSelectedProject}
-          />
-          <div className="map-container">
-            <MapComponent
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}>
+          <div style={{ width: "1200px" }}>
+            <ProjectsView
               pins={filteredPins}
               selectedProject={selectedProject}
               setSelectedProject={setSelectedProject}
+              isListView={toggleView === ViewType.LIST}
             />
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;

@@ -1,11 +1,17 @@
-import { useMemo } from "react";
+import { useCallback, useMemo } from "react";
+import { debounce } from "lodash";
+
 import { mapPins } from "@data/mapPins";
+import { ViewType } from "@constants";
 
 interface IFilters {
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
+  setSearchQuery: (query: string) => void;
+  toggleView: string
+  setToggleView: (view: string) => void;
 }
 
 const Filters: React.FC<IFilters> = ({
@@ -13,6 +19,9 @@ const Filters: React.FC<IFilters> = ({
   setSelectedCategory,
   selectedLocation,
   setSelectedLocation,
+  setSearchQuery,
+  toggleView,
+  setToggleView,
 }) => {
   const locations = useMemo<string[]>(
     () => ["all", ...new Set(mapPins.map((pin) => pin.projectDetails.region))],
@@ -24,15 +33,25 @@ const Filters: React.FC<IFilters> = ({
     []
   );
 
+  const debouncedSetSearchQuery = useCallback(
+    debounce((query) => setSearchQuery(query), 300),
+    []
+  );
   return (
     <div className="filters">
-      <label htmlFor="category-select">Category:</label>
+      <input
+        id="search-input"
+        type="text"
+        onChange={(e) => debouncedSetSearchQuery(e.target.value)}
+        className="filter-search"
+        placeholder="Search by project name..."
+      />
+
       <select
         id="category-select"
         value={selectedCategory}
         onChange={(e) => setSelectedCategory(e.target.value)}
-        className="filter-dropdown"
-      >
+        className="filter-dropdown">
         {categories.map((category) => (
           <option key={category} value={category}>
             {category === "all" ? "All Categories" : category}
@@ -40,19 +59,30 @@ const Filters: React.FC<IFilters> = ({
         ))}
       </select>
 
-      <label htmlFor="location-select">Location:</label>
       <select
         id="location-select"
         value={selectedLocation}
         onChange={(e) => setSelectedLocation(e.target.value)}
-        className="filter-dropdown"
-      >
+        className="filter-dropdown">
         {locations.map((location) => (
           <option key={location} value={location}>
             {location === "all" ? "All Locations" : location}
           </option>
         ))}
       </select>
+
+      <div className="toggle-container">
+        <button
+          className={toggleView === ViewType.MAP ? "active" : ""}
+          onClick={() => setToggleView(ViewType.MAP)}>
+          Map View
+        </button>
+        <button
+          className={toggleView === ViewType.LIST ? "active" : ""}
+          onClick={() => setToggleView(ViewType.LIST)}>
+          List View
+        </button>
+      </div>
     </div>
   );
 };

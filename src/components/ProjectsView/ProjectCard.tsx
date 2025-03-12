@@ -11,6 +11,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) =>
       <img src={project.image} alt="Location View" className="location-card-image" />
       <div className="location-card-content">
         <div className="location-card-section">
+          <h3 className="location-card-title">{project.name}</h3>
           <h3 className="location-card-title">SCOPE</h3>
           <p className="location-card-text">{project.scope}</p>
         </div>
