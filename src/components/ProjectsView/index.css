@@ -1,0 +1,155 @@
+.projects-container {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.locations-list {
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fff;
+  padding-right: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+.no-project-text {
+  color: black;
+  text-align: center;
+  margin-top: 50%;
+}
+
+.map-container {
+  /* flex: 1; */
+  width: 70%;
+  padding: 10px;
+  height: 1000px;
+  position: sticky;
+  top: 70px;
+  z-index: 900;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.location-card {
+  background: #fff;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.location-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.location-card-content {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.location-card-section {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.location-card-section:last-child {
+  margin-bottom: 0;
+}
+
+.location-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.location-card-subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.location-card-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 4px;
+  display: flex;
+}
+
+.location-card-text-detail {
+  margin-top: 3px;
+  margin-right: 3px;
+}
+
+.location-card-text:last-child {
+  margin-bottom: 0;
+}
+
+.mapboxgl-map {
+  width: 100%;
+  height: 100%;
+}
+
+.mapboxgl-popup {
+  max-width: 622px !important;
+  margin-top: -35px;
+}
+
+.mapboxgl-popup-content {
+  width: 550px;
+  background-color: #2c3e50 !important;
+  .mapboxgl-popup-close-button {
+    background-color: #333;
+  }
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #2c3e50 !important;
+  border-bottom-color: #2c3e50 !important;
+}
+
+.list-view-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 20px; /* Spacing between cards */
+}
+
+.no-project-text {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Custom arrow styles */
+.slick-prev {
+  z-index: 1; /* Ensure arrows are above the slides */
+  padding-left: 30px !important;
+}
+.slick-next {
+  z-index: 1; /* Ensure arrows are above the slides */
+  padding-right: 60px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important; /* Arrow color */
+  font-size: 30px !important; /* Arrow size */
+  opacity: 1 !important; /* Ensure arrows are fully opaque */
+}

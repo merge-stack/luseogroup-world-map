@@ -1,6 +1,7 @@
 import React from "react";
 import { IProject } from "@interfaces";
 import ProjectCard from "./ProjectCard";
+import "./index.css";
 
 interface IProjectsList {
   pins: IProject[],

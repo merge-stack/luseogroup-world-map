@@ -1,7 +1,9 @@
 import { useState, useMemo } from "react";
 
-import Filters from "@components/Header/Filters";
 import ProjectsView from "@src/components/ProjectsView";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
+
 import { IProject } from "@interfaces";
 import { ViewType } from "@constants";
 
@@ -31,27 +33,26 @@ function App() {
     }) as IProject[];
   }, [selectedCategory, selectedLocation, searchQuery]);
 
+  const resetFilters = () => {
+    setSelectedCategory("all");
+    setSelectedLocation("all");
+    setSearchQuery("");
+    setSelectedProject(null);
+  };
   return (
     <div className="app-container">
       <div className="content-container">
-        <div className="filters-container">
-          <Filters
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
-            selectedLocation={selectedLocation}
-            setSelectedLocation={setSelectedLocation}
-            setSearchQuery={setSearchQuery}
-            toggleView={toggleView}
-            setToggleView={setToggleView}
-          />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}>
-          <div style={{ width: "1200px" }}>
+        <Header
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          selectedLocation={selectedLocation}
+          setSelectedLocation={setSelectedLocation}
+          setSearchQuery={setSearchQuery}
+          toggleView={toggleView}
+          setToggleView={setToggleView}
+        />
+        <div className="projects-div">
+          <div style={{ width: "83%" }}>
             <ProjectsView
               pins={filteredPins}
               selectedProject={selectedProject}
@@ -60,6 +61,7 @@ function App() {
             />
           </div>
         </div>
+        <Footer resetFilters={resetFilters} />
       </div>
     </div>
   )
