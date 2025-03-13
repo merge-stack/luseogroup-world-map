@@ -17,7 +17,7 @@ const ProjectsList: React.FC<IProjectsList> = ({
   return (
     <div className={!isListView ? "locations-list" : ""}>
       {pins.length ? (
-        <div className={isListView ? "grid-container" : ""}>
+        <div className={isListView ? "grid-container" : "map-list"}>
           {pins.map((project) => (
             <ProjectCard
               key={project.id}

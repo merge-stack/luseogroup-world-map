@@ -6,12 +6,11 @@
 }
 
 .locations-list {
-  width: 30%;
+  width: 35%;
   height: 100%;
   overflow-y: auto;
   background-color: #fff;
   padding-right: 20px;
-  border-right: 1px solid #e0e0e0;
 }
 
 .no-project-text {
@@ -22,15 +21,18 @@
 
 .map-container {
   /* flex: 1; */
-  width: 70%;
-  padding: 10px;
+  width: 65%;
   height: 1000px;
   position: sticky;
   top: 70px;
   z-index: 900;
+}
+
+.mapRef-container {
   border: 2px solid black;
   border-radius: 5px;
 }
+
 .hidden {
   opacity: 0;
   visibility: hidden;
@@ -41,8 +43,11 @@
   border: 2px solid #ced4da;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   overflow: hidden;
+}
+.location-card:hover {
+  border: 2px solid black;
 }
 
 .location-card-image {
@@ -52,7 +57,8 @@
 }
 
 .location-card-content {
-  padding: 15px 20px;
+  padding-inline: 15px;
+  padding-bottom: 20px;
   cursor: pointer;
 }
 
@@ -121,7 +127,12 @@
 
 .list-view-container {
   width: 100%;
-  padding: 20px;
+  margin-bottom: 60px;
+}
+
+.map-list {
+  display: grid;
+  gap: 15px;
 }
 
 .grid-container {
@@ -152,4 +163,18 @@
   color: black !important; /* Arrow color */
   font-size: 30px !important; /* Arrow size */
   opacity: 1 !important; /* Ensure arrows are fully opaque */
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.custom-next {
+  right: 5px;
 }
