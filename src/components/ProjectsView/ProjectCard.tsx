@@ -3,11 +3,24 @@ import "./index.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 interface IProjectCard {
   project: IProject;
   setSelectedProject: (project: IProject) => void;
 }
+
+const CustomPrevArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div className="custom-arrow custom-prev" onClick={onClick}>
+    <FaChevronLeft size={25} />
+  </div>
+);
+
+const CustomNextArrow = ({ onClick }: { onClick?: () => void }) => (
+  <div className="custom-arrow custom-next" onClick={onClick}>
+    <FaChevronRight size={25} />
+  </div>
+);
 
 const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) => {
   const settings = {
@@ -15,7 +28,8 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) =>
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true, // Show left/right arrows
+    nextArrow: <CustomNextArrow />, // Custom Next Arrow
+    prevArrow: <CustomPrevArrow />, // Custom Prev Arrow
   };
   return (
     <div className="location-card">
