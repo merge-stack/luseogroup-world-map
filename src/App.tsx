@@ -1,9 +1,9 @@
-import { useState, useMemo, useCallback, useEffect } from "react";
-import { debounce } from "lodash";
+import { useState, useMemo } from "react";
 
-import Filters from "@components/Header/Filters";
-import MapView from "@components/ViewTabs/MapView";
-import ListView from "@components/ViewTabs/ListView";
+import ProjectsView from "@src/components/ProjectsView";
+import Footer from "@components/Footer";
+import Header from "@components/Header";
+
 import { IProject } from "@interfaces";
 import { ViewType } from "@constants";
 
@@ -16,19 +16,6 @@ function App() {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedProject, setSelectedProject] = useState<IProject | null>(null);
   const [toggleView, setToggleView] = useState<string>(ViewType.MAP);
-
-  const [debouncedSearchQuery, setDebouncedSearchQuery] = useState(searchQuery);
-
-  // Debounce the search query update
-  const debouncedSetSearchQuery = useCallback(
-    debounce((query) => setDebouncedSearchQuery(query), 300),
-    []
-  );
-
-  // Update the debounced query when searchQuery changes
-  useEffect(() => {
-    debouncedSetSearchQuery(searchQuery);
-  }, [searchQuery, debouncedSetSearchQuery]);
 
   const filteredPins = useMemo(() => {
     return mapPins.filter((pin) => {
@@ -44,44 +31,37 @@ function App() {
 
       return matchCategory && matchLocation && matchSearch;
     }) as IProject[];
-  }, [selectedCategory, selectedLocation, debouncedSearchQuery]);
+  }, [selectedCategory, selectedLocation, searchQuery]);
 
+  const resetFilters = () => {
+    setSelectedCategory("all");
+    setSelectedLocation("all");
+    setSearchQuery("");
+    setSelectedProject(null);
+  };
   return (
     <div className="app-container">
       <div className="content-container">
-        <div className="filters-container">
-          <Filters
-            selectedCategory={selectedCategory}
-            setSelectedCategory={setSelectedCategory}
-            selectedLocation={selectedLocation}
-            setSelectedLocation={setSelectedLocation}
-            searchQuery={searchQuery}
-            setSearchQuery={setSearchQuery}
-            toggleView={toggleView}
-            setToggleView={setToggleView}
-          />
-        </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}>
-          <div style={{ width: "1200px" }}>
-            {toggleView === ViewType.MAP ? (
-              <MapView
-                pins={filteredPins}
-                selectedProject={selectedProject}
-                setSelectedProject={setSelectedProject}
-              />
-            ) : (
-              <ListView
-                pins={filteredPins}
-                setSelectedProject={setSelectedProject}
-              />
-            )}
+        <Header
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          selectedLocation={selectedLocation}
+          setSelectedLocation={setSelectedLocation}
+          setSearchQuery={setSearchQuery}
+          toggleView={toggleView}
+          setToggleView={setToggleView}
+        />
+        <div className="projects-div">
+          <div style={{ width: "83%" }}>
+            <ProjectsView
+              pins={filteredPins}
+              selectedProject={selectedProject}
+              setSelectedProject={setSelectedProject}
+              isListView={toggleView === ViewType.LIST}
+            />
           </div>
         </div>
+        <Footer resetFilters={resetFilters} />
       </div>
     </div>
   )
