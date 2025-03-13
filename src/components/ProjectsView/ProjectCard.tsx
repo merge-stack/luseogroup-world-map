@@ -11,7 +11,6 @@ interface IProjectCard {
 
 const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) => {
   const settings = {
-    dots: true, // Show dots below images
     infinite: true, // Loop images
     speed: 500,
     slidesToShow: 1,
@@ -19,7 +18,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) =>
     arrows: true, // Show left/right arrows
   };
   return (
-    <div className="location-card" onClick={() => setSelectedProject(project)}>
+    <div className="location-card">
       <Slider {...settings} className="location-card-slider">
         {[...Array(3)].map((_, index) => (
           <div key={index}>
@@ -27,7 +26,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) =>
           </div>
         ))}
       </Slider>
-      <div className="location-card-content">
+      <div className="location-card-content" onClick={() => setSelectedProject(project)}>
         <div className="location-card-section">
           <h3 className="location-card-title">{project.name}</h3>
           <h3 className="location-card-subtitle">SCOPE</h3>

@@ -4,10 +4,9 @@
   top: 0;
   z-index: 1000; /* Ensures it stays above other elements */
   background: white; /* Optional: Prevents content behind from showing through */
-  padding-left: 140px; /* Optional: Adds some spacing */
-  padding-right: 140px; /* Optional: Adds some spacing */
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .filters label {
@@ -24,7 +23,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
-  width: 100%;
+  width: 83%;
 }
 
 .filter-dropdown {
@@ -76,6 +75,7 @@
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
+  color: black;
 }
 
 .toggle-container button.active {
@@ -86,16 +86,19 @@
 .navbar {
   background-color: #fff;
   color: white;
-  padding: 15px 60px;
+  padding: 15px 0px;
   width: 100%;
   border-bottom: 0.5px solid #262c69;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between; /* Space between logo and slogan */
+  justify-content: start; /* Space between logo and slogan */
   align-items: center; /* Vertically center items */
   gap: 15px;
+  width: 83%;
 }
 
 .navbar-logo {
@@ -109,6 +112,7 @@
   color: #4a4a4a; /* Dark Grey */
   display: flex;
   justify-content: start; /* Space between logo and slogan */
+  padding-left: 80px;
 }
 
 .header {

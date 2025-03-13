@@ -2,7 +2,6 @@
   min-width: 100%;
   min-height: 100%;
   display: flex;
-  border: 1px solid #e0e0e0;
   margin-bottom: 40px;
 }
 
@@ -11,7 +10,7 @@
   height: 100%;
   overflow-y: auto;
   background-color: #fff;
-  padding: 20px;
+  padding-right: 20px;
   border-right: 1px solid #e0e0e0;
 }
 
@@ -26,6 +25,11 @@
   width: 70%;
   padding: 10px;
   height: 1000px;
+  position: sticky;
+  top: 70px;
+  z-index: 900;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .hidden {
   opacity: 0;
@@ -34,10 +38,10 @@
 }
 .location-card {
   background: #fff;
+  border: 2px solid #ced4da;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  cursor: pointer;
   overflow: hidden;
 }
 
@@ -49,6 +53,7 @@
 
 .location-card-content {
   padding: 15px 20px;
+  cursor: pointer;
 }
 
 .location-card-section {
@@ -130,4 +135,21 @@
   font-size: 18px;
   color: #777;
   margin-top: 20px;
+}
+
+/* Custom arrow styles */
+.slick-prev {
+  z-index: 1; /* Ensure arrows are above the slides */
+  padding-left: 30px !important;
+}
+.slick-next {
+  z-index: 1; /* Ensure arrows are above the slides */
+  padding-right: 60px !important;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important; /* Arrow color */
+  font-size: 30px !important; /* Arrow size */
+  opacity: 1 !important; /* Ensure arrows are fully opaque */
 }

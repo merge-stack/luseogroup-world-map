@@ -82,14 +82,14 @@ const Filters: React.FC<IFilters> = ({
 
         <div className="toggle-container">
           <button
-            className={toggleView === ViewType.MAP ? "active" : ""}
-            onClick={() => setToggleView(ViewType.MAP)}>
-            Map View
-          </button>
-          <button
             className={toggleView === ViewType.LIST ? "active" : ""}
             onClick={() => setToggleView(ViewType.LIST)}>
             List View
+          </button>
+          <button
+            className={toggleView === ViewType.MAP ? "active" : ""}
+            onClick={() => setToggleView(ViewType.MAP)}>
+            Map View
           </button>
         </div>
       </div>

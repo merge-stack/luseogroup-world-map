@@ -51,13 +51,8 @@ function App() {
           toggleView={toggleView}
           setToggleView={setToggleView}
         />
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}>
-          <div style={{ width: "1400px" }}>
+        <div className="projects-div">
+          <div style={{ width: "83%" }}>
             <ProjectsView
               pins={filteredPins}
               selectedProject={selectedProject}
