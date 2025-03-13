@@ -9,7 +9,7 @@ mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 interface IMapComponent {
   pins: IProject[];
   selectedProject?: IProject | null;
-  setSelectedProject: (project: IProject) => void;
+  setSelectedProject: (project: IProject | null) => void;
 }
 
 const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject }) => {
@@ -83,7 +83,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         el.addEventListener("click", () => {
           setSelectedProject(pin);
-          flyToProject(mapRef.current, pin);
+          flyToProject(mapRef.current, pin, setSelectedProject);
         });
 
         new mapboxgl.Marker(el, {
@@ -115,13 +115,12 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
   useEffect(() => {
     if (!mapRef.current || selectedProject === undefined) return;
     const project = pins.find((pin) => pin.id === selectedProject?.id);
-    if (project) flyToProject(mapRef.current, project);
+    if (project) flyToProject(mapRef.current, project, setSelectedProject);
   }, [selectedProject]);
 
   return <div ref={mapContainer} className="mapRef-container" />;
 };
-
-const flyToProject = (map: mapboxgl.Map | null, project: IProject) => {
+const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
   if (!map) return;
   const { coordinates, name, image, scope, projectDetails } = project;
 
@@ -148,9 +147,14 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject) => {
     </div>
   `;
 
-  const popup = new mapboxgl.Popup({ closeButton: true, closeOnClick: false })
+  const popup = new mapboxgl.Popup({
+    closeButton: true, closeOnClick: false, offset: [0, -70],
+  })
     .setLngLat(coordinates)
-    .setHTML(popupContent);
+    .setHTML(popupContent)
+    .on("close", () => {
+      setSelectedProject(null);
+    });
 
   map.flyTo({
     center: coordinates,
@@ -160,7 +164,9 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject) => {
     easing: (t) => t,
   });
 
-  map.once("moveend", () => popup.addTo(map));
+  map.once("idle", () => {
+    popup.addTo(map)
+  });
 };
 
 export default MapComponent;
