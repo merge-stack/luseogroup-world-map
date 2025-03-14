@@ -5,6 +5,8 @@ import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/luseoFlag.png";
 import defaultImage from "@assets/default-img.png";
 
+mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
+
 
 interface IMapComponent {
   pins: IProject[];
