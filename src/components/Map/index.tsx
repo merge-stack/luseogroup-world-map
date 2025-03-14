@@ -3,13 +3,15 @@ import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/luseoFlag.png";
+import defaultImage from "@assets/default-img.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
+
 
 interface IMapComponent {
   pins: IProject[];
   selectedProject?: IProject | null;
-  setSelectedProject: (project: IProject) => void;
+  setSelectedProject: (project: IProject | null) => void;
 }
 
 const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject }) => {
@@ -120,7 +122,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         el.addEventListener("click", () => {
           setSelectedProject(pin);
-          flyToProject(mapRef.current, pin);
+          flyToProject(mapRef.current, pin, setSelectedProject);
         });
 
         new mapboxgl.Marker(el, {
@@ -153,15 +155,17 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
   useEffect(() => {
     if (!mapRef.current || selectedProject === undefined) return;
     const project = pins.find((pin) => pin.id === selectedProject?.id);
-    if (project) flyToProject(mapRef.current, project);
+    if (project) flyToProject(mapRef.current, project, setSelectedProject);
   }, [selectedProject]);
 
   return <div ref={mapContainer} className="mapRef-container" />;
 };
-
-const flyToProject = (map: mapboxgl.Map | null, project: IProject) => {
+const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
   if (!map) return;
-  const { coordinates, name, image, scope, projectDetails } = project;
+  const { coordinates, name, photos, description, area, architect, category } = project;
+
+  // Remove all existing popups
+  document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
   const popupContent = `
     <div>
@@ -169,36 +173,58 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject) => {
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif;">
-        <img src="${image}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
+        <img src="${photos.length > 0 ? photos[0] : defaultImage}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
         <div style="padding: 0px 24px;">
           <div style="margin-bottom: 10px;">
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">SCOPE</h3>
-            <p style="color: #fff; font-size: 16px;">${scope}</p>
+            <p style="color: #fff; font-size: 16px;">${description}</p>
           </div>
           <div>
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">PROJECT DETAILS</h3>
-            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${projectDetails.architect}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${projectDetails.size}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${projectDetails.category}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${architect}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${area}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${category}</p>
           </div>
         </div>
       </div>
     </div>
   `;
 
-  const popup = new mapboxgl.Popup({ closeButton: true, closeOnClick: false })
+  const popup = new mapboxgl.Popup({
+    closeButton: true, closeOnClick: false, offset: [0, -70],
+  })
     .setLngLat(coordinates)
-    .setHTML(popupContent);
+    .setHTML(popupContent)
+    .on("close", () => {
+      setSelectedProject(null);
+    });
 
-  map.flyTo({
-    center: coordinates,
-    essential: true,
-    zoom: 15,
-    duration: 4000,
-    easing: (t) => t,
-  });
+  // Get current zoom level
+  const currentZoom = map.getZoom();
 
-  map.once("moveend", () => popup.addTo(map));
+  //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
+  const currentCenter = map.getCenter();
+  const distance = Math.sqrt(
+    Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
+  );
+
+  // Fly to project unless already near the location
+  if (currentZoom <= 13 || distance > 0.005) {
+    map.flyTo({
+      center: coordinates,
+      essential: true,
+      zoom: 15,
+      duration: 4000,
+      easing: (t) => t,
+    });
+
+    map.once("idle", () => {
+      popup.addTo(map);
+    });
+  } else {
+    // If already at zoom 13, show popup immediately
+    popup.addTo(map);
+  }
 };
 
 export default MapComponent;

@@ -21,10 +21,10 @@ function App() {
     return mapPins.filter((pin) => {
       const matchCategory =
         selectedCategory === "all" ||
-        pin.projectDetails.category === selectedCategory;
+        pin.category === selectedCategory;
       const matchLocation =
         selectedLocation === "all" ||
-        pin.projectDetails.region === selectedLocation;
+        pin.region === selectedLocation;
       const matchSearch =
         searchQuery === "" ||
         pin.name.toLowerCase().includes(searchQuery.toLowerCase());
@@ -52,7 +52,7 @@ function App() {
           setToggleView={setToggleView}
         />
         <div className="projects-div">
-          <div style={{ width: "83%" }}>
+          <div style={{ width: "70%" }}>
             <ProjectsView
               pins={filteredPins}
               selectedProject={selectedProject}
