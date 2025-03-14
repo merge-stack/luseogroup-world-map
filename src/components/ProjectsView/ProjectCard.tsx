@@ -1,10 +1,12 @@
-import { IProject } from "@interfaces";
-import "./index.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useEffect, useRef } from "react";
+
+import { IProject } from "@interfaces";
+import defaultImage from "@assets/default-img.png";
+import "./index.css";
 
 interface IProjectCard {
   project: IProject;
@@ -34,12 +36,12 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
   const cardRef = useRef<HTMLDivElement | null>(null);
 
   const settings = {
-    infinite: true, // Loop images
+    infinite: project.photos.length > 1,  // Disable infinite loop if only one image
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    nextArrow: <CustomNextArrow />, // Custom Next Arrow
-    prevArrow: <CustomPrevArrow />, // Custom Prev Arrow
+    nextArrow: project.photos.length > 1 ? <CustomNextArrow /> : undefined, // Hide arrows if only one image
+    prevArrow: project.photos.length > 1 ? <CustomPrevArrow /> : undefined, // Hide arrows if only one image
   };
 
   useEffect(() => {
@@ -54,9 +56,9 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
       className={`location-card ${selectedProject?.id === project.id ? "selected" : ""}`}
       onClick={() => setSelectedProject(project)}>
       <Slider {...settings} className="location-card-slider">
-        {[...Array(3)].map((_, index) => (
+        {(project.photos.length > 0 ? project.photos : [defaultImage]).map((photo, index) => (
           <div key={index} className="location-card-img-div">
-            <img src={project.image} alt={`Slide ${index}`} className="location-card-image" />
+            <img src={photo} alt={`Slide ${index}`} className="location-card-image" />
           </div>
         ))}
       </Slider>
@@ -64,18 +66,18 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
         <div className="location-card-section">
           <h3 className="location-card-title">{project.name}</h3>
           <h3 className="location-card-subtitle">SCOPE</h3>
-          <p className="location-card-text">{project.scope}</p>
+          <p className="location-card-text">{project.description || "N/A"}</p>
         </div>
         <div className="location-card-section">
           <h3 className="location-card-subtitle">PROJECT DETAILS</h3>
           <p className="location-card-text">
-            <h5 className="location-card-text-detail">ARCHITECT: </h5> {project.projectDetails.architect}
+            <h5 className="location-card-text-detail">ARCHITECT: </h5> {project.architect || "N/A"}
           </p>
           <p className="location-card-text">
-            <h5 className="location-card-text-detail">SIZE:</h5> {project.projectDetails.size}
+            <h5 className="location-card-text-detail">SIZE:</h5> {project.area || "N/A"}
           </p>
           <p className="location-card-text">
-            <h5 className="location-card-text-detail">CATEGORY:</h5> {project.projectDetails.category}
+            <h5 className="location-card-text-detail">CATEGORY:</h5> {project.category || "N/A"}
           </p>
         </div>
       </div>

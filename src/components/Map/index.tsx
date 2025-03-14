@@ -160,7 +160,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 };
 const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
   if (!map) return;
-  const { coordinates, name, image, scope, projectDetails } = project;
+  const { coordinates, name, photos, description, area, architect, category } = project;
 
   // Remove all existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
@@ -171,17 +171,17 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif;">
-        <img src="${image}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
+        <img src="${photos.length > 0 && photos[0]}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
         <div style="padding: 0px 24px;">
           <div style="margin-bottom: 10px;">
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">SCOPE</h3>
-            <p style="color: #fff; font-size: 16px;">${scope}</p>
+            <p style="color: #fff; font-size: 16px;">${description}</p>
           </div>
           <div>
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">PROJECT DETAILS</h3>
-            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${projectDetails.architect}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${projectDetails.size}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${projectDetails.category}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${architect}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${area}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${category}</p>
           </div>
         </div>
       </div>
