@@ -22,7 +22,7 @@
 .map-container {
   /* flex: 1; */
   width: 65%;
-  height: 850px;
+  height: 800px;
   position: sticky;
   top: 83px;
   z-index: 900;
