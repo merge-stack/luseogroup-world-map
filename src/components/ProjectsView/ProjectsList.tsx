@@ -5,12 +5,14 @@ import "./index.css";
 
 interface IProjectsList {
   pins: IProject[],
+  selectedProject: IProject | null;
   setSelectedProject: (project: IProject) => void,
   isListView: boolean
 };
 
 const ProjectsList: React.FC<IProjectsList> = ({
   pins,
+  selectedProject,
   setSelectedProject,
   isListView
 }) => {
@@ -22,6 +24,7 @@ const ProjectsList: React.FC<IProjectsList> = ({
             <ProjectCard
               key={project.id}
               project={project}
+              selectedProject={selectedProject}
               setSelectedProject={setSelectedProject}
             />
           ))}

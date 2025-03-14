@@ -162,6 +162,9 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
   if (!map) return;
   const { coordinates, name, image, scope, projectDetails } = project;
 
+  // Remove all existing popups
+  document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
+
   const popupContent = `
     <div>
       <div style="display: flex; justify-content: center; font-size: 19px; color: #e6ae44; font-weight: 700;">
@@ -197,8 +200,14 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
   // Get current zoom level
   const currentZoom = map.getZoom();
 
-  // Only fly if zoom is below 13
-  if (currentZoom < 13) {
+  //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
+  const currentCenter = map.getCenter();
+  const distance = Math.sqrt(
+    Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
+  );
+
+  // Fly to project unless already near the location
+  if (currentZoom <= 13 || distance > 0.005) {
     map.flyTo({
       center: coordinates,
       essential: true,

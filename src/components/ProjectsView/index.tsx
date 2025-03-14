@@ -13,7 +13,7 @@ interface IProjectsViewProps {
 const ProjectsView: React.FC<IProjectsViewProps> = ({ pins, selectedProject, setSelectedProject, isListView }) => {
   return (
     <div className={isListView ? "list-view-container" : "projects-container"}>
-      <ProjectsList pins={pins} setSelectedProject={setSelectedProject} isListView={isListView} />
+      <ProjectsList pins={pins} setSelectedProject={setSelectedProject} isListView={isListView} selectedProject={selectedProject} />
       {!isListView && (
         <div className="map-container">
           <MapComponent

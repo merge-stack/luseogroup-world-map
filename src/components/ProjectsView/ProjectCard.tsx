@@ -4,25 +4,35 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useEffect, useRef } from "react";
 
 interface IProjectCard {
   project: IProject;
+  selectedProject: IProject | null;
   setSelectedProject: (project: IProject) => void;
 }
 
 const CustomPrevArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-prev" onClick={onClick}>
+  <div className="custom-arrow custom-prev" onClick={(event) => {
+    event.stopPropagation(); // Prevents click from bubbling to parent
+    onClick?.();
+  }}>
     <FaChevronLeft size={25} />
   </div>
 );
 
 const CustomNextArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-next" onClick={onClick}>
+  <div className="custom-arrow custom-next" onClick={(event) => {
+    event.stopPropagation(); // Prevents click from bubbling to parent
+    onClick?.();
+  }}>
     <FaChevronRight size={25} />
   </div>
 );
 
-const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) => {
+const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSelectedProject }) => {
+  const cardRef = useRef<HTMLDivElement | null>(null);
+
   const settings = {
     infinite: true, // Loop images
     speed: 500,
@@ -31,16 +41,26 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, setSelectedProject }) =>
     nextArrow: <CustomNextArrow />, // Custom Next Arrow
     prevArrow: <CustomPrevArrow />, // Custom Prev Arrow
   };
+
+  useEffect(() => {
+    if (selectedProject?.id === project.id && cardRef.current) {
+      cardRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [selectedProject, project.id]);
+
   return (
-    <div className="location-card">
+    <div
+      ref={cardRef}
+      className={`location-card ${selectedProject?.id === project.id ? "selected" : ""}`}
+      onClick={() => setSelectedProject(project)}>
       <Slider {...settings} className="location-card-slider">
         {[...Array(3)].map((_, index) => (
-          <div key={index}>
+          <div key={index} className="location-card-img-div">
             <img src={project.image} alt={`Slide ${index}`} className="location-card-image" />
           </div>
         ))}
       </Slider>
-      <div className="location-card-content" onClick={() => setSelectedProject(project)}>
+      <div className="location-card-content" >
         <div className="location-card-section">
           <h3 className="location-card-title">{project.name}</h3>
           <h3 className="location-card-subtitle">SCOPE</h3>
