@@ -13,7 +13,13 @@ Currently, two official plugins are available:
   On macOS, you can install it via Homebrew:
   ```bash
   brew install node@18
+  # Note: Verify that the installed version is 18.17.0.
   brew link --overwrite node@18 --force
+  ```
+  Alternatively, using nvm:
+  ```bash
+  nvm install 18.17.0
+  nvm use 18.17.0
   ```
   Alternatively, download from the official Node.js website.
 
