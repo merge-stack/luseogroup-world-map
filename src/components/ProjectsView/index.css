@@ -148,31 +148,17 @@
   margin-top: 20px;
 }
 
-/* Custom arrow styles */
-.slick-prev {
-  z-index: 1; /* Ensure arrows are above the slides */
-  padding-left: 30px !important;
-}
-.slick-next {
-  z-index: 1; /* Ensure arrows are above the slides */
-  padding-right: 60px !important;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black !important; /* Arrow color */
-  font-size: 30px !important; /* Arrow size */
-  opacity: 1 !important; /* Ensure arrows are fully opaque */
-}
-
 .custom-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
+  color: rgba(255, 255, 255, 0.727);
   padding: 10px;
   cursor: pointer;
   z-index: 2;
+}
+.custom-arrow:hover {
+  color: white;
 }
 
 .custom-next {
