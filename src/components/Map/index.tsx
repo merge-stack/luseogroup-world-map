@@ -3,8 +3,8 @@ import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/luseoFlag.png";
+import defaultImage from "@assets/default-img.png";
 
-mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
 interface IMapComponent {
   pins: IProject[];
@@ -171,7 +171,7 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif;">
-        <img src="${photos.length > 0 && photos[0]}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
+        <img src="${photos.length > 0 ? photos[0] : defaultImage}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
         <div style="padding: 0px 24px;">
           <div style="margin-bottom: 10px;">
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">SCOPE</h3>
