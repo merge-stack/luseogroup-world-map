@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
   width: 70%;
 }
 
@@ -39,7 +39,7 @@
 
 .filter-dropdown:focus {
   outline: none;
-  border-color: #646cff;
+  border-color: black;
 }
 
 .filter-dropdown option {
@@ -55,6 +55,10 @@
   font-size: 14px;
   flex: 1;
   cursor: pointer;
+}
+
+.filter-search:focus {
+  outline: none;
 }
 
 .toggle-container {

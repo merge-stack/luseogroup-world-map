@@ -194,17 +194,26 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
       setSelectedProject(null);
     });
 
-  map.flyTo({
-    center: coordinates,
-    essential: true,
-    zoom: 15,
-    duration: 4000,
-    easing: (t) => t,
-  });
+  // Get current zoom level
+  const currentZoom = map.getZoom();
 
-  map.once("idle", () => {
-    popup.addTo(map)
-  });
+  // Only fly if zoom is below 13
+  if (currentZoom < 13) {
+    map.flyTo({
+      center: coordinates,
+      essential: true,
+      zoom: 15,
+      duration: 4000,
+      easing: (t) => t,
+    });
+
+    map.once("idle", () => {
+      popup.addTo(map);
+    });
+  } else {
+    // If already at zoom 13, show popup immediately
+    popup.addTo(map);
+  }
 };
 
 export default MapComponent;

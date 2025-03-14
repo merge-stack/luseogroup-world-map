@@ -40,7 +40,7 @@ const Filters: React.FC<IFilters> = ({
   );
   return (
     <div className="filters">
-      <div style={{ display: "flex", width: "33.5%" }}>
+      <div style={{ display: "flex", width: "35%" }}>
         <input
           id="search-input"
           type="text"
@@ -53,7 +53,7 @@ const Filters: React.FC<IFilters> = ({
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",
-        width: "66.5%",
+        width: "65%",
         gap: "15px"
       }}>
         <select
