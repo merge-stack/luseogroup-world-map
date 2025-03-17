@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { IProject } from "@interfaces";
-import luseoFlagMarker from "@assets/luseoFlag.png";
-import defaultImage from "@assets/default-img.png";
+import luseoFlagMarker from "@assets/images/luseoFlag.png";
+import defaultImage from "@assets/images/default-img.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
@@ -169,21 +169,21 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
 
   const popupContent = `
     <div>
-      <div style="display: flex; justify-content: center; font-size: 19px; color: #e6ae44; font-weight: 700;">
+      <div style="display: flex; justify-content: center; font-size: 19px; color: #e6ae44; font-weight: 700; padding: 10px 0px;">
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif;">
         <img src="${photos.length > 0 ? photos[0] : defaultImage}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
-        <div style="padding: 0px 24px;">
+        <div style="padding: 25px 24px;">
           <div style="margin-bottom: 10px;">
-            <h3 style="color: #fff; font-size: 17px; font-weight: 600;">SCOPE</h3>
-            <p style="color: #fff; font-size: 16px;">${description}</p>
+            <h3 style="color: #fff; font-size: 16px; font-weight: 600;">SCOPE</h3>
+            <p style="color: #fff; font-size: 14px;">${description}</p>
           </div>
           <div>
-            <h3 style="color: #fff; font-size: 17px; font-weight: 600;">PROJECT DETAILS</h3>
-            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${architect}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${area}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${category}</p>
+            <h3 style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
+            <p style="color: #fff; font-size: 13px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
+            <p style="color: #fff; font-size: 13px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
+            <p style="color: #fff; font-size: 13px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
           </div>
         </div>
       </div>

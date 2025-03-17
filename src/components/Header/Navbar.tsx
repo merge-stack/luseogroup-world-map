@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@assets/logo.png";
+import logo from "@assets/images/logo.png";
 import "./index.css";
 
 const Navbar: React.FC = () => {
@@ -17,5 +17,4 @@ const Navbar: React.FC = () => {
     </nav>
   );
 };
-
 export default Navbar;
