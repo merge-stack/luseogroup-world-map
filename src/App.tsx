@@ -7,7 +7,7 @@ import Header from "@components/Header";
 import { IProject } from "@interfaces";
 import { ViewType } from "@constants";
 
-import { mapPins } from "@data/mapPins";
+import { projects } from "@data/index";
 
 import "./App.css";
 
@@ -19,7 +19,7 @@ function App() {
   const [toggleView, setToggleView] = useState<string>(ViewType.MAP);
 
   const filteredPins = useMemo(() => {
-    return mapPins.filter((pin) => {
+    return projects.filter((pin) => {
       const matchCategory =
         selectedCategory === "all" ||
         pin.category === selectedCategory;

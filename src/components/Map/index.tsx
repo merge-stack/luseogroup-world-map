@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { IProject } from "@interfaces";
-import luseoFlagMarker from "@assets/luseoFlag.png";
-import defaultImage from "@assets/default-img.png";
+import luseoFlagMarker from "@assets/images/luseoFlag.png";
+import defaultImage from "@assets/images/default-img.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 

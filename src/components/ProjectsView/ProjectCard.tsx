@@ -5,7 +5,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 
 import { IProject } from "@interfaces";
-import defaultImage from "@assets/default-img.png";
+import defaultImage from "@assets/images/default-img.png";
 import "./index.css";
 
 interface IProjectCard {

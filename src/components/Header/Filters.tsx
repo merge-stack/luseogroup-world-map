@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from "react";
 import { debounce } from "lodash";
 
-import { mapPins } from "@data/mapPins";
+import { projects } from "@data/index";
 import { ViewType } from "@constants";
 import "./index.css";
 
@@ -25,12 +25,12 @@ const Filters: React.FC<IFilters> = ({
   setToggleView,
 }) => {
   const locations = useMemo<string[]>(
-    () => ["all", ...new Set(mapPins.map((pin) => pin.region))],
+    () => ["all", ...new Set(projects.map((pin) => pin.region))],
     []
   );
 
   const categories = useMemo<string[]>(
-    () => ["all", ...new Set(mapPins.map((pin) => pin.category))],
+    () => ["all", ...new Set(projects.map((pin) => pin.category))],
     []
   );
 
