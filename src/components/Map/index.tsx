@@ -3,8 +3,10 @@ import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/luseoFlag.png";
+import defaultImage from "@assets/default-img.png";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
+
 
 interface IMapComponent {
   pins: IProject[];
@@ -160,7 +162,10 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 };
 const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
   if (!map) return;
-  const { coordinates, name, image, scope, projectDetails } = project;
+  const { coordinates, name, photos, description, area, architect, category } = project;
+
+  // Remove all existing popups
+  document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
   const popupContent = `
     <div>
@@ -168,17 +173,17 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif;">
-        <img src="${image}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
+        <img src="${photos.length > 0 ? photos[0] : defaultImage}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
         <div style="padding: 0px 24px;">
           <div style="margin-bottom: 10px;">
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">SCOPE</h3>
-            <p style="color: #fff; font-size: 16px;">${scope}</p>
+            <p style="color: #fff; font-size: 16px;">${description}</p>
           </div>
           <div>
             <h3 style="color: #fff; font-size: 17px; font-weight: 600;">PROJECT DETAILS</h3>
-            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${projectDetails.architect}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${projectDetails.size}</p>
-            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${projectDetails.category}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
+            <p style="color: #fff; font-size: 16px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
           </div>
         </div>
       </div>
@@ -197,8 +202,14 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
   // Get current zoom level
   const currentZoom = map.getZoom();
 
-  // Only fly if zoom is below 13
-  if (currentZoom < 13) {
+  //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
+  const currentCenter = map.getCenter();
+  const distance = Math.sqrt(
+    Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
+  );
+
+  // Fly to project unless already near the location
+  if (currentZoom <= 13 || distance > 0.005) {
     map.flyTo({
       center: coordinates,
       essential: true,

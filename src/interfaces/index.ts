@@ -1,13 +1,12 @@
-export type IProject = {
+export interface IProject {
   id: number;
   name: string;
   coordinates: [number, number];
-  scope: string;
-  image: string;
-  projectDetails: {
-    architect: string;
-    size: string;
-    category: string;
-    region: string;
-  };
-};
+  description: string;
+  city: string;
+  region: string;
+  area: string;
+  architect: string;
+  category: string;
+  photos: string[];
+}

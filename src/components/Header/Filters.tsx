@@ -25,12 +25,12 @@ const Filters: React.FC<IFilters> = ({
   setToggleView,
 }) => {
   const locations = useMemo<string[]>(
-    () => ["all", ...new Set(mapPins.map((pin) => pin.projectDetails.region))],
+    () => ["all", ...new Set(mapPins.map((pin) => pin.region))],
     []
   );
 
   const categories = useMemo<string[]>(
-    () => ["all", ...new Set(mapPins.map((pin) => pin.projectDetails.category))],
+    () => ["all", ...new Set(mapPins.map((pin) => pin.category))],
     []
   );
 
