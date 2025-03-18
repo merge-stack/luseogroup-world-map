@@ -21,7 +21,7 @@
   margin-bottom: 10px;
   margin-top: 10px;
   display: flex;
-/* justify-content: space-between; */
+  /* justify-content: space-between; */
   align-items: center;
   gap: 12px;
   width: 75%;
@@ -29,9 +29,9 @@
 }
 
 .filter-dropdown {
-  padding: 11px;
+  padding: 14px 24px;
   border: 2px solid #e0e0e0;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: white;
   color: black;
   font-size: 14px;
@@ -91,14 +91,14 @@
   display: flex;
   justify-content: center;
   border: 2px solid #e2e2e2;
-  padding: 7px;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 6px;
 }
 
 .toggle-container button {
   background: #fff;
   border: none;
-  padding: 5px 16px;
+  padding: 9.5px 16px;
   margin: 0 3px;
   cursor: pointer;
   border-radius: 4px;
@@ -157,23 +157,22 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .filters {
     width: 85%;
   }
-
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
   .filters {
     width: 90%;
   }
 
-  .dropdown-container { 
+  .dropdown-container {
     flex-direction: column;
   }
 
-  .dropdown-container div:first-child  { 
+  .dropdown-container div:first-child {
     align-self: normal;
   }
 
@@ -182,8 +181,8 @@
   }
 }
 
-@media screen and (max-width: 568px) { 
-  .dropdown-container div:first-child  { 
+@media screen and (max-width: 568px) {
+  .dropdown-container div:first-child {
     flex-direction: column;
   }
 
