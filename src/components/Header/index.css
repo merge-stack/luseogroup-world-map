@@ -2,8 +2,10 @@
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensures it stays above other elements */
-  background: white; /* Optional: Prevents content behind from showing through */
+  z-index: 1000;
+  /* Ensures it stays above other elements */
+  background: white;
+  /* Optional: Prevents content behind from showing through */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +28,7 @@
   gap: 12px;
   width: 75%;
   flex-wrap: wrap;
+  min-height: 95px;
 }
 
 .filter-dropdown {
@@ -37,7 +40,17 @@
   font-size: 14px;
   flex: 1;
   cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Add custom dropdown arrow */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' fill='none' stroke='black' strokeWidth='2'%3E%3Cpath d='M4 9L12 17L20 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 18px;
 }
+
 
 .filter-dropdown:focus {
   outline: none;
@@ -78,7 +91,7 @@
   /* flex-wrap: wrap; */
 }
 
-.dropdown-container > div:first-child {
+.dropdown-container>div:first-child {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -129,8 +142,10 @@
 
 .navbar-container {
   display: flex;
-  justify-content: start; /* Space between logo and slogan */
-  align-items: center; /* Vertically center items */
+  justify-content: start;
+  /* Space between logo and slogan */
+  align-items: center;
+  /* Vertically center items */
   gap: 15px;
   width: 70%;
 }
@@ -143,9 +158,11 @@
 .navbar-title {
   font-size: 20px;
   font-weight: bold;
-  color: #4a4a4a; /* Dark Grey */
+  color: #4a4a4a;
+  /* Dark Grey */
   display: flex;
-  justify-content: start; /* Space between logo and slogan */
+  justify-content: start;
+  /* Space between logo and slogan */
   padding-left: 80px;
 }
 
@@ -159,7 +176,7 @@
 
 @media screen and (max-width: 1024px) {
   .filters {
-    width: 85%;
+    width: 87%;
   }
 }
 

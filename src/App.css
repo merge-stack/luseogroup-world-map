@@ -20,21 +20,22 @@
   justify-content: center;
   width: 100%;
   background-color: #fff;
+  margin-top: 4px;
 }
 
-.projects-div > div {
+.projects-div>div {
   width: 75%;
 }
 
 
-@media screen and (max-width: 1024px) { 
-  .projects-div > div {
-    width: 85%;
+@media screen and (max-width: 1024px) {
+  .projects-div>div {
+    width: 87%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .projects-div > div {
+  .projects-div>div {
     width: 90%;
   }
 
