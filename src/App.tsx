@@ -53,7 +53,7 @@ function App() {
           setToggleView={setToggleView}
         />
         <div className="projects-div">
-          <div style={{ width: "70%" }}>
+          <div>
             <ProjectsView
               pins={filteredPins}
               selectedProject={selectedProject}

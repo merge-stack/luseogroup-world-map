@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0;
 }
 
 .filters label {
@@ -20,14 +21,15 @@
   margin-bottom: 10px;
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+/* justify-content: space-between; */
   align-items: center;
-  gap: 20px;
-  width: 70%;
+  gap: 12px;
+  width: 75%;
+  flex-wrap: wrap;
 }
 
 .filter-dropdown {
-  padding: 8px;
+  padding: 11px;
   border: 2px solid #e0e0e0;
   border-radius: 4px;
   background-color: white;
@@ -46,42 +48,64 @@
   padding: 8px;
 }
 
+.search-container {
+  display: flex;
+  flex: 1;
+}
+
 .filter-search {
-  padding: 8px;
+  padding: 14px 24px;
   border: 2px solid black;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: white;
   color: black;
-  font-size: 14px;
+  font-size: 16px;
   flex: 1;
   cursor: pointer;
 }
 
 .filter-search:focus {
   outline: none;
+  border-color: #737373;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+}
+
+.dropdown-container > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex: 1;
+  gap: 10px;
+  /* flex-wrap: wrap; */
 }
 
 .toggle-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 10px;
   border: 2px solid #e2e2e2;
-  padding: 3px;
-  margin-top: 10px;
+  padding: 7px;
   border-radius: 5px;
-  width: 30%;
 }
 
 .toggle-container button {
   background: #fff;
   border: none;
-  padding: 7px 16px;
-  margin: 0 5px;
+  padding: 5px 16px;
+  margin: 0 3px;
   cursor: pointer;
   border-radius: 4px;
   font-size: 14px;
   color: black;
-  width: 70%;
+  white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .toggle-container button.active {
@@ -89,10 +113,14 @@
   color: black;
 }
 
+.toggle-container button:hover {
+  background: #ddd;
+}
+
 .navbar {
   background-color: #fff;
   color: white;
-  padding: 15px 0px;
+  padding: 15px 6px;
   width: 100%;
   border-bottom: 0.5px solid #262c69;
   display: flex;
@@ -127,4 +155,49 @@
   align-items: center;
   width: 100%;
   background-color: #fff;
+}
+
+@media screen and (max-width: 1024px) { 
+  .filters {
+    width: 85%;
+  }
+
+}
+
+@media screen and (max-width: 767px) { 
+  .filters {
+    width: 90%;
+  }
+
+  .dropdown-container { 
+    flex-direction: column;
+  }
+
+  .dropdown-container div:first-child  { 
+    align-self: normal;
+  }
+
+  .toggle-container {
+    align-self: flex-start;
+  }
+}
+
+@media screen and (max-width: 568px) { 
+  .dropdown-container div:first-child  { 
+    flex-direction: column;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  .navbar-title {
+    padding-left: 10px;
+    font-size: 16px;
+  }
+
+  .navbar-container {
+    flex: 1;
+  }
 }
