@@ -161,11 +161,14 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
   return <div ref={mapContainer} className="mapRef-container" />;
 };
-const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
-  if (!map) return;
+
+// Function to add popup (only for desktop)
+const addPopup = (map: mapboxgl.Map, project: IProject,
+  setSelectedProject: (project: IProject | null) => void) => {
+
   const { coordinates, name, photos, description, area, architect, category } = project;
 
-  // Remove all existing popups
+  // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
   const popupContent = `
@@ -192,7 +195,9 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
   `;
 
   const popup = new mapboxgl.Popup({
-    closeButton: true, closeOnClick: false, offset: [0, -70],
+    closeButton: true,
+    closeOnClick: false,
+    offset: [0, -70],
   })
     .setLngLat(coordinates)
     .setHTML(popupContent)
@@ -200,9 +205,22 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
       setSelectedProject(null);
     });
 
-  // Get current zoom level
-  const currentZoom = map.getZoom();
+  popup.addTo(map);
+}
 
+const flyToProject = (
+  map: mapboxgl.Map | null,
+  project: IProject,
+  setSelectedProject: (project: IProject | null) => void
+) => {
+  if (!map) return;
+  const { coordinates } = project;
+
+  // Detect if user is on a mobile device (adjust threshold as needed)
+  const isMobile = window.innerWidth <= 768;
+
+  // Fly to project location
+  const currentZoom = map.getZoom();
   //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
   const currentCenter = map.getCenter();
   const distance = Math.sqrt(
@@ -219,13 +237,16 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
       easing: (t) => t,
     });
 
-    map.once("idle", () => {
-      popup.addTo(map);
-    });
+    if (!isMobile) {
+      map.once("idle", () => {
+        addPopup(map, project, setSelectedProject);
+      });
+    }
   } else {
-    // If already at zoom 13, show popup immediately
-    popup.addTo(map);
+    if (!isMobile) {
+      addPopup(map, project, setSelectedProject);
+    }
   }
-};
+}
 
 export default MapComponent;

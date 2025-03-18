@@ -180,7 +180,7 @@
   right: 5px;
 }
 
-@media screen and (max-width: 767px) { 
+@media screen and (max-width: 767px) {
   .locations-list {
     width: 100%;
   }
@@ -194,11 +194,11 @@
 
   .grid-container {
     grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  } 
+  }
 }
 
-@media screen and (max-width: 568px) { 
+@media screen and (max-width: 568px) {
   .grid-container {
     grid-template-columns: repeat(1, 1fr); /* 1 card per row */
-  } 
+  }
 }
