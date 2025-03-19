@@ -51,9 +51,10 @@ function App() {
           setSearchQuery={setSearchQuery}
           toggleView={toggleView}
           setToggleView={setToggleView}
+          resetFilters={resetFilters}
         />
         <div className="projects-div">
-          <div style={{ width: "70%" }}>
+          <div>
             <ProjectsView
               pins={filteredPins}
               selectedProject={selectedProject}
@@ -62,7 +63,7 @@ function App() {
             />
           </div>
         </div>
-        <Footer resetFilters={resetFilters} />
+        <Footer />
       </div>
     </div>
   )

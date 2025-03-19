@@ -11,6 +11,7 @@ interface HeaderProps {
   setSearchQuery: (query: string) => void;
   toggleView: string;
   setToggleView: (view: string) => void;
+  resetFilters: () => void;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -21,11 +22,12 @@ const Header: React.FC<HeaderProps> = ({
   setSearchQuery,
   toggleView,
   setToggleView,
+  resetFilters
 }) => {
   return (
-    <>
+    <div className="wrapper">
       {/* Navbar */}
-      <Navbar />
+      <Navbar resetFilters={resetFilters} />
 
       {/* Filters */}
       <div className="filters-container">
@@ -39,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({
           setToggleView={setToggleView}
         />
       </div>
-    </>
+    </div>
   );
 };
 

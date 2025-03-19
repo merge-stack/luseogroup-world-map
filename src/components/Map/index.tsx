@@ -1,9 +1,15 @@
 import { useEffect, useRef } from "react";
+import ReactDOM from "react-dom/client";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/images/luseoFlag.png";
 import defaultImage from "@assets/images/default-img.png";
+import "./index.css"
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
 
@@ -51,6 +57,8 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
     const map = mapRef.current;
 
     const initializeStyles = () => {
+      map.resize()
+
       const adminLayers = [
         "admin-0-boundary",
         "admin-1-boundary",
@@ -160,71 +168,107 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
   return <div ref={mapContainer} className="mapRef-container" />;
 };
-const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
-  if (!map) return;
+
+// Function to add popup (only for desktop)
+const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
+
   const { coordinates, name, photos, description, area, architect, category } = project;
 
-  // Remove all existing popups
+  // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
+  const popupContainer = document.createElement("div");
   const popupContent = `
     <div>
-      <div style="display: flex; justify-content: center; font-size: 19px; color: #e6ae44; font-weight: 700; padding: 10px 0px;">
+      <div style="display: flex; justify-content: center; font-size: 17px; color: #e6ae44; font-weight: 700; padding: 5px 0px;">
         ${name}
       </div>
-      <div style="display: flex; font-family: Helvetica, Arial, sans-serif;">
-        <img src="${photos.length > 0 ? photos[0] : defaultImage}" alt="Resort View" style="width: 300px; height: 230px; object-fit: cover;">
-        <div style="padding: 25px 24px;">
-          <div style="margin-bottom: 10px;">
-            <h3 style="color: #fff; font-size: 16px; font-weight: 600;">SCOPE</h3>
-            <p style="color: #fff; font-size: 14px;">${description}</p>
-          </div>
-          <div>
-            <h3 style="color: #fff; font-size: 16px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
-            <p style="color: #fff; font-size: 13px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
-            <p style="color: #fff; font-size: 13px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
-            <p style="color: #fff; font-size: 13px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
-          </div>
+      <div style="display: flex; font-family: Helvetica, Arial, sans-serif">
+      <div id="popup-slider-container" style="width: 230px;"></div>
+      <div style="padding: 10px 24px;">
+        <div style="margin-bottom: 10px;">
+          <h3 style="color: #fff; font-size: 13px; font-weight: 600;">SCOPE</h3>
+          <p style="color: #fff; font-size: 12px;">${description}</p>
         </div>
+        <div>
+          <h3 style="color: #fff; font-size: 13px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
+          <p style="color: #fff; font-size: 10px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
+          <p style="color: #fff; font-size: 10px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
+          <p style="color: #fff; font-size: 10px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
+        </div>
+      </div>
       </div>
     </div>
   `;
 
+  popupContainer.innerHTML = popupContent;
+
   const popup = new mapboxgl.Popup({
-    closeButton: true, closeOnClick: false, offset: [0, -70],
+    closeButton: true,
+    closeOnClick: false,
+    offset: [0, -70],
   })
     .setLngLat(coordinates)
-    .setHTML(popupContent)
+    .setDOMContent(popupContainer)
     .on("close", () => {
       setSelectedProject(null);
     });
 
-  // Get current zoom level
-  const currentZoom = map.getZoom();
+  popup.addTo(map);
 
+  //add slider component to the popup
+  setTimeout(() => {
+    const sliderContainer = document.getElementById("popup-slider-container");
+    if (sliderContainer) {
+      const sliderRoot = ReactDOM.createRoot(sliderContainer);
+      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="170px" />);
+    }
+  }, 0);
+};
+
+const flyToProject = (
+  map: mapboxgl.Map | null,
+  project: IProject,
+  setSelectedProject: (project: IProject | null) => void
+) => {
+  if (!map) return;
+  const { coordinates } = project;
+
+  // Detect if user is on a mobile device (adjust threshold as needed)
+  const isMobile = window.innerWidth <= 768;
+
+  // Fly to project location
+  const currentZoom = map.getZoom();
   //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
   const currentCenter = map.getCenter();
   const distance = Math.sqrt(
     Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
   );
 
+  // Offset latitude slightly downward to move the marker lower in the viewport
+  const latOffset = 0.002;
+  const adjustedCoordinates = [coordinates[0], coordinates[1] + latOffset];
+
   // Fly to project unless already near the location
   if (currentZoom <= 13 || distance > 0.005) {
     map.flyTo({
-      center: coordinates,
+      center: adjustedCoordinates as [number, number],
       essential: true,
       zoom: 15,
       duration: 4000,
       easing: (t) => t,
     });
 
-    map.once("idle", () => {
-      popup.addTo(map);
-    });
+    if (!isMobile) {
+      map.once("idle", () => {
+        addPopup(map, project, setSelectedProject);
+      });
+    }
   } else {
-    // If already at zoom 13, show popup immediately
-    popup.addTo(map);
+    if (!isMobile) {
+      addPopup(map, project, setSelectedProject);
+    }
   }
-};
+}
 
 export default MapComponent;

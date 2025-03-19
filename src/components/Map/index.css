@@ -1,0 +1,8 @@
+.mapboxgl-popup-content {
+  max-width: 2\450px !important;
+  width: auto !important;
+  padding: 10px !important;
+  font-size: 12px;
+  max-height: 230px !important;
+  height: auto !important;
+}
