@@ -89,7 +89,7 @@
   /* flex-wrap: wrap; */
 }
 
-.dropdown-container>div:first-child {
+.dropdown-container > div:first-child {
   display: flex;
   justify-content: space-between;
   flex: 1;
@@ -230,7 +230,6 @@
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0;
 }
 
