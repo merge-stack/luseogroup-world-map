@@ -1,6 +1,5 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useEffect, useRef } from "react";
 
 import { IProject } from "@interfaces";
@@ -14,35 +13,8 @@ interface IProjectCard {
   setSelectedProject: (project: IProject) => void;
 }
 
-const CustomPrevArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-prev" onClick={(event) => {
-    event.stopPropagation(); // Prevents click from bubbling to parent
-    onClick?.();
-  }}>
-    <FaChevronLeft size={25} />
-  </div>
-);
-
-const CustomNextArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-next" onClick={(event) => {
-    event.stopPropagation(); // Prevents click from bubbling to parent
-    onClick?.();
-  }}>
-    <FaChevronRight size={25} />
-  </div>
-);
-
 const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSelectedProject }) => {
   const cardRef = useRef<HTMLDivElement | null>(null);
-
-  const settings = {
-    infinite: project.photos.length > 1,  // Disable infinite loop if only one image
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    nextArrow: project.photos.length > 1 ? <CustomNextArrow /> : undefined, // Hide arrows if only one image
-    prevArrow: project.photos.length > 1 ? <CustomPrevArrow /> : undefined, // Hide arrows if only one image
-  };
 
   useEffect(() => {
     if (selectedProject?.id === project.id && cardRef.current) {

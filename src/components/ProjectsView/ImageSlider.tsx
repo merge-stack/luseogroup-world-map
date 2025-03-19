@@ -32,6 +32,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    appendDots: (dots: any) => (
+      <div style={{ position: 'absolute', bottom: '20px', width: '100%' }}>
+        <ul> {dots} </ul>
+      </div>
+    ), dots: true,
     nextArrow: photos.length > 1 ? <CustomNextArrow /> : undefined,
     prevArrow: photos.length > 1 ? <CustomPrevArrow /> : undefined,
   };

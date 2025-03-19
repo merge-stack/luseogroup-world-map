@@ -168,8 +168,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 };
 
 // Function to add popup (only for desktop)
-const addPopup = (map: mapboxgl.Map, project: IProject,
-  setSelectedProject: (project: IProject | null) => void) => {
+const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
 
   const { coordinates, name, photos, description, area, architect, category } = project;
 
@@ -183,7 +182,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject,
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif">
-      <div id="popup-slider-container" style="width: 170px;"></div>
+      <div id="popup-slider-container" style="width: 230px;"></div>
       <div style="padding: 10px 24px;">
         <div style="margin-bottom: 10px;">
           <h3 style="color: #fff; font-size: 13px; font-weight: 600;">SCOPE</h3>
@@ -220,7 +219,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject,
     const sliderContainer = document.getElementById("popup-slider-container");
     if (sliderContainer) {
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="150px" />);
+      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="170px" />);
     }
   }, 0);
 };
