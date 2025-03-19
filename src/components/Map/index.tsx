@@ -227,10 +227,14 @@ const flyToProject = (
     Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
   );
 
+  // Offset latitude slightly downward to move the marker lower in the viewport
+  const latOffset = 0.002;
+  const adjustedCoordinates = [coordinates[0], coordinates[1] + latOffset];
+
   // Fly to project unless already near the location
   if (currentZoom <= 13 || distance > 0.005) {
     map.flyTo({
-      center: coordinates,
+      center: adjustedCoordinates as [number, number],
       essential: true,
       zoom: 15,
       duration: 4000,
