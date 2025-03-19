@@ -57,6 +57,8 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
     const map = mapRef.current;
 
     const initializeStyles = () => {
+      map.resize()
+
       const adminLayers = [
         "admin-0-boundary",
         "admin-1-boundary",
