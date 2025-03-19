@@ -26,9 +26,8 @@
   /* justify-content: space-between; */
   align-items: center;
   gap: 12px;
-  width: 75%;
+  width: 85%;
   flex-wrap: wrap;
-  min-height: 95px;
 }
 
 .filter-dropdown {
@@ -50,7 +49,6 @@
   background-position: right 16px center;
   background-size: 18px;
 }
-
 
 .filter-dropdown:focus {
   outline: none;
@@ -91,7 +89,7 @@
   /* flex-wrap: wrap; */
 }
 
-.dropdown-container>div:first-child {
+.dropdown-container > div:first-child {
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -142,12 +140,25 @@
 
 .navbar-container {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   /* Space between logo and slogan */
   align-items: center;
   /* Vertically center items */
   gap: 15px;
-  width: 70%;
+  width: 85%;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: black;
 }
 
 .navbar-logo {
@@ -164,6 +175,33 @@
   justify-content: start;
   /* Space between logo and slogan */
   padding-left: 80px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.navbar-item {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0.5px;
+}
+
+.navbar-item:hover {
+  color: rgb(167, 156, 234);
 }
 
 .header {

@@ -23,24 +23,22 @@
   margin-top: 4px;
 }
 
-.projects-div>div {
-  width: 75%;
+.projects-div > div {
+  width: 85%;
 }
 
-
 @media screen and (max-width: 1024px) {
-  .projects-div>div {
+  .projects-div > div {
     width: 87%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .projects-div>div {
+  .projects-div > div {
     width: 90%;
   }
 
   .projects-container {
     flex-direction: column;
   }
-
 }

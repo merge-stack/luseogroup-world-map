@@ -1,11 +1,7 @@
 import logo from "@assets/images/logo.png";
 import "./index.css";
 
-interface FooterProps {
-  resetFilters: () => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ resetFilters }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="footer">
       {/* Logo */}
@@ -16,20 +12,6 @@ const Footer: React.FC<FooterProps> = ({ resetFilters }) => {
       {/* Divider */}
       <hr className="footer-divider" />
 
-      {/* Footer Links */}
-      <div className="footer-links">
-        <a href="/contact" target="_blank" rel="noopener noreferrer" className="footer-item">
-          Contact
-        </a>
-
-        <a href="#" target="_blank" rel="noopener noreferrer" className="footer-item">
-          About
-        </a>
-
-        <div onClick={resetFilters} className="footer-item footer-button">
-          Reset Filters
-        </div>
-      </div>
     </footer>
   );
 };
