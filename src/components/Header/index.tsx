@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({
   resetFilters
 }) => {
   return (
-    <>
+    <div className="wrapper">
       {/* Navbar */}
       <Navbar resetFilters={resetFilters} />
 
@@ -41,7 +41,7 @@ const Header: React.FC<HeaderProps> = ({
           setToggleView={setToggleView}
         />
       </div>
-    </>
+    </div>
   );
 };
 
