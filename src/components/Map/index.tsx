@@ -1,6 +1,11 @@
 import { useEffect, useRef } from "react";
+import ReactDOM from "react-dom/client";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
 import luseoFlagMarker from "@assets/images/luseoFlag.png";
 import defaultImage from "@assets/images/default-img.png";
@@ -171,28 +176,31 @@ const addPopup = (map: mapboxgl.Map, project: IProject,
   // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
+  const popupContainer = document.createElement("div");
   const popupContent = `
     <div>
       <div style="display: flex; justify-content: center; font-size: 17px; color: #e6ae44; font-weight: 700; padding: 5px 0px;">
         ${name}
       </div>
       <div style="display: flex; font-family: Helvetica, Arial, sans-serif">
-        <img src="${photos.length > 0 ? photos[0] : defaultImage}" alt="Resort View" style="width: 170px; height: 170px; object-fit: cover;">
-        <div style="padding: 10px 24px;">
-          <div style="margin-bottom: 10px;">
-            <h3 style="color: #fff; font-size: 13px; font-weight: 600;">SCOPE</h3>
-            <p style="color: #fff; font-size: 12px;">${description}</p>
-          </div>
-          <div>
-            <h3 style="color: #fff; font-size: 13px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
-            <p style="color: #fff; font-size: 10px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
-            <p style="color: #fff; font-size: 10px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
-            <p style="color: #fff; font-size: 10px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
-          </div>
+      <div id="popup-slider-container" style="width: 170px;"></div>
+      <div style="padding: 10px 24px;">
+        <div style="margin-bottom: 10px;">
+          <h3 style="color: #fff; font-size: 13px; font-weight: 600;">SCOPE</h3>
+          <p style="color: #fff; font-size: 12px;">${description}</p>
         </div>
+        <div>
+          <h3 style="color: #fff; font-size: 13px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
+          <p style="color: #fff; font-size: 10px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
+          <p style="color: #fff; font-size: 10px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
+          <p style="color: #fff; font-size: 10px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
+        </div>
+      </div>
       </div>
     </div>
   `;
+
+  popupContainer.innerHTML = popupContent;
 
   const popup = new mapboxgl.Popup({
     closeButton: true,
@@ -200,13 +208,22 @@ const addPopup = (map: mapboxgl.Map, project: IProject,
     offset: [0, -70],
   })
     .setLngLat(coordinates)
-    .setHTML(popupContent)
+    .setDOMContent(popupContainer)
     .on("close", () => {
       setSelectedProject(null);
     });
 
   popup.addTo(map);
-}
+
+  //add slider component to the popup
+  setTimeout(() => {
+    const sliderContainer = document.getElementById("popup-slider-container");
+    if (sliderContainer) {
+      const sliderRoot = ReactDOM.createRoot(sliderContainer);
+      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="150px" />);
+    }
+  }, 0);
+};
 
 const flyToProject = (
   map: mapboxgl.Map | null,

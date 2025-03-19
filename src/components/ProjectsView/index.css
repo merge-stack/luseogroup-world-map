@@ -7,7 +7,7 @@
 }
 
 .locations-list {
-  width: 30%;
+  width: 35%;
   height: 100%;
   overflow-y: auto;
   background-color: #fff;
@@ -59,7 +59,7 @@
 
 .location-card-image {
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   outline: none;
   /* Removes default focus outline */
   border: none;

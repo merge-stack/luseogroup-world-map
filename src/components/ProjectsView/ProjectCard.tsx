@@ -1,4 +1,3 @@
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -7,6 +6,7 @@ import { useEffect, useRef } from "react";
 import { IProject } from "@interfaces";
 import defaultImage from "@assets/images/default-img.png";
 import "./index.css";
+import ImageSlider from "./ImageSlider";
 
 interface IProjectCard {
   project: IProject;
@@ -55,13 +55,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
       ref={cardRef}
       className={`location-card ${selectedProject?.id === project.id ? "selected" : ""}`}
       onClick={() => setSelectedProject(project)}>
-      <Slider {...settings} className="location-card-slider">
-        {(project.photos.length > 0 ? project.photos : [defaultImage]).map((photo, index) => (
-          <div key={index} className="location-card-img-div">
-            <img src={photo} alt={`Slide ${index}`} className="location-card-image" />
-          </div>
-        ))}
-      </Slider>
+      <ImageSlider photos={project.photos.length > 0 ? project.photos : [defaultImage]} photoHeight="250px" />
       <div className="location-card-content" >
         <div className="location-card-section">
           <h3 className="location-card-title">{project.name}</h3>
