@@ -24,7 +24,7 @@
   width: 70%;
   height: 750px;
   position: sticky;
-  top: 155px;
+  top: 174px;
   z-index: 900;
 }
 
@@ -188,6 +188,12 @@
 
 .custom-next {
   right: 5px;
+}
+
+@media screen and (max-width: 1231px) {
+  .map-container {
+    top: 236px;
+  }
 }
 
 @media screen and (max-width: 767px) {

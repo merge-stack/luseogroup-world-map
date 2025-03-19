@@ -23,7 +23,7 @@ const Header: React.FC<HeaderProps> = ({
   setToggleView,
 }) => {
   return (
-    <>
+    <div className="wrapper">
       {/* Navbar */}
       <Navbar />
 
@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({
           setToggleView={setToggleView}
         />
       </div>
-    </>
+    </div>
   );
 };
 
