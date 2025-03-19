@@ -33,7 +33,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     appendDots: (dots: any) => (
-      <div style={{ position: 'absolute', bottom: '20px', width: '100%' }}>
+      <div style={{ position: 'absolute', bottom: '20px', width: '100%' }} onClick={(event) => event.stopPropagation()}>
         <ul> {dots} </ul>
       </div>
     ), dots: true,
