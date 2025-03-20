@@ -190,49 +190,41 @@
   right: 5px;
 }
 
-.slick-dots {
-  display: flex !important; /* Ensure flexbox layout */
-  justify-content: center; /* Center the dots horizontally */
-  padding: 0;
-  margin: 0;
-  list-style: none;
+/* Change the arrow color */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: white; /* Change to your desired color */
 }
 
-/* Individual dot items */
-.slick-dots li {
-  margin: 0 10px; /* Space between dots */
-}
-
-/* Dot buttons */
-.slick-dots li button {
-  width: 10px;
-  height: 10px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  opacity: 1;
-}
-
-/* Inactive dot style */
-.slick-dots li button::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: 1px solid white;
+/* Optional: Change the background color of arrows */
+.swiper-button-next,
+.swiper-button-prev {
+  padding: 10px;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 1;
 }
 
-/* Active dot style */
-.slick-dots li.slick-active button::before {
-  background-color: white;
-  border: none;
-  opacity: 1;
-  width: 13px;
-  height: 13px;
+/* Optional: Change the arrow size */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 33px; /* Increase or decrease arrow size */
+}
+
+.swiper-pagination {
+  bottom: 15px !important; /* Move dots up (increase for more lift) */
+}
+
+/* Change default dot color */
+.swiper-pagination-bullet {
+  width: 17px;
+  height: 17px;
+  background: transparent;
+  border: 2px solid white;
+  opacity: 1; /* Ensure visibility */
+}
+
+/* Change active dot color */
+.swiper-pagination-bullet-active {
+  background: white; /* Change to your desired color */
 }
 
 @media screen and (max-width: 1231px) {

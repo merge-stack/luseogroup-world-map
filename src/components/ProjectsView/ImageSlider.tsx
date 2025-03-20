@@ -1,54 +1,46 @@
-import React from "react";
-import Slider from "react-slick";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import "./index.css"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 interface ImageSliderProps {
   photos: string[];
-  photoHeight: string
+  photoHeight?: string;
 }
 
-const CustomPrevArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-prev" onClick={(event) => {
-    event.stopPropagation();
-    onClick?.();
-  }}>
-    <FaChevronLeft size={25} />
-  </div>
-);
-
-const CustomNextArrow = ({ onClick }: { onClick?: () => void }) => (
-  <div className="custom-arrow custom-next" onClick={(event) => {
-    event.stopPropagation();
-    onClick?.();
-  }}>
-    <FaChevronRight size={25} />
-  </div>
-);
-
 const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
-  const settings = {
-    infinite: photos.length > 1,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    appendDots: (dots: any) => (
-      <div style={{ position: 'absolute', bottom: '20px', width: '100%' }} onClick={(event) => event.stopPropagation()}>
-        <ul> {dots} </ul>
-      </div>
-    ), dots: true,
-    nextArrow: photos.length > 1 ? <CustomNextArrow /> : undefined,
-    prevArrow: photos.length > 1 ? <CustomPrevArrow /> : undefined,
-  };
-
   return (
-    <Slider {...settings} className="location-card-slider">
-      {photos.map((photo, index) => (
-        <div key={index} className="location-card-img-div">
-          <img src={photo} alt={`Slide ${index}`} className="location-card-image" style={{ height: photoHeight }} />
-        </div>
+    <Swiper
+      modules={[Navigation, Pagination]}
+      slidesPerView={1}
+      loop={true}
+      navigation={{
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }}
+      pagination={{
+        clickable: true,
+        dynamicBullets: true,
+      }}
+      className="location-card-slider"
+    >
+      {photos.map((img, index) => (
+        <SwiperSlide key={index}>
+          <img src={img} alt={`slide-${index}`} style={{ width: "100%", height: photoHeight }} />
+        </SwiperSlide>
       ))}
-    </Slider>
+
+      {/* Custom Navigation Buttons to Stop Propagation */}
+      <div
+        className="swiper-button-prev"
+        onClick={(e) => e.stopPropagation()}
+      ></div>
+      <div
+        className="swiper-button-next"
+        onClick={(e) => e.stopPropagation()}
+      ></div>
+    </Swiper>
   );
 };
 
