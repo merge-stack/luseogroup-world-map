@@ -2,8 +2,6 @@ import { useEffect, useRef } from "react";
 import ReactDOM from "react-dom/client";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
