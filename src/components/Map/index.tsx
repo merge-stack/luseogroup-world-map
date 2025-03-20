@@ -159,7 +159,11 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
   }, [pins, setSelectedProject]);
 
   useEffect(() => {
-    if (!mapRef.current || selectedProject === undefined) return;
+    if (!selectedProject) {
+      document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
+      return;
+    }
+    if (!mapRef.current) return;
     const project = pins.find((pin) => pin.id === selectedProject?.id);
     if (project) flyToProject(mapRef.current, project, setSelectedProject);
   }, [selectedProject]);
