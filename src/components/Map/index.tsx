@@ -5,8 +5,8 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
-import luseoFlagMarker from "@assets/images/luseoFlag.png";
-import defaultImage from "@assets/images/default-img.png";
+import luseoPin from "@assets/images/luseo-pin.png";
+import defaultImage from "@assets/images/missing-image.jpg";
 import "./index.css"
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
@@ -118,9 +118,9 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         const el = document.createElement("div");
         el.className = "custom-marker";
-        el.style.backgroundImage = `url(${luseoFlagMarker})`;
-        el.style.width = "60px";
-        el.style.height = "120px";
+        el.style.backgroundImage = `url(${luseoPin})`;
+        el.style.width = "20px";
+        el.style.height = "40px";
         el.style.backgroundSize = "100%";
         el.style.backgroundRepeat = "no-repeat";
         el.style.backgroundPosition = "center";
@@ -133,7 +133,6 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         new mapboxgl.Marker(el, {
           anchor: "bottom", // Ensures tip stays at the location
-          offset: [20, 10], // Moves the marker tip stays in place
         })
           .setLngLat(pin.coordinates)
           .addTo(map);
@@ -156,7 +155,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       map.on("load", initializeMap);
       map.on("styledata", initializeStyles)
     }
-  }, [pins, setSelectedProject]);
+  }, [pins, setSelectedProject, selectedProject]);
 
   useEffect(() => {
     if (!selectedProject) {
@@ -174,33 +173,42 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 // Function to add popup (only for desktop)
 const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
 
-  const { coordinates, name, photos, description, area, architect, category } = project;
+  const { coordinates, name, photos, description, area, architect, category, city, region } = project;
 
   // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
   const popupContainer = document.createElement("div");
-  const popupContent = `
-    <div>
-      <div style="display: flex; justify-content: center; font-size: 17px; color: #e6ae44; font-weight: 700; padding: 5px 0px;">
-        ${name}
-      </div>
-      <div style="display: flex; font-family: Helvetica, Arial, sans-serif">
-      <div id="popup-slider-container" style="width: 230px;"></div>
-      <div style="padding: 10px 24px;">
-        <div style="margin-bottom: 10px;">
-          <h3 style="color: #fff; font-size: 13px; font-weight: 600;">SCOPE</h3>
-          <p style="color: #fff; font-size: 12px;">${description}</p>
+  const popupContent = `    
+  <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
+    <div id="popup-slider-container" style="width: 320px;"></div>
+      <div style="cursor: pointer; padding: 10px 20px;  color:black" margin-top:10px >
+        <h5 style="font-size: 20px; font-weight: 600; color: #fdb82d;">${name}</h5>
+        <span style=" color: black; display: block; font-size: 8px; line-height: 1.9;">${city}, ${region}</span>
+        <div style="margin-bottom: 5px;  margin-top: 5px;">
+          <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d; margin-bottom: 1px;">MISSION</h3>
+          <span style="font-size: 10px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">${description || "N/A"}</span>
         </div>
-        <div>
-          <h3 style="color: #fff; font-size: 13px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
-          <p style="color: #fff; font-size: 10px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
-          <p style="color: #fff; font-size: 10px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
-          <p style="color: #fff; font-size: 10px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
+        <div style="margin-bottom: 5px;  margin-top: 5px;">
+          <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d;">DÈTAILS</h3>
+          <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
+            <p style="  margin-right: 3px; font-size: 10px; color: black;"><strong>TYPE DÈ PROJET:</strong> ${category || "N/A"}</p>
+          </p>
+          <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
+              <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>SURFACE:</strong> ${area || "N/A"}</p>
+          </p>
+          <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
+             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>BIM:</strong> BIM</p>
+          </p>
+          <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
+             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> Certification </p>
+          </p>
+          <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
+           <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${architect || "N/A"} </p>
+          </p>
         </div>
       </div>
-      </div>
-    </div>
+     </div>
   `;
 
   popupContainer.innerHTML = popupContent;
@@ -208,7 +216,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   const popup = new mapboxgl.Popup({
     closeButton: true,
     closeOnClick: false,
-    offset: [0, -70],
+    offset: [0, -10],
   })
     .setLngLat(coordinates)
     .setDOMContent(popupContainer)
@@ -223,7 +231,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
     const sliderContainer = document.getElementById("popup-slider-container");
     if (sliderContainer) {
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="170px" />);
+      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="250px" />);
     }
   }, 0);
 };
