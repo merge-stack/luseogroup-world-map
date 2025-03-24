@@ -27,20 +27,23 @@ const Header: React.FC<HeaderProps> = ({
   return (
     <div className="wrapper">
       {/* Navbar */}
-      <Navbar resetFilters={resetFilters} />
+      <Navbar
+        resetFilters={resetFilters}
+        setSearchQuery={setSearchQuery}
+        toggleView={toggleView}
+        setToggleView={setToggleView} />
 
       {/* Filters */}
-      <div className="filters-container">
-        <Filters
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-          selectedLocation={selectedLocation}
-          setSelectedLocation={setSelectedLocation}
-          setSearchQuery={setSearchQuery}
-          toggleView={toggleView}
-          setToggleView={setToggleView}
-        />
-      </div>
+      <Filters
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        selectedLocation={selectedLocation}
+        setSelectedLocation={setSelectedLocation}
+        setSearchQuery={setSearchQuery}
+        toggleView={toggleView}
+        setToggleView={setToggleView}
+      />
+
     </div>
   );
 };

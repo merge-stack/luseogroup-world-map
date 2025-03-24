@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import { debounce } from "lodash";
+import { debounce, startCase, toLower } from "lodash";
 
 import { projects } from "@data/index";
 import { ViewType } from "@constants";
@@ -25,12 +25,12 @@ const Filters: React.FC<IFilters> = ({
   setToggleView,
 }) => {
   const locations = useMemo<string[]>(
-    () => ["all", ...new Set(projects.map((pin) => pin.region))],
+    () => ["all", ...new Set(projects.map((pin) => startCase(toLower(pin.region))))],
     []
   );
 
   const categories = useMemo<string[]>(
-    () => ["all", ...new Set(projects.map((pin) => pin.category))],
+    () => ["all", ...new Set(projects.map((pin) => startCase(toLower(pin.category))))],
     []
   );
 
@@ -40,15 +40,6 @@ const Filters: React.FC<IFilters> = ({
   );
   return (
     <div className="filters">
-      <div className="search-container">
-        <input
-          id="search-input"
-          type="text"
-          onChange={(e) => debouncedSetSearchQuery(e.target.value)}
-          className="filter-search"
-          placeholder="Search by project name..."
-        />
-      </div>
       <div className="dropdown-container">
         <div>
           <select
@@ -58,7 +49,7 @@ const Filters: React.FC<IFilters> = ({
             className="filter-dropdown">
             {categories.map((category) => (
               <option key={category} value={category}>
-                {category === "all" ? "All Categories" : category}
+                {category === "all" ? "Type De Projet" : category}
               </option>
             ))}
           </select>
@@ -69,23 +60,10 @@ const Filters: React.FC<IFilters> = ({
             className="filter-dropdown">
             {locations.map((location) => (
               <option key={location} value={location}>
-                {location === "all" ? "All Locations" : location}
+                {location === "all" ? "Pays" : location}
               </option>
             ))}
           </select>
-        </div>
-
-        <div className="toggle-container">
-          <button
-            className={toggleView === ViewType.LIST ? "active" : ""}
-            onClick={() => setToggleView(ViewType.LIST)}>
-            List View
-          </button>
-          <button
-            className={toggleView === ViewType.MAP ? "active" : ""}
-            onClick={() => setToggleView(ViewType.MAP)}>
-            Map View
-          </button>
         </div>
       </div>
     </div >
