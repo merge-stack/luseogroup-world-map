@@ -31,10 +31,15 @@ const Header: React.FC<HeaderProps> = ({
         resetFilters={resetFilters}
         setSearchQuery={setSearchQuery}
         toggleView={toggleView}
-        setToggleView={setToggleView} />
+        setToggleView={setToggleView} 
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        selectedLocation={selectedLocation}
+        setSelectedLocation={setSelectedLocation}
+        />
 
       {/* Filters */}
-      <Filters
+      {/* <Filters
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
         selectedLocation={selectedLocation}
@@ -42,7 +47,7 @@ const Header: React.FC<HeaderProps> = ({
         setSearchQuery={setSearchQuery}
         toggleView={toggleView}
         setToggleView={setToggleView}
-      />
+      /> */}
 
     </div>
   );
