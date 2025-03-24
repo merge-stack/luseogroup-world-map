@@ -173,7 +173,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 // Function to add popup (only for desktop)
 const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
 
-  const { coordinates, name, photos, description, area, architect, category, city, region } = project;
+  const { coordinates, name, photos, mission, area, architect, category, city, region, certification, bim } = project;
 
   // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
@@ -181,13 +181,13 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   const popupContainer = document.createElement("div");
   const popupContent = `    
   <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
-    <div id="popup-slider-container" style="width: 320px;"></div>
+    <div id="popup-slider-container" style="width: 325px;"></div>
       <div style="cursor: pointer; padding: 10px 20px;  color:black" margin-top:10px >
         <h5 style="font-size: 20px; font-weight: 600; color: #fdb82d;">${name}</h5>
         <span style=" color: black; display: block; font-size: 8px; line-height: 1.9;">${city}, ${region}</span>
         <div style="margin-bottom: 5px;  margin-top: 5px;">
           <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d; margin-bottom: 1px;">MISSION</h3>
-          <span style="font-size: 10px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">${description || "N/A"}</span>
+          <span style="font-size: 10px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">${mission || "N/A"}</span>
         </div>
         <div style="margin-bottom: 5px;  margin-top: 5px;">
           <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d;">DÈTAILS</h3>
@@ -198,10 +198,10 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
               <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>SURFACE:</strong> ${area || "N/A"}</p>
           </p>
           <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>BIM:</strong> BIM</p>
+             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>BIM:</strong>${bim || "N/A"}</p>
           </p>
           <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> Certification </p>
+             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> ${certification || "N/A"} </p>
           </p>
           <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
            <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${architect || "N/A"} </p>
@@ -231,7 +231,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
     const sliderContainer = document.getElementById("popup-slider-container");
     if (sliderContainer) {
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="250px" />);
+      sliderRoot.render(<ImageSlider photos={photos?.length > 0 ? photos : [defaultImage]} photoHeight="250px" />);
     }
   }, 0);
 };

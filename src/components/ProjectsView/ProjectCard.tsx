@@ -26,7 +26,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
       className={`location-card ${selectedProject?.id === project.id ? "selected" : ""}`}
       onClick={() => setSelectedProject(project)}>
       <div className="img-div">
-        <ImageSlider photos={project.photos.length > 0 ? project.photos : [defaultImage]} photoHeight="176px" />
+        <ImageSlider photos={project.photos?.length > 0 ? project.photos : [defaultImage]} photoHeight="176px" />
       </div>
       <div className="location-card-content" >
         <h3 className="project-name">{project.name}</h3>
@@ -34,7 +34,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
         <hr className="project-divider" />
         <div className="location-card-section">
           <h3 className="location-card-subtitle">MISSION</h3>
-          <p className="location-card-text">{project.description || "N/A"}</p>
+          <p className="location-card-text">{project.mission || "N/A"}</p>
         </div>
         <div className="location-card-section">
           <h3 className="location-card-subtitle">DÈTAILS</h3>
@@ -45,10 +45,10 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
             <h5 className="location-card-text-detail">SURFACE:</h5> {project.area || "N/A"}
           </p>
           <p className="location-card-text">
-            <h5 className="location-card-text-detail">BIM:</h5> BIM
+            <h5 className="location-card-text-detail">BIM:</h5> {project.bim || "N/A"}
           </p>
           <p className="location-card-text">
-            <h5 className="location-card-text-detail">CERTIFICATION:</h5> Certification
+            <h5 className="location-card-text-detail">CERTIFICATION:</h5> {project.certification || "N/A"}
           </p>
           <p className="location-card-text">
             <h5 className="location-card-text-detail">ARCHITECTÈ: </h5> {project.architect || "N/A"}
