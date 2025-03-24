@@ -16,7 +16,7 @@ import "./index.css";
 interface FooterProps {
   resetFilters: () => void;
   setSearchQuery: (query: string) => void;
-  toggleView: string
+  toggleView: string;
   setToggleView: (view: string) => void;
   selectedCategory: string;
   setSelectedCategory: (category: string) => void;
@@ -24,7 +24,16 @@ interface FooterProps {
   setSelectedLocation: (location: string) => void;
 }
 
-const Navbar: React.FC<FooterProps> = ({ resetFilters, setSearchQuery, toggleView, setToggleView, selectedCategory, setSelectedCategory, selectedLocation, setSelectedLocation }) => {
+const Navbar: React.FC<FooterProps> = ({
+  resetFilters,
+  setSearchQuery,
+  toggleView,
+  setToggleView,
+  selectedCategory,
+  setSelectedCategory,
+  selectedLocation,
+  setSelectedLocation,
+}) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -82,31 +91,28 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, setSearchQuery, toggleVie
                   />
                 </div>
               </div>
+
               <div className="navbar-right">
-                <img src={franceflag} alt="Company Logo" className="france-flag" />
                 <div className="toggle-container">
-                  <button
-                    className={toggleView === ViewType.LIST ? "active" : ""}
-                    onClick={() => setToggleView(ViewType.LIST)}
-                  >
+                  <button className={toggleView === ViewType.LIST ? "active" : ""} onClick={() => setToggleView(ViewType.LIST)}>
                     Liste
                   </button>
-                  <button
-                    className={toggleView === ViewType.MAP ? "active" : ""}
-                    onClick={() => setToggleView(ViewType.MAP)}
-                  >
+                  <button className={toggleView === ViewType.MAP ? "active" : ""} onClick={() => setToggleView(ViewType.MAP)}>
                     Carte
                   </button>
                 </div>
+
+                <img src={franceflag} alt="Company Logo" className="france-flag" />
+
                 <div className="navbar-links">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item">
-                    <img src={contact} alt="Company Logo" className="navbar-logo" />
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="Tous les projets">
+                    <img src={contact} alt="" className="navbar-logo" />
                   </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item">
-                    <img src={about} alt="Company Logo" className="navbar-logo" />
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
+                    <img src={about} alt="" className="navbar-logo" />
                   </a>
-                  <div onClick={resetFilters} className="navbar-item navbar-button">
-                    <img src={reset} alt="Company Logo" className="navbar-logo" />
+                  <div onClick={resetFilters} className="navbar-item navbar-button" title="Contactez-nous">
+                    <img src={reset} alt="" className="navbar-logo" />
                   </div>
                 </div>
                 <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
@@ -144,12 +150,11 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, setSearchQuery, toggleVie
                   </select>
                 </div>
               </div>
-            </div >
-
+            </div>
           </div>
         </div>
-
       </nav>
+
       <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
         <a href="#" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
           Contact

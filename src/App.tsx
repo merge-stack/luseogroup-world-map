@@ -20,15 +20,9 @@ function App() {
 
   const filteredPins = useMemo(() => {
     return projects.filter((pin) => {
-      const matchCategory =
-        selectedCategory === "all" ||
-        pin.category === selectedCategory;
-      const matchLocation =
-        selectedLocation === "all" ||
-        pin.region === selectedLocation;
-      const matchSearch =
-        searchQuery === "" ||
-        pin.name.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchCategory = selectedCategory === "all" || pin.category === selectedCategory;
+      const matchLocation = selectedLocation === "all" || pin.region === selectedLocation;
+      const matchSearch = searchQuery === "" || pin.name.toLowerCase().includes(searchQuery.toLowerCase());
 
       return matchCategory && matchLocation && matchSearch;
     }) as IProject[];
@@ -66,7 +60,7 @@ function App() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;

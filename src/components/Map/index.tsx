@@ -7,10 +7,9 @@ import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
 import luseoPin from "@assets/images/luseo-pin.png";
 import defaultImage from "@assets/images/missing-image.jpg";
-import "./index.css"
+import "./index.css";
 
 mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
-
 
 interface IMapComponent {
   pins: IProject[];
@@ -55,7 +54,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
     const map = mapRef.current;
 
     const initializeStyles = () => {
-      map.resize()
+      map.resize();
 
       const adminLayers = [
         "admin-0-boundary",
@@ -68,13 +67,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       //set boundaries according to the moroccan worldview
       adminLayers.forEach((layerName) => {
         if (map.getLayer(layerName)) {
-          map.setFilter(layerName, [
-            "match",
-            ["get", "worldview"],
-            ["all", WORLD_VIEW],
-            true,
-            false,
-          ]);
+          map.setFilter(layerName, ["match", ["get", "worldview"], ["all", WORLD_VIEW], true, false]);
         }
       });
 
@@ -96,16 +89,16 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
         "water-point-label",
       ];
 
-      labelLayers.forEach(layer => {
+      labelLayers.forEach((layer) => {
         if (map.getLayer(layer)) {
           map.setLayoutProperty(layer, "text-field", ["get", "name_fr"]);
         }
       });
-    }
+    };
 
     const initializeMap = () => {
       //remove existing markers
-      document.querySelectorAll(".mapboxgl-marker").forEach(marker => marker.remove());
+      document.querySelectorAll(".mapboxgl-marker").forEach((marker) => marker.remove());
 
       if (pins.length === 0) return;
 
@@ -153,7 +146,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       initializeMap();
     } else {
       map.on("load", initializeMap);
-      map.on("styledata", initializeStyles)
+      map.on("styledata", initializeStyles);
     }
   }, [pins, setSelectedProject, selectedProject]);
 
@@ -172,7 +165,6 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
 // Function to add popup (only for desktop)
 const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
-
   const { coordinates, name, photos, mission, area, architect, category, city, region, certification, bim } = project;
 
   // Remove existing popups
@@ -183,7 +175,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
     <div id="popup-slider-container" style="width: 325px;"></div>
       <div style="cursor: pointer; padding: 10px 20px;  color:black" margin-top:10px >
-        <h5 style="font-size: 20px; font-weight: 600; color: #fdb82d;">${name}</h5>
+        <h5 style="font-size: 15px; font-weight: 600; color: #fdb82d;">${name}</h5>
         <span style=" color: black; display: block; font-size: 8px; line-height: 1.9;">${city}, ${region}</span>
         <div style="margin-bottom: 5px;  margin-top: 5px;">
           <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d; margin-bottom: 1px;">MISSION</h3>
@@ -201,10 +193,14 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
              <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>BIM:</strong>${bim || "N/A"}</p>
           </p>
           <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> ${certification || "N/A"} </p>
+             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> ${
+               certification || "N/A"
+             } </p>
           </p>
           <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-           <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${architect || "N/A"} </p>
+           <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${
+             architect || "N/A"
+           } </p>
           </p>
         </div>
       </div>
@@ -236,11 +232,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   }, 0);
 };
 
-const flyToProject = (
-  map: mapboxgl.Map | null,
-  project: IProject,
-  setSelectedProject: (project: IProject | null) => void
-) => {
+const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
   if (!map) return;
   const { coordinates } = project;
 
@@ -251,9 +243,7 @@ const flyToProject = (
   const currentZoom = map.getZoom();
   //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
   const currentCenter = map.getCenter();
-  const distance = Math.sqrt(
-    Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
-  );
+  const distance = Math.sqrt(Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2));
 
   // Offset latitude slightly downward to move the marker lower in the viewport
   const latOffset = 0.002;
@@ -279,6 +269,6 @@ const flyToProject = (
       addPopup(map, project, setSelectedProject);
     }
   }
-}
+};
 
 export default MapComponent;
