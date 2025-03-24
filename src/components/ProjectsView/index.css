@@ -24,7 +24,7 @@
   width: 80%;
   height: calc(100vh - 200px);
   position: sticky;
-  top: 85px;
+  top: 145px;
   z-index: 900;
 }
 
@@ -218,7 +218,8 @@
 /* Change the arrow color */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  color: white; /* Change to your desired color */
+  color: white;
+  /* Change to your desired color */
 }
 
 /* Optional: Change the background color of arrows */
@@ -231,11 +232,13 @@
 /* Optional: Change the arrow size */
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 33px; /* Increase or decrease arrow size */
+  font-size: 33px;
+  /* Increase or decrease arrow size */
 }
 
 .swiper-pagination {
-  bottom: 15px !important; /* Move dots up (increase for more lift) */
+  bottom: 15px !important;
+  /* Move dots up (increase for more lift) */
 }
 
 /* Change default dot color */
@@ -244,12 +247,14 @@
   height: 17px;
   background: transparent;
   border: 2px solid white;
-  opacity: 1; /* Ensure visibility */
+  opacity: 1;
+  /* Ensure visibility */
 }
 
 /* Change active dot color */
 .swiper-pagination-bullet-active {
-  background: white; /* Change to your desired color */
+  background: white;
+  /* Change to your desired color */
 }
 
 @media screen and (max-width: 1231px) {

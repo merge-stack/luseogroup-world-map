@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import Filters from "./Filters";
 import "./index.css";
 
 interface HeaderProps {
@@ -31,17 +30,11 @@ const Header: React.FC<HeaderProps> = ({
         resetFilters={resetFilters}
         setSearchQuery={setSearchQuery}
         toggleView={toggleView}
-        setToggleView={setToggleView} />
-
-      {/* Filters */}
-      <Filters
+        setToggleView={setToggleView}
         selectedCategory={selectedCategory}
         setSelectedCategory={setSelectedCategory}
         selectedLocation={selectedLocation}
         setSelectedLocation={setSelectedLocation}
-        setSearchQuery={setSearchQuery}
-        toggleView={toggleView}
-        setToggleView={setToggleView}
       />
 
     </div>

@@ -1,6 +1,6 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { debounce } from "lodash";
+import { debounce, startCase, toLower } from "lodash";
 
 import logo from "@assets/images/logo.png";
 import contact from "@assets/images/contact.png";
@@ -9,20 +9,22 @@ import reset from "@assets/images/reset.png";
 import franceflag from "@assets/images/france.png";
 
 import { ViewType } from "@constants";
+import { projects } from "@src/data";
 
 import "./index.css";
-import Filters from "./Filters";
 
 interface FooterProps {
   resetFilters: () => void;
   setSearchQuery: (query: string) => void;
   toggleView: string
   setToggleView: (view: string) => void;
+  selectedCategory: string;
+  setSelectedCategory: (category: string) => void;
+  selectedLocation: string;
+  setSelectedLocation: (location: string) => void;
 }
 
-const Navbar: React.FC<FooterProps> = ({ resetFilters, setSearchQuery,
-  toggleView,
-  setToggleView, }) => {
+const Navbar: React.FC<FooterProps> = ({ resetFilters, setSearchQuery, toggleView, setToggleView, selectedCategory, setSelectedCategory, selectedLocation, setSelectedLocation }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -33,52 +35,117 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, setSearchQuery,
     debounce((query) => setSearchQuery(query), 300),
     []
   );
+
+  const locations = useMemo<{ label: string; value: string }[]>(
+    () => [
+      { label: "Pays", value: "all" }, // "Pays" is the display label for "all"
+      ...Array.from(
+        new Map(
+          projects
+            .filter((pin) => pin.region && pin.region.trim() !== "") // Remove empty/undefined regions
+            .map((pin) => [pin.region, { label: startCase(toLower(pin.region)), value: pin.region }])
+        ).values()
+      ),
+    ],
+    [projects]
+  );
+
+  const categories = useMemo<{ label: string; value: string }[]>(
+    () => [
+      { label: "Type De Projet", value: "all" }, // "Type De Projet" is the display label for "all"
+      ...Array.from(
+        new Map(
+          projects
+            .filter((pin) => pin.category && pin.category.trim() !== "") // Remove empty/undefined categories
+            .map((pin) => [pin.category, { label: startCase(toLower(pin.category)), value: pin.category }])
+        ).values()
+      ),
+    ],
+    [projects]
+  );
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <div className="navbar-left">
-            <img src={logo} alt="Company Logo" className="navbar-logo" />
-            <div className="search-container">
-              <input
-                id="search-input"
-                type="text"
-                onChange={(e) => debouncedSetSearchQuery(e.target.value)}
-                className="filter-search"
-                placeholder="Recherche..."
-              />
-            </div>
-          </div>
-          <div className="navbar-right">
-            <img src={franceflag} alt="Company Logo" className="france-flag" />
-            <div className="toggle-container">
-              <button
-                className={toggleView === ViewType.LIST ? "active" : ""}
-                onClick={() => setToggleView(ViewType.LIST)}
-              >
-                Liste
-              </button>
-              <button
-                className={toggleView === ViewType.MAP ? "active" : ""}
-                onClick={() => setToggleView(ViewType.MAP)}
-              >
-                Carte
-              </button>
-            </div>
-            <div className="navbar-links">
-              <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item">
-                <img src={contact} alt="Company Logo" className="navbar-logo" />
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item">
-                <img src={about} alt="Company Logo" className="navbar-logo" />
-              </a>
-              <div onClick={resetFilters} className="navbar-item navbar-button">
-                <img src={reset} alt="Company Logo" className="navbar-logo" />
+          <img src={logo} alt="Company Logo" className="navbar-logo" />
+          <div>
+            <div className="navbar-content">
+              <div className="navbar-left">
+                <div className="search-container">
+                  <input
+                    id="search-input"
+                    type="text"
+                    onChange={(e) => debouncedSetSearchQuery(e.target.value)}
+                    className="filter-search"
+                    placeholder="Recherche..."
+                  />
+                </div>
+              </div>
+              <div className="navbar-right">
+                <img src={franceflag} alt="Company Logo" className="france-flag" />
+                <div className="toggle-container">
+                  <button
+                    className={toggleView === ViewType.LIST ? "active" : ""}
+                    onClick={() => setToggleView(ViewType.LIST)}
+                  >
+                    Liste
+                  </button>
+                  <button
+                    className={toggleView === ViewType.MAP ? "active" : ""}
+                    onClick={() => setToggleView(ViewType.MAP)}
+                  >
+                    Carte
+                  </button>
+                </div>
+                <div className="navbar-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item">
+                    <img src={contact} alt="Company Logo" className="navbar-logo" />
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item">
+                    <img src={about} alt="Company Logo" className="navbar-logo" />
+                  </a>
+                  <div onClick={resetFilters} className="navbar-item navbar-button">
+                    <img src={reset} alt="Company Logo" className="navbar-logo" />
+                  </div>
+                </div>
+                <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+                  {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+                </div>
               </div>
             </div>
-            <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-              {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-            </div>
+
+            <div className="filters">
+              <div className="dropdown-container">
+                <div>
+                  <select
+                    id="category-select"
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    className="filter-dropdown"
+                  >
+                    {categories.map(({ label, value }) => (
+                      <option key={value} value={value}>
+                        {label}
+                      </option>
+                    ))}
+                  </select>
+                  <select
+                    id="location-select"
+                    value={selectedLocation}
+                    onChange={(e) => setSelectedLocation(e.target.value)}
+                    className="filter-dropdown"
+                  >
+                    {locations.map(({ label, value }) => (
+                      <option key={value} value={value}>
+                        {label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+            </div >
+
           </div>
         </div>
 
