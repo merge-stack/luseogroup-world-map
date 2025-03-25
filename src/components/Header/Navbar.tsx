@@ -14,12 +14,14 @@ interface FooterProps {
   resetFilters: () => void;
   toggleView: string;
   setToggleView: (view: string) => void;
+  className?: string;
 }
 
 const Navbar: React.FC<FooterProps> = ({
   resetFilters,
   toggleView,
   setToggleView,
+  className= '',
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -29,7 +31,7 @@ const Navbar: React.FC<FooterProps> = ({
   
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${className}`}>
         <div className="navbar-container">
           <div className="nav-top">
             <div className="navbar-left">

@@ -1,7 +1,7 @@
-import React from "react";
-import Navbar from "./Navbar";
-import "./index.css";
-import Filters from "./Filters";
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
+import Filters from './Filters';
+import './index.css';
 
 interface HeaderProps {
   selectedCategory: string;
@@ -24,23 +24,58 @@ const Header: React.FC<HeaderProps> = ({
   setToggleView,
   resetFilters
 }) => {
+  const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+
+      if (window.innerWidth <= 568) {
+        const st = window.pageYOffset || document.documentElement.scrollTop;
+        
+        // If scrolling up and we're not at the top
+        if (st < lastScrollTop && st > 0) {
+          setIsNavbarVisible(true);
+        } 
+        // If scrolling down and we're not at the top
+        else if (st > lastScrollTop && st > 0) {
+          setIsNavbarVisible(false);
+        }
+        
+        setLastScrollTop(st <= 0 ? 0 : st);
+      } else {
+        // Reset for larger screens
+        setIsNavbarVisible(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollTop]);
+
   return (
     <>
-      {/* Navbar */}
-      <Navbar
-        resetFilters={resetFilters}
-        toggleView={toggleView}
-        setToggleView={setToggleView}
-      />
-
-      <Filters
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-        selectedLocation={selectedLocation}
-        setSelectedLocation={setSelectedLocation}
-        setSearchQuery={setSearchQuery}
-      />
-
+      <div 
+        className={`navbar-mobile-wrapper ${isNavbarVisible ? 'navbar-visible' : ''}`}
+      >
+        <Navbar
+          resetFilters={resetFilters}
+          toggleView={toggleView}
+          setToggleView={setToggleView}
+        />
+      </div>
+      
+      <div 
+        className={`filters-mobile-wrapper ${isNavbarVisible ? 'filters-with-navbar' : ''}`}
+      >
+        <Filters
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          selectedLocation={selectedLocation}
+          setSelectedLocation={setSelectedLocation}
+          setSearchQuery={setSearchQuery}
+        />
+      </div>
     </>
   );
 };

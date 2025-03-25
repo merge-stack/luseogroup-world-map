@@ -10,6 +10,7 @@ interface IFilters {
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
   setSearchQuery: (query: string) => void;
+  className?: string;
 }
 
 const Filters: React.FC<IFilters> = ({
@@ -18,6 +19,7 @@ const Filters: React.FC<IFilters> = ({
   selectedLocation,
   setSelectedLocation,
   setSearchQuery,
+  className = '',
 }) => {
   const locations = useMemo<{ label: string; value: string }[]>(
     () => [
@@ -52,7 +54,7 @@ const Filters: React.FC<IFilters> = ({
     []
   );
   return (
-    <div className="filters">
+    <div className={`filters ${className}`}>
       <input
         id="search-input"
         type="text"

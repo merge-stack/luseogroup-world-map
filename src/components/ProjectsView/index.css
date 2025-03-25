@@ -257,10 +257,10 @@
   /* Change to your desired color */
 }
 
-@media screen and (max-width: 1231px) {
-  .map-container {
-    top: 85px;
-  }
+@media screen and (max-width: 869px) {
+ .map-container {
+  top: 200px;
+ }
 }
 
 @media screen and (max-width: 1024px) {
@@ -306,5 +306,9 @@
   
   .location-card-content {
     padding: 0 14px;
+  }
+
+  .projects-container {
+    margin-top: 10px;
   }
 }
