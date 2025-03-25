@@ -1,6 +1,5 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { debounce, startCase, toLower } from "lodash";
 
 import logo from "@assets/images/logo.png";
 import contact from "@assets/images/contact.png";
@@ -8,20 +7,17 @@ import about from "@assets/images/about.png";
 import franceflag from "@assets/images/france.png";
 
 import { ViewType } from "@constants";
-import { projects } from "@src/data";
 
 import "./index.css";
 
 interface FooterProps {
   resetFilters: () => void;
-  setSearchQuery: (query: string) => void;
   toggleView: string;
   setToggleView: (view: string) => void;
 }
 
 const Navbar: React.FC<FooterProps> = ({
   resetFilters,
-  setSearchQuery,
   toggleView,
   setToggleView,
 }) => {
@@ -30,40 +26,6 @@ const Navbar: React.FC<FooterProps> = ({
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  const debouncedSetSearchQuery = useCallback(
-    debounce((query) => setSearchQuery(query), 300),
-    []
-  );
-
-  const locations = useMemo<{ label: string; value: string }[]>(
-    () => [
-      { label: "PAYS", value: "all" }, // "Pays" is the display label for "all"
-      ...Array.from(
-        new Map(
-          projects
-            .filter((pin) => pin.region && pin.region.trim() !== "") // Remove empty/undefined regions
-            .map((pin) => [pin.region, { label: startCase(toLower(pin.region)), value: pin.region }])
-        ).values()
-      ),
-    ],
-    [projects]
-  );
-
-  const categories = useMemo<{ label: string; value: string }[]>(
-    () => [
-      { label: "TYPE DE PROJET", value: "all" }, // "Type De Projet" is the display label for "all"
-      ...Array.from(
-        new Map(
-          projects
-            .filter((pin) => pin.category && pin.category.trim() !== "") // Remove empty/undefined categories
-            .map((pin) => [pin.category, { label: startCase(toLower(pin.category)), value: pin.category }])
-        ).values()
-      ),
-    ],
-    [projects]
-  );
-
   return (
     <>
       <nav className="navbar">

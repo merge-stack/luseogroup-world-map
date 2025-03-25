@@ -140,7 +140,7 @@
   gap: 30px;
 }
 
-.navbar-left>div {
+.navbar-left > div {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -262,7 +262,7 @@
     gap: 15px;
   }
 
-  .navbar-left>div {
+  .navbar-left > div {
     gap: 15px;
   }
 }
@@ -307,7 +307,7 @@
     gap: 13px;
   }
 
-  .navbar-left>div {
+  .navbar-left > div {
     gap: 13px;
   }
 }
@@ -332,7 +332,7 @@
   .filters {
     top: 0;
   }
-  
+
   .nav-top {
     align-items: flex-start;
   }
@@ -350,12 +350,11 @@
     font-size: 12px;
   }
 
-  
   .navbar-left {
     gap: 10px;
   }
 
-  .navbar-left>div {
+  .navbar-left > div {
     gap: 10px;
   }
 }

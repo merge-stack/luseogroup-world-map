@@ -29,7 +29,6 @@ const Header: React.FC<HeaderProps> = ({
       {/* Navbar */}
       <Navbar
         resetFilters={resetFilters}
-        setSearchQuery={setSearchQuery}
         toggleView={toggleView}
         setToggleView={setToggleView}
       />
@@ -40,8 +39,6 @@ const Header: React.FC<HeaderProps> = ({
         selectedLocation={selectedLocation}
         setSelectedLocation={setSelectedLocation}
         setSearchQuery={setSearchQuery}
-        toggleView={toggleView}
-        setToggleView={setToggleView}
       />
 
     </>

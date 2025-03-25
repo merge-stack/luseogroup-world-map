@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from "react";
-import { debounce } from "lodash";
+import { debounce, startCase, toLower } from "lodash";
 
 import { projects } from "@data/index";
 import "./index.css";
@@ -10,8 +10,6 @@ interface IFilters {
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
   setSearchQuery: (query: string) => void;
-  toggleView: string
-  setToggleView: (view: string) => void;
 }
 
 const Filters: React.FC<IFilters> = ({
@@ -20,17 +18,33 @@ const Filters: React.FC<IFilters> = ({
   selectedLocation,
   setSelectedLocation,
   setSearchQuery,
-  toggleView,
-  setToggleView,
 }) => {
-  const locations = useMemo<string[]>(
-    () => ["all", ...new Set(projects.map((pin) => pin.region))],
-    []
+  const locations = useMemo<{ label: string; value: string }[]>(
+    () => [
+      { label: "PAYS", value: "all" }, // "Pays" is the display label for "all"
+      ...Array.from(
+        new Map(
+          projects
+            .filter((pin) => pin.region && pin.region.trim() !== "") // Remove empty/undefined regions
+            .map((pin) => [pin.region, { label: startCase(toLower(pin.region)), value: pin.region }])
+        ).values()
+      ),
+    ],
+    [projects]
   );
 
-  const categories = useMemo<string[]>(
-    () => ["all", ...new Set(projects.map((pin) => pin.category))],
-    []
+  const categories = useMemo<{ label: string; value: string }[]>(
+    () => [
+      { label: "TYPE DE PROJET", value: "all" }, // "Type De Projet" is the display label for "all"
+      ...Array.from(
+        new Map(
+          projects
+            .filter((pin) => pin.category && pin.category.trim() !== "") // Remove empty/undefined categories
+            .map((pin) => [pin.category, { label: startCase(toLower(pin.category)), value: pin.category }])
+        ).values()
+      ),
+    ],
+    [projects]
   );
 
   const debouncedSetSearchQuery = useCallback(
@@ -52,9 +66,9 @@ const Filters: React.FC<IFilters> = ({
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
           className="filter-dropdown">
-          {categories.map((category) => (
-            <option key={category} value={category}>
-              {category === "all" ? "All Categories" : category}
+          {categories.map(({ label, value }) => (
+            <option key={value} value={value}>
+              {label}
             </option>
           ))}
         </select>
@@ -63,9 +77,9 @@ const Filters: React.FC<IFilters> = ({
           value={selectedLocation}
           onChange={(e) => setSelectedLocation(e.target.value)}
           className="filter-dropdown">
-          {locations.map((location) => (
-            <option key={location} value={location}>
-              {location === "all" ? "All Locations" : location}
+          {locations.map(({ label, value }) => (
+            <option key={value} value={value}>
+              {label}
             </option>
           ))}
         </select>
