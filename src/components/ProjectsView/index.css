@@ -263,6 +263,13 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    /* 1 card per row */
+  }
+}
+
 @media screen and (max-width: 900px) and (min-width: 768px) {
   .map-container {
     width: 70%;
@@ -295,5 +302,9 @@
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
     /* 1 card per row */
+  }
+  
+  .location-card-content {
+    padding: 0 14px;
   }
 }

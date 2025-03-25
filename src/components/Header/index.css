@@ -18,7 +18,7 @@
   padding: 12px;
   padding-top: 0;
   position: sticky;
-  top: 82px;
+  top: 78px;
   z-index: 1000;
   flex-wrap: wrap;
   background: white;
@@ -60,10 +60,13 @@
 
 .filter-search::placeholder {
   color: #797777;
-  font-style: italic; /* Italicize the text */
-  font-size: 16px; /* Adjust font size */
+  font-style: italic;
+  /* Italicize the text */
+  font-size: 16px;
+  /* Adjust font size */
   font-weight: 500;
-  opacity: 1; /* Ensure full visibility */
+  opacity: 1;
+  /* Ensure full visibility */
 }
 
 .filter-search {
@@ -156,7 +159,7 @@
   gap: 30px;
 }
 
-.navbar-left > div {
+.navbar-left>div {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -278,8 +281,20 @@
     gap: 15px;
   }
 
-  .navbar-left > div {
+  .navbar-left>div {
     gap: 15px;
+  }
+
+  .navbar-logo {
+    height: 38px;
+  }
+
+  .reset-button {
+    padding: 13px 20px;
+  }
+
+  .toggle-container button {
+    padding: 13px 34px;
   }
 }
 
@@ -316,21 +331,50 @@
   }
 
   .navbar-logo {
-    height: 37px;
+    height: 35px;
   }
 
   .navbar-left {
     gap: 13px;
   }
 
-  .navbar-left > div {
+  .navbar-left>div {
     gap: 13px;
+  }
+
+  .reset-button {
+    padding: 13px 16px;
+  }
+
+  .toggle-container button {
+    padding: 13px 28px;
+  }
+
+  .navbar-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-right {
+    align-items: flex-start;
+  }
+
+  .nav-top {
+    align-items: normal;
+  }
+
+  .filters {
+    top: 125px;
   }
 }
 
 @media screen and (max-width: 568px) {
+  .filter-search {
+    padding: 11px 18px;
+  }
+
   .filter-dropdown {
-    padding: 14px !important;
+    padding: 12px !important;
     background-position: right 4px center;
     min-width: 0;
     width: 100%;
@@ -343,23 +387,14 @@
 
   .navbar {
     position: static;
+    padding: 10px;
+    padding-bottom: 0;
   }
 
   .filters {
     top: 0;
-  }
-
-  .nav-top {
-    align-items: flex-start;
-  }
-
-  .navbar-left {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-right {
-    align-items: flex-start;
+    padding-bottom: 8px;
+    padding-top: 8px;
   }
 
   select option {
@@ -370,14 +405,41 @@
     gap: 10px;
   }
 
-  .navbar-left > div {
+  .navbar-left>div {
     gap: 10px;
+  }
+
+  .reset-button {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .toggle-container button {
+    font-size: 10px;
+    padding: 10px 15px;
+  }
+
+
+  .navbar-logo {
+    height: 25px;
+  }
+
+  .navbar-right {
+    gap: 5px;
+  }
+
+  .dropdown-container {
+    flex-direction: column;
+  }
+
+  .navbar-button {
+    margin-top: 4px;
   }
 }
 
 @media screen and (max-width: 375px) {
   .filter-dropdown {
-    padding: 12px !important;
+    padding: 10px !important;
     background-position: right 2px center;
     min-width: 0;
     width: 100%;

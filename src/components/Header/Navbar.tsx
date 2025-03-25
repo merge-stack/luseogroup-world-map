@@ -26,6 +26,7 @@ const Navbar: React.FC<FooterProps> = ({
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+  
   return (
     <>
       <nav className="navbar">

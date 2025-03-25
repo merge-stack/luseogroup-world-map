@@ -17,9 +17,6 @@
 }
 
 .projects-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   background-color: #fff;
   padding: 12px;
