@@ -59,12 +59,15 @@ const Navbar: React.FC<FooterProps> = ({
                 <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
                   <img src={about} alt="" className="navbar-options" />
                 </a>
-                <div className="navbar-button">
+                <div className="navbar-item">
                   <img src={franceflag} alt="Company Logo" className="navbar-options" />
                 </div>
               </div>
               <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
                 {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+              </div>
+              <div className="navbar-button">
+                <img src={franceflag} alt="Company Logo" className="navbar-options" />
               </div>
             </div>
           </div>
