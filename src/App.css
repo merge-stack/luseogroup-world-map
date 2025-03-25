@@ -22,24 +22,10 @@
   justify-content: center;
   width: 100%;
   background-color: #fff;
-  margin-top: 4px;
-}
-
-.projects-div > div {
-  width: 99.5%;
-}
-
-@media screen and (max-width: 1024px) {
-  .projects-div > div {
-    width: 99.5%;
-  }
+  padding: 12px;
 }
 
 @media screen and (max-width: 767px) {
-  .projects-div > div {
-    width: 90%;
-  }
-
   .projects-container {
     flex-direction: column;
   }

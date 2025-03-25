@@ -17,10 +17,6 @@ interface FooterProps {
   setSearchQuery: (query: string) => void;
   toggleView: string;
   setToggleView: (view: string) => void;
-  selectedCategory: string;
-  setSelectedCategory: (category: string) => void;
-  selectedLocation: string;
-  setSelectedLocation: (location: string) => void;
 }
 
 const Navbar: React.FC<FooterProps> = ({
@@ -28,10 +24,6 @@ const Navbar: React.FC<FooterProps> = ({
   setSearchQuery,
   toggleView,
   setToggleView,
-  selectedCategory,
-  setSelectedCategory,
-  selectedLocation,
-  setSelectedLocation,
 }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -76,28 +68,10 @@ const Navbar: React.FC<FooterProps> = ({
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <img src={logo} alt="Company Logo" className="navbar-logo" />
-          <div>
-            <div className="navbar-content">
-              <div className="navbar-left">
-                <div className="search-container">
-                  <input
-                    id="search-input"
-                    type="text"
-                    onChange={(e) => debouncedSetSearchQuery(e.target.value)}
-                    className="filter-search"
-                    placeholder="Recherche par mots-clès..."
-                  />
-                </div>
-              </div>
-
-              <div className="navbar-right">
-                <button
-                  style={{ backgroundColor: "#272C64", color: "white" }}
-                  onClick={resetFilters}
-                >
-                  RÈINITIALISER
-                </button>
+          <div className="nav-top">
+            <div className="navbar-left">
+              <img src={logo} alt="Company Logo" className="navbar-logo" />
+              <div>
                 <div className="toggle-container">
                   <button className={toggleView === ViewType.LIST ? "active" : ""} onClick={() => setToggleView(ViewType.LIST)}>
                     LISTE
@@ -106,55 +80,32 @@ const Navbar: React.FC<FooterProps> = ({
                     CARTE
                   </button>
                 </div>
-
-                <div className="navbar-links">
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="Tous les projets">
-                    <img src={contact} alt="" className="navbar-logo" />
-                  </a>
-                  <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
-                    <img src={about} alt="" className="navbar-logo" />
-                  </a>
-                  <div className="navbar-item navbar-button">
-                    <img src={franceflag} alt="Company Logo" className="navbar-logo" />
-                  </div>
-                </div>
-                <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
-                  {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-                </div>
+                <button
+                  style={{ backgroundColor: "#272C64", color: "white" }}
+                  onClick={resetFilters}
+                >
+                  RÈINITIALISER
+                </button>
               </div>
             </div>
-
-            <div className="filters">
-              <div className="dropdown-container">
-                <div>
-                  <select
-                    id="category-select"
-                    value={selectedCategory}
-                    onChange={(e) => setSelectedCategory(e.target.value)}
-                    className="filter-dropdown"
-                  >
-                    {categories.map(({ label, value }) => (
-                      <option key={value} value={value}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
-                  <select
-                    id="location-select"
-                    value={selectedLocation}
-                    onChange={(e) => setSelectedLocation(e.target.value)}
-                    className="filter-dropdown"
-                  >
-                    {locations.map(({ label, value }) => (
-                      <option key={value} value={value}>
-                        {label}
-                      </option>
-                    ))}
-                  </select>
+            <div className="navbar-right">
+              <div className="navbar-links">
+                <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="Tous les projets">
+                  <img src={contact} alt="" className="navbar-logo" />
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
+                  <img src={about} alt="" className="navbar-logo" />
+                </a>
+                <div className="navbar-button">
+                  <img src={franceflag} alt="Company Logo" className="navbar-logo" />
                 </div>
+              </div>
+              <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
+                {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
               </div>
             </div>
           </div>
+
         </div>
       </nav>
 
