@@ -5,7 +5,6 @@ import { debounce, startCase, toLower } from "lodash";
 import logo from "@assets/images/logo.png";
 import contact from "@assets/images/contact.png";
 import about from "@assets/images/about.png";
-import reset from "@assets/images/reset.png";
 import franceflag from "@assets/images/france.png";
 
 import { ViewType } from "@constants";
@@ -47,7 +46,7 @@ const Navbar: React.FC<FooterProps> = ({
 
   const locations = useMemo<{ label: string; value: string }[]>(
     () => [
-      { label: "Pays", value: "all" }, // "Pays" is the display label for "all"
+      { label: "PAYS", value: "all" }, // "Pays" is the display label for "all"
       ...Array.from(
         new Map(
           projects
@@ -61,7 +60,7 @@ const Navbar: React.FC<FooterProps> = ({
 
   const categories = useMemo<{ label: string; value: string }[]>(
     () => [
-      { label: "Type De Projet", value: "all" }, // "Type De Projet" is the display label for "all"
+      { label: "TYPE DE PROJET", value: "all" }, // "Type De Projet" is the display label for "all"
       ...Array.from(
         new Map(
           projects
@@ -87,22 +86,26 @@ const Navbar: React.FC<FooterProps> = ({
                     type="text"
                     onChange={(e) => debouncedSetSearchQuery(e.target.value)}
                     className="filter-search"
-                    placeholder="Recherche..."
+                    placeholder="Recherche par mots-clès..."
                   />
                 </div>
               </div>
 
               <div className="navbar-right">
+                <button
+                  style={{ backgroundColor: "#272C64", color: "white" }}
+                  onClick={resetFilters}
+                >
+                  RÈINITIALISER
+                </button>
                 <div className="toggle-container">
                   <button className={toggleView === ViewType.LIST ? "active" : ""} onClick={() => setToggleView(ViewType.LIST)}>
-                    Liste
+                    LISTE
                   </button>
                   <button className={toggleView === ViewType.MAP ? "active" : ""} onClick={() => setToggleView(ViewType.MAP)}>
-                    Carte
+                    CARTE
                   </button>
                 </div>
-
-                <img src={franceflag} alt="Company Logo" className="france-flag" />
 
                 <div className="navbar-links">
                   <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="Tous les projets">
@@ -111,8 +114,8 @@ const Navbar: React.FC<FooterProps> = ({
                   <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
                     <img src={about} alt="" className="navbar-logo" />
                   </a>
-                  <div onClick={resetFilters} className="navbar-item navbar-button" title="Contactez-nous">
-                    <img src={reset} alt="" className="navbar-logo" />
+                  <div className="navbar-item navbar-button">
+                    <img src={franceflag} alt="Company Logo" className="navbar-logo" />
                   </div>
                 </div>
                 <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
