@@ -16,11 +16,7 @@ interface FooterProps {
   setToggleView: (view: string) => void;
 }
 
-const Navbar: React.FC<FooterProps> = ({
-  resetFilters,
-  toggleView,
-  setToggleView,
-}) => {
+const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -43,20 +39,29 @@ const Navbar: React.FC<FooterProps> = ({
                     CARTE
                   </button>
                 </div>
-                <button
-                  className="reset-button"
-                  onClick={resetFilters}
-                >
+                <button className="reset-button" onClick={resetFilters}>
                   RÈINITIALISER
                 </button>
               </div>
             </div>
             <div className="navbar-right">
               <div className="navbar-links">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="Tous les projets">
+                <a
+                  href="https://luseogroup.com/contact.php"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="navbar-item"
+                  title="Tous les projets"
+                >
                   <img src={contact} alt="" className="navbar-options" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
+                <a
+                  href="https://luseogroup.com/who-we-are.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="navbar-item"
+                  title="À propos de LUSEO GROUP"
+                >
                   <img src={about} alt="" className="navbar-options" />
                 </a>
                 <div className="navbar-item">
@@ -71,15 +76,14 @@ const Navbar: React.FC<FooterProps> = ({
               </div>
             </div>
           </div>
-
         </div>
       </nav>
 
       <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
+        <a href="https://luseogroup.com/contact.php" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
           Contact
         </a>
-        <a href="#" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
+        <a href="https://luseogroup.com/who-we-are.html" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
           About
         </a>
       </div>
