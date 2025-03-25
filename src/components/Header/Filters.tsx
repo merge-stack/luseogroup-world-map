@@ -58,7 +58,7 @@ const Filters: React.FC<IFilters> = ({
         type="text"
         onChange={(e) => debouncedSetSearchQuery(e.target.value)}
         className="filter-search"
-        placeholder="Search by project name..."
+        placeholder="Recherche par mots-clès..."
       />
       <div className="dropdown-container">
         <select
