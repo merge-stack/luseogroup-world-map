@@ -29,8 +29,8 @@
 }
 
 .mapRef-container {
-  border: 2px solid black;
-  border-radius: 5px;
+  border: 1px solid #d3d1d1;
+  border-radius: 0px;
 }
 
 .hidden {

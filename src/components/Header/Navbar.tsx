@@ -26,7 +26,7 @@ const Navbar: React.FC<FooterProps> = ({
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-  
+
   return (
     <>
       <nav className="navbar">
@@ -54,13 +54,13 @@ const Navbar: React.FC<FooterProps> = ({
             <div className="navbar-right">
               <div className="navbar-links">
                 <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="Tous les projets">
-                  <img src={contact} alt="" className="navbar-logo" />
+                  <img src={contact} alt="" className="navbar-options" />
                 </a>
                 <a href="#" target="_blank" rel="noopener noreferrer" className="navbar-item" title="À propos de LUSEO GROUP">
-                  <img src={about} alt="" className="navbar-logo" />
+                  <img src={about} alt="" className="navbar-options" />
                 </a>
                 <div className="navbar-button">
-                  <img src={franceflag} alt="Company Logo" className="navbar-logo" />
+                  <img src={franceflag} alt="Company Logo" className="navbar-options" />
                 </div>
               </div>
               <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
@@ -79,9 +79,6 @@ const Navbar: React.FC<FooterProps> = ({
         <a href="#" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
           About
         </a>
-        <div onClick={resetFilters} className="mobile-menu-item">
-          Reset Filters
-        </div>
       </div>
     </>
   );
