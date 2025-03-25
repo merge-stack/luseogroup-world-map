@@ -14,7 +14,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
     <Swiper
       modules={[Navigation, Pagination]}
       slidesPerView={1}
-      loop={true}
+      loop={photos.length > 1} // Enable loop only if there are at least 2 slides
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

@@ -64,4 +64,5 @@ const saveToFile = (data) => {
 
 // Run the script
 const projects = loadXLSXData();
+
 saveToFile(projects);
