@@ -48,7 +48,7 @@ const loadXLSXData = () => {
         certification: row["CERTIFICATION"] || "",
         selection_bw: row["SELECTION BW"] || "",
         businessName: row["NOM D'AFFAIRE"] || "",
-        //photos: row["PHOTOS"] ? row["PHOTOS"].split(",") : [], // Convert string to array
+        photos: row["PHOTOS"] ? row["PHOTOS"].split(",") : [], // Convert string to array
       };
     })
     .filter(Boolean); // Remove null entries
