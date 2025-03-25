@@ -32,12 +32,13 @@
 }
 
 .filter-dropdown {
-  padding: 12.5px 24px !important;
-  border: 2px solid #e0e0e0;
-  border-radius: 6px;
+  padding: 11px 24px !important;
+  border: 1px solid #d3d1d1;
+  border-radius: 0px;
   background-color: white;
-  color: black;
-  font-size: 14px;
+  color: #272c64;
+  font-size: 16px;
+  font-weight: 500;
   flex: 1;
   cursor: pointer;
   appearance: none !important;
@@ -57,10 +58,18 @@
   border-color: black;
 }
 
+.filter-search::placeholder {
+  color: #797777;
+  font-style: italic; /* Italicize the text */
+  font-size: 16px; /* Adjust font size */
+  font-weight: 500;
+  opacity: 1; /* Ensure full visibility */
+}
+
 .filter-search {
-  padding: 14px 24px;
-  border: 2px solid black;
-  border-radius: 6px;
+  padding: 13px 24px;
+  border: 1px solid #d3d1d1;
+  border-radius: 0px;
   background-color: white;
   color: black;
   font-size: 16px;
@@ -76,31 +85,38 @@
 .toggle-container {
   display: flex;
   justify-content: center;
-  border: 2px solid #e2e2e2;
-  padding: 5px;
-  border-radius: 6px;
+  border: 1px solid #d3d1d1;
+  border-radius: 0px;
 }
 
 .toggle-container button {
   background: #fff;
   border: none;
-  padding: 9.5px 16px;
-  margin: 0 3px;
+  border-radius: 0px;
+  padding: 13px 60px;
   cursor: pointer;
-  border-radius: 4px;
-  font-size: 14px;
-  color: black;
+  font-size: 16px;
+  color: #797777;
   white-space: nowrap;
   transition: background-color 0.3s ease-in-out;
 }
 
 .toggle-container button.active {
-  background: #fdb82d;
-  color: black;
+  background: #272c64;
+  color: #fdb82d;
 }
 
 .toggle-container button:hover {
-  background: #fdb82d;
+  background: #272c64;
+}
+
+.reset-button {
+  background-color: #272c64;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  padding: 13px 30px;
+  cursor: pointer;
 }
 
 .france-flag {

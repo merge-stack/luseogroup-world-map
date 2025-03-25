@@ -43,7 +43,7 @@ const Navbar: React.FC<FooterProps> = ({
                   </button>
                 </div>
                 <button
-                  style={{ backgroundColor: "#272C64", color: "white" }}
+                  className="reset-button"
                   onClick={resetFilters}
                 >
                   RÈINITIALISER

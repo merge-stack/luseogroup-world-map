@@ -42,7 +42,7 @@
 .location-card {
   background: #fff;
   border: 2px solid #ced4da;
-  border-radius: 8px;
+  border-radius: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   /* margin-bottom: 20px; */
   overflow: hidden;
@@ -260,6 +260,15 @@
 @media screen and (max-width: 1231px) {
   .map-container {
     top: 85px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  .map-container {
+    width: 70%;
+  }
+  .locations-list {
+    width: 30%;
   }
 }
 

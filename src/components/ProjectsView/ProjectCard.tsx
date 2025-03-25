@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 
 import { IProject } from "@interfaces";
-import defaultImage from "@assets/images/missing-image.jpg";
+import { REACT_DEFAULT_IMAGE_URL } from "@config";
+
 import "./index.css";
 import ImageSlider from "./ImageSlider";
 
@@ -26,7 +27,7 @@ const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSele
       className={`location-card ${selectedProject?.id === project.id ? "selected" : ""}`}
       onClick={() => setSelectedProject(project)}>
       <div className="img-div">
-        <ImageSlider photos={project.photos?.length > 0 ? project.photos : [defaultImage]} photoHeight="176px" />
+        <ImageSlider photos={project.photos?.length > 0 ? project.photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight="180px" />
       </div>
       <div className="location-card-content" >
         <h3 className="project-name">{project.name}</h3>

@@ -6,10 +6,11 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
 import luseoPin from "@assets/images/luseo-pin.png";
-import defaultImage from "@assets/images/missing-image.jpg";
+import { REACT_APP_MAP_API_KEY, REACT_DEFAULT_IMAGE_URL } from "@config";
+
 import "./index.css";
 
-mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
+mapboxgl.accessToken = REACT_APP_MAP_API_KEY
 
 interface IMapComponent {
   pins: IProject[];
@@ -173,8 +174,8 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   const popupContainer = document.createElement("div");
   const popupContent = `    
   <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
-    <div id="popup-slider-container" style="width: 325px;"></div>
-      <div style="cursor: pointer; padding: 10px 20px;  color:black" margin-top:10px >
+    <div id="popup-slider-container" style="width: 325px; flex-shrink: 0;"></div>
+      <div style="cursor: pointer; padding: 10px 20px;  color:black" margin-top:10px  width: 250px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word; >
         <h5 style="font-size: 15px; font-weight: 600; color: #fdb82d;">${name}</h5>
         <span style=" color: black; display: block; font-size: 8px; line-height: 1.9;">${city}, ${region}</span>
         <div style="margin-bottom: 5px;  margin-top: 5px;">
@@ -193,14 +194,12 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
              <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>BIM:</strong>${bim || "N/A"}</p>
           </p>
           <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> ${
-               certification || "N/A"
-             } </p>
+             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> ${certification || "N/A"
+    } </p>
           </p>
           <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-           <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${
-             architect || "N/A"
-           } </p>
+           <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${architect || "N/A"
+    } </p>
           </p>
         </div>
       </div>
@@ -225,9 +224,14 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   //add slider component to the popup
   setTimeout(() => {
     const sliderContainer = document.getElementById("popup-slider-container");
-    if (sliderContainer) {
+    const textContainer = sliderContainer?.nextElementSibling; // The div containing text
+    if (sliderContainer && textContainer) {
+      // Get the computed height of the text container
+      const textHeight = textContainer.getBoundingClientRect().height;
+      // Ensure a minimum height to avoid issues and match the height of the text div
+      const photoHeight = textHeight > 0 ? `${textHeight}px` : "250px";
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(<ImageSlider photos={photos?.length > 0 ? photos : [defaultImage]} photoHeight="250px" />);
+      sliderRoot.render(<ImageSlider photos={photos?.length > 0 ? photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight={photoHeight} />);
     }
   }, 0);
 };
