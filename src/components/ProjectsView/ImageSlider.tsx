@@ -35,20 +35,20 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
         const validImg = img && img.trim() !== "" ? img : REACT_DEFAULT_IMAGE_URL;
         return (
           <SwiperSlide key={index}>
-            <img src={validImg} alt={`slide-${index}`} style={{ width: "100%", height: photoHeight }} onError={handleImageError} />
+            <img
+              loading="lazy"
+              src={validImg}
+              alt={`slide-${index}`}
+              style={{ width: "100%", height: photoHeight }}
+              onError={handleImageError}
+            />
           </SwiperSlide>
         );
       })}
 
       {/* Custom Navigation Buttons to Stop Propagation */}
-      <div
-        className="swiper-button-prev"
-        onClick={(e) => e.stopPropagation()}
-      ></div>
-      <div
-        className="swiper-button-next"
-        onClick={(e) => e.stopPropagation()}
-      ></div>
+      <div className="swiper-button-prev" onClick={(e) => e.stopPropagation()}></div>
+      <div className="swiper-button-next" onClick={(e) => e.stopPropagation()}></div>
     </Swiper>
   );
 };
