@@ -24,7 +24,7 @@
   width: 80%;
   height: calc(100vh - 200px);
   position: sticky;
-  top: 168px;
+  top: 157px;
   z-index: 900;
 }
 
@@ -275,14 +275,14 @@
     /* 1 card per row */
   }
   .map-container {
-    top: 155px;
+    top: 143px;
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
   .map-container {
     width: 70%;
-    top: 215px;
+    top: 202px;
   }
   .locations-list {
     width: 30%;
