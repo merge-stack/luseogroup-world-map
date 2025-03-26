@@ -33,6 +33,9 @@ const Navbar: React.FC<FooterProps> = ({
   //   setIsMobileMenuOpen(!isMobileMenuOpen);
   // };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
       <nav className={`navbar ${className}`}>
@@ -78,7 +81,7 @@ const Navbar: React.FC<FooterProps> = ({
           </div>
         </div>
       </nav>
-      <button className="top-button">Top</button>
+      <button className="top-button" onClick={scrollToTop}>Scroll to Top</button>
       {/* 
       <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
         <a href="https://luseogroup.com/contact.php" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">

@@ -14,6 +14,7 @@ import shoppingMall from "@assets/images/CENTRES-COMMERCIAUX.png"
 import sante from "@assets/images/SANTE.png"
 import publicFacility from "@assets/images/EQUIPEMENTS-PUBLICS.png"
 import highRise from "@assets/images/IMMEUBLE-DE-GRANDE-HAUTEUR.png"
+import transport from "@assets/images/TRANSPORT.png"
 
 import { REACT_APP_MAP_API_KEY, REACT_DEFAULT_IMAGE_URL } from "@config";
 
@@ -28,7 +29,8 @@ const categoryIcons: Record<string, string> = {
   "Santé": sante,
   "Bâtiments résidentiels, tertiaires ou mixtes": residential,
   "Hôtellerie": hotellerie,
-  "Industrie": industrie
+  "Industrie": industrie,
+  "Transport": transport
 };
 
 interface IMapComponent {
