@@ -59,7 +59,7 @@ const Navbar: React.FC<FooterProps> = ({
                   className="navbar-item"
                   title="À propos de LUSEO GROUP"
                 >
-                  <img src={about} alt="" className="navbar-options" />
+                  <img src={about} alt="" className="about-icon" />
                 </a>
                 <a
                   href="https://luseogroup.com/contact.php"
@@ -78,6 +78,7 @@ const Navbar: React.FC<FooterProps> = ({
           </div>
         </div>
       </nav>
+      <button className="top-button">Top</button>
       {/* 
       <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
         <a href="https://luseogroup.com/contact.php" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">

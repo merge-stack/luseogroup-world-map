@@ -36,6 +36,7 @@
   flex-wrap: wrap;
   gap: 12px;
   align-items: center;
+  flex: 1;
 }
 
 .filter-dropdown {
@@ -194,6 +195,11 @@
   width: auto;
 }
 
+.about-icon {
+  height: 41px;
+  width: auto;
+}
+
 .filter-icon {
   height: 37px;
   width: auto;
@@ -303,6 +309,18 @@
   z-index: 1000;
 }
 
+.top-button {
+  background: #FFB000;
+  color: #272C64;
+  border-radius: 0;
+  padding: 4px 24px;
+  position: fixed;
+  bottom: 13px;
+  right: 23px;
+  display: none;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1024px) {
   .navbar-links {
     gap: 10px;
@@ -373,6 +391,10 @@
     height: 30px;
   }
 
+  .about-icon {
+    height: 23px;
+  }
+
   .navbar-links {
     margin-top: 0;
     gap: 5px;
@@ -409,6 +431,10 @@
   .filter-icon {
     height: 30px;
   }
+
+  .top-button {
+    display: block;
+   }
 }
 
 @media screen and (max-width: 568px) {
