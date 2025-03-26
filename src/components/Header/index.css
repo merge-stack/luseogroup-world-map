@@ -195,7 +195,7 @@
 }
 
 .filter-icon {
-  height: 40px;
+  height: 37px;
   width: auto;
 }
 
@@ -404,6 +404,10 @@
 
   .filters-mobile-wrapper {
     top: 62px;
+  }
+
+  .filter-icon {
+    height: 30px;
   }
 }
 
