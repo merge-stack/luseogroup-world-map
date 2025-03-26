@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { startCase, toLower } from "lodash";
 import ReactDOM from "react-dom/client";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -6,11 +7,29 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
 import luseoPin from "@assets/images/luseo-pin.png";
+import hotellerie from "@assets/images/HOTELLERIE.png"
+import industrie from "@assets/images/INDUSTRIE.png"
+import residential from "@assets/images/BATIMENTS-RESIDENTIELS-TERTIAIRES-OU-MIXTES.png"
+import shoppingMall from "@assets/images/CENTRES-COMMERCIAUX.png"
+import sante from "@assets/images/SANTE.png"
+import publicFacility from "@assets/images/EQUIPEMENTS-PUBLICS.png"
+import highRise from "@assets/images/IMMEUBLE-DE-GRANDE-HAUTEUR.png"
+
 import { REACT_APP_MAP_API_KEY, REACT_DEFAULT_IMAGE_URL } from "@config";
 
 import "./index.css";
 
 mapboxgl.accessToken = REACT_APP_MAP_API_KEY
+
+const categoryIcons: Record<string, string> = {
+  "Centres commerciaux": shoppingMall,
+  "Immeuble de Grande Hauteur": highRise,
+  "Equipements publics": publicFacility,
+  "Santé": sante,
+  "Bâtiments résidentiels, tertiaires ou mixtes": residential,
+  "Hôtellerie": hotellerie,
+  "Industrie": industrie
+};
 
 interface IMapComponent {
   pins: IProject[];
@@ -166,41 +185,35 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
 // Function to add popup (only for desktop)
 const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
-  const { coordinates, name, photos, mission, area, architect, category, city, region, certification, bim } = project;
+  const { coordinates, name, photos, category, city, region } = project;
 
   // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
+  const categoryIcon = categoryIcons[category]
+
   const popupContainer = document.createElement("div");
   const popupContent = `    
   <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
-    <div id="popup-slider-container" style="width: 325px; flex-shrink: 0;"></div>
-      <div style="cursor: pointer; padding: 10px 20px;  color:black" margin-top:10px  width: 250px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word; >
-        <h5 style="font-size: 15px; font-weight: 600; color: #fdb82d;">${name}</h5>
-        <span style=" color: black; display: block; font-size: 8px; line-height: 1.9;">${city}, ${region}</span>
-        <div style="margin-bottom: 5px;  margin-top: 5px;">
-          <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d; margin-bottom: 1px;">MISSION</h3>
-          <span style="font-size: 10px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">${mission || "N/A"}</span>
-        </div>
-        <div style="margin-bottom: 5px;  margin-top: 5px;">
-          <h3 style="font-size: 10px; font-weight: 600; color: #fdb82d;">DÈTAILS</h3>
-          <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-            <p style="  margin-right: 3px; font-size: 10px; color: black;"><strong>TYPE DÈ PROJET:</strong> ${category || "N/A"}</p>
-          </p>
-          <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-              <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>SURFACE:</strong> ${area || "N/A"}</p>
-          </p>
-          <p style="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>BIM:</strong>${bim || "N/A"}</p>
-          </p>
-          <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-             <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>CERTIFICATION:</strong> ${certification || "N/A"
-    } </p>
-          </p>
-          <p className="font-size: 7px; color: black; line-height: 1.5;  margin-bottom: 4px;  display: flex;">
-           <p style=" margin-top: 3px; margin-right: 3px; font-size: 10px; color: black;"><strong>ARCHITECTÈ: </strong> ${architect || "N/A"
-    } </p>
-          </p>
+    <div id="popup-slider-container" style="width: 240px; flex-shrink: 0;"></div>
+      <div style="cursor: pointer; padding-left:15px;  color:#272C64; padding-top:12px;  width: 270px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word;" >
+        <h5 style="font-size: 25px; font-weight: 500; color: #272C64; line-height: 1.0">${name}</h5>
+        <div style="margin-top:20px;">
+          <div style="display: flex; align-items: center; font-size: 14px; color: #272C64; margin-bottom: 10px;">
+            <img src="${luseoPin}" alt="City" style="width: 20px; height: 30px; margin-right: 10px;">
+            <span>${startCase(toLower(city))}, ${startCase(toLower(region))}</span>
+          </div>
+
+          <div style="display: flex; align-items: center; font-size: 14px; color: #272C64; margin-bottom: 4px;">
+            <img src="${categoryIcon}" alt="Category" style="width: 25px; height: 25px; margin-right: 8px;">
+            <span>${category || "N/A"}</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content:center; margin-top:25px;">
+            <button style="background-color: #FFB000; color: white;  border: none; border-radius: 0px; padding: 10px 0px; width:100%; cursor: pointer; font-weight:600"="popup-button">
+                EN SAVIOR PLUS
+            </button>
+            </div>
         </div>
       </div>
      </div>
@@ -211,6 +224,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   const popup = new mapboxgl.Popup({
     closeButton: true,
     closeOnClick: false,
+    focusAfterOpen: false,
     offset: [0, -10],
   })
     .setLngLat(coordinates)
@@ -224,15 +238,22 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   //add slider component to the popup
   setTimeout(() => {
     const sliderContainer = document.getElementById("popup-slider-container");
-    const textContainer = sliderContainer?.nextElementSibling; // The div containing text
+    const textContainer = sliderContainer?.nextElementSibling; // Get the content div
+
     if (sliderContainer && textContainer) {
-      // Get the computed height of the text container
-      const textHeight = textContainer.getBoundingClientRect().height;
-      // Ensure a minimum height to avoid issues and match the height of the text div
-      const photoHeight = textHeight > 0 ? `${textHeight}px` : "250px";
+      const textHeight = textContainer.clientHeight; // Get height of content div
+      const adjustedPhotoHeight = Math.max(textHeight, 200) + "px"; // Ensure minimum height
+
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(<ImageSlider photos={photos?.length > 0 ? photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight={photoHeight} />);
+      sliderRoot.render(
+        <ImageSlider photos={photos?.length > 0 ? photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight={adjustedPhotoHeight} />
+      );
     }
+
+    // document.getElementById("popup-button")?.addEventListener("click", () => {
+    //   console.log("Button Clicked!");
+    //   setSelectedProject(project)
+    // });
   }, 0);
 };
 

@@ -51,7 +51,9 @@ const loadXLSXData = () => {
         photos: row["PHOTOS"] ? row["PHOTOS"].split(",") : [], // Convert string to array
       };
     })
-    .filter(Boolean); // Remove null entries
+    .filter(Boolean) // Remove null entries
+    .slice(0, 80); // Limit to first 80 projects
+
   return data;
 };
 

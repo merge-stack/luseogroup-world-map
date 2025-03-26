@@ -3,6 +3,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { REACT_DEFAULT_IMAGE_URL } from "@config";
 
 interface ImageSliderProps {
   photos: string[];
@@ -10,6 +11,10 @@ interface ImageSliderProps {
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = REACT_DEFAULT_IMAGE_URL; // Replace with default image on error
+    e.currentTarget.onerror = null; // Prevent infinite loops
+  };
   return (
     <Swiper
       modules={[Navigation, Pagination]}
@@ -25,11 +30,15 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
       }}
       className="location-card-slider"
     >
-      {photos.map((img, index) => (
-        <SwiperSlide key={index}>
-          <img src={img} alt={`slide-${index}`} style={{ width: "100%", height: photoHeight }} />
-        </SwiperSlide>
-      ))}
+      {photos.map((img, index) => {
+        // Fallback to default image if img is an empty string
+        const validImg = img && img.trim() !== "" ? img : REACT_DEFAULT_IMAGE_URL;
+        return (
+          <SwiperSlide key={index}>
+            <img src={validImg} alt={`slide-${index}`} style={{ width: "100%", height: photoHeight }} onError={handleImageError} />
+          </SwiperSlide>
+        );
+      })}
 
       {/* Custom Navigation Buttons to Stop Propagation */}
       <div

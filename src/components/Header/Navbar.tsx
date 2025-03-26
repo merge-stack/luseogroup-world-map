@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import logo from "@assets/images/logo.png";
 import contact from "@assets/images/contact.png";
 import about from "@assets/images/about.png";
-import franceflag from "@assets/images/france.png";
+import france from "@assets/images/france.png";
 import map from "@assets/images/map-off.png";
 import mapActive from "@assets/images/map-on.png";
 import reset from "@assets/images/reset.png";
@@ -27,11 +27,11 @@ const Navbar: React.FC<FooterProps> = ({
   setToggleView,
   className = '',
 }) => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //   setIsMobileMenuOpen(!isMobileMenuOpen);
+  // };
 
   return (
     <>
@@ -43,31 +43,15 @@ const Navbar: React.FC<FooterProps> = ({
             </div>
             <div className="navbar-right">
               <div className="navbar-links">
-                <a
-                  
-                  className="navbar-item"
-                  title="Map"
-                  onClick={() => setToggleView(ViewType.MAP)}
-                >
+                <div className="navbar-item" title="Map" onClick={() => setToggleView(ViewType.MAP)}          >
                   <img src={toggleView === ViewType.MAP ? mapActive : map} alt="" className="navbar-options" />
-                </a>
-                <a
-                  
-                  className="navbar-item"
-                  title="List"
-                  onClick={() => setToggleView(ViewType.LIST)}
-                >
+                </div>
+                <div className="navbar-item" title="List" onClick={() => setToggleView(ViewType.LIST)}>
                   <img src={toggleView === ViewType.LIST ? listActive : list} alt="" className="navbar-options" />
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="navbar-item"
-                  title="reset"
-                >
+                </div>
+                <div className="navbar-item" title="reset" onClick={resetFilters} >
                   <img src={reset} alt="" className="navbar-options" />
-                </a>
+                </div>
                 <a
                   href="https://luseogroup.com/who-we-are.html"
                   target="_blank"
@@ -87,7 +71,7 @@ const Navbar: React.FC<FooterProps> = ({
                   <img src={contact} alt="" className="navbar-options" />
                 </a>
                 <div className="navbar-item">
-                  <img src={franceflag} alt="Company Logo" className="navbar-options" />
+                  <img src={france} alt="Company Logo" className="navbar-options" />
                 </div>
               </div>
             </div>
