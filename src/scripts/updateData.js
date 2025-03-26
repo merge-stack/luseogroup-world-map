@@ -3,7 +3,6 @@ import XLSX from "xlsx";
 
 import path from "path";
 import { fileURLToPath } from "url";
-import { Certificate } from "crypto";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,7 +15,7 @@ const DATA_FILE = path.join(__dirname, "../data/index.ts");
 const loadXLSXData = () => {
   if (!fs.existsSync(XLSX_FILE)) {
     console.error("❌ XLSX file not found:", XLSX_FILE);
-    process.exit(1);
+    throw new Error("XLSX file not found");
   }
 
   const workbook = XLSX.readFile(XLSX_FILE);
