@@ -24,28 +24,26 @@ const Header: React.FC<HeaderProps> = ({
   setToggleView,
   resetFilters
 }) => {
-  const [isNavbarVisible, setIsNavbarVisible] = useState(false);
+  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
-
       if (window.innerWidth <= 568) {
         const st = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // If scrolling up and we're not at the top
-        if (st < lastScrollTop && st > 0) {
+
+        if (st < lastScrollTop) {
+          // Scrolling up → show navbar
           setIsNavbarVisible(true);
-        } 
-        // If scrolling down and we're not at the top
-        else if (st > lastScrollTop && st > 0) {
+        } else if (st > lastScrollTop) {
+          // Scrolling down → hide navbar
           setIsNavbarVisible(false);
         }
-        
-        setLastScrollTop(st <= 0 ? 0 : st);
+
+        setLastScrollTop(st);
       } else {
-        // Reset for larger screens
-        setIsNavbarVisible(false);
+        // Always visible on larger screens
+        setIsNavbarVisible(true);
       }
     };
 

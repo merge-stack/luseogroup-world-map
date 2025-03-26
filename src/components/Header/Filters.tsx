@@ -2,6 +2,8 @@ import { useCallback, useMemo } from "react";
 import { debounce, startCase, toLower } from "lodash";
 
 import { projects } from "@data/index";
+import filter from "@assets/images/filter.png";
+
 import "./index.css";
 
 interface IFilters {
@@ -55,13 +57,16 @@ const Filters: React.FC<IFilters> = ({
   );
   return (
     <div className={`filters ${className}`}>
-      <input
-        id="search-input"
-        type="text"
-        onChange={(e) => debouncedSetSearchQuery(e.target.value)}
-        className="filter-search"
-        placeholder="Recherche par mots-clès..."
-      />
+      <div className="search-container">
+        <img src={filter} alt="Company Logo" className="filter-icon" />
+        <input
+          id="search-input"
+          type="text"
+          onChange={(e) => debouncedSetSearchQuery(e.target.value)}
+          className="filter-search"
+          placeholder="Recherche par mots-clès..."
+        />
+      </div>
       <div className="dropdown-container">
         <select
           id="category-select"
