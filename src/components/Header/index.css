@@ -443,6 +443,10 @@
   .top-button {
     display: block;
   }
+
+  .dropdown-container {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 568px) {

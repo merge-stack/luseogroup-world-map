@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import logo from "@assets/images/logo.png";
 import contact from "@assets/images/contact.png";
@@ -32,6 +32,23 @@ const Navbar: React.FC<FooterProps> = ({
   // const toggleMobileMenu = () => {
   //   setIsMobileMenuOpen(!isMobileMenuOpen);
   // };
+
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 250) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -81,7 +98,11 @@ const Navbar: React.FC<FooterProps> = ({
           </div>
         </div>
       </nav>
-      <button className="top-button" onClick={scrollToTop}>Scroll to Top</button>
+      {showScrollButton && (
+        <button className="top-button" onClick={scrollToTop}>
+          Scroll to Top
+        </button>
+      )}
       {/* 
       <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
         <a href="https://luseogroup.com/contact.php" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
