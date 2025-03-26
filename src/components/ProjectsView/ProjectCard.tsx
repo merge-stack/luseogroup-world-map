@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect } from "react";
 
 import { IProject } from "@interfaces";
 import { REACT_DEFAULT_IMAGE_URL } from "@config";
@@ -10,20 +10,34 @@ interface IProjectCard {
   project: IProject;
   selectedProject: IProject | null;
   setSelectedProject: (project: IProject) => void;
+  projectRefs: React.RefObject<Record<string, HTMLDivElement | null>>
+  scrollToProject: (projectId: number) => void
 }
 
-const ProjectCard: React.FC<IProjectCard> = ({ project, selectedProject, setSelectedProject }) => {
-  const cardRef = useRef<HTMLDivElement | null>(null);
+const ProjectCard: React.FC<IProjectCard> = ({
+  project,
+  selectedProject,
+  setSelectedProject,
+  projectRefs,
+  scrollToProject
+}) => {
+  const setProjectRef = useCallback(
+    (el: HTMLDivElement | null) => {
+      if (el) {
+        projectRefs.current[project.id] = el;
+      }
+    },
+    [project.id, projectRefs]
+  );
 
   useEffect(() => {
-    if (selectedProject?.id === project.id && cardRef.current) {
-      cardRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (selectedProject?.id === project.id) {
+      scrollToProject(project.id);
     }
   }, [selectedProject, project.id]);
-
   return (
     <div
-      ref={cardRef}
+      ref={setProjectRef}
       className={`location-card ${selectedProject?.id === project.id ? "selected" : ""}`}
       onClick={() => setSelectedProject(project)}>
       <div className="img-div">

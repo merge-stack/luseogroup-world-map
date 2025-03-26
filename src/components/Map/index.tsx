@@ -35,9 +35,10 @@ interface IMapComponent {
   pins: IProject[];
   selectedProject?: IProject | null;
   setSelectedProject: (project: IProject | null) => void;
+  scrollToProject: (projectId: number) => void
 }
 
-const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject }) => {
+const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject, scrollToProject }) => {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const WORLD_VIEW = "MA"; // Morocco's ISO code for worldview filtering
@@ -141,7 +142,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         el.addEventListener("click", () => {
           setSelectedProject(pin);
-          flyToProject(mapRef.current, pin, setSelectedProject);
+          flyToProject(mapRef.current, pin, setSelectedProject, scrollToProject);
         });
 
         new mapboxgl.Marker(el, {
@@ -177,14 +178,14 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
     }
     if (!mapRef.current) return;
     const project = pins.find((pin) => pin.id === selectedProject?.id);
-    if (project) flyToProject(mapRef.current, project, setSelectedProject);
+    if (project) flyToProject(mapRef.current, project, setSelectedProject, scrollToProject);
   }, [selectedProject]);
 
   return <div ref={mapContainer} className="mapRef-container" />;
 };
 
 // Function to add popup (only for desktop)
-const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
+const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void, scrollToProject: (projectId: number) => void) => {
   const { coordinates, name, photos, category, city, region } = project;
 
   // Remove existing popups
@@ -195,10 +196,10 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   const popupContainer = document.createElement("div");
   const popupContent = `    
   <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
-    <div id="popup-slider-container" style="width: 240px; flex-shrink: 0;"></div>
-      <div style="cursor: pointer; padding-left:15px;  color:#272C64; padding-top:12px;  width: 270px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word;" >
+    <div id="popup-slider-container" style="width: 260px; flex-shrink: 0;"></div>
+      <div style="cursor: pointer; padding-left:15px;  color:#272C64; padding-top:12px;  width: 270px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word; " >
         <h5 style="font-size: 25px; font-weight: 500; color: #272C64; line-height: 1.0">${name}</h5>
-        <div style="margin-top:20px;">
+         <div style="margin-top: 20px; flex-grow: 1;">
           <div style="display: flex; align-items: center; font-size: 14px; color: #272C64; margin-bottom: 10px;">
             <img src="${luseoPin}" alt="City" style="width: 20px; height: 30px; margin-right: 10px;">
             <span>${startCase(toLower(city))}, ${startCase(toLower(region))}</span>
@@ -210,7 +211,7 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
           </div>
 
           <div style="display: flex; align-items: center; justify-content:center; margin-top:25px;">
-            <button style="background-color: #FFB000; color: white;  border: none; border-radius: 0px; padding: 10px 0px; width:100%; cursor: pointer; font-weight:600"="popup-button">
+            <button style="background-color: #FFB000; color: white;  border: none; border-radius: 0px; padding: 10px 0px; width:100%; cursor: pointer; font-weight:600" id="popup-button">
                 EN SAVIOR PLUS
             </button>
             </div>
@@ -250,14 +251,14 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
       );
     }
 
-    // document.getElementById("popup-button")?.addEventListener("click", () => {
-    //   console.log("Button Clicked!");
-    //   setSelectedProject(project)
-    // });
+    document.getElementById("popup-button")?.addEventListener("click", () => {
+      console.log("Button Clicked!");
+      scrollToProject(project.id)
+    });
   }, 0);
 };
 
-const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
+const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void, scrollToProject: (projectId: number) => void) => {
   if (!map) return;
   const { coordinates } = project;
 
@@ -286,12 +287,12 @@ const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedPr
 
     if (!isMobile) {
       map.once("idle", () => {
-        addPopup(map, project, setSelectedProject);
+        addPopup(map, project, setSelectedProject, scrollToProject);
       });
     }
   } else {
     if (!isMobile) {
-      addPopup(map, project, setSelectedProject);
+      addPopup(map, project, setSelectedProject, scrollToProject);
     }
   }
 };
