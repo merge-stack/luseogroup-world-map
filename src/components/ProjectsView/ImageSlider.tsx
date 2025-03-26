@@ -37,10 +37,12 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
           <SwiperSlide key={index}>
             <img
               loading="lazy"
-              src={validImg}
+              src={`${validImg}?quality=80&w=800`} // Added quality and width parameters for compression
               alt={`slide-${index}`}
               style={{ width: "100%", height: photoHeight }}
               onError={handleImageError}
+              decoding="async" // Added for better performance
+              fetchPriority="high" // Prioritize loading for visible images
             />
           </SwiperSlide>
         );
