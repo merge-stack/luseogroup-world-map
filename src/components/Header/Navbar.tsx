@@ -46,13 +46,13 @@ const Navbar: React.FC<FooterProps> = ({
             </div>
             <div className="navbar-right">
               <div className="navbar-links">
-                <div className="navbar-item" title="Map" onClick={() => setToggleView(ViewType.MAP)}          >
+                <div className="navbar-item" title="Carte" onClick={() => setToggleView(ViewType.MAP)}          >
                   <img src={toggleView === ViewType.MAP ? mapActive : map} alt="" className="navbar-options" />
                 </div>
-                <div className="navbar-item" title="List" onClick={() => setToggleView(ViewType.LIST)}>
+                <div className="navbar-item" title="Liste" onClick={() => setToggleView(ViewType.LIST)}>
                   <img src={toggleView === ViewType.LIST ? listActive : list} alt="" className="navbar-options" />
                 </div>
-                <div className="navbar-item" title="reset" onClick={resetFilters} >
+                <div className="navbar-item" title="Réinitialiser les filtres" onClick={resetFilters} >
                   <img src={reset} alt="" className="navbar-options" />
                 </div>
                 <a
@@ -60,7 +60,7 @@ const Navbar: React.FC<FooterProps> = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="navbar-item"
-                  title="À propos de LUSEO GROUP"
+                  title="À propos de Luseo Group"
                 >
                   <img src={about} alt="" className="about-icon" />
                 </a>
@@ -69,7 +69,7 @@ const Navbar: React.FC<FooterProps> = ({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="navbar-item"
-                  title="Tous les projets"
+                  title="Contact"
                 >
                   <img src={contact} alt="" className="navbar-options" />
                 </a>
