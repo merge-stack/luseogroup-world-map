@@ -52,7 +52,7 @@ const loadXLSXData = () => {
       };
     })
     .filter(Boolean) // Remove null entries
-    .slice(0, 80); // Limit to first 80 projects
+  // .slice(0, 80); // Limit to first 80 projects
 
   return data;
 };
