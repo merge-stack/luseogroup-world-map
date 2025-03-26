@@ -8,13 +8,17 @@ interface IProjectsList {
   selectedProject: IProject | null;
   setSelectedProject: (project: IProject) => void,
   isListView: boolean
+  projectRefs: React.RefObject<Record<string, HTMLDivElement | null>>
+  scrollToProject: (projectId: number) => void
 };
 
 const ProjectsList: React.FC<IProjectsList> = ({
   pins,
   selectedProject,
   setSelectedProject,
-  isListView
+  isListView,
+  projectRefs,
+  scrollToProject
 }) => {
   return (
     <div className={!isListView ? "locations-list" : ""}>
@@ -26,6 +30,8 @@ const ProjectsList: React.FC<IProjectsList> = ({
               project={project}
               selectedProject={selectedProject}
               setSelectedProject={setSelectedProject}
+              projectRefs={projectRefs}
+              scrollToProject={scrollToProject}
             />
           ))}
         </div>

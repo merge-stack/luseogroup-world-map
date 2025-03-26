@@ -164,7 +164,7 @@
   gap: 30px;
 }
 
-.navbar-left>div {
+.navbar-left > div {
   display: flex;
   align-items: center;
   gap: 30px;
@@ -201,7 +201,7 @@
 }
 
 .filter-icon {
-  height: 37px;
+  height: 32px;
   width: auto;
 }
 
@@ -310,17 +310,25 @@
 }
 
 .top-button {
-  background: #FFB000;
-  color: #272C64;
+  background: #272c64;
+  color: white;
   border-radius: 0;
+  border: 1px solid #d3d1d1;
   padding: 4px 24px;
   position: fixed;
   bottom: 13px;
   right: 23px;
   display: none;
-  font-weight: 700;
+  font-weight: 500;
 }
 
+.top-button:hover {
+  border: 1px solid #959393;
+}
+
+.top-button:focus {
+  outline: none;
+}
 @media screen and (max-width: 1024px) {
   .navbar-links {
     gap: 10px;
@@ -330,7 +338,7 @@
     gap: 15px;
   }
 
-  .navbar-left>div {
+  .navbar-left > div {
     gap: 15px;
   }
 
@@ -404,7 +412,7 @@
     gap: 13px;
   }
 
-  .navbar-left>div {
+  .navbar-left > div {
     gap: 13px;
   }
 
@@ -429,12 +437,12 @@
   }
 
   .filter-icon {
-    height: 30px;
+    height: 28px;
   }
 
   .top-button {
     display: block;
-   }
+  }
 }
 
 @media screen and (max-width: 568px) {
@@ -474,7 +482,7 @@
     gap: 10px;
   }
 
-  .navbar-left>div {
+  .navbar-left > div {
     gap: 10px;
   }
 
@@ -505,7 +513,7 @@
   }
 
   .filter-icon {
-    height: 25px;
+    height: 23px;
   }
 
   .navbar-links {
@@ -527,7 +535,6 @@
 }
 
 @media screen and (max-width: 568px) {
-
   /* Navbar wrapper for mobile */
   .navbar-mobile-wrapper {
     position: fixed;
