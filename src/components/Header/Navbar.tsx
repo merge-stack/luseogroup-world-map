@@ -10,7 +10,6 @@ import reset from "@assets/images/reset.png";
 import list from "@assets/images/list-off.png";
 import listActive from "@assets/images/list-on.png";
 
-
 import "./index.css";
 import { ViewType } from "@src/constants";
 
@@ -21,12 +20,7 @@ interface FooterProps {
   className?: string;
 }
 
-const Navbar: React.FC<FooterProps> = ({
-  resetFilters,
-  toggleView,
-  setToggleView,
-  className = '',
-}) => {
+const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView, className = "" }) => {
   // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // const toggleMobileMenu = () => {
@@ -63,13 +57,13 @@ const Navbar: React.FC<FooterProps> = ({
             </div>
             <div className="navbar-right">
               <div className="navbar-links">
-                <div className="navbar-item" title="Carte" onClick={() => setToggleView(ViewType.MAP)}          >
+                <div className="navbar-item" title="Carte" onClick={() => setToggleView(ViewType.MAP)}>
                   <img src={toggleView === ViewType.MAP ? mapActive : map} alt="" className="navbar-options" />
                 </div>
                 <div className="navbar-item" title="Liste" onClick={() => setToggleView(ViewType.LIST)}>
                   <img src={toggleView === ViewType.LIST ? listActive : list} alt="" className="navbar-options" />
                 </div>
-                <div className="navbar-item" title="Réinitialiser les filtres" onClick={resetFilters} >
+                <div className="navbar-item" title="Réinitialiser les filtres" onClick={resetFilters}>
                   <img src={reset} alt="" className="navbar-options" />
                 </div>
                 <a
@@ -103,15 +97,6 @@ const Navbar: React.FC<FooterProps> = ({
           Scroll to Top
         </button>
       )}
-      {/* 
-      <div className={`mobile-menu ${isMobileMenuOpen ? "open" : ""}`}>
-        <a href="https://luseogroup.com/contact.php" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
-          Contact
-        </a>
-        <a href="https://luseogroup.com/who-we-are.html" target="_blank" rel="noopener noreferrer" className="mobile-menu-item">
-          About
-        </a>
-      </div> */}
     </>
   );
 };

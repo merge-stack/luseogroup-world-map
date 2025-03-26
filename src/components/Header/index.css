@@ -396,7 +396,40 @@
   }
 
   .navbar-options {
-    height: 30px;
+    height: 38px;
+    width: auto;
+  }
+
+  .about-icon {
+    height: 45px;
+    width: auto;
+  }
+
+  .navbar-links {
+    gap: 25px;
+  }
+
+  .navbar-item {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .about-icon {
+    height: 46px;
+  }
+
+  .navbar-links {
+    gap: 15px;
+  }
+
+  .navbar-item {
+    padding: 5px;
   }
 
   .about-icon {
@@ -562,6 +595,6 @@
   }
 
   .filters-mobile-wrapper.filters-with-navbar {
-    top: 44px;
+    top: 60px;
   }
 }
