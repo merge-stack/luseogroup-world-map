@@ -1,7 +1,7 @@
-import React from "react";
-import Navbar from "./Navbar";
-import Filters from "./Filters";
-import "./index.css";
+import React from 'react';
+import Navbar from './Navbar';
+import Filters from './Filters';
+import './index.css';
 
 interface HeaderProps {
   selectedCategory: string;
@@ -24,24 +24,31 @@ const Header: React.FC<HeaderProps> = ({
   setToggleView,
   resetFilters
 }) => {
-  return (
-    <div className="wrapper">
-      {/* Navbar */}
-      <Navbar resetFilters={resetFilters} />
 
-      {/* Filters */}
-      <div className="filters-container">
+  return (
+    <>
+      <div 
+        className={`navbar-mobile-wrapper`}
+      >
+        <Navbar
+          resetFilters={resetFilters}
+          toggleView={toggleView}
+          setToggleView={setToggleView}
+        />
+      </div>
+      
+      <div 
+        className={`filters-mobile-wrapper`}
+      >
         <Filters
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
           selectedLocation={selectedLocation}
           setSelectedLocation={setSelectedLocation}
           setSearchQuery={setSearchQuery}
-          toggleView={toggleView}
-          setToggleView={setToggleView}
         />
       </div>
-    </div>
+    </>
   );
 };
 

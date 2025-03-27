@@ -1,8 +1,9 @@
 import { useCallback, useMemo } from "react";
-import { debounce } from "lodash";
+import { debounce, startCase, toLower } from "lodash";
 
 import { projects } from "@data/index";
-import { ViewType } from "@constants";
+import filter from "@assets/images/filter.png";
+
 import "./index.css";
 
 interface IFilters {
@@ -11,8 +12,7 @@ interface IFilters {
   selectedLocation: string;
   setSelectedLocation: (location: string) => void;
   setSearchQuery: (query: string) => void;
-  toggleView: string
-  setToggleView: (view: string) => void;
+  className?: string;
 }
 
 const Filters: React.FC<IFilters> = ({
@@ -21,17 +21,35 @@ const Filters: React.FC<IFilters> = ({
   selectedLocation,
   setSelectedLocation,
   setSearchQuery,
-  toggleView,
-  setToggleView,
+  className = "",
 }) => {
-  const locations = useMemo<string[]>(
-    () => ["all", ...new Set(projects.map((pin) => pin.region))],
-    []
+  const locations = useMemo<{ label: string; value: string }[]>(
+    () => [
+      { label: "PAYS", value: "all" }, // "Pays" is the display label for "all"
+      ...Array.from(
+        new Map(
+          projects
+            .filter((pin) => pin.region && pin.region.trim() !== "") // Remove empty/undefined regions
+            .map((pin) => [pin.region, { label: startCase(toLower(pin.region)), value: pin.region }])
+        ).values()
+      ),
+    ],
+    [projects]
   );
 
-  const categories = useMemo<string[]>(
-    () => ["all", ...new Set(projects.map((pin) => pin.category))],
-    []
+  const categories = useMemo<{ label: string; value: string }[]>(
+    () => [
+      { label: "TYPE DE PROJET", value: "all" }, // "Type De Projet" is the display label for "all"
+      ...Array.from(
+        new Map(
+          projects
+            .filter((pin) => pin.category && pin.category.trim() !== "") // Remove empty/undefined categories
+            .map((pin) => [pin.category, { label: startCase(toLower(pin.category)), value: pin.category }])
+        ).values()
+      ),
+      { label: "SÉLECTION BW", value: "oui" },
+    ],
+    [projects]
   );
 
   const debouncedSetSearchQuery = useCallback(
@@ -39,56 +57,44 @@ const Filters: React.FC<IFilters> = ({
     []
   );
   return (
-    <div className="filters">
+    <div className={`filters ${className}`}>
       <div className="search-container">
+        <img src={filter} alt="Company Logo" className="filter-icon" />
         <input
           id="search-input"
           type="text"
           onChange={(e) => debouncedSetSearchQuery(e.target.value)}
           className="filter-search"
-          placeholder="Search by project name..."
+          placeholder="Recherche par mots-clès..."
         />
       </div>
       <div className="dropdown-container">
-        <div>
-          <select
-            id="category-select"
-            value={selectedCategory}
-            onChange={(e) => setSelectedCategory(e.target.value)}
-            className="filter-dropdown">
-            {categories.map((category) => (
-              <option key={category} value={category}>
-                {category === "all" ? "All Categories" : category}
-              </option>
-            ))}
-          </select>
-          <select
-            id="location-select"
-            value={selectedLocation}
-            onChange={(e) => setSelectedLocation(e.target.value)}
-            className="filter-dropdown">
-            {locations.map((location) => (
-              <option key={location} value={location}>
-                {location === "all" ? "All Locations" : location}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="toggle-container">
-          <button
-            className={toggleView === ViewType.LIST ? "active" : ""}
-            onClick={() => setToggleView(ViewType.LIST)}>
-            List View
-          </button>
-          <button
-            className={toggleView === ViewType.MAP ? "active" : ""}
-            onClick={() => setToggleView(ViewType.MAP)}>
-            Map View
-          </button>
-        </div>
+        <select
+          id="category-select"
+          value={selectedCategory}
+          onChange={(e) => setSelectedCategory(e.target.value)}
+          className="filter-dropdown"
+        >
+          {categories.map(({ label, value }) => (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          ))}
+        </select>
+        <select
+          id="location-select"
+          value={selectedLocation}
+          onChange={(e) => setSelectedLocation(e.target.value)}
+          className="filter-dropdown"
+        >
+          {locations.map(({ label, value }) => (
+            <option key={value} value={value}>
+              {label}
+            </option>
+          ))}
+        </select>
       </div>
-    </div >
+    </div>
   );
 };
 

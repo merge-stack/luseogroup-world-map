@@ -1,8 +1,18 @@
-.mapboxgl-popup-content {
-  max-width: 2\450px !important;
+.mapboxgl-popup .mapboxgl-popup-content {
+  max-width: 2\550px !important;
   width: auto !important;
   padding: 10px !important;
   font-size: 12px;
-  max-height: 230px !important;
+  max-height: 700px !important;
   height: auto !important;
+  background-color: white !important;
+}
+
+.mapboxgl-popup .mapboxgl-popup-close-button {
+  background-color: white !important;
+}
+
+.mapboxgl-popup .mapboxgl-popup-tip {
+  border-top-color: white !important;
+  border-bottom-color: white !important;
 }

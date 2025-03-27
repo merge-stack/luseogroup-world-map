@@ -3,6 +3,7 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { REACT_DEFAULT_IMAGE_URL } from "@config";
 
 interface ImageSliderProps {
   photos: string[];
@@ -10,11 +11,15 @@ interface ImageSliderProps {
 }
 
 const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = REACT_DEFAULT_IMAGE_URL; // Replace with default image on error
+    e.currentTarget.onerror = null; // Prevent infinite loops
+  };
   return (
     <Swiper
       modules={[Navigation, Pagination]}
       slidesPerView={1}
-      loop={true}
+      loop={photos.length > 1} // Enable loop only if there are at least 2 slides
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -25,21 +30,27 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ photos, photoHeight }) => {
       }}
       className="location-card-slider"
     >
-      {photos.map((img, index) => (
-        <SwiperSlide key={index}>
-          <img src={img} alt={`slide-${index}`} style={{ width: "100%", height: photoHeight }} />
-        </SwiperSlide>
-      ))}
+      {photos.map((img, index) => {
+        // Fallback to default image if img is an empty string
+        const validImg = img && img.trim() !== "" ? img : REACT_DEFAULT_IMAGE_URL;
+        return (
+          <SwiperSlide key={index}>
+            <img
+              loading="lazy"
+              src={`${validImg}?quality=80&w=800`} // Added quality and width parameters for compression
+              alt={`slide-${index}`}
+              style={{ width: "100%", height: photoHeight }}
+              onError={handleImageError}
+              decoding="async" // Added for better performance
+              fetchPriority="high" // Prioritize loading for visible images
+            />
+          </SwiperSlide>
+        );
+      })}
 
       {/* Custom Navigation Buttons to Stop Propagation */}
-      <div
-        className="swiper-button-prev"
-        onClick={(e) => e.stopPropagation()}
-      ></div>
-      <div
-        className="swiper-button-next"
-        onClick={(e) => e.stopPropagation()}
-      ></div>
+      <div className="swiper-button-prev" onClick={(e) => e.stopPropagation()}></div>
+      <div className="swiper-button-next" onClick={(e) => e.stopPropagation()}></div>
     </Swiper>
   );
 };

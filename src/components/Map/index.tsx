@@ -1,24 +1,46 @@
 import { useEffect, useRef } from "react";
+import { startCase, toLower } from "lodash";
 import ReactDOM from "react-dom/client";
 import mapboxgl, { FullscreenControl } from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
-import luseoFlagMarker from "@assets/images/luseoFlag.png";
-import defaultImage from "@assets/images/default-img.png";
-import "./index.css"
+import luseoPin from "@assets/images/luseo-pin.png";
+import hotellerie from "@assets/images/HOTELLERIE.png"
+import industrie from "@assets/images/INDUSTRIE.png"
+import residential from "@assets/images/BATIMENTS-RESIDENTIELS-TERTIAIRES-OU-MIXTES.png"
+import shoppingMall from "@assets/images/CENTRES-COMMERCIAUX.png"
+import sante from "@assets/images/SANTE.png"
+import publicFacility from "@assets/images/EQUIPEMENTS-PUBLICS.png"
+import highRise from "@assets/images/IMMEUBLE-DE-GRANDE-HAUTEUR.png"
+import transport from "@assets/images/TRANSPORT.png"
 
-mapboxgl.accessToken = import.meta.env.VITE_REACT_APP_MAP_API_KEY;
+import { REACT_APP_MAP_API_KEY, REACT_DEFAULT_IMAGE_URL } from "@config";
 
+import "./index.css";
+
+mapboxgl.accessToken = REACT_APP_MAP_API_KEY
+
+export const categoryIcons: Record<string, string> = {
+  "Centres commerciaux": shoppingMall,
+  "Immeuble de Grande Hauteur": highRise,
+  "Equipements publics": publicFacility,
+  "Santé": sante,
+  "Bâtiments résidentiels, tertiaires ou mixtes": residential,
+  "Hôtellerie": hotellerie,
+  "Industrie": industrie,
+  "Transport": transport
+};
 
 interface IMapComponent {
   pins: IProject[];
   selectedProject?: IProject | null;
   setSelectedProject: (project: IProject | null) => void;
+  scrollToProject: (projectId: number) => void
 }
 
-const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject }) => {
+const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject, scrollToProject }) => {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<mapboxgl.Map | null>(null);
   const WORLD_VIEW = "MA"; // Morocco's ISO code for worldview filtering
@@ -55,7 +77,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
     const map = mapRef.current;
 
     const initializeStyles = () => {
-      map.resize()
+      map.resize();
 
       const adminLayers = [
         "admin-0-boundary",
@@ -68,13 +90,7 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       //set boundaries according to the moroccan worldview
       adminLayers.forEach((layerName) => {
         if (map.getLayer(layerName)) {
-          map.setFilter(layerName, [
-            "match",
-            ["get", "worldview"],
-            ["all", WORLD_VIEW],
-            true,
-            false,
-          ]);
+          map.setFilter(layerName, ["match", ["get", "worldview"], ["all", WORLD_VIEW], true, false]);
         }
       });
 
@@ -96,16 +112,16 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
         "water-point-label",
       ];
 
-      labelLayers.forEach(layer => {
+      labelLayers.forEach((layer) => {
         if (map.getLayer(layer)) {
           map.setLayoutProperty(layer, "text-field", ["get", "name_fr"]);
         }
       });
-    }
+    };
 
     const initializeMap = () => {
       //remove existing markers
-      document.querySelectorAll(".mapboxgl-marker").forEach(marker => marker.remove());
+      document.querySelectorAll(".mapboxgl-marker").forEach((marker) => marker.remove());
 
       if (pins.length === 0) return;
 
@@ -118,9 +134,9 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         const el = document.createElement("div");
         el.className = "custom-marker";
-        el.style.backgroundImage = `url(${luseoFlagMarker})`;
-        el.style.width = "60px";
-        el.style.height = "120px";
+        el.style.backgroundImage = `url(${luseoPin})`;
+        el.style.width = "20px";
+        el.style.height = "40px";
         el.style.backgroundSize = "100%";
         el.style.backgroundRepeat = "no-repeat";
         el.style.backgroundPosition = "center";
@@ -128,12 +144,11 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 
         el.addEventListener("click", () => {
           setSelectedProject(pin);
-          flyToProject(mapRef.current, pin, setSelectedProject);
+          flyToProject(mapRef.current, pin, setSelectedProject, scrollToProject);
         });
 
         new mapboxgl.Marker(el, {
           anchor: "bottom", // Ensures tip stays at the location
-          offset: [20, 10], // Moves the marker tip stays in place
         })
           .setLngLat(pin.coordinates)
           .addTo(map);
@@ -154,9 +169,9 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
       initializeMap();
     } else {
       map.on("load", initializeMap);
-      map.on("styledata", initializeStyles)
+      map.on("styledata", initializeStyles);
     }
-  }, [pins, setSelectedProject]);
+  }, [pins, setSelectedProject, selectedProject]);
 
   useEffect(() => {
     if (!selectedProject) {
@@ -165,42 +180,46 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
     }
     if (!mapRef.current) return;
     const project = pins.find((pin) => pin.id === selectedProject?.id);
-    if (project) flyToProject(mapRef.current, project, setSelectedProject);
+    if (project) flyToProject(mapRef.current, project, setSelectedProject, scrollToProject);
   }, [selectedProject]);
 
   return <div ref={mapContainer} className="mapRef-container" />;
 };
 
 // Function to add popup (only for desktop)
-const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void) => {
-
-  const { coordinates, name, photos, description, area, architect, category } = project;
+const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void, scrollToProject: (projectId: number) => void) => {
+  const { coordinates, name, photos, category, city, region } = project;
 
   // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
+  const categoryIcon = categoryIcons[category]
+
   const popupContainer = document.createElement("div");
-  const popupContent = `
-    <div>
-      <div style="display: flex; justify-content: center; font-size: 17px; color: #e6ae44; font-weight: 700; padding: 5px 0px;">
-        ${name}
-      </div>
-      <div style="display: flex; font-family: Helvetica, Arial, sans-serif">
-      <div id="popup-slider-container" style="width: 230px;"></div>
-      <div style="padding: 10px 24px;">
-        <div style="margin-bottom: 10px;">
-          <h3 style="color: #fff; font-size: 13px; font-weight: 600;">SCOPE</h3>
-          <p style="color: #fff; font-size: 12px;">${description}</p>
+  const popupContent = `    
+  <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
+    <div id="popup-slider-container" style="width: 260px; flex-shrink: 0;"></div>
+      <div style="cursor: pointer; padding-left:15px;  color:#272C64; padding-top:12px;  width: 270px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word; " >
+        <h5 style="font-size: 25px; font-weight: 500; color: #272C64; line-height: 1.0">${name}</h5>
+         <div style="margin-top: 20px; flex-grow: 1;">
+          <div style="display: flex; align-items: center; font-size: 14px; color: #272C64; margin-bottom: 10px;">
+            <img src="${luseoPin}" alt="City" style="width: 20px; height: 30px; margin-right: 10px;">
+            <span>${startCase(toLower(city))}, ${startCase(toLower(region))}</span>
+          </div>
+
+          <div style="display: flex; align-items: center; font-size: 14px; color: #272C64; margin-bottom: 4px;">
+            <img src="${categoryIcon}" alt="Category" style="width: 25px; height: 25px; margin-right: 8px;">
+            <span>${category || "N/A"}</span>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content:center; margin-top:25px;">
+            <button style="background-color: #FFB000; color: white;  border: none; border-radius: 0px; padding: 10px 0px; width:100%; cursor: pointer; font-weight:600" id="popup-button">
+                EN SAVIOR PLUS
+            </button>
+            </div>
         </div>
-        <div>
-          <h3 style="color: #fff; font-size: 13px; font-weight: 600; margin-bottom:5px;">PROJECT DETAILS</h3>
-          <p style="color: #fff; font-size: 10px;"><strong>ARCHITECT:</strong> ${architect || 'N/A'}</p>
-          <p style="color: #fff; font-size: 10px;"><strong>SIZE:</strong> ${area || 'N/A'}</p>
-          <p style="color: #fff; font-size: 10px;"><strong>CATEGORY:</strong> ${category || 'N/A'}</p>
-        </div>
       </div>
-      </div>
-    </div>
+     </div>
   `;
 
   popupContainer.innerHTML = popupContent;
@@ -208,7 +227,8 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   const popup = new mapboxgl.Popup({
     closeButton: true,
     closeOnClick: false,
-    offset: [0, -70],
+    focusAfterOpen: false,
+    offset: [0, -10],
   })
     .setLngLat(coordinates)
     .setDOMContent(popupContainer)
@@ -221,18 +241,26 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
   //add slider component to the popup
   setTimeout(() => {
     const sliderContainer = document.getElementById("popup-slider-container");
-    if (sliderContainer) {
+    const textContainer = sliderContainer?.nextElementSibling; // Get the content div
+
+    if (sliderContainer && textContainer) {
+      const textHeight = textContainer.clientHeight; // Get height of content div
+      const adjustedPhotoHeight = Math.max(textHeight, 200) + "px"; // Ensure minimum height
+
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(<ImageSlider photos={photos.length > 0 ? photos : [defaultImage]} photoHeight="170px" />);
+      sliderRoot.render(
+        <ImageSlider photos={photos?.length > 0 ? photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight={adjustedPhotoHeight} />
+      );
     }
+
+    document.getElementById("popup-button")?.addEventListener("click", () => {
+      console.log("Button Clicked!");
+      scrollToProject(project.id)
+    });
   }, 0);
 };
 
-const flyToProject = (
-  map: mapboxgl.Map | null,
-  project: IProject,
-  setSelectedProject: (project: IProject | null) => void
-) => {
+const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void, scrollToProject: (projectId: number) => void) => {
   if (!map) return;
   const { coordinates } = project;
 
@@ -243,9 +271,7 @@ const flyToProject = (
   const currentZoom = map.getZoom();
   //to check whether we want to stop the map to fly for a pin that is already in the bbox of the map.
   const currentCenter = map.getCenter();
-  const distance = Math.sqrt(
-    Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2)
-  );
+  const distance = Math.sqrt(Math.pow(currentCenter.lng - coordinates[0], 2) + Math.pow(currentCenter.lat - coordinates[1], 2));
 
   // Offset latitude slightly downward to move the marker lower in the viewport
   const latOffset = 0.002;
@@ -263,14 +289,14 @@ const flyToProject = (
 
     if (!isMobile) {
       map.once("idle", () => {
-        addPopup(map, project, setSelectedProject);
+        addPopup(map, project, setSelectedProject, scrollToProject);
       });
     }
   } else {
     if (!isMobile) {
-      addPopup(map, project, setSelectedProject);
+      addPopup(map, project, setSelectedProject, scrollToProject);
     }
   }
-}
+};
 
 export default MapComponent;

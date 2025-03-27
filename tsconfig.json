@@ -24,7 +24,7 @@
       "@src/*": ["src/*"], // Aliases to make imports more readable
       "@components/*": ["src/components/*"],
       "@assets/*": ["src/assets/*"],
-      "@config/*": ["src/config/*"],
+      "@config": ["src/config/index"],
       "@interfaces": ["src/interfaces/index"], // Directly point to the index file
       "@constants": ["src/constants/index"],
       "@data/*": ["src/data/*"]

@@ -1,4 +1,4 @@
-import logo from "@assets/images/logo.png";
+import logo from "@assets/images/LOGO LUSEO.png";
 import "./index.css";
 
 const Footer: React.FC = () => {

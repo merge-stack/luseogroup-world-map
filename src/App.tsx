@@ -22,13 +22,17 @@ function App() {
     return projects.filter((pin) => {
       const matchCategory =
         selectedCategory === "all" ||
-        pin.category === selectedCategory;
-      const matchLocation =
-        selectedLocation === "all" ||
-        pin.region === selectedLocation;
+        pin.category === selectedCategory ||
+        // Custom filter for BIM = yes
+        // It'll be moved to a separate filter in v2
+        // @ts-ignore
+        (selectedCategory === "oui" && selectedCategory === String(pin.selection_bw)?.toLowerCase());
+      const matchLocation = selectedLocation === "all" || pin.region === selectedLocation;
       const matchSearch =
         searchQuery === "" ||
-        pin.name.toLowerCase().includes(searchQuery.toLowerCase());
+        pin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        pin.architect.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        String(pin.bim).toLowerCase().includes(searchQuery.toLowerCase());
 
       return matchCategory && matchLocation && matchSearch;
     }) as IProject[];
@@ -66,7 +70,7 @@ function App() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
