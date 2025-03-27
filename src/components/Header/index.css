@@ -466,7 +466,7 @@
   }
 
   .filters-mobile-wrapper {
-    top: 62px;
+    top: 61px;
   }
 
   .filter-icon {
@@ -556,6 +556,19 @@
   .navbar-links {
     gap: 2px;
   }
+
+  .navbar-options {
+    height: 30px;
+  }
+
+  .navbar-item {
+    padding: 3px;
+  }
+
+  .filters-mobile-wrapper {
+    top: 45px;
+  }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -569,32 +582,17 @@
   .navbar-logo {
     height: 22px;
   }
-}
 
-@media screen and (max-width: 568px) {
-  /* Navbar wrapper for mobile */
-  .navbar-mobile-wrapper {
-    position: fixed;
-    top: -82px;
-    left: 0;
-    right: 0;
-    z-index: 1010;
-    transition: top 0.2s ease;
+  .navbar-options {
+    height: 27px;
   }
 
-  .navbar-mobile-wrapper.navbar-visible {
-    top: 0;
+  .navbar-item {
+    padding: 2px;
   }
 
-  /* Filters wrapper for mobile */
   .filters-mobile-wrapper {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    transition: top 0.2s ease;
+    top: 41px;
   }
 
-  .filters-mobile-wrapper.filters-with-navbar {
-    top: 60px;
-  }
 }

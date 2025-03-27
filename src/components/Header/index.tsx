@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import Filters from './Filters';
 import './index.css';
@@ -24,37 +24,11 @@ const Header: React.FC<HeaderProps> = ({
   setToggleView,
   resetFilters
 }) => {
-  const [isNavbarVisible, setIsNavbarVisible] = useState(true);
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.innerWidth <= 568) {
-        const st = window.pageYOffset || document.documentElement.scrollTop;
-
-        if (st < lastScrollTop) {
-          // Scrolling up → show navbar
-          setIsNavbarVisible(true);
-        } else if (st > lastScrollTop) {
-          // Scrolling down → hide navbar
-          setIsNavbarVisible(false);
-        }
-
-        setLastScrollTop(st);
-      } else {
-        // Always visible on larger screens
-        setIsNavbarVisible(true);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScrollTop]);
 
   return (
     <>
       <div 
-        className={`navbar-mobile-wrapper ${isNavbarVisible ? 'navbar-visible' : ''}`}
+        className={`navbar-mobile-wrapper`}
       >
         <Navbar
           resetFilters={resetFilters}
@@ -64,7 +38,7 @@ const Header: React.FC<HeaderProps> = ({
       </div>
       
       <div 
-        className={`filters-mobile-wrapper ${isNavbarVisible ? 'filters-with-navbar' : ''}`}
+        className={`filters-mobile-wrapper`}
       >
         <Filters
           selectedCategory={selectedCategory}
