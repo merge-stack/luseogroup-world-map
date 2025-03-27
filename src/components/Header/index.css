@@ -310,11 +310,6 @@
 }
 
 .top-button {
-  background: #272c64;
-  color: white;
-  border-radius: 0;
-  border: 1px solid #d3d1d1;
-  padding: 4px 24px;
   position: fixed;
   bottom: 13px;
   right: 23px;
@@ -323,7 +318,7 @@
 }
 
 .top-button:hover {
-  border: 1px solid #959393;
+  border: none;
 }
 
 .top-button:focus {
@@ -359,7 +354,7 @@
   }
 
   .filters-mobile-wrapper {
-    top: 83px;
+    top: 88px;
   }
 }
 
@@ -466,7 +461,7 @@
   }
 
   .filters-mobile-wrapper {
-    top: 61px;
+    top: 74px;
   }
 
   .filter-icon {
@@ -566,7 +561,7 @@
   }
 
   .filters-mobile-wrapper {
-    top: 45px;
+    top: 48px;
   }
 }
 
@@ -579,11 +574,11 @@
   }
 
   .navbar-logo {
-    height: 22px;
+    height: 17px;
   }
 
   .navbar-options {
-    height: 27px;
+    height: 31px;
   }
 
   .navbar-item {
@@ -591,6 +586,6 @@
   }
 
   .filters-mobile-wrapper {
-    top: 41px;
+    top: 47px;
   }
 }

@@ -289,11 +289,15 @@
   }
 }
 
-/* @media screen and (max-width: 869px) {
+@media screen and (max-width: 1194px) {
   .map-container {
-    top: 200px;
+    width: 75%;
   }
-} */
+
+  .locations-list {
+    width: 25%;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .grid-container {
@@ -301,17 +305,34 @@
     /* 1 card per row */
   }
   .map-container {
-    top: 143px;
+    top: 149px;
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 768px) {
+@media screen and (max-width: 990px) {
   .map-container {
     width: 70%;
-    top: 202px;
   }
+
   .locations-list {
     width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 908px) {
+  .map-container {
+    top: 206px;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .map-container {
+    width: 65%;
+  }
+
+  .locations-list {
+    width: 35%;
   }
 }
 
