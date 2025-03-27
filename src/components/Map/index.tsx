@@ -22,7 +22,7 @@ import "./index.css";
 
 mapboxgl.accessToken = REACT_APP_MAP_API_KEY
 
-const categoryIcons: Record<string, string> = {
+export const categoryIcons: Record<string, string> = {
   "Centres commerciaux": shoppingMall,
   "Immeuble de Grande Hauteur": highRise,
   "Equipements publics": publicFacility,

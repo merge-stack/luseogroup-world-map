@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import logo from "@assets/images/logo.png";
+import logo from "@assets/images/LOGO LUSEO.png";
 import contact from "@assets/images/contact.png";
 import about from "@assets/images/about.png";
 import france from "@assets/images/france.png";
@@ -67,7 +67,7 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView
                   <img src={reset} alt="" className="navbar-options" />
                 </div>
                 <a
-                  href="https://luseogroup.com/who-we-are.html"
+                  href="https://luseogroup.com/index-fr.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="navbar-item"
@@ -76,7 +76,7 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView
                   <img src={about} alt="" className="about-icon" />
                 </a>
                 <a
-                  href="https://luseogroup.com/contact.php"
+                  href="https://luseogroup.com/contact-fr.php"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="navbar-item"
