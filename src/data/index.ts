@@ -16,9 +16,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 6001,
-    "photos": [
-      "https://luseogroup.com/luseomap/06001-1.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 2,
@@ -37,9 +35,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 6017,
-    "photos": [
-      "https://luseogroup.com/luseomap/06017-2.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 3,
@@ -58,18 +54,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 7005,
-    "photos": [
-      "https://luseogroup.com/luseomap/07005-1.jpg",
-      "https://luseogroup.com/luseomap/07005-2.jpg",
-      "https://luseogroup.com/luseomap/07005-.pg",
-      "https://luseogroup.com/luseomap/07005-3.jpg",
-      "https://luseogroup.com/luseomap/07005-4",
-      "jpg",
-      "https://luseogroup.com/luseomap/07005-5",
-      "jpg",
-      "https://luseogroup.com/luseomap/07005-6.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
     "id": 4,
@@ -88,9 +73,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 7016,
-    "photos": [
-      "https://luseogroup.com/luseomap/07005-1.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 5,
@@ -109,18 +92,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 6022,
-    "photos": [
-      "https://luseogroup.com/luseomap/06022-1.jpg",
-      "https://luseogroup.com/luseomap/06022-10.jpg",
-      "https://luseogroup.com/luseomap/06022-2.jpg",
-      "https://luseogroup.com/luseomap/06022-3.jpg",
-      "https://luseogroup.com/luseomap/06022-4.jpg",
-      "https://luseogroup.com/luseomap/06022-5.jpg",
-      "https://luseogroup.com/luseomap/06022-6.jpg",
-      "https://luseogroup.com/luseomap/06022-7.jpg",
-      "https://luseogroup.com/luseomap/06022-8.jpg",
-      "https://luseogroup.com/luseomap/06022-9.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 6,
@@ -139,9 +111,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 920,
-    "photos": [
-      "https://luseogroup.com/luseomap/09020-2.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 7,
@@ -160,19 +130,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 930,
-    "photos": [
-      "https://luseogroup.com/luseomap//06022-1.jpg",
-      "https://luseogroup.com/luseomap/06022-10.jpg",
-      "https://luseogroup.com/luseomap/06022-3.jpg",
-      "https://luseogroup.com/luseomap/06022-2.jpg",
-      "https://luseogroup.com/luseomap/06022-4.jpg",
-      "https://luseogroup.com/luseomap/06022-5.jpg",
-      "https://luseogroup.com/luseomap/06022-6.jpg",
-      "https://luseogroup.com/luseomap/06022-7.jpg",
-      "https://luseogroup.com/luseomap/06022-8.jpg",
-      "https://luseogroup.com/luseomap/06022-9.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
     "id": 8,
@@ -191,10 +149,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 10003,
-    "photos": [
-      "https://luseogroup.com/luseomap/10003 - onomo.jpg",
-      "https://luseogroup.com/luseomap/10003 - Hotel ONOMO - ABIDJAN - Cote d'Ivoire.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 10,
@@ -203,8 +158,8 @@ export const projects = [
       -149.58606213198235,
       -17.545206511138964
     ],
-    "mission": "Etude de Conception pour les lots Electricité, Fluide & Suivi de Travaux",
-    "city": "PAPPETE",
+    "mission": "Etude de Conception pour les lots Electricité,  Fluide & Suivi de Travaux",
+    "city": "PAPEETE",
     "region": "POLYNESIE FRANCAISE",
     "area": "60 000m²",
     "architect": "Philippe GRANDOU",
@@ -213,10 +168,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 10022,
-    "photos": [
-      "https://luseogroup.com/luseomap/10022 - takau plaza.jpg",
-      "https://luseogroup.com/luseomap/10022 - takau plaza.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 11,
@@ -235,10 +187,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 11021,
-    "photos": [
-      "https://luseogroup.com/luseomap/11021 beach comber (1).jpeg",
-      "https://luseogroup.com/luseomap/11021 INTERCONTINENTAL HOEL .jpg"
-    ]
+    "photos": []
   },
   {
     "id": 12,
@@ -257,12 +206,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 11051,
-    "photos": [
-      "https://luseogroup.com/luseomap/11051 - papwoth hospital-1.jpg",
-      "https://luseogroup.com/luseomap/11051 - papwoth hospital-1.jpg",
-      "https://luseogroup.com/luseomap/https://luseogroup.com/luseomap/11051 - papwoth hospital-1.jpg",
-      "https://luseogroup.com/luseomap/11051 papworth.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 13,
@@ -281,10 +225,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 12001,
-    "photos": [
-      "https://luseogroup.com/luseomap/12001 - Ritz Carlton Rabat.jpg",
-      "https://luseogroup.com/luseomap/12001 Ritz-Carlton - Rabat - DES.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 14,
@@ -303,9 +244,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 12027,
-    "photos": [
-      "https://luseogroup.com/luseomap/12007 & 12057 -CCIA modelise.JPG"
-    ]
+    "photos": []
   },
   {
     "id": 15,
@@ -324,13 +263,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 12053,
-    "photos": [
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 16,
-    "name": "NOVOTEL ABIDJAN",
+    "name": "RADISSON BLUE LAGOS AIRPORT",
     "coordinates": [
       -4.016369700334223,
       5.316200961875266
@@ -345,11 +282,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 13034,
-    "photos": [
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg",
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg",
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 17,
@@ -368,9 +301,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 13040,
-    "photos": [
-      "https://luseogroup.com/luseomap/13040 perth stadium.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 18,
@@ -389,11 +320,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 14014,
-    "photos": [
-      "https://luseogroup.com/luseomap/14014 - Tour Postel.jpg",
-      "https://luseogroup.com/luseomap/14014-1.JPG",
-      "https://luseogroup.com/luseomap/14014-TOUR POSTEL.JPG"
-    ]
+    "photos": []
   },
   {
     "id": 19,
@@ -412,9 +339,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "14021-A",
-    "photos": [
-      "https://luseogroup.com/luseomap/14021 - Milton Velodrome-Mattamy National Cycling Centre.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 20,
@@ -433,9 +358,7 @@ export const projects = [
     "certification": "",
     "selection_bw": "oui",
     "businessName": "14021-B",
-    "photos": [
-      "https://luseogroup.com/luseomap/14021 - Milton Velodrome-Mattamy National Cycling Centre.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 21,
@@ -454,9 +377,7 @@ export const projects = [
     "certification": "",
     "selection_bw": "oui",
     "businessName": "14021-C",
-    "photos": [
-      "https://luseogroup.com/luseomap/14021 - Stadium YORK University.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 22,
@@ -475,39 +396,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 15009,
-    "photos": [
-      "https://luseogroup.com/luseomap/15009-2.jpg",
-      "https://luseogroup.com/luseomap/15009-1.jpg",
-      "https://luseogroup.com/luseomap/15009-3.JPG",
-      "https://luseogroup.com/luseomap/15009-4.JPG",
-      "https://luseogroup.com/luseomap/15009-5.jpg",
-      "https://luseogroup.com/luseomap/15009-6.jpg",
-      "https://luseogroup.com/luseomap/15009-7.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 23,
-    "name": "UNIVERSITE DE SAN PEDRO",
-    "coordinates": [
-      -6.698213013481272,
-      4.785622020079659
-    ],
-    "mission": "Etude de Conception et d’Exécutions Tout Corps d’Etat",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "29417 m²\n+ 8768 m²",
-    "architect": "GROUPE 6",
-    "category": "Equipements publics",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 15019,
-    "photos": [
-      "https://luseogroup.com/luseomap/15019 université san pedro.jpg"
-    ]
-  },
-  {
-    "id": 24,
     "name": "AKWA",
     "coordinates": [
       9.700061253764256,
@@ -523,13 +415,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 15035,
-    "photos": [
-      "https://luseogroup.com/luseomap/15035-1AKWA.jpg",
-      "https://luseogroup.com/luseomap/15035-AKWA.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 25,
+    "id": 24,
     "name": "TOUR BANQUE CENTRALE POPULAIRE",
     "coordinates": [
       -7.659849377068919,
@@ -545,12 +434,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 15040,
-    "photos": [
-      "https://luseogroup.com/luseomap/15040 siege Bank Populaire.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 26,
+    "id": 25,
     "name": "IMMEUBLE ODYSSEE",
     "coordinates": [
       9.445696324809882,
@@ -566,12 +453,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 16022,
-    "photos": [
-      "https://luseogroup.com/luseomap/16022 - BGFI.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 27,
+    "id": 26,
     "name": "PULLMAN",
     "coordinates": [
       -4.013618984454206,
@@ -587,12 +472,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 16026,
-    "photos": [
-      "https://luseogroup.com/luseomap/16026- pullman.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 28,
+    "id": 27,
     "name": "FAIRMONT",
     "coordinates": [
       -6.829945109272517,
@@ -608,12 +491,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 16027,
-    "photos": [
-      "https://luseogroup.com/luseomap/16027&16039 -FAIRMONT.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 29,
+    "id": 28,
     "name": "MUSEE YVES SAINT LAURENT",
     "coordinates": [
       -8.003914899519227,
@@ -629,34 +510,45 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 16040,
-    "photos": [
-      "https://luseogroup.com/luseomap/16040 Yves-Saint-Laurent-marrakech.jpg",
-      "https://luseogroup.com/luseomap/16040 yYSL-1.jpg",
-      "https://luseogroup.com/luseomap/16040 yYSL-2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 30,
-    "name": "UNIVERSITE SAN PEDRO \n &\n UINIVERSITE KORHOGO",
+    "id": 29,
+    "name": "UNIVERSITE SAN PEDRO",
     "coordinates": [
       -5.6288150842447,
       9.426826087755321
     ],
     "mission": "Etude APS Tout Corps d’Etat",
-    "city": "SAN PEDRO \n& \nKOROGO",
+    "city": "SAN PEDRO",
     "region": "COTE D'IVOIRE",
-    "area": "200 000m²\n\n200 000m²",
-    "architect": "ACA ARCHITECTE\n\nYOLANDE DOUKOURE",
+    "area": "200 000m²",
+    "architect": "ACA ARCHITECTE",
     "category": "Equipements publics",
     "bim": "",
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 17001,
-    "photos": [
-      "https://luseogroup.com/luseomap/17001 - Uni San pedro 2.jpg",
-      "https://luseogroup.com/luseomap/17001 - Uni San pedro.jpg",
-      ""
-    ]
+    "photos": []
+  },
+  {
+    "id": 30,
+    "name": "UINIVERSITE KORHOGO",
+    "coordinates": [
+      -5.62894379467617,
+      9.426738043130905
+    ],
+    "mission": "Etude APS Tout Corps d’Etat",
+    "city": "KOROGO",
+    "region": "COTE D'IVOIRE",
+    "area": "200 000m²",
+    "architect": "YOLANDE DOUKOURE",
+    "category": "Equipements publics",
+    "bim": "",
+    "certification": "",
+    "selection_bw": "oui",
+    "businessName": 17001,
+    "photos": []
   },
   {
     "id": 31,
@@ -675,9 +567,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 18001,
-    "photos": [
-      "https://luseogroup.com/luseomap/18001 - USINE-PHARMA-5-AFRICA-ABIDJAN-COTE-DIVOIRE.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 32,
@@ -696,9 +586,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 18009,
-    "photos": [
-      "https://luseogroup.com/luseomap/18009 -noom-hotel-abidjan-pool-view-wide.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 33,
@@ -717,9 +605,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 18023,
-    "photos": [
-      "https://luseogroup.com/luseomap/18023 ONOMO extention (2).jpg"
-    ]
+    "photos": []
   },
   {
     "id": 34,
@@ -738,9 +624,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 20036,
-    "photos": [
-      "https://luseogroup.com/luseomap/20036 prison Basse terre.jpg"
-    ]
+    "photos": []
   },
   {
     "id": 35,
@@ -759,21 +643,7 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "21CI001",
-    "photos": [
-      "https://luseogroup.com/luseomap/20036 prison Basse terre.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - BUREAU 4.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - BUREAU RECTIFIE 2 .jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - centre médical.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - ecole d'archi.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - ecole d'archi.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - ecole d'archi.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 - ecole d'archi.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 amphi.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 bib escalier.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 bib escalier2.jpg",
-      "https://luseogroup.com/luseomap/21CI001-1 bib execution.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
     "id": 36,
@@ -792,29 +662,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "21CI006",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI006- (1).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (10).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (11).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (12).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (13).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (14).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (15).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (16).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (17).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (2).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (3).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (4).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (5).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (6).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (7).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (8).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (8).jpg",
-      "https://luseogroup.com/luseomap/21CI006- (9).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 38,
+    "id": 37,
     "name": "MARCHE  REGIONAL",
     "coordinates": [
       2.6081098080211955,
@@ -830,13 +681,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "22BJ002",
-    "photos": [
-      "https://luseogroup.com/luseomap/22BJ-002-marche ketou -1.jpg",
-      "https://luseogroup.com/luseomap/22BJ-002-marche ketou.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 39,
+    "id": 38,
     "name": "MARCHE ZOCA",
     "coordinates": [
       2.4216759635787746,
@@ -852,14 +700,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "22BJ004",
-    "photos": [
-      "https://luseogroup.com/luseomap/22BJ004 - Marché Zoca-1.jpg",
-      "https://luseogroup.com/luseomap/22BJ004 - Marché Zoca.jpg",
-      "https://luseogroup.com/luseomap/22BJ004 - Marché Zoca-2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 40,
+    "id": 39,
     "name": "SIEGE PFO",
     "coordinates": [
       -4.00342214108575,
@@ -875,14 +719,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "22FR015",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR015-SIEGE PFO.jpg",
-      "https://luseogroup.com/luseomap/22FR015-SIEGE PFO-1.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 41,
+    "id": 40,
     "name": "IMMEUBLE OGL",
     "coordinates": [
       2.3932841231811866,
@@ -898,20 +738,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "23CI004",
-    "photos": [
-      "https://luseogroup.com/luseomap/23CI004 - Immeuble OGL.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 42,
+    "id": 41,
     "name": "YYLDYZ HOTEL",
     "coordinates": [
       58.331655841529745,
       37.93427558723677
     ],
     "mission": "Conception CET.",
-    "city": "Ashgabat",
-    "region": "Turkmenistan",
+    "city": "ASHGABAT",
+    "region": "TURKMENISTAN",
     "area": "85,000 m ²",
     "architect": "Bouygues",
     "category": "Hôtellerie",
@@ -919,34 +757,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 11005,
-    "photos": [
-      "https://luseogroup.com/luseomap/11005 Hotel 5 Ashgabat - Turkmenistan.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 43,
-    "name": "MAISON DE L'ART DE GRAND BASSAM",
-    "coordinates": [
-      -3.7342845567757,
-      5.195278090509617
-    ],
-    "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
-    "city": "Abijan",
-    "region": "Côte d'Ivoire",
-    "area": "2 830m²",
-    "architect": "Koffi & Diabate",
-    "category": "Equipements publics",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": "21CI005",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR015-SIEGE PFO-1.jpg",
-      "https://luseogroup.com/luseomap/21CI005-maison de l'art.jpg"
-    ]
-  },
-  {
-    "id": 44,
+    "id": 42,
     "name": "CENTRE COMMERCIAL GREEN SHOPS",
     "coordinates": [
       -3.738471835492599,
@@ -954,7 +768,7 @@ export const projects = [
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Bassam",
-    "region": "Côte d'Ivoire",
+    "region": "COTE D'IVOIRE",
     "area": "12 640m²",
     "architect": "TUO",
     "category": "Centres commerciaux",
@@ -962,12 +776,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "24CI002",
-    "photos": [
-      "https://luseogroup.com/luseomap/24CI002 Green Shop.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 45,
+    "id": 43,
     "name": "MUSÉE NATIONAL DES ARTS D'ABIDJAN",
     "coordinates": [
       -4.017776252650221,
@@ -975,7 +787,7 @@ export const projects = [
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Abijan",
-    "region": "Côte d'Ivoire",
+    "region": "COTE D'IVOIRE",
     "area": "5 300m²",
     "architect": "PFO",
     "category": "Equipements publics",
@@ -983,37 +795,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "22FR017",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC-1.jpg",
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC-3.jpg",
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC-4.jpg",
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC-5.jpg",
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC-6.jpg",
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC-7.jpg",
-      "https://luseogroup.com/luseomap/22FR-017 MNAFTC.jpg"
-    ]
-  },
-  {
-    "id": 46,
-    "name": "MARCHÉ RÉGIONAL COVE",
-    "coordinates": [
-      2.3399547673744054,
-      7.21938600574137
-    ],
-    "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
-    "city": "Covè",
-    "region": "Bénin",
-    "area": "5 830m²",
-    "architect": "BA Architecture",
-    "category": "Equipements publics",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": "22BJ003",
     "photos": []
   },
   {
-    "id": 47,
+    "id": 44,
     "name": "RÉSIDENCES OFFICIELLES DU PRÉSIDENT DE LA RÉPUBLIQUE",
     "coordinates": [
       2.4091446962994723,
@@ -1021,7 +806,7 @@ export const projects = [
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Cotonou",
-    "region": "Bénin",
+    "region": "BENIN",
     "area": "4 000m²",
     "architect": "Koffi & Diabate",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1029,31 +814,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "24CI005",
-    "photos": [
-      "https://luseogroup.com/luseomap/24CI005-.jpg",
-      "https://luseogroup.com/luseomap/24CI005- (15).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (16).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (17).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (18).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (19).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (20).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (21).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (22).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (23).jpg",
-      "https://luseogroup.com/luseomap/24CI005- (29).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 48,
+    "id": 45,
     "name": "PÔLE RECHERCHE - UPF",
     "coordinates": [
       -149.6099103305361,
       -17.57641481989577
     ],
     "mission": "Conception CET, études d’exécution et suivi des travaux. Mission  HQE",
-    "city": "Faa'a",
-    "region": "Polynésie Française",
+    "city": "FAA'A",
+    "region": "POLYNESIE FRANCAISE",
     "area": "2750 m²",
     "architect": "Bertrand PORTIER Architecte",
     "category": "Equipements publics",
@@ -1061,22 +833,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "LSP-UPF",
-    "photos": [
-      "https://luseogroup.com/luseomap/LSP-UPF POLE RECHERCH-E.jpg",
-      "https://luseogroup.com/luseomap/LSP-UPF POLE RECHERHCE.JPG",
-      "https://luseogroup.com/luseomap/LSP-UPF POLE RECHERHHE-.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 49,
-    "name": "CONSTRUCTION D'UN BÂTIMENT ADMINISTRATIF POUR LES BESOINS DU SEAC PF (ETUDE ET SUIVI TRAVAUX)",
+    "id": 46,
+    "name": "SERVICE D'ETAT DE L'AVIATION CIVILE",
     "coordinates": [
       -149.59787262838483,
       -17.561808419123878
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux. Mission HQE",
-    "city": "Faa'a",
-    "region": "Polynésie Française",
+    "city": "FAA'A",
+    "region": "POLYNESIE FRANCAISE",
     "area": "2000 m²",
     "architect": "Island Architecture",
     "category": "Equipements publics",
@@ -1084,20 +852,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "LSP-SEAC",
-    "photos": [
-      "https://luseogroup.com/luseomap/seac BATIMENT ADMINISTRATIF.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 50,
-    "name": "RÉNOVATION EXTENSION HÔTEL HILTON TAHITI",
+    "id": 47,
+    "name": "HÔTEL HILTON TAHITI",
     "coordinates": [
       -149.5858999017016,
       -17.545373689187553
     ],
     "mission": "Conception gros oeuvre, études d’exécution et suivi des travaux TCE.",
-    "city": "Faa'a",
-    "region": "Polynésie Française",
+    "city": "FAA'A",
+    "region": "POLYNESIE FRANCAISE",
     "area": "15000m²",
     "architect": "Tropical Architecture",
     "category": "Hôtellerie",
@@ -1105,20 +871,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "25FR002",
-    "photos": [
-      "https://luseogroup.com/luseomap/25FR002-HILTON PIRAE.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 51,
-    "name": "CONSTRUCTION D'UN SYSTÈME DE PRODUCTION DE FRIGORIES À PARTIR D'UN PUISAGE OCÉANIQUE EN EAU PROFONDE (SWAC) POUR LA CLIMATISATION DU CENTRE HOSPITALIER DE POLYNÉSIE-FRANCÇAISE",
+    "id": 48,
+    "name": "CENTRE HOSPITALIER DE POLYNÉSIE-FRANÇAISE",
     "coordinates": [
       -149.5465110369314,
       -17.528399249830414
     ],
     "mission": "Conception CET, études d’exécution et suivi des travaux.",
     "city": "Pirae",
-    "region": "Polynesie Française",
+    "region": "POLYNESIE FRANCAISE",
     "area": "600m²",
     "architect": "SO",
     "category": "Industrie",
@@ -1126,13 +890,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "LSP-PROD FRIGO CHU POLYNESIE",
-    "photos": [
-      "https://luseogroup.com/luseomap/LSP-PROD FRIGO CHU POLYNESIE-2.jpg",
-      "https://luseogroup.com/luseomap/LSP-PROD FRIGO CHU POLYNESIE-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 52,
+    "id": 49,
     "name": "CDA DOMAINE COEUR D'ANFA",
     "coordinates": [
       -7.710378078550996,
@@ -1148,19 +909,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "21MA021",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA021- (1).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (5).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (17).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (18).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (2).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (23).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (25).jpg",
-      "https://luseogroup.com/luseomap/21MA021- (29).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 53,
+    "id": 50,
     "name": "LE COLISEE ARENA",
     "coordinates": [
       2.5308669702178173,
@@ -1176,12 +928,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "22FR007",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR-007 COLISEE ARENA-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 54,
+    "id": 51,
     "name": "METRO STATION",
     "coordinates": [
       -80.19049657327066,
@@ -1189,7 +939,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild residental 8-storry, 55- unit building",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Modis Architects",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1197,12 +947,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US015",
-    "photos": [
-      "https://luseogroup.com/luseomap/US015-Metro Station.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 55,
+    "id": 52,
     "name": "PALMA CONDOMINIUM",
     "coordinates": [
       -80.12438517808042,
@@ -1210,7 +958,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild 13-story, 126-unit condo building",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Built Form",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1218,12 +966,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US014",
-    "photos": [
-      "https://luseogroup.com/luseomap/US014-Palma Condominium.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 56,
+    "id": 53,
     "name": "RESIDENCES AT PALM COURT",
     "coordinates": [
       -80.12896071390544,
@@ -1231,7 +977,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild residential 12-story 316-unit building, and two commercial buildings.",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Related Urban",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1239,12 +985,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US013",
-    "photos": [
-      "https://luseogroup.com/luseomap/US013-Residences at Palm Court.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 57,
+    "id": 54,
     "name": "HYATT CONFIDANTE",
     "coordinates": [
       -80.12187292807809,
@@ -1252,7 +996,7 @@ export const projects = [
     ],
     "mission": "MEP/FP Design of Comprehensive 1940’s iconic 16-story hotel renovation",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "EoA Group",
     "category": "Hôtellerie",
@@ -1260,12 +1004,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US012",
-    "photos": [
-      "https://luseogroup.com/luseomap/US012-Hyatt Confidante.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 58,
+    "id": 55,
     "name": "3337 MULTIFAMILY",
     "coordinates": [
       -80.13488763350394,
@@ -1273,7 +1015,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild high-end 3-story + rooftop residential building.",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Kobi Karp Architecture & ID",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1281,12 +1023,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US011",
-    "photos": [
-      "https://luseogroup.com/luseomap/US011-3337 Multifamily.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 59,
+    "id": 56,
     "name": "CASA FAMILIA III",
     "coordinates": [
       -80.25446878060899,
@@ -1294,7 +1034,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild 50-unit, 4-story residential building.",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Studio McG Architecture",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1302,12 +1042,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US010",
-    "photos": [
-      "https://luseogroup.com/luseomap/US010-Casa Familia III.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 60,
+    "id": 57,
     "name": "PURDY AVE MULTIFAMILY",
     "coordinates": [
       -80.13161005744368,
@@ -1315,7 +1053,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild high-end 5-story + rooftop residential building.",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Kobi Karp Architecture & ID",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1323,12 +1061,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US009",
-    "photos": [
-      "https://luseogroup.com/luseomap/US009-Purdy Ave Apartments.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 61,
+    "id": 58,
     "name": "HOUSE OF PRAYER",
     "coordinates": [
       -80.19281341659038,
@@ -1336,7 +1072,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild religious mixed-use building. Includes offices, classrooms, common areas and prayer spaces.",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Modis Architects",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1344,12 +1080,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US008",
-    "photos": [
-      "https://luseogroup.com/luseomap/US008-House of Prayer.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 62,
+    "id": 59,
     "name": "111 WYNWOOD",
     "coordinates": [
       -80.19725876682647,
@@ -1357,7 +1091,7 @@ export const projects = [
     ],
     "mission": "MEP for newbuild commercial building featuring shops and restaurants",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Touzet Studio",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1365,12 +1099,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US001",
-    "photos": [
-      "https://luseogroup.com/luseomap/US001 - 111 Wynwood.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 63,
+    "id": 60,
     "name": "MISSION INN RESORT",
     "coordinates": [
       -81.78238007252916,
@@ -1378,7 +1110,7 @@ export const projects = [
     ],
     "mission": "MEP engineering for the renovation of the F&B and common areas of a golf resort.",
     "city": "Orlando",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "RAD Architecture",
     "category": "Hôtellerie",
@@ -1386,12 +1118,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US003",
-    "photos": [
-      "https://luseogroup.com/luseomap/US003-Mission Inn Resort.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 64,
+    "id": 61,
     "name": "RESORTS WORLD CASINO",
     "coordinates": [
       -74.64873066807245,
@@ -1399,7 +1129,7 @@ export const projects = [
     ],
     "mission": "MEP Design for 120,000 SF VLT Gaming casino",
     "city": "Mashpee",
-    "region": "MA",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Southport Engineering Associates",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1407,12 +1137,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US002",
-    "photos": [
-      "https://luseogroup.com/luseomap/US002-Resorts World Casino.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 65,
+    "id": 62,
     "name": "AURORA RESORT PARK",
     "coordinates": [
       -63.12776512951443,
@@ -1428,12 +1156,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US004",
-    "photos": [
-      "https://luseogroup.com/luseomap/US004-Aurora Resort Park.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 66,
+    "id": 63,
     "name": "JACK'S BAY RESORT",
     "coordinates": [
       -76.16748726308285,
@@ -1441,7 +1167,7 @@ export const projects = [
     ],
     "mission": "MEP engineering for the renovation of beach resort.",
     "city": "Eleuthera",
-    "region": "Bahamas",
+    "region": "BAHAMAS",
     "area": "",
     "architect": "RAD Architecture",
     "category": "Hôtellerie",
@@ -1449,12 +1175,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US005",
-    "photos": [
-      "https://luseogroup.com/luseomap/US005-Jacks Bay Resort.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 67,
+    "id": 64,
     "name": "GOLDEN BEACH HOME",
     "coordinates": [
       -80.1207511746621,
@@ -1462,7 +1186,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for 21,000 sf oceanfront ultra-high-end home.",
     "city": "Golden Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Sabal Development",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1470,12 +1194,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US006",
-    "photos": [
-      "https://luseogroup.com/luseomap/US006-Golden beach Home.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 68,
+    "id": 65,
     "name": "GABLES ESTATES HOME",
     "coordinates": [
       -80.25176010623116,
@@ -1483,7 +1205,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for 13,000 SF ultra-high-end home",
     "city": "Coral Gables",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Mocca Construction",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1491,12 +1213,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "US007",
-    "photos": [
-      "https://luseogroup.com/luseomap/US007-Gables Estates Home.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 69,
+    "id": 66,
     "name": "AEROPORT INTERNATIONNAL FELIX HOUPHOUET BOIGNY",
     "coordinates": [
       -3.932542815756966,
@@ -1512,12 +1232,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 14051,
-    "photos": [
-      "https://luseogroup.com/luseomap/14051-Aéroport d'Abidjan.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 70,
+    "id": 67,
     "name": "HOPITAL POINTE A PITRE",
     "coordinates": [
       -61.5254169153194,
@@ -1533,12 +1251,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 17051,
-    "photos": [
-      "https://luseogroup.com/luseomap/17051 - CHU pointe a pritre (3).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 71,
+    "id": 68,
     "name": "TOUR MOHAMED VI",
     "coordinates": [
       -6.80518459084931,
@@ -1554,12 +1270,10 @@ export const projects = [
     "certification": "LEED Gold et HQE",
     "selection_bw": "oui",
     "businessName": 18036,
-    "photos": [
-      "https://luseogroup.com/luseomap/18057 - BMCE-Tower O - BESIX.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 72,
+    "id": 69,
     "name": "TOUR SENELEC",
     "coordinates": [
       -17.469242476798907,
@@ -1575,12 +1289,10 @@ export const projects = [
     "certification": "HQE niveau Très Bon",
     "selection_bw": "oui",
     "businessName": 20035,
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR007-SENELEC.jpeg"
-    ]
+    "photos": []
   },
   {
-    "id": 73,
+    "id": 70,
     "name": "COLLEGE ANDREE CHEDID",
     "coordinates": [
       -0.6721291999999911,
@@ -1596,15 +1308,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": 20049,
-    "photos": [
-      "https://luseogroup.com/luseomap/20049 collège du haillan.jpg",
-      "https://luseogroup.com/luseomap/20049 collège du haillan1.jpg",
-      "https://luseogroup.com/luseomap/20049 collège du haillan1.jpg",
-      "https://luseogroup.com/luseomap/20049 collège du haillan2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 74,
+    "id": 71,
     "name": "SIEGE SOCIETE  IVOIRIENNE DE BANQUE",
     "coordinates": [
       -3.9832578157981016,
@@ -1620,18 +1327,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "21CI009",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI009- (1).jpg",
-      "https://luseogroup.com/luseomap/21CI009- (15).jpg",
-      "https://luseogroup.com/luseomap/21CI009- (16).jpg",
-      "https://luseogroup.com/luseomap/21CI009- (3).jpg",
-      "https://luseogroup.com/luseomap/21CI009- (4).jpg",
-      "https://luseogroup.com/luseomap/21CI009- (8).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 75,
-    "name": "LE CARROUSSEL PHASE II",
+    "id": 72,
+    "name": "LE CARROUSSEL PHASE I",
     "coordinates": [
       -6.89348625001056,
       33.98214162438535
@@ -1646,22 +1346,10 @@ export const projects = [
     "certification": "HQE niveau Très Bon",
     "selection_bw": "oui",
     "businessName": "21MA035",
-    "photos": [
-      "https://luseogroup.com/luseomap/19036  LA CARROUSSEL.jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (1).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (2).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (3).jpg?",
-      "https://luseogroup.com/luseomap/19036 Carroussel (4).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (5).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (6).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (7).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (7).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (8).jpg",
-      "https://luseogroup.com/luseomap/19036 Carroussel (9).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 76,
+    "id": 73,
     "name": "TOUR CONTI 26",
     "coordinates": [
       47.5184779064448,
@@ -1677,13 +1365,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "22FR010",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR010-CONTI26.jpeg"
-    ]
+    "photos": []
   },
   {
-    "id": 77,
-    "name": "CENTRE HOSPITALIER UNIVERISTAIRE & FACULTE DE MEDECINE DE L’UNIVERISTE INTERNATIONAL DE RABAT",
+    "id": 74,
+    "name": "CHU & FACULTÉ DE MEDECINE RABAT",
     "coordinates": [
       -6.727533921645129,
       33.986273508949225
@@ -1698,12 +1384,10 @@ export const projects = [
     "certification": "HQE niveau Excellent",
     "selection_bw": "oui",
     "businessName": "22MA004",
-    "photos": [
-      "https://luseogroup.com/luseomap/22MA-004 CHU TECHNOPOLIS.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 78,
+    "id": 75,
     "name": "LINCOLN",
     "coordinates": [
       -7.612074360586206,
@@ -1719,12 +1403,10 @@ export const projects = [
     "certification": "HQE niveau Excellent",
     "selection_bw": "oui",
     "businessName": "23MA001",
-    "photos": [
-      "https://luseogroup.com/luseomap/19051 - LINCOLN.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 79,
+    "id": 76,
     "name": "CENTRE HOSPITALIER UIVERSITAIRE FONDATION MOHAMED VI",
     "coordinates": [
       -6.856591606831632,
@@ -1740,13 +1422,11 @@ export const projects = [
     "certification": "HQE niveau Excellent",
     "selection_bw": "oui",
     "businessName": "23MA020",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA020 CHM6_.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 80,
-    "name": "CENTRE HOSPITALIER UNIVERSITAIRE FONDATION MOHAMED VI\n DAKHLA",
+    "id": 77,
+    "name": "CENTRE HOSPITALIER UNIVERSITAIRE FONDATION MOHAMED VI",
     "coordinates": [
       -15.955640401811449,
       23.686084116870525
@@ -1761,20 +1441,18 @@ export const projects = [
     "certification": "HQE niveau Excellent",
     "selection_bw": "oui",
     "businessName": "23MA034",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA034 CHU DAKHLA_.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 81,
-    "name": "COMPLEXE OPÉRATIONNEL ET SCIENTIFIQUE (COS) – LES TOURS BLEUES",
+    "id": 78,
+    "name": "COMPLEXE OPÉRATIONNEL ET SCIENTIFIQUE LES TOURS BLEUES",
     "coordinates": [
       -17.034718092283807,
       20.946313983942677
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Nouadhibou",
-    "region": "Mauritanie",
+    "region": "MAURITANIE",
     "area": "",
     "architect": "Segond Guyon",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1782,24 +1460,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "24FR011",
-    "photos": [
-      "https://luseogroup.com/luseomap/24FR011-1 - tour bleu.jpg",
-      "https://luseogroup.com/luseomap/24FR011-2 - tour bleu.jpg",
-      "https://luseogroup.com/luseomap/24FR011-3 - tour bleu.jpg",
-      "https://luseogroup.com/luseomap/24FR011-4 - tour bleu.jpg",
-      "https://luseogroup.com/luseomap/24FR011-5 - tour bleu.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 82,
-    "name": "CONSTRUCTION DE LA 4ÈME COMPAGNIE DU RSMA",
+    "id": 79,
+    "name": "4ÈME COMPAGNIE DU RSMA",
     "coordinates": [
       -149.53083880354865,
       -17.528619192892208
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Hao",
-    "region": "Polynésie Française",
+    "region": "POLYNESIE FRANCAISE",
     "area": "10000m²",
     "architect": "SO",
     "category": "Equipements publics",
@@ -1807,20 +1479,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "oui",
     "businessName": "24FR006",
-    "photos": [
-      "https://luseogroup.com/luseomap/24FR006- (1).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (10).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (2).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (3).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (4).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (5).jpghttps://luseogroup.com/luseomap/24FR006- (6).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (7).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (8).jpg",
-      "https://luseogroup.com/luseomap/24FR006- (9).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 83,
+    "id": 80,
     "name": "CASA FINANCE CITY - lot 58",
     "coordinates": [
       -7.6596706300594555,
@@ -1836,12 +1498,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18030,
-    "photos": [
-      "https://luseogroup.com/luseomap/18030 - CFC lot 58 .jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 84,
+    "id": 81,
     "name": "AEROPORT JOSE MARTI",
     "coordinates": [
       -82.40748384139445,
@@ -1857,14 +1517,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18038,
-    "photos": [
-      "https://luseogroup.com/luseomap/18038 - aeroport jose marti havana2.jpg",
-      "https://luseogroup.com/luseomap/18038 - aeroport jose marti havana1.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 85,
+    "id": 82,
     "name": "ANFA 212",
     "coordinates": [
       -7.66352998063588,
@@ -1880,13 +1536,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19003,
-    "photos": [
-      "https://luseogroup.com/luseomap/19003 - ANFA 212.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 86,
-    "name": "Ecole JULES VERNES",
+    "id": 83,
+    "name": "ECOLE JULES VERNES",
     "coordinates": [
       2.267850642469868,
       48.7670614399637
@@ -1901,15 +1555,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11056,
-    "photos": [
-      "https://luseogroup.com/luseomap/11056 Jule vernes2.jpg",
-      "https://luseogroup.com/luseomap/11056 jules verne.jpg",
-      "https://luseogroup.com/luseomap/11056 jules vernes -5.jpg",
-      "https://luseogroup.com/luseomap/11056 jules vernes -6.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 87,
+    "id": 84,
     "name": "IBIS CASA VOAYGEURS",
     "coordinates": [
       -7.591792289174477,
@@ -1925,12 +1574,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16024,
-    "photos": [
-      "https://luseogroup.com/luseomap/16024-Ibis Casa voyageur1 (1).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 88,
+    "id": 85,
     "name": "DAR AL DIYAFA",
     "coordinates": [
       -6.8149976095471905,
@@ -1946,12 +1593,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12048,
-    "photos": [
-      "https://luseogroup.com/luseomap/12033 dar al dyafa.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 91,
+    "id": 88,
     "name": "ATLAS GOLF RESORT",
     "coordinates": [
       -8.015765161745676,
@@ -1967,15 +1612,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 512,
-    "photos": [
-      "https://luseogroup.com/luseomap/05012-1.jpg",
-      "https://luseogroup.com/luseomap/05012-2.jpg",
-      "https://luseogroup.com/luseomap/05012-3.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 92,
+    "id": 89,
     "name": "ECOLE MONTESQUIEU",
     "coordinates": [
       -0.26898927510901416,
@@ -1991,14 +1631,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 859,
-    "photos": [
-      "https://luseogroup.com/luseomap/08059 montesquieu II.jpg",
-      "https://luseogroup.com/luseomap/08059 montesquieu III.jpg",
-      "https://luseogroup.com/luseomap/08059 montesquieu.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 93,
+    "id": 90,
     "name": "CARREFOUR GRAND LITTORAL",
     "coordinates": [
       5.34979729728723,
@@ -2014,13 +1650,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6002,
-    "photos": [
-      "https://luseogroup.com/luseomap/06002-1.jpg",
-      "https://luseogroup.com/luseomap/06002-2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 94,
+    "id": 91,
     "name": "BROOMFIELD HOSPITAL",
     "coordinates": [
       0.4663099825834906,
@@ -2036,14 +1669,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6003,
-    "photos": [
-      "https://luseogroup.com/luseomap/06003-1.jpg",
-      "https://luseogroup.com/luseomap/06003-2.jpg",
-      "https://luseogroup.com/luseomap/06003-3.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 95,
+    "id": 92,
     "name": "LE LAMENTIN",
     "coordinates": [
       -60.989162219432615,
@@ -2059,12 +1688,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6004,
-    "photos": [
-      "https://luseogroup.com/luseomap/06004-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 96,
+    "id": 93,
     "name": "CENTRE HOPITALIER DE LA TIMONE",
     "coordinates": [
       5.402220339609319,
@@ -2080,13 +1707,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6006,
-    "photos": [
-      "https://luseogroup.com/luseomap/06006 -Timone-1.jpg",
-      "https://luseogroup.com/luseomap/06006-timone.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 97,
+    "id": 94,
     "name": "ROYAL MANSOUR",
     "coordinates": [
       -7.997501961111763,
@@ -2102,15 +1726,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6007,
-    "photos": [
-      "https://luseogroup.com/luseomap/06007-1jpg.jpg",
-      "https://luseogroup.com/luseomap/06007-2.jpg",
-      "https://luseogroup.com/luseomap/06007-3.jpg",
-      "https://luseogroup.com/luseomap/06007-4.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 98,
+    "id": 95,
     "name": "EXXON MOBIL",
     "coordinates": [
       142.0542714533769,
@@ -2126,14 +1745,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6012,
-    "photos": [
-      "https://luseogroup.com/luseomap/06012-1.jpg",
-      "https://luseogroup.com/luseomap/06012-2.jpg",
-      "https://luseogroup.com/luseomap/06012-3.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 99,
+    "id": 96,
     "name": "HOTEL DU GOLF",
     "coordinates": [
       -0.710590221652918,
@@ -2149,17 +1764,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6013,
-    "photos": [
-      "https://luseogroup.com/luseomap/https://luseogroup.com/luseomap/06013-1.jpg",
-      "https://luseogroup.com/luseomap/https://luseogroup.com/luseomap/06013-2.jpg",
-      "https://luseogroup.com/luseomap/https://luseogroup.com/luseomap/06013-3.jpg",
-      "",
-      "https://luseogroup.com/luseomap/https://luseogroup.com/luseomap/06013-4.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 100,
+    "id": 97,
     "name": "LYCEE BORDA",
     "coordinates": [
       -1.0557027026888652,
@@ -2175,15 +1783,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6016,
-    "photos": [
-      "https://luseogroup.com/luseomap/06016-1.jpg",
-      "https://luseogroup.com/luseomap/06016-3.jpg",
-      "https://luseogroup.com/luseomap/06016-4.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 101,
+    "id": 98,
     "name": "AUCHAN CLUJ",
     "coordinates": [
       23.629198882190767,
@@ -2199,12 +1802,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7001,
-    "photos": [
-      "https://luseogroup.com/luseomap/07001.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 102,
+    "id": 99,
     "name": "HOPITAL PERIGUEUX",
     "coordinates": [
       0.7313645135966456,
@@ -2220,15 +1821,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7010,
-    "photos": [
-      "https://luseogroup.com/luseomap/07010 - Perigueux 1.jpg",
-      "https://luseogroup.com/luseomap/07010 - Perigueux-.jpg",
-      "https://luseogroup.com/luseomap/07010 - Perigueux-1.jpg",
-      "https://luseogroup.com/luseomap/07010 - Perigueux-2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 103,
+    "id": 100,
     "name": "CHAIS CANTENAC",
     "coordinates": [
       -0.6787114756113471,
@@ -2244,12 +1840,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7011,
-    "photos": [
-      "https://luseogroup.com/luseomap/07011 chais cantenac.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 104,
+    "id": 101,
     "name": "CHÂTEAU MONTROSE",
     "coordinates": [
       -0.7628163332680529,
@@ -2265,12 +1859,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7012,
-    "photos": [
-      "https://luseogroup.com/luseomap/07012 - Chateau Montrose.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 105,
+    "id": 102,
     "name": "HOTEL LOTTI",
     "coordinates": [
       2.3282758400238364,
@@ -2286,15 +1878,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7013,
-    "photos": [
-      "https://luseogroup.com/luseomap/07013 - Lotti hotel-1.jpg",
-      "https://luseogroup.com/luseomap/07013 - Lotti hotel-2.jpg",
-      "https://luseogroup.com/luseomap/07013 - Lotti hotel-3.jpg",
-      "https://luseogroup.com/luseomap/07013 - Lotti hotel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 106,
+    "id": 103,
     "name": "COLLEGE GERARD PHILIPPE",
     "coordinates": [
       -0.6224678179553373,
@@ -2310,17 +1897,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7014,
-    "photos": [
-      "https://luseogroup.com/luseomap/07014 - Collège Gérard Philippe.jpg",
-      "https://luseogroup.com/luseomap/07014.jpg",
-      "https://luseogroup.com/luseomap/07014-Revelarchi_college-Gerard-PhilippE.jpg",
-      "https://luseogroup.com/luseomap/07014-Revelarchi_college-Gerard-Philippe_ban-1pg.jpg",
-      "https://luseogroup.com/luseomap/07014-Revelarchi_college-Gerard-Philippe_ban-1pg.jpg",
-      "https://luseogroup.com/luseomap/07014-Revelarchi_college-Gerard-Philippe_ban-2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 107,
+    "id": 104,
     "name": "SALLE DE SPECTACLE BRUNOY",
     "coordinates": [
       2.5054210823380476,
@@ -2336,12 +1916,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7017,
-    "photos": [
-      "https://luseogroup.com/luseomap/07017 - salle spectacle Brunoy.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 108,
+    "id": 105,
     "name": "CHÂTEAU FAUGERE",
     "coordinates": [
       -0.08692294678579217,
@@ -2357,31 +1935,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7021,
-    "photos": [
-      "https://luseogroup.com/luseomap/07021 - Chateau-Faugeres.jpg"
-    ]
-  },
-  {
-    "id": 109,
-    "name": "FONDATION FELIX HOUPHOUET BOIGNY",
-    "coordinates": [
-      -5.264389397440605,
-      6.797323927953106
-    ],
-    "mission": "Etude Avant-Projet Sommaire pour le lot Electricité",
-    "city": "YAMOUSSOUKRO",
-    "region": "FRANCE",
-    "area": "78 829M²",
-    "architect": "-",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 10333,
     "photos": []
   },
   {
-    "id": 110,
+    "id": 106,
     "name": "PELVISZY VILLAGE VACANCES ULVF",
     "coordinates": [
       1.216572566713238,
@@ -2397,12 +1954,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7029,
-    "photos": [
-      "https://luseogroup.com/luseomap/07029 - domaine-pelvezy.webp"
-    ]
+    "photos": []
   },
   {
-    "id": 111,
+    "id": 107,
     "name": "LYCEE GRAND AIR",
     "coordinates": [
       -1.1657500044748568,
@@ -2418,14 +1973,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7030,
-    "photos": [
-      "https://luseogroup.com/luseomap/07030 Lycée tech & gén grand air - Arcachon-1.jpg",
-      "https://luseogroup.com/luseomap/07030 Lycée tech & gén grand air - Arcachon-2.jpg",
-      "https://luseogroup.com/luseomap/07030 Lycée tech & gén grand air - Arcachon.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 112,
+    "id": 108,
     "name": "BIRMINGHAM HOSPITAL",
     "coordinates": [
       -1.9430964087606264,
@@ -2441,18 +1992,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7039,
-    "photos": [
-      "https://luseogroup.com/luseomap/07039 - Birmingham hospital 1.jpg",
-      "https://luseogroup.com/luseomap/07039 - Birmingham hospital 2.jpg",
-      "https://luseogroup.com/luseomap/07039 - Birmingham hospital 3.jpg",
-      "https://luseogroup.com/luseomap/07039 - Birmingham hospital 6.jpg",
-      "https://luseogroup.com/luseomap/07039 - Birmingham hospital-1.jpg",
-      "https://luseogroup.com/luseomap/07039 - Birmingham hospital.jpg",
-      "https://luseogroup.com/luseomap/07039 birmingham .jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 113,
+    "id": 109,
     "name": "GRAND STADE DE MARRAKECH",
     "coordinates": [
       -7.980275084564864,
@@ -2468,12 +2011,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23FR018",
-    "photos": [
-      "https://luseogroup.com/luseomap/23FR018 Stade marrakech.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 114,
+    "id": 110,
     "name": "LYCEE LA RUCHE",
     "coordinates": [
       -0.5584978137327302,
@@ -2489,15 +2030,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7041,
-    "photos": [
-      "https://luseogroup.com/luseomap/07041-ruche2.jpg",
-      "https://luseogroup.com/luseomap/07041-ruche4.jpg",
-      "https://luseogroup.com/luseomap/07041-ruche5.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 115,
+    "id": 111,
     "name": "LYCEE PHILADELPHE  DE GERDE",
     "coordinates": [
       -0.6523333467924569,
@@ -2513,12 +2049,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7043,
-    "photos": [
-      "https://luseogroup.com/luseomap/07043 lycee philadelphe de gerde 1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 116,
+    "id": 112,
     "name": "BART'S HOSPITAL",
     "coordinates": [
       -0.09970069838346803,
@@ -2534,20 +2068,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7047,
-    "photos": [
-      "https://luseogroup.com/luseomap/07047 - Barts.jpg",
-      "https://luseogroup.com/luseomap/07047 - barts_hospital.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 117,
+    "id": 113,
     "name": "SURREY MEMORIAL HOSPITAL CRITICAL CARE  TOWER",
     "coordinates": [
       -122.84248227682976,
       49.17578868956261
     ],
     "mission": "Conception du lot Electricité",
-    "city": "Vancouver",
+    "city": "VANCOUVER",
     "region": "CANADA",
     "area": "39020m²-151 lits",
     "architect": "CEI Architecture and Parkin Architects",
@@ -2556,59 +2087,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 7052,
-    "photos": [
-      "https://luseogroup.com/luseomap/07052 surrey Memorial Hospital Critical care TowerII.jpg",
-      "https://luseogroup.com/luseomap/07052 surrey Memorial Hospital Critical care TowerIII.jpg",
-      ""
-    ]
-  },
-  {
-    "id": 118,
-    "name": "HOPITAL XAVIER ARNOZAN",
-    "coordinates": [
-      -0.6594776278288272,
-      44.79872960368231
-    ],
-    "mission": "Etudes d’Exécutions du lot Electricité",
-    "city": "Pessac",
-    "region": "FRANCE",
-    "area": "1325 lits",
-    "architect": "-",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 7053,
     "photos": []
   },
   {
-    "id": 119,
-    "name": "STADE VELODROME",
-    "coordinates": [
-      2.0349559247830147,
-      48.78820440667269
-    ],
-    "mission": "Phase APS/APD pour le lot Électricité",
-    "city": "St QUENTIN en YVELINES",
-    "region": "FRANCE",
-    "area": "6043 places",
-    "architect": "Chabanne & Partenaires",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 802,
-    "photos": [
-      "https://luseogroup.com/luseomap/08002 - velodrome-national-de-saint-quentin-en-yvelines.jpg",
-      "https://luseogroup.com/luseomap/08002 - velodrome-national-de-saint-quentin-en-yvelines.jpg",
-      "https://luseogroup.com/luseomap/08002 saint-quentin-velodrome-2.jpg",
-      "https://luseogroup.com/luseomap/08002 velodrome-stquentin (1).jpg",
-      "https://luseogroup.com/luseomap/08002 velodrome-stquentin (2).jpg"
-    ]
-  },
-  {
-    "id": 120,
-    "name": "FAURECIA PHASE I",
+    "id": 114,
+    "name": "FAURECIA  -PHASE I",
     "coordinates": [
       -6.505421091656119,
       34.29293732195536
@@ -2623,12 +2106,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 806,
-    "photos": [
-      "https://luseogroup.com/luseomap/08006 Faurecia-Phase I.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 121,
+    "id": 115,
     "name": "MAISON VIGNE ET TERROIRS",
     "coordinates": [
       -0.30587436393795053,
@@ -2644,32 +2125,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 807,
-    "photos": [
-      "https://luseogroup.com/luseomap/08007 MAISON-DE-LA-VIGNE-ET-DES-TERROIRS-431.jpg",
-      "https://luseogroup.com/luseomap/08007 MAISON-DE-LA-VIGNE-ET-DES-TERROIRS.jpg"
-    ]
-  },
-  {
-    "id": 122,
-    "name": "LAFARGE",
-    "coordinates": [
-      -0.4697411381665991,
-      44.959037764587904
-    ],
-    "mission": "Etude d'Exécution pour le lot Electrcité",
-    "city": "SAINT LOUBES",
-    "region": "FRANCE",
-    "area": "2140m²",
-    "architect": "archi concept",
-    "category": "Industrie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 810,
     "photos": []
   },
   {
-    "id": 123,
+    "id": 116,
     "name": "HOTEL CUB BORDEAUX",
     "coordinates": [
       -0.585422946788963,
@@ -2685,14 +2144,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 812,
-    "photos": [
-      "https://luseogroup.com/luseomap/08012 Hotel CUB bordeaux I.jpg",
-      "https://luseogroup.com/luseomap/08012 Hotel CUB bordeaux II.jpg",
-      "https://luseogroup.com/luseomap/08012 Hotel CUB bordeaux.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 124,
+    "id": 117,
     "name": "ECOLE GAMBETTA",
     "coordinates": [
       -0.5345962877937347,
@@ -2708,14 +2163,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 813,
-    "photos": [
-      "https://luseogroup.com/luseomap/08013 ecole Gambetta.jpg",
-      "https://luseogroup.com/luseomap/08013 ECOLE_GAMBETTA_.jpg",
-      "https://luseogroup.com/luseomap/08013-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 125,
+    "id": 118,
     "name": "LYCEE PROFESSIONNELLE EMILE COMBE",
     "coordinates": [
       -0.5522168094405956,
@@ -2731,31 +2182,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 814,
-    "photos": [
-      "https://luseogroup.com/luseomap/08014 lycée emilie combe.jpg"
-    ]
-  },
-  {
-    "id": 126,
-    "name": "SOPPEC",
-    "coordinates": [
-      0.07469201081530985,
-      45.631017729354404
-    ],
-    "mission": "Etude d'Exécution pour les lots Electricité & Fluide",
-    "city": "NERSAC",
-    "region": "FRANCE",
-    "area": "2600m²",
-    "architect": "atelier centre joel nissou",
-    "category": "Industrie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 815,
     "photos": []
   },
   {
-    "id": 127,
+    "id": 119,
     "name": "SOFITEL MOGADOR",
     "coordinates": [
       -9.767423931215369,
@@ -2771,21 +2201,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 819,
-    "photos": [
-      "https://luseogroup.com/luseomap/08019 Sofitel Mogador I - essaouira - marco.jpg",
-      "https://luseogroup.com/luseomap/08019Sofitel Mogador I - Essaouira - Maroc.jpg",
-      "https://luseogroup.com/luseomap/08019Sofitel Mogador - Essaouira - Maroc.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 128,
+    "id": 120,
     "name": "HYATT",
     "coordinates": [
       60.59208691061229,
       56.84290350153071
     ],
     "mission": "Etudes d’Exécutions pour le lot Electricité",
-    "city": "EKATERINBOUREKATERINBOURG",
+    "city": "EKATERINBOURG",
     "region": "RUSSIE",
     "area": "296 Chambres",
     "architect": "VALODE  & PISTRE",
@@ -2794,12 +2220,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 6010,
-    "photos": [
-      "https://luseogroup.com/luseomap/06010 - Hyaat - Ekaterinbourg Russie (2).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 129,
+    "id": 121,
     "name": "MAZAGAN RESORT",
     "coordinates": [
       -8.3838854021591,
@@ -2815,12 +2239,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 833,
-    "photos": [
-      "https://luseogroup.com/luseomap/08033 Mazagan - El jadida.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 130,
+    "id": 122,
     "name": "LYCEE ALFRED KASTLER",
     "coordinates": [
       -0.5991437937013809,
@@ -2836,31 +2258,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 834,
-    "photos": [
-      "https://luseogroup.com/luseomap/08034 lycée aflread kastler.jpg"
-    ]
-  },
-  {
-    "id": 131,
-    "name": "Centre de vacances CCAS",
-    "coordinates": [
-      0.23425175489748656,
-      47.181295467061
-    ],
-    "mission": "Etudes d’Exécutions pour les lots Electricité & Fluide",
-    "city": "CHINON\nlieu LES FONTENILS (37)",
-    "region": "FRANCE",
-    "area": "Salle  spectacle\nRestauration \n1300m²",
-    "architect": "ANDRE FOURNIER \nSI TU SAVAIS",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 838,
     "photos": []
   },
   {
-    "id": 132,
+    "id": 123,
     "name": "LYCEE JACQUES BREL",
     "coordinates": [
       -0.5138659583444805,
@@ -2876,16 +2277,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 842,
-    "photos": [
-      "https://luseogroup.com/luseomap/08042 - Lycee Pro Jacques Brel - Lormont.jpg",
-      "https://luseogroup.com/luseomap/08042 - Lycee Pro Jacques Brel - Lormont.jpg",
-      "https://luseogroup.com/luseomap/08042-1.jpg",
-      "https://luseogroup.com/luseomap/08042-2.jpg",
-      "https://luseogroup.com/luseomap/08042-lyceeJB.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 133,
+    "id": 124,
     "name": "CASASHORE DELL",
     "coordinates": [
       -7.642354762863058,
@@ -2901,12 +2296,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 845,
-    "photos": [
-      "https://luseogroup.com/luseomap/08045 dell casanearshoreHD.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 134,
+    "id": 125,
     "name": "POLE EQUIPEMENT SERVICE PUBLIC, CRECHE-MATERNELLE-PRIMAIRE CENTRE DE LOISIRS",
     "coordinates": [
       -0.5931627041410491,
@@ -2922,14 +2315,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 848,
-    "photos": [
-      "https://luseogroup.com/luseomap/08048 pesp bruges I.jpg",
-      "https://luseogroup.com/luseomap/08048 pesp bruges II.jpg?https://luseogroup.com/luseomap/08048 pesp bruges III.jpg",
-      "https://luseogroup.com/luseomap/08048 pesp bruges IV.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 135,
+    "id": 126,
     "name": "CENTRE HOPSITALIER UNIVERSITAIRE",
     "coordinates": [
       2.2532644895508196,
@@ -2945,15 +2334,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 854,
-    "photos": [
-      "https://luseogroup.com/luseomap/08054 chu amiens I.jpg",
-      "https://luseogroup.com/luseomap/08054 chu amiens II.jpg",
-      "https://luseogroup.com/luseomap/08054 chu amiens IV.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 136,
+    "id": 127,
     "name": "FOUR SEASONS",
     "coordinates": [
       -8.017424989285452,
@@ -2969,15 +2353,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 857,
-    "photos": [
-      "https://luseogroup.com/luseomap/08057 - 4 Seasons 2.jpg",
-      "https://luseogroup.com/luseomap/08057 - 4 Seasons 4.jpg",
-      "https://luseogroup.com/luseomap/08057 - 4 Seasons 5.jpg",
-      "https://luseogroup.com/luseomap/08057 - Four_Seasons_Marrakech_4.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 137,
+    "id": 128,
     "name": "SALLE DE SPECTACLE",
     "coordinates": [
       0.23521462230281714,
@@ -2993,12 +2372,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 858,
-    "photos": [
-      "https://luseogroup.com/luseomap/08058 - chinon.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 138,
+    "id": 129,
     "name": "SOFITEL MOGADOR - SPA",
     "coordinates": [
       -9.76737933605956,
@@ -3014,15 +2391,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 860,
-    "photos": [
-      "https://luseogroup.com/luseomap/08060 Sofitel Mogador - essaouira (2).jpg",
-      "https://luseogroup.com/luseomap/08060 Sofitel Mogador - essaouira (3).jpg",
-      "https://luseogroup.com/luseomap/08060 Sofitel Mogador - essaouira  (4).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 139,
+    "id": 130,
     "name": "SIEGE CFG BANK",
     "coordinates": [
       -7.660332693937392,
@@ -3038,13 +2410,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA025",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA025 - CFG 1.jpg",
-      "https://luseogroup.com/luseomap/21MA025 - CFG.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 140,
+    "id": 131,
     "name": "LES VILLAS D' ORNAMO",
     "coordinates": [
       -0.594806157612644,
@@ -3060,12 +2429,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 869,
-    "photos": [
-      "https://luseogroup.com/luseomap/08069 - villa_dornano.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 141,
+    "id": 132,
     "name": "MAIRIE DE BEGLES",
     "coordinates": [
       -0.5431137245091278,
@@ -3081,12 +2448,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 870,
-    "photos": [
-      "https://luseogroup.com/luseomap/08070 mairie de begles.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 142,
+    "id": 133,
     "name": "Mr Bricolage",
     "coordinates": [
       -149.61438923754056,
@@ -3102,12 +2467,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 909,
-    "photos": [
-      "https://luseogroup.com/luseomap/09009 Mr Bricolage Faa'a.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 143,
+    "id": 134,
     "name": "SOFITEL",
     "coordinates": [
       8.906764894657968,
@@ -3123,12 +2486,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 912,
-    "photos": [
-      "https://luseogroup.com/luseomap/09012 Malabo - Guinée equatorial.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 144,
+    "id": 135,
     "name": "CAMPUS UNIVERSITAIRE DU GAZ ET DU PETROLE",
     "coordinates": [
       58.38877345319954,
@@ -3144,12 +2505,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 917,
-    "photos": [
-      "https://luseogroup.com/luseomap/09012 Malabo - Guinée equatorial.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 145,
+    "id": 136,
     "name": "COMPLEXE ANFA PLACE",
     "coordinates": [
       -7.665503810154257,
@@ -3165,27 +2524,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 925,
-    "photos": [
-      "https://luseogroup.com/luseomap/09025-1 (1).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (2).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (3).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (4).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (5).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (6).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (7).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (8).jpg",
-      "https://luseogroup.com/luseomap/09025-1 (9).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 146,
+    "id": 137,
     "name": "ECOLE MATERNELLE ET PRIMAIRE DE TEAVARO",
     "coordinates": [
       -149.76939308954357,
       -17.510491453667694
     ],
     "mission": "Etude de Conception phase PRO pour le lot Electricité",
-    "city": "",
+    "city": "TEAVARO",
     "region": "POLYNESIE FRANCAISE",
     "area": "300 élèves",
     "architect": "CHAUVIN ARICHITECTE",
@@ -3194,19 +2543,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 927,
-    "photos": [
-      "https://luseogroup.com/luseomap/09027 ECOLE TEAVARO.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 147,
+    "id": 138,
     "name": "MINISTERE DU TOURISME",
     "coordinates": [
       -149.5651939047236,
       -17.539455822193904
     ],
     "mission": "Etude d’Exécutions Lot Electricité",
-    "city": "tahiti",
+    "city": "TAHIITI",
     "region": "POLYNESIE FRANCAISE",
     "area": "3 500m²",
     "architect": "-",
@@ -3215,31 +2562,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 932,
-    "photos": [
-      "https://luseogroup.com/luseomap/09032 - tahiti-tourisme 2 - Copie.jpg"
-    ]
-  },
-  {
-    "id": 148,
-    "name": "HOTEL DES FAMILLES HOPITAL DE TAHITI",
-    "coordinates": [
-      -149.54651153571723,
-      -17.53032852750339
-    ],
-    "mission": "Etudes de Conception et d’Exécutions pour les lots Electricité & Fluide",
-    "city": "TAHIITI",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "",
-    "architect": "-",
-    "category": "Hôtellerie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 935,
     "photos": []
   },
   {
-    "id": 149,
+    "id": 139,
     "name": "CREDIT AGRICOLE",
     "coordinates": [
       5.401173983757692,
@@ -3255,34 +2581,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 939,
-    "photos": [
-      "https://luseogroup.com/luseomap/09039-CREDIT AGRICOL.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 150,
-    "name": "Hôpitaux Universitaires de Marseille Timone",
-    "coordinates": [
-      5.4020744301228625,
-      43.290533935576285
-    ],
-    "mission": "Etude d'Exécution pour le lot Electrcité",
-    "city": "MARSEILLE",
-    "region": "FRANCE",
-    "area": "80 000m²\n247 lits",
-    "architect": "AART FARAH ARCHITETCE",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 941,
-    "photos": [
-      "https://luseogroup.com/luseomap/09041 - la timone 1.jpg",
-      "https://luseogroup.com/luseomap/09041 - la timone.jpg"
-    ]
-  },
-  {
-    "id": 151,
+    "id": 140,
     "name": "GARE MARITIME",
     "coordinates": [
       -149.5690334327815,
@@ -3298,19 +2600,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 942,
-    "photos": [
-      "https://luseogroup.com/luseomap/09042 - port de papeete.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 152,
+    "id": 141,
     "name": "RESIDENCE PRESIDENTIELLE",
     "coordinates": [
       11.284965176841137,
       1.6112080939913829
     ],
     "mission": "Etude d’Exécution pour les lots Electricité & Fluide",
-    "city": "Mogomo",
+    "city": "MOGOMO",
     "region": "GUINEE EQUATORIALE",
     "area": "2 000m²",
     "architect": "KNOw DESIGN",
@@ -3319,19 +2619,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 949,
-    "photos": [
-      "https://luseogroup.com/luseomap/09049 Mongomo.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 153,
+    "id": 142,
     "name": "SOFITEL ESSAOUIRA MOGADOR\nCLUB HOUSE",
     "coordinates": [
       -9.767349928176595,
       31.470053214155165
     ],
     "mission": "Etude de Conception pour le lot Fluide",
-    "city": "Essaouira",
+    "city": "ESSAOUIRA",
     "region": "MAROC",
     "area": "",
     "architect": "RACHID ANDALOUSSI BENBRAHIM & EDUARDO GAGGIANO",
@@ -3340,12 +2638,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10002,
-    "photos": [
-      "https://luseogroup.com/luseomap/10002 Spa sofitel et club house.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 154,
+    "id": 143,
     "name": "MAIRIE DE HIENGENE",
     "coordinates": [
       164.94573884360926,
@@ -3361,14 +2657,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10005,
-    "photos": [
-      "https://luseogroup.com/luseomap/10005 mairie.jpg",
-      "https://luseogroup.com/luseomap/10005.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 155,
+    "id": 144,
     "name": "VELODROME",
     "coordinates": [
       2.034926121036266,
@@ -3384,14 +2676,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10011,
-    "photos": [
-      "https://luseogroup.com/luseomap/10011 - velodrome - St Quentin (1).jpg",
-      "https://luseogroup.com/luseomap/10011 - velodrome - St Quentin (2).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 156,
+    "id": 145,
     "name": "CENTRE COMMERCIAL  TARAVAO",
     "coordinates": [
       -149.30925499062644,
@@ -3407,13 +2695,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10021,
-    "photos": [
-      "https://luseogroup.com/luseomap/10021 centre commercial taravao.jpeg",
-      "https://luseogroup.com/luseomap/10021 CENTRE COMMERCILA TAVARO.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 157,
+    "id": 146,
     "name": "MINISTERE TRAVAUX PUBLICS & DES INFRASTRUCTURES",
     "coordinates": [
       8.760578803208823,
@@ -3429,12 +2714,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10023,
-    "photos": [
-      "https://luseogroup.com/luseomap/10023 ministere travaux public.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 158,
+    "id": 147,
     "name": "LEAR  PHASE I",
     "coordinates": [
       -6.715551950427157,
@@ -3450,12 +2733,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10036,
-    "photos": [
-      "https://luseogroup.com/luseomap/10036-Lear_Technopolis.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 159,
+    "id": 148,
     "name": "GORO NICKEL",
     "coordinates": [
       166.49014513977548,
@@ -3471,12 +2752,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10047,
-    "photos": [
-      "https://luseogroup.com/luseomap/10047 GORO NICKEL.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 160,
+    "id": 149,
     "name": "CONFEDERATION GENERALE DES ENTREPRISES DE COTE D'IVOIRE",
     "coordinates": [
       -4.019070950592898,
@@ -3492,12 +2771,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10048,
-    "photos": [
-      "https://luseogroup.com/luseomap/10048 cONFEDERATION DES ENTREPEISE CI.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 161,
+    "id": 150,
     "name": "CENTRE HOSPITALIER UNIVERSITAIRE",
     "coordinates": [
       2.253686470783852,
@@ -3513,56 +2790,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 10049,
-    "photos": [
-      "https://luseogroup.com/luseomap/10049 - CHU amiens.jpg",
-      "https://luseogroup.com/luseomap/10049 - CHU_Amiens.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 162,
-    "name": "Centre Commercial ZAC EIFFEL",
-    "coordinates": [
-      2.282329109648391,
-      48.84842967362595
-    ],
-    "mission": "Etude d’Exécution pour le lot Electricité",
-    "city": "LEVALLOIS",
-    "region": "FRANCE",
-    "area": "84 000M²",
-    "architect": "cabinet glaiman",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 10057,
-    "photos": [
-      "https://luseogroup.com/luseomap/10057 ZAC eiffel.jpg"
-    ]
-  },
-  {
-    "id": 163,
-    "name": "MATAWAI",
-    "coordinates": [
-      -149.5861447137333,
-      -17.545427112947593
-    ],
-    "mission": "Etude Conception pour les lots Electricité & Fluide",
-    "city": "PAPEETE - TAHITI",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "14 000m²",
-    "architect": "ARTEMIS - EDIFICOM \nPHILIPPE TILLIET",
-    "category": "Centres commerciaux",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 10061,
-    "photos": [
-      "https://luseogroup.com/luseomap/10061 - matavai - Tahiti - PF.BMP",
-      ""
-    ]
-  },
-  {
-    "id": 164,
+    "id": 151,
     "name": "COMPLEXE PORT LIXUS",
     "coordinates": [
       -6.134409693877859,
@@ -3578,14 +2809,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11001,
-    "photos": [
-      "https://luseogroup.com/luseomap/11001 projet lixus hidalgo.jpg",
-      "https://luseogroup.com/luseomap/11001-1 lixus.jpg",
-      "https://luseogroup.com/luseomap/11001-31 lixus.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 165,
+    "id": 152,
     "name": "HOTEL TCHANDYBIL",
     "coordinates": [
       58.33946330851267,
@@ -3601,12 +2828,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11005,
-    "photos": [
-      "https://luseogroup.com/luseomap/11005 Hotel 5 Ashgabat - Turkmenistan.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 166,
+    "id": 153,
     "name": "NOVOTEL & IBIS CASANEARSHORE",
     "coordinates": [
       -7.6351896913020445,
@@ -3622,15 +2847,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11006,
-    "photos": [
-      "https://luseogroup.com/luseomap/11006 - ibis casa.JPG",
-      "https://luseogroup.com/luseomap/11006 - ibis casablanca (2).JPG",
-      "https://luseogroup.com/luseomap/11006 - ibis casablanca (6).JPG",
-      "https://luseogroup.com/luseomap/11006 - Ibis-Novotel - casablanca.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 167,
+    "id": 154,
     "name": "PROJET HOTEL 4 ETOILES",
     "coordinates": [
       9.449283728926584,
@@ -3646,12 +2866,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11009,
-    "photos": [
-      "https://luseogroup.com/luseomap/11009 hotel libreville-HD.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 168,
+    "id": 155,
     "name": "Stade d'Angondjé",
     "coordinates": [
       9.39330991543622,
@@ -3659,7 +2877,7 @@ export const projects = [
     ],
     "mission": "Étude de Conception pour les lots Électricité, Fluide, Protection Incendie\n& VRD",
     "city": "LIBREVILLE",
-    "region": "Gabon",
+    "region": "GABON",
     "area": "40 000 places",
     "architect": "-",
     "category": "Equipements publics",
@@ -3667,14 +2885,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11010,
-    "photos": [
-      "https://luseogroup.com/luseomap/11010 satde libreville 1 (1).jpg",
-      "https://luseogroup.com/luseomap/11010 satde libreville 1 (2).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 169,
+    "id": 156,
     "name": "MINISTERE DES FINANCES",
     "coordinates": [
       58.37790579546477,
@@ -3690,16 +2904,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11017,
-    "photos": [
-      "https://luseogroup.com/luseomap/11017 - MINISTERE DES FINANCES-1.jpg",
-      "https://luseogroup.com/luseomap/11017 - MINISTERE DES FINANCES-2.jpg",
-      "https://luseogroup.com/luseomap/11017 ministere des finances.jpg",
-      "https://luseogroup.com/luseomap/11017 ministere finances.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 170,
+    "id": 157,
     "name": "MINISTERE : \n- DE L'ECONOMIE ET DU DEVELOPPEMENT\n- MINISTERE DES FINANCES  \n- MINISTERE DE LA SECURITE SOCIALE",
     "coordinates": [
       58.37791196819954,
@@ -3715,15 +2923,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11017,
-    "photos": [
-      "https://luseogroup.com/luseomap/11017 - MINISTERE DES FINANCES-1.jpg",
-      "https://luseogroup.com/luseomap/11017 - MINISTERE DES FINANCES-2.jpg",
-      "https://luseogroup.com/luseomap/11017 ministere des finances.jpg",
-      "https://luseogroup.com/luseomap/11017 ministere finances.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 171,
+    "id": 158,
     "name": "BANK AL MAGHREB",
     "coordinates": [
       -6.840107868715385,
@@ -3739,13 +2942,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11023,
-    "photos": [
-      "https://luseogroup.com/luseomap/11023- (1).jpg",
-      "https://luseogroup.com/luseomap/11023- (2).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 172,
+    "id": 159,
     "name": "VILLA MHE",
     "coordinates": [
       -7.966565491061902,
@@ -3761,13 +2961,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11026,
-    "photos": [
-      "https://luseogroup.com/luseomap/11026",
-      "jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 173,
+    "id": 160,
     "name": "CHALLENGER",
     "coordinates": [
       2.0720688077629106,
@@ -3783,12 +2980,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11032,
-    "photos": [
-      "https://luseogroup.com/luseomap/11032 - CHALLENGER .jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 174,
+    "id": 161,
     "name": "LYCEE AGRICOLE BLANQUEFORT",
     "coordinates": [
       -0.6329229452376004,
@@ -3804,14 +2999,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 831,
-    "photos": [
-      "https://luseogroup.com/luseomap/08031 lycée agricole blanquefort.jpg",
-      "https://luseogroup.com/luseomap/08031-LYCEE-BLAQUEFORT-2.jpg",
-      "https://luseogroup.com/luseomap/08031-LYCEE-BLAQUEFORT-5.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 175,
+    "id": 162,
     "name": "BEAUGRENELLE",
     "coordinates": [
       2.2824179768605557,
@@ -3827,16 +3018,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11039,
-    "photos": [
-      "https://luseogroup.com/luseomap/11039 beaugrenelle (2).jpg",
-      "https://luseogroup.com/luseomap/11039 beaugrenelle (3).jpg",
-      "https://luseogroup.com/luseomap/11039 beaugrenelle (6).jpg",
-      "https://luseogroup.com/luseomap/11039 beaugrenelle (7).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 176,
+    "id": 163,
     "name": "PALAIS PRESIDENTIEL  - GRAND PALAIS",
     "coordinates": [
       -4.022864089463468,
@@ -3852,12 +3037,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11040,
-    "photos": [
-      "https://luseogroup.com/luseomap/11040 - palais-presidentiel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 177,
+    "id": 164,
     "name": "L'ORANGERAIE",
     "coordinates": [
       -6.847134687111526,
@@ -3873,14 +3056,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11042,
-    "photos": [
-      "https://luseogroup.com/luseomap/11042 - ORANGERAIE -1.jpg",
-      "https://luseogroup.com/luseomap/11042 - ORANGERAIE -12.jpg",
-      "https://luseogroup.com/luseomap/11042 ORANGERAIE.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 178,
+    "id": 165,
     "name": "ECOLE CHENIER",
     "coordinates": [
       -6.822430623411576,
@@ -3896,17 +3075,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11043,
-    "photos": [
-      "https://luseogroup.com/luseomap/11043- (1).jpg",
-      "https://luseogroup.com/luseomap/11043- (2).jpg",
-      "https://luseogroup.com/luseomap/11043- (3).jpg",
-      "https://luseogroup.com/luseomap/11043- (4).jpg",
-      "https://luseogroup.com/luseomap/11043- (5).jpg",
-      "https://luseogroup.com/luseomap/11043- (6).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 179,
+    "id": 166,
     "name": "ECOLE MOLIERE",
     "coordinates": [
       -7.626491803822486,
@@ -3922,17 +3094,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11044,
-    "photos": [
-      "https://luseogroup.com/luseomap/11044- (1).jpg",
-      "https://luseogroup.com/luseomap/11044- (2).jpg",
-      "https://luseogroup.com/luseomap/11044- (3).jpg",
-      "https://luseogroup.com/luseomap/11044- (4).jpg",
-      "https://luseogroup.com/luseomap/11044- (5).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 180,
+    "id": 167,
     "name": "LYCEE LYAUTEY",
     "coordinates": [
       -7.634778932509817,
@@ -3948,39 +3113,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11046,
-    "photos": [
-      "https://luseogroup.com/luseomap/11046- (1).jpg",
-      "https://luseogroup.com/luseomap/11046- (2).jpg",
-      "https://luseogroup.com/luseomap/11046- (3).jpg",
-      "https://luseogroup.com/luseomap/11046- (4).jpg",
-      "https://luseogroup.com/luseomap/11046- (5).jpg",
-      "https://luseogroup.com/luseomap/11046- (6).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 181,
-    "name": "MINISTERE DES TRAVAUX PUBLIC",
-    "coordinates": [
-      8.761355937501838,
-      3.73642835396811
-    ],
-    "mission": "APS, Room by Room, Coordination pour le lot Fluide",
-    "city": "malabo",
-    "region": "GUINEE EQUATORIALE",
-    "area": "7 092M²",
-    "architect": "ARCHITTETURA + ART DESIGN",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 11047,
-    "photos": [
-      "https://luseogroup.com/luseomap/11047 ministère travaux publics.jpg"
-    ]
-  },
-  {
-    "id": 182,
+    "id": 168,
     "name": "BIO IMAGERIE",
     "coordinates": [
       -0.6078412464441763,
@@ -3996,12 +3132,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11054,
-    "photos": [
-      "https://luseogroup.com/luseomap/11054 bio imagerie bordeaux.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 183,
+    "id": 169,
     "name": "CENTRE PENITENTIAIRE",
     "coordinates": [
       -149.33884497140906,
@@ -4017,31 +3151,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 11057,
-    "photos": [
-      "https://luseogroup.com/luseomap/11057 - papeari - tahiti.jpg"
-    ]
-  },
-  {
-    "id": 184,
-    "name": "NYONIE",
-    "coordinates": [
-      9.340600948547047,
-      -0.0393382863322525
-    ],
-    "mission": "Etude de faisabilité, Chiffrage et Quantitatif Tout Corps d’Etat",
-    "city": "NYONIE",
-    "region": "GABON",
-    "area": "300 Chambres",
-    "architect": "LEISURE & HOSPITALITY DESIGN Inte ????r",
-    "category": "Hôtellerie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 11099,
     "photos": []
   },
   {
-    "id": 185,
+    "id": 170,
     "name": "MEDIPOLE KOUTIO",
     "coordinates": [
       166.4538241231077,
@@ -4057,12 +3170,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12003,
-    "photos": [
-      "https://luseogroup.com/luseomap/12003 medipole koutio.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 186,
+    "id": 171,
     "name": "TOUR CCIA",
     "coordinates": [
       -4.021897609414884,
@@ -4078,13 +3189,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12007,
-    "photos": [
-      "https://luseogroup.com/luseomap/12007 & 12057 -CCIA modelise.JPG",
-      "https://luseogroup.com/luseomap/12007 & 12057 -CCIA.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 187,
+    "id": 172,
     "name": "UNISERSITE V",
     "coordinates": [
       58.387620589327256,
@@ -4100,12 +3208,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12013,
-    "photos": [
-      "https://luseogroup.com/luseomap/12013 University 5_Ashgabat.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 188,
+    "id": 173,
     "name": "POLE SANTE DU VILLENEUVOIS",
     "coordinates": [
       0.7461733581705672,
@@ -4121,13 +3227,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12014,
-    "photos": [
-      "https://luseogroup.com/luseomap/12014 villeneuve sur lot.jpg",
-      "https://luseogroup.com/luseomap/12014 villeneuve sur lot.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 189,
+    "id": 174,
     "name": "ELEPHANT VERT",
     "coordinates": [
       -5.468164141715604,
@@ -4143,15 +3246,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13046,
-    "photos": [
-      "https://luseogroup.com/luseomap/13046 Elephant Vert I - Meknes (1).jpg",
-      "https://luseogroup.com/luseomap/13046 Elephant Vert I - Meknes (2).jpg",
-      "https://luseogroup.com/luseomap/13046 Elephant Vert I - Meknes (3).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 190,
+    "id": 175,
     "name": "AL HOUARA",
     "coordinates": [
       -5.965869109459601,
@@ -4167,12 +3265,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12031,
-    "photos": [
-      "https://luseogroup.com/luseomap/12031 - alhouara  - Copie.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 191,
+    "id": 176,
     "name": "MINISTERE DE LA JUSTICE",
     "coordinates": [
       58.29660877113539,
@@ -4188,33 +3284,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12032,
-    "photos": [
-      "https://luseogroup.com/luseomap/12032 ministere de la justice ashgabat.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 192,
-    "name": "AERODROME DE TAHITI FAA'A",
-    "coordinates": [
-      -149.608981525151,
-      -17.559318313777712
-    ],
-    "mission": "Études de conception & Exécution pour le lot Fluide – Tour de Contrôle",
-    "city": "TAHITI",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "",
-    "architect": "-",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 12034,
-    "photos": [
-      "voir si photo aeroport tahiti"
-    ]
-  },
-  {
-    "id": 194,
+    "id": 178,
     "name": "VILLA DE ASSINIE",
     "coordinates": [
       -3.3208265186326393,
@@ -4230,14 +3303,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12041,
-    "photos": [
-      "https://luseogroup.com/luseomap/12041 Villa ASSINIE.jpg",
-      "https://luseogroup.com/luseomap/12041 villa de assinie-1.jpg",
-      "https://luseogroup.com/luseomap/12041 villa de assinie.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 195,
+    "id": 179,
     "name": "BANQUE AFRICIANE DE DEVELLOPPEMENT",
     "coordinates": [
       -4.0167985896449885,
@@ -4253,19 +3322,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12045,
-    "photos": [
-      "https://luseogroup.com/luseomap/12045 BAD I.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 196,
+    "id": 180,
     "name": "PALAIS PRESIDENTIEL",
     "coordinates": [
       -5.294835211693065,
       6.810613548554749
     ],
     "mission": "Etude de Conception pour le lot Electrique",
-    "city": "YAMASUKRO",
+    "city": "YAMOUSSOUKRO",
     "region": "COTE D'IVOIRE",
     "area": "12485 m²",
     "architect": "Dufau-Lafon Architecte DPLG",
@@ -4274,13 +3341,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12052,
-    "photos": [
-      "https://luseogroup.com/luseomap/12052 palais presidentiel CIGrand palais I.jpghttps://luseogroup.com/luseomap/12052 palais presidentiel CI petit palais.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 197,
+    "id": 181,
     "name": "La pinède",
     "coordinates": [
       -6.829607274087902,
@@ -4296,19 +3360,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13002,
-    "photos": [
-      "https://luseogroup.com/luseomap/13002 - la pinède.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 198,
+    "id": 182,
     "name": "DISPENSAIRE FONDATION DROGBA",
     "coordinates": [
       -4.018929859348272,
       5.542942444964922
     ],
     "mission": "Maîtrise d’Œuvre Conception et Exécution Technique Tout Corps d’Etat",
-    "city": "",
+    "city": "ABIDJAN",
     "region": "COTE D'IVOIRE",
     "area": "1 599m²",
     "architect": "Pierre Fakhoury",
@@ -4317,12 +3379,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13008,
-    "photos": [
-      "https://luseogroup.com/luseomap/13008 fondation drogba.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 199,
+    "id": 183,
     "name": "NEMOTEK",
     "coordinates": [
       -6.713378583030816,
@@ -4338,13 +3398,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 865,
-    "photos": [
-      "https://luseogroup.com/luseomap/08065 NEMOTEK I.jpg",
-      "https://luseogroup.com/luseomap/08065-2NEMOTEK.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 200,
+    "id": 184,
     "name": "Centre Hospitalier Bergerac",
     "coordinates": [
       0.49690906167604865,
@@ -4360,12 +3417,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13017,
-    "photos": [
-      "https://luseogroup.com/luseomap/13017 Hopital bergerac.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 201,
+    "id": 185,
     "name": "MARRIOTT",
     "coordinates": [
       -6.844871082145193,
@@ -4381,12 +3436,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13022,
-    "photos": [
-      "https://luseogroup.com/luseomap/13022 - MARRIOTT-RABAT.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 202,
+    "id": 186,
     "name": "RESIDENCE CHOCOLAT",
     "coordinates": [
       -3.9558184207742966,
@@ -4394,7 +3447,7 @@ export const projects = [
     ],
     "mission": "Concours d’Architecture",
     "city": "ABIDJAN",
-    "region": "GABON",
+    "region": "COTE D'IVOIRE",
     "area": "complexe Immoblier luxe 14 villas/18appart",
     "architect": "Koffi & Diabatté",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -4402,12 +3455,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13026,
-    "photos": [
-      "https://luseogroup.com/luseomap/13026 Chocolat.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 203,
+    "id": 187,
     "name": "TULIPIN HOTEL",
     "coordinates": [
       -5.776109684772901,
@@ -4423,16 +3474,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13027,
-    "photos": [
-      "https://luseogroup.com/luseomap/13027- (1).jpg",
-      "https://luseogroup.com/luseomap/13027- (3).jpg",
-      "https://luseogroup.com/luseomap/13027- (5).jpg",
-      "https://luseogroup.com/luseomap/13027- (7).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 204,
+    "id": 188,
     "name": "BOUSTANE SAHEL",
     "coordinates": [
       -7.59021569519166,
@@ -4448,12 +3493,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13031,
-    "photos": [
-      "https://luseogroup.com/luseomap/13031 -  al boustane.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 205,
+    "id": 189,
     "name": "NORTHMIDLLESEX",
     "coordinates": [
       -0.07454265655763252,
@@ -4469,37 +3512,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 809,
-    "photos": [
-      "https://luseogroup.com/luseomap/08009 Northmiddlesex I.jpg",
-      "https://luseogroup.com/luseomap/08009 Northmiddlesex II.jpg",
-      "https://luseogroup.com/luseomap/08009 Northmiddlesex.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 206,
-    "name": "RADISSON BLUE LAGOS AIRPORT",
-    "coordinates": [
-      3.361026799525545,
-      6.588088316252628
-    ],
-    "mission": "Étude de Conception pour le lot Fluide\nMétré & Quantitatif  pour les lots Électricité et Fluide\n Étude d’Exécution pour les lots Électricité et Fluide",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "261 ch -",
-    "architect": "S.A.R.L D'Architecture ADOU(A+A)",
-    "category": "Hôtellerie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 13034,
-    "photos": [
-      "https://luseogroup.com/luseomap/13034 Radissons abidjan.jpg",
-      "https://luseogroup.com/luseomap/13034-2 Radissons abidjan.jpg",
-      "https://luseogroup.com/luseomap/13034-3 Radissons abidjan.jpg"
-    ]
-  },
-  {
-    "id": 207,
+    "id": 190,
     "name": "NOVOTEL / IBIS",
     "coordinates": [
       15.02369048750953,
@@ -4515,14 +3531,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13039,
-    "photos": [
-      "https://luseogroup.com/luseomap/13039 IBIS N'Djamena.jpg",
-      "https://luseogroup.com/luseomap/13039 Novotel tchadienne.jpg",
-      "https://luseogroup.com/luseomap/13039 Novotel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 208,
+    "id": 191,
     "name": "TECHNIP ANGOFLEX",
     "coordinates": [
       13.362605134978324,
@@ -4538,13 +3550,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13042,
-    "photos": [
-      "https://luseogroup.com/luseomap/13042- (1).jpg",
-      "https://luseogroup.com/luseomap/13042- (7).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 209,
+    "id": 192,
     "name": "FACULTE  DE MEDECINE & DE PHARMACIE",
     "coordinates": [
       -5.9219412643465565,
@@ -4560,13 +3569,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13043,
-    "photos": [
-      "https://luseogroup.com/luseomap/13043-uni tanger.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 210,
-    "name": "ELEPHANT VERT - Mali",
+    "id": 193,
+    "name": "ELEPHANT VERT",
     "coordinates": [
       -6.1974004396803215,
       13.452137575408745
@@ -4581,17 +3588,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13046,
-    "photos": [
-      "https://luseogroup.com/luseomap/13046- (2).jpg",
-      "https://luseogroup.com/luseomap/13046- (3).jpg",
-      "https://luseogroup.com/luseomap/13046- (7).jpg",
-      "https://luseogroup.com/luseomap/13046- (8).jpg",
-      "https://luseogroup.com/luseomap/13046- (9).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 211,
+    "id": 194,
     "name": "IKEA",
     "coordinates": [
       -7.436126569672198,
@@ -4607,16 +3607,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13051,
-    "photos": [
-      "https://luseogroup.com/luseomap/15003-ikea I.jpg",
-      "https://luseogroup.com/luseomap/15003-ikea II.jpg",
-      "https://luseogroup.com/luseomap/15003-ikea III.jpg",
-      "https://luseogroup.com/luseomap/15003-ikea III(2).jpg",
-      "https://luseogroup.com/luseomap/15003-ikea IV.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 212,
+    "id": 195,
     "name": "CHRIFIA",
     "coordinates": [
       -8.021301201306427,
@@ -4632,12 +3626,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13054,
-    "photos": [
-      "https://luseogroup.com/luseomap/13054 - Chrifia - Residence Senior Marrakech.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 213,
+    "id": 196,
     "name": "TOUR CASA FINANCE CITY AUDA",
     "coordinates": [
       -7.659597819279235,
@@ -4653,19 +3645,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14001,
-    "photos": [
-      "https://luseogroup.com/luseomap/14001 - Auda.png"
-    ]
+    "photos": []
   },
   {
-    "id": 214,
+    "id": 197,
     "name": "Universite de la polynesie francaise",
     "coordinates": [
       -149.610006891736,
       -17.576312540255735
     ],
     "mission": "Etude Conception phase PRO, pour les lots Fluides & Electricité",
-    "city": "Tahiti",
+    "city": "TAHIITI",
     "region": "POLYNESIE FRANCAISE",
     "area": "",
     "architect": "-",
@@ -4674,12 +3664,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14002,
-    "photos": [
-      "https://luseogroup.com/luseomap/20015 aeroport tahiti-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 215,
+    "id": 198,
     "name": "VILLAS NOVOTEL",
     "coordinates": [
       -6.835216027449072,
@@ -4695,16 +3683,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14003,
-    "photos": [
-      "https://luseogroup.com/luseomap/14003 novotel 3.jpg",
-      "https://luseogroup.com/luseomap/14003 novotel rabat 1.jpg",
-      "https://luseogroup.com/luseomap/14003 novotel rabat 2.jpg",
-      "https://luseogroup.com/luseomap/14003 novotel rabat 4 copie.jpg",
-      "https://luseogroup.com/luseomap/14003 novotel rabat.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 216,
+    "id": 199,
     "name": "Clinique Périnatale Mohammed VI",
     "coordinates": [
       -8.06778579175816,
@@ -4720,31 +3702,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14009,
-    "photos": [
-      "https://luseogroup.com/luseomap/14009 unite périnatale.jpg"
-    ]
-  },
-  {
-    "id": 217,
-    "name": "LE BOIS MIRAIL",
-    "coordinates": [
-      1.3979710697235557,
-      43.56520869610509
-    ],
-    "mission": "Étude de Conception phase DCE pour le lot Electricité",
-    "city": "BELLEFONTAINE\nTOULOUSE",
-    "region": "FRANCE",
-    "area": "48 logement\n4 450m²",
-    "architect": "ESPAGNO  MILANI",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 14017,
     "photos": []
   },
   {
-    "id": 218,
+    "id": 200,
     "name": "CONSULAT DE France",
     "coordinates": [
       -6.847204963348492,
@@ -4760,13 +3721,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14019,
-    "photos": [
-      "https://luseogroup.com/luseomap/14019 consulat de france-1.jpg",
-      "https://luseogroup.com/luseomap/14019 consulat de france.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 219,
+    "id": 201,
     "name": "LE DOMAINE DE MALENA",
     "coordinates": [
       -0.4284277585046548,
@@ -4782,12 +3740,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14023,
-    "photos": [
-      "https://luseogroup.com/luseomap/14023 logements isle d espagnac.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 220,
+    "id": 202,
     "name": "CLINIQUE PSYCHIATRIQUE",
     "coordinates": [
       8.780371477613684,
@@ -4803,12 +3759,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14026,
-    "photos": [
-      "https://luseogroup.com/luseomap/14026 clinique psy.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 221,
+    "id": 203,
     "name": "DAHER",
     "coordinates": [
       -5.911662935909408,
@@ -4824,12 +3778,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14028,
-    "photos": [
-      "https://luseogroup.com/luseomap/14028 Daher.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 222,
+    "id": 204,
     "name": "CENTRE NATIONAL DE RADIOTHERAPIE ET\nD’ONCOLOGIE MEDICALE",
     "coordinates": [
       -3.99278953856356,
@@ -4845,15 +3797,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14033,
-    "photos": [
-      "https://luseogroup.com/luseomap/14033 - CNROM 2.jpg",
-      "https://luseogroup.com/luseomap/14033 - CNROM.jpg",
-      "https://luseogroup.com/luseomap/14033CNROM.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 223,
+    "id": 205,
     "name": "LE MERIDIEN MANDJI",
     "coordinates": [
       8.78882289008982,
@@ -4869,13 +3816,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14034,
-    "photos": [
-      "https://luseogroup.com/luseomap/14034-1-Le meridien Mandji.jpg",
-      "https://luseogroup.com/luseomap/14034-Le meridien Mandji.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 224,
+    "id": 206,
     "name": "IBIS AGDAL",
     "coordinates": [
       -6.858733389005541,
@@ -4891,12 +3835,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14043,
-    "photos": [
-      "https://luseogroup.com/luseomap/14043 Ibis Rabat 1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 225,
+    "id": 207,
     "name": "GARE FERROVIERE D'OUJDA",
     "coordinates": [
       -1.9249974052788967,
@@ -4912,19 +3854,17 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14049,
-    "photos": [
-      "https://luseogroup.com/luseomap/14049 - gare-oujda.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 226,
+    "id": 208,
     "name": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST",
     "coordinates": [
       -17.26255066314285,
       15.815384904306754
     ],
     "mission": "Etude de Conception d’Exécutions pour les lots Electricité et Fluide",
-    "city": "abengourou",
+    "city": "ABENGOUROU",
     "region": "COTE D'IVOIRE",
     "area": "",
     "architect": "-",
@@ -4933,12 +3873,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 14052,
-    "photos": [
-      "https://luseogroup.com/luseomap/"
-    ]
+    "photos": []
   },
   {
-    "id": 227,
+    "id": 209,
     "name": "COLLEGE BEAULIEU",
     "coordinates": [
       -7.635278215071242,
@@ -4946,7 +3884,7 @@ export const projects = [
     ],
     "mission": "Etude de Conception & Suivi de Travaux Tout Corps d’Etat",
     "city": "CASABLANCA",
-    "region": "Maroc",
+    "region": "MAROC",
     "area": "11 000m²",
     "architect": "Nicolas Michelin  & Associés",
     "category": "Equipements publics",
@@ -4954,12 +3892,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15002,
-    "photos": [
-      "https://luseogroup.com/luseomap/15002 - beaulieu - Lyautey phase 2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 228,
+    "id": 210,
     "name": "AEROPORT ORLY BATIMENT DE JONCTION SUD & OUEST",
     "coordinates": [
       2.372918832748344,
@@ -4975,13 +3911,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15005,
-    "photos": [
-      "https://luseogroup.com/luseomap/15005 - aeroport paris orly-1.jpg",
-      "https://luseogroup.com/luseomap/15005 - aeroport paris orly-2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 229,
+    "id": 211,
     "name": "GROUPE SCOLAIRE UNIFIE HONORE DE BALZAC",
     "coordinates": [
       -6.578976208872689,
@@ -4997,12 +3930,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15006,
-    "photos": [
-      "https://luseogroup.com/luseomap/15006 Balzac.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 230,
+    "id": 212,
     "name": "LOTISSEMENT AVOBRAM",
     "coordinates": [
       9.40533036760113,
@@ -5018,12 +3949,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15010,
-    "photos": [
-      "https://luseogroup.com/luseomap/15010 lotissement avobram.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 231,
+    "id": 213,
     "name": "SIEGE TOTAL",
     "coordinates": [
       7.468311225428039,
@@ -5039,12 +3968,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15014,
-    "photos": [
-      "https://luseogroup.com/luseomap/15014 TOTAL.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 232,
+    "id": 214,
     "name": "RICHBOND",
     "coordinates": [
       -4.092987824357645,
@@ -5060,12 +3987,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15015,
-    "photos": [
-      "https://luseogroup.com/luseomap/16015-richbond usine abidjan 2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 233,
+    "id": 215,
     "name": "IMMEUBLE AFEIZ",
     "coordinates": [
       -6.862478340115488,
@@ -5081,12 +4006,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15018,
-    "photos": [
-      "https://luseogroup.com/luseomap/15018-2 immeuble hay riad.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 234,
+    "id": 216,
     "name": "RESIDENCE INTERGENERATIONNELLE",
     "coordinates": [
       -1.0678639784662494,
@@ -5102,12 +4025,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15020,
-    "photos": [
-      "https://luseogroup.com/luseomap/15020 SANGUINET-HD.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 235,
+    "id": 217,
     "name": "PROVIDENCE WHARF TOWER  - GYM",
     "coordinates": [
       -0.004990353937884696,
@@ -5123,12 +4044,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15031,
-    "photos": [
-      "https://luseogroup.com/luseomap/15031 GYM CLUB (2).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 236,
+    "id": 218,
     "name": "ECOLE BERCHET",
     "coordinates": [
       -5.8117323470201505,
@@ -5144,12 +4063,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15032,
-    "photos": [
-      "https://luseogroup.com/luseomap/15032 adrien berchet.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 237,
+    "id": 219,
     "name": "SUNCITY",
     "coordinates": [
       -6.866359119403334,
@@ -5165,12 +4082,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15038,
-    "photos": [
-      "https://luseogroup.com/luseomap/15038 suncity.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 238,
+    "id": 220,
     "name": "MULTIPURPOSE BANQUET CENTRE TRANSCORP HILTON",
     "coordinates": [
       7.495020958039255,
@@ -5186,12 +4101,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15041,
-    "photos": [
-      "https://luseogroup.com/luseomap/"
-    ]
+    "photos": []
   },
   {
-    "id": 239,
+    "id": 221,
     "name": "AMENAGEMENT DE LA CITE ATALAYOUN",
     "coordinates": [
       -2.906165366964446,
@@ -5207,33 +4120,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 15042,
-    "photos": [
-      "https://luseogroup.com/luseomap/15042 - cite atalayoun .jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 240,
-    "name": "FAURECIA",
-    "coordinates": [
-      -6.505125626081376,
-      34.292580351048755
-    ],
-    "mission": "Étude de Conception et d’Exécution Tout Corps d’État & Ordonnancement, Pilotage & Coordination & Assistance à Maîtrise d’Ouvrage",
-    "city": "RABAT-SALE",
-    "region": "MAROC",
-    "area": "12 211m²",
-    "architect": "Cabinet ROBAIE – Assoufi Robaie",
-    "category": "Industrie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 15043,
-    "photos": [
-      "https://luseogroup.com/luseomap/15043 faurecia phase II.png"
-    ]
-  },
-  {
-    "id": 241,
+    "id": 222,
     "name": "PALAIS JAMAI",
     "coordinates": [
       -4.974119998768966,
@@ -5249,12 +4139,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16002,
-    "photos": [
-      "https://luseogroup.com/luseomap/16002- plais_jamai.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 242,
+    "id": 223,
     "name": "MUSE NATIONAL ARCHEOLOGIE DU PEROU",
     "coordinates": [
       -77.06178841125151,
@@ -5270,18 +4158,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16005,
-    "photos": [
-      "https://luseogroup.com/luseomap/16005 Musée Perou1.jpg",
-      "https://luseogroup.com/luseomap/16005 Musée Perou15.jpg",
-      "https://luseogroup.com/luseomap/16005 Musée Perou2.jpg",
-      "https://luseogroup.com/luseomap/16005 Musée Perou3.jpg",
-      "https://luseogroup.com/luseomap/16005 Musée Perou4.jpg",
-      "https://luseogroup.com/luseomap/16005 Musée Perou6.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 243,
+    "id": 224,
     "name": "PALAIS TAZI",
     "coordinates": [
       -6.837844740117668,
@@ -5297,12 +4177,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16006,
-    "photos": [
-      "https://luseogroup.com/luseomap/16006 PALAIS TAZI-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 244,
+    "id": 225,
     "name": "CENTRE DE FORMATION",
     "coordinates": [
       -4.085497533030383,
@@ -5318,14 +4196,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16007,
-    "photos": [
-      "https://luseogroup.com/luseomap/16007- (1).jpg",
-      "https://luseogroup.com/luseomap/16007- (2).jpghttps://luseogroup.com/luseomap/16007- (3).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 245,
-    "name": "TOURS BALZAC",
+    "id": 226,
+    "name": "TOUR BALZAC",
     "coordinates": [
       -7.637697458358937,
       33.59083838218385
@@ -5340,12 +4215,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16008,
-    "photos": [
-      "https://luseogroup.com/luseomap/16008 TOURS BALZAC.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 246,
+    "id": 227,
     "name": "QATAR DIAR \nPARCELLE 7",
     "coordinates": [
       -5.960777825182381,
@@ -5361,16 +4234,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16009,
-    "photos": [
-      "https://luseogroup.com/luseomap/16009-1.jpg",
-      "https://luseogroup.com/luseomap/16009-2.jpg",
-      "https://luseogroup.com/luseomap/16009-3.jpg",
-      "",
-      "https://luseogroup.com/luseomap/16009-4.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 247,
+    "id": 228,
     "name": "SIEGE BGFI",
     "coordinates": [
       9.44279472650113,
@@ -5386,12 +4253,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16022,
-    "photos": [
-      "https://luseogroup.com/luseomap/16022 - BGFI.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 248,
+    "id": 229,
     "name": "RESIDENCE MORLASS",
     "coordinates": [
       -0.2642729473104202,
@@ -5407,12 +4272,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16012,
-    "photos": [
-      "https://luseogroup.com/luseomap/16012-morlass.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 249,
+    "id": 230,
     "name": "GREEN TECH VALLEY",
     "coordinates": [
       -6.819229845857795,
@@ -5428,12 +4291,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16014,
-    "photos": [
-      "https://luseogroup.com/luseomap/16014 Green Tech Valley.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 250,
+    "id": 231,
     "name": "HOTEL DE LA PLAGE",
     "coordinates": [
       -81.25675347003316,
@@ -5449,12 +4310,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16017,
-    "photos": [
-      "https://luseogroup.com/luseomap/16017 - hotel de la plage - SALINAS 1 Cayo Las Brujas.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 251,
+    "id": 232,
     "name": "GRAN HOTEL",
     "coordinates": [
       -82.35773234668318,
@@ -5470,12 +4329,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16021,
-    "photos": [
-      "https://luseogroup.com/luseomap/16021- (1).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 252,
+    "id": 233,
     "name": "NSIA BANQUE",
     "coordinates": [
       -3.9897926363904532,
@@ -5491,12 +4348,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16028,
-    "photos": [
-      "https://luseogroup.com/luseomap/16028 NSIA banque.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 253,
+    "id": 234,
     "name": "PHYTO PROD",
     "coordinates": [
       -4.664049954166199,
@@ -5512,12 +4367,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16030,
-    "photos": [
-      "https://luseogroup.com/luseomap/16030 - phyto prod.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 254,
+    "id": 235,
     "name": "CNIE",
     "coordinates": [
       -6.723903059429695,
@@ -5533,13 +4386,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16033,
-    "photos": [
-      "https://luseogroup.com/luseomap/16033 - usine cnie.png"
-    ]
+    "photos": []
   },
   {
-    "id": 255,
-    "name": "PALAIS PRESIDENTIEL libreville",
+    "id": 236,
+    "name": "PALAIS PRESIDENTIEL",
     "coordinates": [
       9.442229992765578,
       0.39232849941067766
@@ -5553,15 +4404,12 @@ export const projects = [
     "bim": "-",
     "certification": "-",
     "selection_bw": "TBC",
-    "businessName": 13001,
-    "photos": [
-      "https://luseogroup.com/luseomap/13018 - palais-presidentiel-1.jpg",
-      "https://luseogroup.com/luseomap/13018 - palais-presidentiel.jpg"
-    ]
+    "businessName": "13001\n13018",
+    "photos": []
   },
   {
-    "id": 256,
-    "name": "ONOMO - LOME",
+    "id": 237,
+    "name": "ONOMO",
     "coordinates": [
       1.2445938919953412,
       6.130781524631092
@@ -5576,19 +4424,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16036,
-    "photos": [
-      "https://luseogroup.com/luseomap/16036 onomo lomé.jpg",
-      "https://luseogroup.com/luseomap/16036-onomo lomé 1.jpg",
-      "https://luseogroup.com/luseomap/16036-onomo lomé 2.jpg",
-      "https://luseogroup.com/luseomap/16036-onomo lomé 3.jpg",
-      "https://luseogroup.com/luseomap/16036-onomo lomé 4.jpg",
-      "https://luseogroup.com/luseomap/16036-onomo lomé 5.jpg",
-      "https://luseogroup.com/luseomap/16036-onomo lomé 6.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 257,
+    "id": 238,
     "name": "DAKAR SPHERE MINISTERIELLE",
     "coordinates": [
       -17.204307575460355,
@@ -5604,12 +4443,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16037,
-    "photos": [
-      "https://luseogroup.com/luseomap/16037-sphere ministerielle diamiadio.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 258,
+    "id": 239,
     "name": "NATIONAL LIBRARY OF ARCHIVES \n&\nHOUSE OF ARTS AND CULTURE",
     "coordinates": [
       -6.81571922235232,
@@ -5625,13 +4462,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16042,
-    "photos": [
-      "https://luseogroup.com/luseomap/16042-1 wessal.jpg",
-      "https://luseogroup.com/luseomap/16042-2 wessal.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 259,
+    "id": 240,
     "name": "NEXANS",
     "coordinates": [
       -3.948176538933638,
@@ -5647,15 +4481,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 16048,
-    "photos": [
-      "https://luseogroup.com/luseomap/16045 Nexans 1 (1).JPG",
-      "https://luseogroup.com/luseomap/16045 Nexans 1 (2).JPG",
-      "https://luseogroup.com/luseomap/16045 Nexans.JPG",
-      "https://luseogroup.com/luseomap/16048 nexans1.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 260,
+    "id": 241,
     "name": "TOUR TRINITY",
     "coordinates": [
       2.24117375101062,
@@ -5671,12 +4500,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17004,
-    "photos": [
-      "https://luseogroup.com/luseomap/17004-TOUR TRINITY.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 261,
+    "id": 242,
     "name": "EHPAD",
     "coordinates": [
       5.698227394671488,
@@ -5692,12 +4519,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17005,
-    "photos": [
-      "https://luseogroup.com/luseomap/17005-EHPAD.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 262,
+    "id": 243,
     "name": "PARKING GARE RABAT VILLE",
     "coordinates": [
       -6.835668821453722,
@@ -5713,14 +4538,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17007,
-    "photos": [
-      "https://luseogroup.com/luseomap/17007-2parking rabat ville_.jpg",
-      "https://luseogroup.com/luseomap/17007-3-parking rabat ville_.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 263,
+    "id": 244,
     "name": "SIEGE PARFUM CHRISTIN DIOR\nCHARLES DE GAULLES 192",
     "coordinates": [
       2.2573567731700277,
@@ -5736,12 +4557,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17013,
-    "photos": [
-      "https://luseogroup.com/luseomap/17013 - 192 charles de gaulle .jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 264,
+    "id": 245,
     "name": "MOVENPICK",
     "coordinates": [
       -4.018457329631778,
@@ -5757,12 +4576,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17015,
-    "photos": [
-      "https://luseogroup.com/luseomap/17015-movenpick.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 265,
+    "id": 246,
     "name": "BAHIA RESORT",
     "coordinates": [
       -7.203523508945834,
@@ -5778,14 +4595,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17016,
-    "photos": [
-      "https://luseogroup.com/luseomap/17016-TANGER BAHIA RESSORT-1.jpg",
-      "https://luseogroup.com/luseomap/17016-TANGER BAHIA RESSORT.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 266,
+    "id": 247,
     "name": "IBIS MARCORY",
     "coordinates": [
       -3.9734965946750247,
@@ -5801,13 +4614,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17022,
-    "photos": [
-      "https://luseogroup.com/luseomap/17022-IBIS MARCOURY.jpg",
-      "https://luseogroup.com/luseomap/17022-IBIS MARCOURY1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 267,
+    "id": 248,
     "name": "APPOLON – TERRAIN FOOT TOITURE + \nFITNESS CLUB",
     "coordinates": [
       9.71348536120121,
@@ -5823,17 +4633,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17028,
-    "photos": [
-      "https://luseogroup.com/luseomap/17028 - APPOLLON.jpg",
-      "https://luseogroup.com/luseomap/17028 - APPOLLON1.jpg",
-      "https://luseogroup.com/luseomap/17028 - APPOLLON2.jpg",
-      "https://luseogroup.com/luseomap/17028 - APPOLLON3.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 268,
-    "name": "FAURECIA PHASE  II",
+    "id": 249,
+    "name": "FAURECIA  -PHASE  II",
     "coordinates": [
       -6.505969621543292,
       34.29153841127284
@@ -5848,12 +4652,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17030,
-    "photos": [
-      "https://luseogroup.com/luseomap/17030- Faurecia phase II.png"
-    ]
+    "photos": []
   },
   {
-    "id": 269,
+    "id": 250,
     "name": "CIH - AGENCE REGIONAL",
     "coordinates": [
       -6.827901484336835,
@@ -5869,12 +4671,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17038,
-    "photos": [
-      "https://luseogroup.com/luseomap/17038 - CIH agence regional à rabat.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 270,
+    "id": 251,
     "name": "TIBAR BAY PORT",
     "coordinates": [
       125.47126910308978,
@@ -5890,12 +4690,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17039,
-    "photos": [
-      "https://luseogroup.com/luseomap/17039 - tibar bay.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 271,
+    "id": 252,
     "name": "AMBASSADE  DE France",
     "coordinates": [
       9.447001033084819,
@@ -5911,12 +4709,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17044,
-    "photos": [
-      "https://luseogroup.com/luseomap/17044 - AMBASSADE FRANCE GABON LIBREVILLE-réduit.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 272,
+    "id": 253,
     "name": "FREETOWN TERMINAL",
     "coordinates": [
       -13.212308039360964,
@@ -5932,14 +4728,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17045,
-    "photos": [
-      "https://luseogroup.com/luseomap/17045 - FREETOWN TERMINAL SIERRA LEON.1.jpg",
-      "https://luseogroup.com/luseomap/17045 - FREETOWN TERMINAL SIERRA LEON.2.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 273,
-    "name": "ONOMO KAMPALA",
+    "id": 254,
+    "name": "ONOMO",
     "coordinates": [
       32.579121790581645,
       0.3279298752470862
@@ -5954,13 +4747,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17047,
-    "photos": [
-      "https://luseogroup.com/luseomap/17047 - ONOMO HOTEL kamapala.bmp.jpg",
-      "https://luseogroup.com/luseomap/17047 - ONOMO HOTEL kamapala1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 274,
+    "id": 255,
     "name": "CAPITAINERIE PORT TANGER MED",
     "coordinates": [
       -5.486203403394461,
@@ -5976,12 +4766,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17049,
-    "photos": [
-      "https://luseogroup.com/luseomap/17049 Capiteainerie Tanger Med.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 275,
+    "id": 256,
     "name": "MAROCLEAR",
     "coordinates": [
       -7.644686316057249,
@@ -5997,13 +4785,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17052,
-    "photos": [
-      "https://luseogroup.com/luseomap/17052 maroc clear 1.jpg",
-      "https://luseogroup.com/luseomap/17052 maroc clear.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 276,
+    "id": 257,
     "name": "KOICA -  CENTRE SPORTIF ET CULTUREL IVOIRO-COREEN",
     "coordinates": [
       -4.010688576923516,
@@ -6019,12 +4804,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17054,
-    "photos": [
-      "https://luseogroup.com/luseomap/17054 - KOICA.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 277,
+    "id": 258,
     "name": "RABAT SQUARE",
     "coordinates": [
       -6.841184962420309,
@@ -6040,12 +4823,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 17056,
-    "photos": [
-      "https://luseogroup.com/luseomap/17056 - Rabat-Square.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 278,
+    "id": 259,
     "name": "CENTRE DE TRAITEMENT FIDUCIAIRE - BCEAO",
     "coordinates": [
       -4.622697938117876,
@@ -6061,12 +4842,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18003,
-    "photos": [
-      "https://luseogroup.com/luseomap/18003 CENTRE FIDUCIAIRE BCEAO.JPG"
-    ]
+    "photos": []
   },
   {
-    "id": 279,
+    "id": 260,
     "name": "LEAR  PHASE II",
     "coordinates": [
       -6.71680621957514,
@@ -6082,12 +4861,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18004,
-    "photos": [
-      "https://luseogroup.com/luseomap/18004 - usine lear a salé el jadida - colliers.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 280,
+    "id": 261,
     "name": "BUREAUX CASA FINANCE CITY  - PWC",
     "coordinates": [
       -7.660654651312519,
@@ -6103,33 +4880,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18005,
-    "photos": [
-      "https://luseogroup.com/luseomap/18005 - pwc - aménagement du 19ème et 20ème étage de la tour CFC.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 281,
-    "name": "LYCEE LYAUTEY - COLLEGE BEAULIEU",
-    "coordinates": [
-      -7.636784918424575,
-      33.59596158376517
-    ],
-    "mission": "Étude de Conception & Suivi de Travaux Tout Corps d’État",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "14 080m²",
-    "architect": "NICOLAS MICHELIN",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18018,
-    "photos": [
-      "DOUBLON"
-    ]
-  },
-  {
-    "id": 282,
+    "id": 262,
     "name": "RESIDENCE SENIORS BELFORT",
     "coordinates": [
       6.85410352437922,
@@ -6145,13 +4899,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18019,
-    "photos": [
-      "https://luseogroup.com/luseomap/18019 - belfort rue.jpg",
-      "https://luseogroup.com/luseomap/18019 - résidence seniors à Belfort France.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 283,
+    "id": 263,
     "name": "EPYCENTRE",
     "coordinates": [
       -17.159026613584977,
@@ -6167,12 +4918,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18026,
-    "photos": [
-      "https://luseogroup.com/luseomap/18026 - Teyliom - DIAMNIADIO SENEGAL  BUSINESS PARK.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 284,
+    "id": 264,
     "name": "CINEMA PATHE GAUMONT",
     "coordinates": [
       -7.639741970562654,
@@ -6188,12 +4937,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18028,
-    "photos": [
-      "https://luseogroup.com/luseomap/18028 - cinéma pathé gaumont casa.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 285,
+    "id": 265,
     "name": "AMBASSADE COTE D'IVOIRE",
     "coordinates": [
       7.480783039369612,
@@ -6209,16 +4956,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18029,
-    "photos": [
-      "https://luseogroup.com/luseomap/18029 - Ambassade Cote d'Ivoire au Nigeria1.jpg",
-      "https://luseogroup.com/luseomap/18029 - Ambassade Cote d'Ivoire au Nigeria2.jpg",
-      "https://luseogroup.com/luseomap/18029 - Ambassade Cote d'Ivoire au Nigeria3.jpg",
-      "https://luseogroup.com/luseomap/18029 - Ambassade Cote d'Ivoire au Nigeria4.jpg",
-      "https://luseogroup.com/luseomap/18029 - Ambassade Cote Ivoire  (2).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 286,
+    "id": 266,
     "name": "CASA FINANCE CITY  LOT 65.1",
     "coordinates": [
       -7.660470815092162,
@@ -6234,58 +4975,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18031,
-    "photos": [
-      "https://luseogroup.com/luseomap/18031- CFC LOT 65.1.jpg"
-    ]
-  },
-  {
-    "id": 287,
-    "name": "CFG - AGENCE HASSAN",
-    "coordinates": [
-      -6.826038020088914,
-      34.01753248650664
-    ],
-    "mission": "Clé en Mains Tout Corps d’Etat",
-    "city": "RABAT",
-    "region": "MAROC",
-    "area": "170m²",
-    "architect": "B jerome",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18032,
     "photos": []
   },
   {
-    "id": 288,
-    "name": "CFG - AGENCE CORPORATE",
-    "coordinates": [
-      -7.625678230603089,
-      33.58261173350157
-    ],
-    "mission": "Clé en Mains Tout Corps d’Etat",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "",
-    "architect": "-",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18033,
-    "photos": []
-  },
-  {
-    "id": 289,
+    "id": 267,
     "name": "CENTRE HOPSITALIER REGIONAL",
     "coordinates": [
       -12.859992261823532,
       10.048552763169377
     ],
-    "mission": "Avant-Projet Sommaire, Métré, Quantitatif et Chiffrage Tout Corps d’Etat",
-    "city": "KINDIA/LABE",
-    "region": "GUINEE CONAKRY",
+    "mission": "Avant-Projet Sommaire, Métré, Quantitatif et Chiffrage Tout Corps d’Etat\nEtude de Conception et d’Exécution Tout Corps d’Etat",
+    "city": "KINDIA",
+    "region": "GUINEE",
     "area": "12652m²\n697 LITS",
     "architect": "ENIA ARCHITECTES",
     "category": "Santé",
@@ -6293,12 +4994,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18035,
-    "photos": [
-      "https://luseogroup.com/luseomap/18035 - centre hospitalier regional kinida FASEP conakry réduit.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 290,
+    "id": 268,
     "name": "HOTEL YAAS REPUBLIQUE",
     "coordinates": [
       -17.520251540794913,
@@ -6314,13 +5013,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18039,
-    "photos": [
-      "https://luseogroup.com/luseomap/18039 - YAAS SMART HOTEL.jpg",
-      "https://luseogroup.com/luseomap/18039 - YAAS SMART HOTEL1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 291,
+    "id": 269,
     "name": "LAC DE RETENTION DES EAUX PLUVIALES\nLEISURE PARK",
     "coordinates": [
       -17.173041176362986,
@@ -6336,35 +5032,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18040,
-    "photos": [
-      "https://luseogroup.com/luseomap/18040 - LAC ARTIFICIEL.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 292,
-    "name": "DIAM BUSINESS - EPYCENTRE",
-    "coordinates": [
-      -17.450197848788974,
-      14.730509423814079
-    ],
-    "mission": "Etude de Conception pour les lots Electricité & Fluide",
-    "city": "DIAMNIADIO",
-    "region": "SENEGAL",
-    "area": "Immeuble R+11",
-    "architect": "LUV . Architecture & Design S.L",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18041,
-    "photos": [
-      "https://luseogroup.com/luseomap/18041 - epycentre 1.jpg",
-      "https://luseogroup.com/luseomap/18041 - epycentre 2.jpg",
-      "https://luseogroup.com/luseomap/18041 - epycentre immeuble.jpg"
-    ]
-  },
-  {
-    "id": 293,
+    "id": 270,
     "name": "NOVOTEL  - RABAT",
     "coordinates": [
       -6.858765439981771,
@@ -6380,13 +5051,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18042,
-    "photos": [
-      "https://luseogroup.com/luseomap/18042 NOVOTEL (1).jpghttps://luseogroup.com/luseomap/18042 NOVOTEL (2).jpg",
-      "https://luseogroup.com/luseomap/18042 NOVOTEL (3).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 294,
+    "id": 271,
     "name": "CINEMA PATHE GAUMONT",
     "coordinates": [
       -6.8522948282466105,
@@ -6402,12 +5070,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18044,
-    "photos": [
-      "https://luseogroup.com/luseomap/18044 - GAUMONT RABAT.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 295,
+    "id": 272,
     "name": "WATER FRONT",
     "coordinates": [
       -17.48537341983007,
@@ -6423,13 +5089,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18048,
-    "photos": [
-      "https://luseogroup.com/luseomap/18048 - SAOTA_SN_DakarWaterfront_3_.jpg",
-      "https://luseogroup.com/luseomap/18048 - waterfront teyliom dakar.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 296,
+    "id": 273,
     "name": "BAB EZZOUAR  SIEGE MAAZOUZ",
     "coordinates": [
       3.220082354341569,
@@ -6445,19 +5108,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18052,
-    "photos": [
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR (2).jpg",
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR (3).jpg",
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR (4).jpg",
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR (5).jpg",
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR (6).jpg",
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR (7).jpg",
-      "https://luseogroup.com/luseomap/18052 - BAB EZZOUAR.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 297,
+    "id": 274,
     "name": "RESIDENCE DES BOIS",
     "coordinates": [
       3.055601210385917,
@@ -6473,12 +5127,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18053,
-    "photos": [
-      "https://luseogroup.com/luseomap/18053 - résidence des bois  delly brahimreduit.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 298,
+    "id": 275,
     "name": "AEROPORT SAN ANTONIO DE LOS BANOS",
     "coordinates": [
       -82.5048234085559,
@@ -6494,13 +5146,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18054,
-    "photos": [
-      "https://luseogroup.com/luseomap/18054 - San-Antonio-Airport.jpg",
-      "https://luseogroup.com/luseomap/18054 - San-Antonio-Airport_Main-Image.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 299,
+    "id": 276,
     "name": "DATA CENTER OCP",
     "coordinates": [
       -7.927862087981508,
@@ -6516,17 +5165,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18058,
-    "photos": [
-      "https://luseogroup.com/luseomap/18058 - DATA CENTER OCP-4.jpg",
-      "https://luseogroup.com/luseomap/18058 - DATA CENTER OCP.jpg",
-      "https://luseogroup.com/luseomap/18058 - DATA CENTER OCP1.jpg",
-      "https://luseogroup.com/luseomap/18058 - DATA CENTER OCP2.jpg",
-      "https://luseogroup.com/luseomap/18058 - DATA CENTER OCP3.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 301,
+    "id": 277,
     "name": "HOTEL PESTANA \nM AVENUE",
     "coordinates": [
       -8.016995621175626,
@@ -6542,14 +5184,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18060,
-    "photos": [
-      "https://luseogroup.com/luseomap/18060 - M Avenue-1.jpg",
-      "https://luseogroup.com/luseomap/18060 - M Avenue.jpg",
-      "https://luseogroup.com/luseomap/18060-M-Avenue@DL2A.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 302,
+    "id": 278,
     "name": "HOTEL THALES",
     "coordinates": [
       -8.005118379434236,
@@ -6565,12 +5203,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 18067,
-    "photos": [
-      "https://luseogroup.com/luseomap/18067 - HOTEL CHAOUI (1).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 303,
+    "id": 279,
     "name": "SEEN HOTEL",
     "coordinates": [
       -4.018771254799682,
@@ -6586,12 +5222,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19004,
-    "photos": [
-      "https://luseogroup.com/luseomap/19004 - SEEN-SMART HOTEL.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 304,
+    "id": 280,
     "name": "BRANSON ULTRASONICS HEADQUARTERS",
     "coordinates": [
       -73.4042403587726,
@@ -6607,12 +5241,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19005,
-    "photos": [
-      "https://luseogroup.com/luseomap/19005 - BRANSON ULTRASONIC HEADQUARTERS.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 305,
+    "id": 281,
     "name": "COMPLEXE OMNISPORT",
     "coordinates": [
       -6.8290891848981445,
@@ -6628,12 +5260,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19006,
-    "photos": [
-      "https://luseogroup.com/luseomap/19006 SALLE OMNISPORT PISCINE.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 306,
+    "id": 282,
     "name": "RESIDENCE SENIORS UZES",
     "coordinates": [
       4.4131586397562454,
@@ -6649,12 +5279,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19009,
-    "photos": [
-      "https://luseogroup.com/luseomap/19009 - résidences séniors Uzes.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 307,
+    "id": 283,
     "name": "SECRETS SAINT MARTIN RESORT & SPA",
     "coordinates": [
       -63.039905939952384,
@@ -6670,15 +5298,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19010,
-    "photos": [
-      "https://luseogroup.com/luseomap/19010 - SECRET HOTEL -1.jpg",
-      "https://luseogroup.com/luseomap/19010 - SECRET HOTEL -2.jpg",
-      "https://luseogroup.com/luseomap/19010 - SECRET HOTEL -4.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 308,
+    "id": 284,
     "name": "PUMA C8",
     "coordinates": [
       -8.39758904192708,
@@ -6694,13 +5317,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19011,
-    "photos": [
-      "https://luseogroup.com/luseomap/19011 - Puma C8 - Copie.jpg",
-      "https://luseogroup.com/luseomap/19011 - Puma C8-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 309,
+    "id": 285,
     "name": "ECOLES VERTES",
     "coordinates": [
       -7.468529700406677,
@@ -6716,12 +5336,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19012,
-    "photos": [
-      "https://luseogroup.com/luseomap/"
-    ]
+    "photos": []
   },
   {
-    "id": 310,
+    "id": 286,
     "name": "CENTRE HOPSPITALIER UNIVERSITAIRE",
     "coordinates": [
       -61.52541632529428,
@@ -6737,13 +5355,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19017,
-    "photos": [
-      "https://luseogroup.com/luseomap/19017 - CHU pointe a pritre 1.jpg",
-      "https://luseogroup.com/luseomap/19017 - CHU pointe a pritre.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 311,
+    "id": 287,
     "name": "VALEO",
     "coordinates": [
       -5.6634393046354425,
@@ -6751,7 +5366,7 @@ export const projects = [
     ],
     "mission": "Rédaction Cahier de Charges, Assistance à Maîtrise d’Ouvrage, Étude de Faisabilité & Étude de Conception et d’Exécution Tout Corps d’État",
     "city": "TANGER",
-    "region": "Maroc",
+    "region": "MAROC",
     "area": "19100 m² H.O.",
     "architect": "Med Hicham EL Ajmi",
     "category": "Industrie",
@@ -6759,13 +5374,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 2009,
-    "photos": [
-      "https://luseogroup.com/luseomap/20 009 VALEO.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 312,
-    "name": "ALAIA BEACH CLUB HOTEL - Alaia Autograph Collection By Marriott",
+    "id": 288,
+    "name": "ALAIA AUTOGRAPH COLLECTION BY MARRIOTT",
     "coordinates": [
       -87.97451275262804,
       17.90634056714038
@@ -6780,28 +5393,18 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19024,
-    "photos": [
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (1).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (2).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (3).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (4).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (5).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (6).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (7).jpg",
-      "https://luseogroup.com/luseomap/19024 - Alaia 01 (8).jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 313,
+    "id": 289,
     "name": "DESCARTES",
     "coordinates": [
       -6.845808262592084,
       33.99075406689288
     ],
     "mission": "Étude de Conception et d’Exécution Tout Corps d’État & Assistance Technique",
-    "city": "rabat",
-    "region": "maroc",
+    "city": "RABAT",
+    "region": "MAROC",
     "area": "",
     "architect": "-",
     "category": "Equipements publics",
@@ -6809,12 +5412,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12021,
-    "photos": [
-      "https://luseogroup.com/luseomap/13016 - DESCARTES - rabat.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 315,
+    "id": 291,
     "name": "AEROPORT DE MARSEILLE PROVENCE",
     "coordinates": [
       5.215338561009127,
@@ -6830,15 +5431,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19040,
-    "photos": [
-      "https://luseogroup.com/luseomap/19040 - aeroport marseille.jpg",
-      "https://luseogroup.com/luseomap/19040 - aeroport-marseille.jpg",
-      "https://luseogroup.com/luseomap/19040 - aeroport-marseille1.jpg",
-      "https://luseogroup.com/luseomap/19040 - aeroport-marseille3.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 316,
+    "id": 292,
     "name": "LINCOLN",
     "coordinates": [
       -7.612117264391184,
@@ -6854,12 +5450,10 @@ export const projects = [
     "certification": "HQE niveau Excellent",
     "selection_bw": "TBC",
     "businessName": 19051,
-    "photos": [
-      "https://luseogroup.com/luseomap/19051 - LINCOLN.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 319,
+    "id": 295,
     "name": "AUDA LOT 19",
     "coordinates": [
       -7.6607105570167,
@@ -6875,14 +5469,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19057,
-    "photos": [
-      "https://luseogroup.com/luseomap/19057 - lot 19 - 1.jpg",
-      "https://luseogroup.com/luseomap/19057 - lot 19.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 320,
+    "id": 296,
     "name": "ACADEMIE DE LUTTE CONTRE LE TERRORISME",
     "coordinates": [
       -3.9226845041497134,
@@ -6898,12 +5488,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 19059,
-    "photos": [
-      "VOIR SUR LE SITE intranet DE LUSEO PLUSIEURS PHOTOS"
-    ]
+    "photos": []
   },
   {
-    "id": 321,
+    "id": 297,
     "name": "SOFITEL HOTEL & APPARTEMENTS",
     "coordinates": [
       -5.328795829224219,
@@ -6919,12 +5507,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20005,
-    "photos": [
-      "https://luseogroup.com/luseomap/20005 bahia sofitel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 322,
+    "id": 298,
     "name": "LOT 107",
     "coordinates": [
       -7.66567117762361,
@@ -6940,12 +5526,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20007,
-    "photos": [
-      "https://luseogroup.com/luseomap/20007 Lot 107.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 323,
+    "id": 299,
     "name": "SOFITEL COTONOU Marina Hotel & Spa",
     "coordinates": [
       2.3936541525380486,
@@ -6961,13 +5545,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20010,
-    "photos": [
-      "https://luseogroup.com/luseomap/20010 - sofitel cotonou.jpg",
-      "https://luseogroup.com/luseomap/20010 - sofitel cotonou1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 324,
+    "id": 300,
     "name": "K HOTEL BANA",
     "coordinates": [
       10.277358515976848,
@@ -6983,12 +5564,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20012,
-    "photos": [
-      "https://luseogroup.com/luseomap/20012 K hotel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 325,
+    "id": 301,
     "name": "ANCFCC",
     "coordinates": [
       -6.885279454900805,
@@ -7004,12 +5583,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20013,
-    "photos": [
-      "https://luseogroup.com/luseomap/20013 - ancfcc.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 326,
+    "id": 302,
     "name": "COOPER JACK BAY",
     "coordinates": [
       -72.23982438244241,
@@ -7025,12 +5602,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20017,
-    "photos": [
-      "https://luseogroup.com/luseomap/20017 cooper jack bay.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 327,
+    "id": 303,
     "name": "SIEGE MOBILE TELEPHONE NETWORK",
     "coordinates": [
       -3.995558948371033,
@@ -7046,12 +5621,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20021,
-    "photos": [
-      "https://luseogroup.com/luseomap/20021 MTN.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 328,
+    "id": 304,
     "name": "CAMPUS ESCA",
     "coordinates": [
       -7.662178531503763,
@@ -7067,15 +5640,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20023,
-    "photos": [
-      "https://luseogroup.com/luseomap/20023 campus ESCA 2.jpg",
-      "https://luseogroup.com/luseomap/20023 campus ESCA 3.jpg",
-      "https://luseogroup.com/luseomap/20023 campus ESCA01.jpg",
-      "https://luseogroup.com/luseomap/20023 ESCA-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 329,
+    "id": 305,
     "name": "AKWABA BUSINESS PARK - LOT 20",
     "coordinates": [
       -3.956457799505109,
@@ -7091,13 +5659,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20025,
-    "photos": [
-      "https://luseogroup.com/luseomap/20025AKWABA BUSINESS PARK.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 330,
-    "name": "LE CAROUSEL -LOGEMENTS",
+    "id": 306,
+    "name": "LE CAROUSEL - PHASE II",
     "coordinates": [
       -6.893046744148259,
       33.98063009154901
@@ -7112,12 +5678,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20027,
-    "photos": [
-      "https://luseogroup.com/luseomap/20027 - logements carrousel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 331,
+    "id": 307,
     "name": "VILLAS OLIVER PALM",
     "coordinates": [
       -7.910239049691355,
@@ -7133,13 +5697,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20028,
-    "photos": [
-      "https://luseogroup.com/luseomap/20028- villa oliver palm-2.jpg",
-      "https://luseogroup.com/luseomap/20028- villa oliver palm.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 332,
+    "id": 308,
     "name": "GROUPE SCOLAIRE  LA RESIDENCE",
     "coordinates": [
       -7.618772943422715,
@@ -7155,12 +5716,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20031,
-    "photos": [
-      "https://luseogroup.com/luseomap/20031 Groupe Résidence Scolaire.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 333,
+    "id": 309,
     "name": "SEVEN SQUARE",
     "coordinates": [
       -7.651209142058165,
@@ -7176,12 +5735,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20034,
-    "photos": [
-      "https://luseogroup.com/luseomap/20034 seven square.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 334,
+    "id": 310,
     "name": "LYCEE  POLYVALENT TAAONE",
     "coordinates": [
       -149.54943759961836,
@@ -7197,34 +5754,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20041,
-    "photos": [
-      "https://luseogroup.com/luseomap/20041 lycée taaone.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 335,
-    "name": "HOPITAL REGIONAL FASEP",
-    "coordinates": [
-      -12.860334212799664,
-      10.048595137248412
-    ],
-    "mission": "Étude de Conception et d’Exécution Tout Corps d’État",
-    "city": "KINDIA",
-    "region": "REPUBLIQUE GUINEE",
-    "area": "12 600 m²",
-    "architect": "ENIA",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 20047,
-    "photos": [
-      "https://luseogroup.com/luseomap/20041 lycée taaone.jpg"
-    ]
-  },
-  {
-    "id": 336,
-    "name": "CENTRE HOPSPITALIER UNIVERSITAIRE DE LENS",
+    "id": 311,
+    "name": "CENTRE HOPSPITALIER UNIVERSITAIRE",
     "coordinates": [
       2.817864931046971,
       50.439220339560904
@@ -7239,14 +5773,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 20048,
-    "photos": [
-      "https://luseogroup.com/luseomap/20048 - CHU Lens.jpg",
-      "https://luseogroup.com/luseomap/20048 CHU Lens (2).jpg",
-      "https://luseogroup.com/luseomap/20048 chu lens.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 337,
+    "id": 312,
     "name": "CITE ADMINISTRATIVE",
     "coordinates": [
       2.3168390162387973,
@@ -7262,14 +5792,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21BJ002",
-    "photos": [
-      "https://luseogroup.com/luseomap/21BJ-002Cité-admin (1).jpg",
-      "https://luseogroup.com/luseomap/21BJ-002Cité-admin (2).jpg",
-      "https://luseogroup.com/luseomap/21BJ-002Cité-admin (3).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 338,
+    "id": 313,
     "name": "SOFITEL HOTEL IVOIRE",
     "coordinates": [
       -4.004446500335855,
@@ -7285,12 +5811,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 937,
-    "photos": [
-      "https://luseogroup.com/luseomap/09037 - Hôtel Ivoire - Abidjan - Cote d'ivoire.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 339,
+    "id": 314,
     "name": "QUARTIER GENERAL DE LA POLICE REPUBLICANE",
     "coordinates": [
       2.43259994353264,
@@ -7306,15 +5830,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21CI002",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI002-Quartier Générale la Police (1).jpg",
-      "https://luseogroup.com/luseomap/21CI002-Quartier Générale la Police (2).jpg",
-      "https://luseogroup.com/luseomap/21CI002-Quartier Générale la Police-1.jpg",
-      "https://luseogroup.com/luseomap/21CI002-Quartier Générale la Police-2.jpghttps://luseogroup.com/luseomap/21CI002-Quartier Générale la Police.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 340,
+    "id": 315,
     "name": "SATURNE",
     "coordinates": [
       2.428593850154695,
@@ -7330,12 +5849,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21CI003",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI003 saturne.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 341,
+    "id": 316,
     "name": "MAISON DE L'ART",
     "coordinates": [
       -3.735322944751352,
@@ -7351,13 +5868,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21CI005",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI005 - maison de l'art (11).jpg",
-      "https://luseogroup.com/luseomap/21CI005 - maison de l'art.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 342,
+    "id": 317,
     "name": "COMPLEXE SPORTIF UNAFRICA",
     "coordinates": [
       2.4214553957706717,
@@ -7373,31 +5887,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21CI007",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI007 UNAFRICA - COMPLEXE SPORTIF.jpg"
-    ]
-  },
-  {
-    "id": 343,
-    "name": "RESIDENCE 77",
-    "coordinates": [
-      1.2252732824197758,
-      6.1494720055458805
-    ],
-    "mission": "Etude de Dossier Consultation des Entreprises pour les lots Electricité, Structure & VRD, et Suivi de Travaux",
-    "city": "LOME",
-    "region": "TOGO",
-    "area": "1 000 m²",
-    "architect": "LUSEO CI",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "21CI008",
     "photos": []
   },
   {
-    "id": 344,
+    "id": 318,
     "name": "SIEGE  MANUTENTION AFRICAINE",
     "coordinates": [
       -4.102261067377037,
@@ -7413,12 +5906,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21CI010",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI010 MANUTENTION AFRICAINE YOPOUGON.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 345,
+    "id": 319,
     "name": "RESIDENCE AMBASSADEUR DE France",
     "coordinates": [
       1.2189058120626772,
@@ -7434,14 +5925,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21CI012",
-    "photos": [
-      "https://luseogroup.com/luseomap/21CI012-Ambassade lomé-1.jpg",
-      "https://luseogroup.com/luseomap/21CI012-Ambassade lomé.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 347,
+    "id": 321,
     "name": "Résidence Services Seniors DOMITYS - Cybèle",
     "coordinates": [
       6.853707757872839,
@@ -7457,12 +5944,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR001",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR001 CYBELE BELFORT.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 348,
+    "id": 322,
     "name": "LES ROCHES CARBON BLANC",
     "coordinates": [
       -0.5002876338624584,
@@ -7478,15 +5963,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR004",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR004 - Les roches 2.jpg",
-      "https://luseogroup.com/luseomap/21FR004 - Les roches-1.jpg",
-      "https://luseogroup.com/luseomap/21FR004 - Les roches.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 349,
+    "id": 323,
     "name": "LYCEE  STEPHANE HESSEL",
     "coordinates": [
       1.4755169545197064,
@@ -7502,14 +5982,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR009",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR009-Lycée Hessel-1.jpg",
-      "https://luseogroup.com/luseomap/21FR009-Lycée Hessel.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 350,
+    "id": 324,
     "name": "CENTRE AQUATIQUE",
     "coordinates": [
       -0.4372486077035784,
@@ -7525,17 +6001,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR010",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR010E - PISCINE-ST-ANDRE-1.jpg",
-      "https://luseogroup.com/luseomap/21FR010E - PISCINE-ST-ANDRE-2.jpg",
-      "https://luseogroup.com/luseomap/21FR010E - PISCINE-ST-ANDRE-3.jpg",
-      "https://luseogroup.com/luseomap/21FR010E - PISCINE-ST-ANDRE-4.jpg",
-      "https://luseogroup.com/luseomap/21FR010E - PISCINE-ST-ANDRE-5.jpg",
-      "https://luseogroup.com/luseomap/21FR010E - PISCINE-ST-ANDRE.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 351,
+    "id": 325,
     "name": "HOPITAL GENERAL",
     "coordinates": [
       11.510566339758867,
@@ -7551,12 +6020,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR012",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR012 - HOPITAL YAOUNDE-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 352,
+    "id": 326,
     "name": "GROUPE SCOLAIRE FITII",
     "coordinates": [
       -151.03217408877234,
@@ -7572,25 +6039,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR014",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR014- (1).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (2).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (3).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (4).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (5).jpghttps://luseogroup.com/luseomap/21FR014- (6).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (7).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (8).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (9).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (10).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (11).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (12).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (13).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (14).jpg",
-      "https://luseogroup.com/luseomap/21FR014- (15).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 353,
+    "id": 327,
     "name": "CENTRE PENITENTIAIRE  DES BEAUMETTES III",
     "coordinates": [
       5.414857348062631,
@@ -7606,12 +6058,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR015",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR015 - les beaumettes.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 354,
+    "id": 328,
     "name": "Spa Deep Ocean Bora Bora",
     "coordinates": [
       -151.70162373064719,
@@ -7627,12 +6077,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21FR016",
-    "photos": [
-      "https://luseogroup.com/luseomap/21FR016-SPA MERIDIEN.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 355,
+    "id": 329,
     "name": "SONACOS",
     "coordinates": [
       -6.827369980005593,
@@ -7648,12 +6096,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA001",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA001 - sonacos.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 356,
+    "id": 330,
     "name": "PATRIMONIA",
     "coordinates": [
       -7.62112170356936,
@@ -7669,52 +6115,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA003",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA003 - PATRIMONIA.jpg"
-    ]
-  },
-  {
-    "id": 357,
-    "name": "INSITUT Français DE KENITRA \nDETECTION INCENDIE",
-    "coordinates": [
-      -6.576896023574835,
-      34.2639465186594
-    ],
-    "mission": "Etude de conception pour la Détection Incendie",
-    "city": "RABAT",
-    "region": "MAROC",
-    "area": "200 m²",
-    "architect": "AAZ",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "21MA004",
     "photos": []
   },
   {
-    "id": 358,
-    "name": "TOUR BALZAC",
-    "coordinates": [
-      -7.637394416024497,
-      33.590053077952525
-    ],
-    "mission": "Etude de Conception et d’Exécution pour les lots Electricité et Fluide",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "8 000m²",
-    "architect": "CHAOUI",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "21MA011\n16008",
-    "photos": [
-      "https://luseogroup.com/luseomap/16008 TOURS BALZAC.jpg"
-    ]
-  },
-  {
-    "id": 359,
+    "id": 331,
     "name": "LES RESIDENCE BLEUES VAL D’OR",
     "coordinates": [
       -6.986764166109079,
@@ -7730,12 +6134,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA013",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA013-14-15 Val d'or.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 360,
+    "id": 332,
     "name": "LES PORTES DE RABAT",
     "coordinates": [
       -6.936180391257448,
@@ -7751,13 +6153,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA016",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA016 PORTES DE RABAT.jpg",
-      "https://luseogroup.com/luseomap/21MA016-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 361,
+    "id": 333,
     "name": "WAVE GHANDOURI",
     "coordinates": [
       -5.755755810974256,
@@ -7773,16 +6172,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA019",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA019 bahia hotel-1.jpg",
-      "https://luseogroup.com/luseomap/21MA019 bahia hotel-2.jpg",
-      "https://luseogroup.com/luseomap/21MA019 bahia hotel-3.jpg",
-      "https://luseogroup.com/luseomap/21MA019 bahia hotel-4.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 362,
+    "id": 334,
     "name": "SOCRATE",
     "coordinates": [
       -7.646962764792772,
@@ -7798,12 +6191,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA023",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA023- Socrate Saray.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 363,
+    "id": 335,
     "name": "BURJ ATTIJARI",
     "coordinates": [
       -7.6614509033272284,
@@ -7819,14 +6210,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA027",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA027 -  tour attijariwafa_1.jpg",
-      "https://luseogroup.com/luseomap/21MA027 - tour attijari.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 364,
-    "name": "NOUVEL HOPITAL IBN SINA",
+    "id": 336,
+    "name": "HOPITAL IBN SINA",
     "coordinates": [
       -6.852269352549596,
       33.98305913435011
@@ -7841,15 +6229,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA028",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA028 - hopital IBN SINA-1.jpg",
-      "https://luseogroup.com/luseomap/21MA028 - hopital IBN SINA-2.jpg",
-      "https://luseogroup.com/luseomap/21MA028 - hopital IBN SINA.jpg",
-      "https://luseogroup.com/luseomap/21MA028 - hopital-ibnou-sina.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 365,
+    "id": 337,
     "name": "TEMARA SQUARE",
     "coordinates": [
       -6.923211945301384,
@@ -7865,13 +6248,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA032",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA032 - TEMARA SQUARE.jpg",
-      "https://luseogroup.com/luseomap/21MA032 TEMARA SQUARE.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 366,
+    "id": 338,
     "name": "CLINIQUE ZAHRAT",
     "coordinates": [
       -6.832886405446627,
@@ -7887,18 +6267,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA034",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA034 (1).jpg",
-      "https://luseogroup.com/luseomap/21MA034 (2).jpg",
-      "https://luseogroup.com/luseomap/21MA034 (3).jpg",
-      "https://luseogroup.com/luseomap/21MA034 (4).jpg",
-      "https://luseogroup.com/luseomap/21MA034 (5).jpg",
-      "https://luseogroup.com/luseomap/21MA034 (6).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 368,
-    "name": "la Cite des metiers et des Compétences de rabat\nOFPPT",
+    "id": 339,
+    "name": "la Cite des metiers et des Compétences - OFPPT",
     "coordinates": [
       -6.935824623387261,
       33.84166446750577
@@ -7913,12 +6286,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA038",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA038 - CMC OFPPT.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 369,
+    "id": 340,
     "name": "AUTO HALL",
     "coordinates": [
       -6.532881408198826,
@@ -7934,12 +6305,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "21MA040",
-    "photos": [
-      "https://luseogroup.com/luseomap/21MA040 auto hall.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 370,
+    "id": 341,
     "name": "NOUVEAU CENTRE HOSPITALIER DE POLYNESIE FRANCAISE",
     "coordinates": [
       -149.54649561872162,
@@ -7955,16 +6324,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 5007,
-    "photos": [
-      "https://luseogroup.com/luseomap/05007-1.jpg",
-      "https://luseogroup.com/luseomap/05007-2.jpg",
-      "https://luseogroup.com/luseomap/05007-3.jpg",
-      "https://luseogroup.com/luseomap/05007-4.jpg",
-      "https://luseogroup.com/luseomap/05007-5.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 371,
+    "id": 342,
     "name": "CAMP GUEZO",
     "coordinates": [
       2.410135602819017,
@@ -7980,12 +6343,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22CI002",
-    "photos": [
-      "https://luseogroup.com/luseomap/22CI-002 camp guezo.jpeg"
-    ]
+    "photos": []
   },
   {
-    "id": 372,
+    "id": 343,
     "name": "VILLAGE ABATTA",
     "coordinates": [
       -3.917497516720774,
@@ -8001,16 +6362,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22CI003",
-    "photos": [
-      "https://luseogroup.com/luseomap/22CI-003 ABATTA-VILLAGE-1.jpg",
-      "https://luseogroup.com/luseomap/22CI-003 ABATTA-VILLAGE-2.jpg",
-      "https://luseogroup.com/luseomap/22CI-003 ABATTA-VILLAGE-3.jpg",
-      "https://luseogroup.com/luseomap/22CI-003 ABATTA-VILLAGE.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 373,
+    "id": 344,
     "name": "CENTRE DE CONNAISSANCE ET DE LA CULTURE - LYCEE BLAISE PASCAL",
     "coordinates": [
       -3.9517425224169878,
@@ -8026,21 +6381,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22CI004",
-    "photos": [
-      "https://luseogroup.com/luseomap/22CI004- (1).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (2).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (3).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (4).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (5).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (6).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (7).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (8).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (9).jpg",
-      "https://luseogroup.com/luseomap/22CI004- (10).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 374,
+    "id": 345,
     "name": "COMPLEXE SPORTIF GRAND BASSAM",
     "coordinates": [
       -3.7353140587180005,
@@ -8056,12 +6400,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22CI006",
-    "photos": [
-      "https://luseogroup.com/luseomap/22CI006 - complexe sportif Gd Bassam.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 375,
+    "id": 346,
     "name": "INSTITUT NATIONAL STATISTIQUE",
     "coordinates": [
       2.40053388393836,
@@ -8077,12 +6419,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22CI007",
-    "photos": [
-      "https://luseogroup.com/luseomap/22CI-007 Institut statistique.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 376,
+    "id": 347,
     "name": "LYCEE AGRICOLE OPUNOHU",
     "coordinates": [
       -149.8342966046696,
@@ -8098,15 +6438,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR001",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR001-lycée moorea.jpg",
-      "https://luseogroup.com/luseomap/22FR001-lycée moorea-3.jpg",
-      "https://luseogroup.com/luseomap/22FR001-lycée moorea-2.jpg",
-      "https://luseogroup.com/luseomap/22FR001-lycée moorea-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 377,
+    "id": 348,
     "name": "LES ARCHIVES\nPOLE DE RECHERHCE ET DE CONVERSATION DU PATRIMOINE VAUCLUSIEN",
     "coordinates": [
       4.887534255927413,
@@ -8122,13 +6457,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR002",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR002 - POLE DE RECHERHCE ET DE CONVERSATION DU PATRIMOINE VAUCLUSIEN.jpg",
-      "https://luseogroup.com/luseomap/22FR002 - POLE DE RECHERHCE ET DE CONVERSATION DU PATRIMOINE VAUCLUSIEN-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 378,
+    "id": 349,
     "name": "CENTRE ADMINISTRATIF D’ÉTAT",
     "coordinates": [
       4.854695435244514,
@@ -8144,13 +6476,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR004",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR004 centre administratif d'etat.jpg",
-      "https://luseogroup.com/luseomap/22FR004 centre administratif d'etat - Copie.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 379,
+    "id": 350,
     "name": "EYRE'BASSIN",
     "coordinates": [
       -0.7712580870582427,
@@ -8166,12 +6495,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR006",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR-006 EYRE BASSIN.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 380,
+    "id": 351,
     "name": "IZON LOG",
     "coordinates": [
       -0.36178810280317136,
@@ -8187,14 +6514,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR009",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR-009 - lotissement izon-1.jpg",
-      "https://luseogroup.com/luseomap/22FR-009 - lotissement izon.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 381,
+    "id": 352,
     "name": "ECOLES DES METIERS",
     "coordinates": [
       2.0926068655439676,
@@ -8210,16 +6533,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR012",
-    "photos": [
-      "https://luseogroup.com/luseomap/22fr012- (1).jpg",
-      "https://luseogroup.com/luseomap/22fr012- (2).jpg",
-      "https://luseogroup.com/luseomap/22fr012- (3).jpg",
-      "https://luseogroup.com/luseomap/22fr012- (4).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 382,
-    "name": "FAIRMONT  - GENEVE",
+    "id": 353,
+    "name": "FAIRMONT",
     "coordinates": [
       6.1507998225345,
       46.21020033387861
@@ -8234,12 +6552,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR013",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR-013 FAIRMONT.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 383,
+    "id": 354,
     "name": "TOUR C",
     "coordinates": [
       -4.023246717083079,
@@ -8255,31 +6571,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22FR016",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR016 - tour-C.jpg"
-    ]
-  },
-  {
-    "id": 384,
-    "name": "MUSÉE NATIONAL D’ART AFRICAIN ET\nCONTEMPORAIN",
-    "coordinates": [
-      -3.964567665522786,
-      5.284381018942551
-    ],
-    "mission": "Études de conception Tout Corps d’État",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "12 000 m²",
-    "architect": "PFO",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "22FR017",
     "photos": []
   },
   {
-    "id": 385,
+    "id": 355,
     "name": "VILLA TAHITI",
     "coordinates": [
       9.467173599046555,
@@ -8295,14 +6590,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22GB001",
-    "photos": [
-      "https://luseogroup.com/luseomap/22GB-001 villa tahiti (1).jpg",
-      "https://luseogroup.com/luseomap/22GB-001 villa tahiti (2).jpg",
-      "https://luseogroup.com/luseomap/22GB-001 villa tahiti (3).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 386,
+    "id": 356,
     "name": "HOTEL  & APPARTEMENTS UNIVERSITE MOHAMED VI",
     "coordinates": [
       -7.933269218475865,
@@ -8318,12 +6609,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22MA001",
-    "photos": [
-      "https://luseogroup.com/luseomap/22MA-001 Université Mohamed VI-1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 387,
+    "id": 357,
     "name": "ECOLE GREEN WOOD",
     "coordinates": [
       -7.610418606255366,
@@ -8339,17 +6628,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22MA013",
-    "photos": [
-      "https://luseogroup.com/luseomap/22MA013 (1).jpg",
-      "https://luseogroup.com/luseomap/22MA013 (2).jpg",
-      "https://luseogroup.com/luseomap/22MA013 (3).jpg",
-      "https://luseogroup.com/luseomap/22MA013 (4).jpg",
-      "https://luseogroup.com/luseomap/22MA013 (5).jpg",
-      "https://luseogroup.com/luseomap/22MA013 (6).jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 388,
+    "id": 358,
     "name": "UNIVERSITE PIERRE ET MARIE CURIE",
     "coordinates": [
       2.35742132092774,
@@ -8365,13 +6647,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 12038,
-    "photos": [
-      "https://luseogroup.com/luseomap/12038 - jussieu.jpg",
-      "https://luseogroup.com/luseomap/12038 - Universite-pierre-et-marie-curie campus-de-jussieu II.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 389,
+    "id": 359,
     "name": "OULFA YAMED",
     "coordinates": [
       -7.66989159127643,
@@ -8387,13 +6666,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "22MA015",
-    "photos": [
-      "https://luseogroup.com/luseomap/22MA-015 résidence Mina à Al Oulfa.jpg",
-      "https://luseogroup.com/luseomap/22MA-015-1 résidence Mina à Al Oulfa.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 390,
+    "id": 360,
     "name": "YAAS AKWABA",
     "coordinates": [
       -3.9810446029550692,
@@ -8401,7 +6677,7 @@ export const projects = [
     ],
     "mission": "Étude de Conception &  d’Exécution pour les lots Électricité & Fluide",
     "city": "ABIDJAN",
-    "region": "CôTE D'IVOIRE",
+    "region": "COTE D'IVOIRE",
     "area": "13 000 m²",
     "architect": "MANGALIS",
     "category": "Hôtellerie",
@@ -8409,16 +6685,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23CI002",
-    "photos": [
-      "https://luseogroup.com/luseomap/23CI002 YAAS AKWABA (1).JPG",
-      "https://luseogroup.com/luseomap/23CI002 YAAS AKWABA (2).JPG",
-      "https://luseogroup.com/luseomap/23CI002 YAAS AKWABA (3).JPG",
-      "https://luseogroup.com/luseomap/23CI002 YAAS AKWABA (4).JPG",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 391,
+    "id": 361,
     "name": "QUARTIER CULTUREL",
     "coordinates": [
       2.422906632202392,
@@ -8434,13 +6704,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23CI003",
-    "photos": [
-      "https://luseogroup.com/luseomap/23CI003 COMPLEXE CULTUREL.jpg",
-      "https://luseogroup.com/luseomap/23CI003 Quartier Culturel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 393,
+    "id": 363,
     "name": "CENTRE MEDICAL",
     "coordinates": [
       9.691051347239151,
@@ -8456,13 +6723,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23FR009",
-    "photos": [
-      "https://luseogroup.com/luseomap/23FR009 clnique Douala (1).jpeg",
-      "https://luseogroup.com/luseomap/23FR009 clnique Douala (2).jpeg"
-    ]
+    "photos": []
   },
   {
-    "id": 394,
+    "id": 364,
     "name": "NEVERLAND",
     "coordinates": [
       7.431722868786946,
@@ -8478,25 +6742,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23FR011",
-    "photos": [
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_01.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_02.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_03.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_04.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_05.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_06.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_07.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_08.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_09.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_10.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_11.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_12.jpg",
-      "https://luseogroup.com/luseomap/23FR011 - nerveland monaco_Page_13.jpg",
-      "https://luseogroup.com/luseomap/23FR011 NERVERLAND.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 395,
+    "id": 365,
     "name": "EPHAD BALCONS DE TIVOLIS",
     "coordinates": [
       -0.5947667300254822,
@@ -8512,12 +6761,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23FR017",
-    "photos": [
-      "https://luseogroup.com/luseomap/23FR017 EHPAD balcons tivoli.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 397,
+    "id": 367,
     "name": "AEROPORT DE NANTES ATLANTIQUE",
     "coordinates": [
       -1.6061314734130212,
@@ -8533,14 +6780,11 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23GO004",
-    "photos": [
-      "https://luseogroup.com/luseomap/23GO004 - aeroport Nantes-3.jpg",
-      "https://luseogroup.com/luseomap/23GO004 - aeroport Nantes.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 398,
-    "name": "AUTO HALL TANGER",
+    "id": 368,
+    "name": "AUTO HALL",
     "coordinates": [
       -5.8052227250298944,
       35.77248987031203
@@ -8555,12 +6799,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA003",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA003 Auto Hall Danger.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 400,
+    "id": 369,
     "name": "PARKING BAB FES",
     "coordinates": [
       -6.818906168688848,
@@ -8576,12 +6818,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA010",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA010 Parking Salé.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 401,
+    "id": 370,
     "name": "RESIDENCE MASHER LIVING",
     "coordinates": [
       -6.832403106184884,
@@ -8597,13 +6837,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA017",
-    "photos": [
-      "https://luseogroup.com/luseomap/23mA017 MAZHAR LIVING-1.jpg",
-      "https://luseogroup.com/luseomap/23mA017 MAZHAR LIVING.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 402,
+    "id": 371,
     "name": "PARKING CENTRE DES AFFAIRES MARITIME",
     "coordinates": [
       2.4264383233102027,
@@ -8619,12 +6856,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA021",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA021 CENTRES DES AFFAIRES MARITIMES.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 403,
+    "id": 372,
     "name": "MUSEE VODUN",
     "coordinates": [
       2.3373051737550123,
@@ -8640,12 +6875,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA023",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA023 MUSEE VODUN.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 404,
+    "id": 373,
     "name": "ARCHIPEL",
     "coordinates": [
       -5.790724882765611,
@@ -8661,12 +6894,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA024",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA024 Archipel.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 405,
+    "id": 374,
     "name": "HILTON",
     "coordinates": [
       -8.061793790951466,
@@ -8682,12 +6913,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23MA031",
-    "photos": [
-      "https://luseogroup.com/luseomap/23MA031 Hilton.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 406,
+    "id": 375,
     "name": "KIA ORA RESORT AND SPA",
     "coordinates": [
       -147.63651498322147,
@@ -8695,7 +6924,7 @@ export const projects = [
     ],
     "mission": "Étude de Conception\n& d’Exécution Tout Corps d’État",
     "city": "ATOLL DE RANGIROA",
-    "region": "POLYNéSIE FRANçAISE",
+    "region": "POLYNESIE FRANCAISE",
     "area": "103 586 m²",
     "architect": "Rochet Wenish Architectes",
     "category": "Hôtellerie",
@@ -8703,33 +6932,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "23PF001TCE",
-    "photos": [
-      "https://luseogroup.com/luseomap/23PF001 Kia Ora resort & spa.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 407,
-    "name": "CENTRES HOSPITALIERS REGIONAUX",
-    "coordinates": [
-      -12.859988715832507,
-      10.04855068251092
-    ],
-    "mission": "Etude de Conception et d’Exécution Tout Corps d’Etat",
-    "city": "KINDIA",
-    "region": "GUINEE",
-    "area": "10 000 m²",
-    "architect": "ENIA ARCHITECTE",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "24FR002",
-    "photos": [
-      "https://luseogroup.com/luseomap/20047 kindia centre hospitalier.jpg"
-    ]
-  },
-  {
-    "id": 408,
+    "id": 376,
     "name": "SKY TOWER",
     "coordinates": [
       -7.661380160926443,
@@ -8745,17 +6951,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "24MA004S",
-    "photos": [
-      "https://luseogroup.com/luseomap/24MA 004 - Sky tower-1.jpg",
-      "https://luseogroup.com/luseomap/24MA 004 - Sky tower-2.jpg",
-      "https://luseogroup.com/luseomap/24MA 004 - Sky tower-2.jpg",
-      "https://luseogroup.com/luseomap/24MA 004 - Sky tower-3.jpg",
-      "https://luseogroup.com/luseomap/24MA 004 - Sky tower.jpg",
-      ""
-    ]
+    "photos": []
   },
   {
-    "id": 409,
+    "id": 377,
     "name": "VILLAS & APPARTEMENTS RITZ CARLTON",
     "coordinates": [
       -5.340130456817235,
@@ -8771,16 +6970,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": 13003,
-    "photos": [
-      "https://luseogroup.com/luseomap/13003- (1).jpg",
-      "https://luseogroup.com/luseomap/13003- (2).jpg",
-      "https://luseogroup.com/luseomap/13003- (3).jpg",
-      "https://luseogroup.com/luseomap/13003- (4).jpg",
-      "https://luseogroup.com/luseomap/13003 - TAMUDA BAY.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 410,
+    "id": 378,
     "name": "CASA FINANCE CITY LOT 34.1",
     "coordinates": [
       -7.660566015908062,
@@ -8796,12 +6989,10 @@ export const projects = [
     "certification": "-",
     "selection_bw": "TBC",
     "businessName": "24MA014S",
-    "photos": [
-      "https://luseogroup.com/luseomap/24MA014 LOT 34.1.jpg"
-    ]
+    "photos": []
   },
   {
-    "id": 411,
+    "id": 379,
     "name": "COLLEGE SAINT EXUPERY",
     "coordinates": [
       -6.827081072007981,
@@ -8811,12 +7002,12 @@ export const projects = [
     "city": "RABAT",
     "region": "MAROC",
     "area": "8 000 m2",
-    "architect": "G3A +LT2A",
-    "category": "Equipements publics",
+    "architect": "G3A & LT2A",
+    "category": "ENSEIGNEMENT",
     "bim": "-",
     "certification": "-",
     "selection_bw": "TBC",
-    "businessName": "",
+    "businessName": "24MA033",
     "photos": []
   }
 ];

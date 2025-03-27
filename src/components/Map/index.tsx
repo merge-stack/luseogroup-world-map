@@ -7,37 +7,37 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import ImageSlider from "@components/ProjectsView/ImageSlider";
 import { IProject } from "@interfaces";
 import luseoPin from "@assets/images/luseo-pin.png";
-import hotellerie from "@assets/images/HOTELLERIE.png"
-import industrie from "@assets/images/INDUSTRIE.png"
-import residential from "@assets/images/BATIMENTS-RESIDENTIELS-TERTIAIRES-OU-MIXTES.png"
-import shoppingMall from "@assets/images/CENTRES-COMMERCIAUX.png"
-import sante from "@assets/images/SANTE.png"
-import publicFacility from "@assets/images/EQUIPEMENTS-PUBLICS.png"
-import highRise from "@assets/images/IMMEUBLE-DE-GRANDE-HAUTEUR.png"
-import transport from "@assets/images/TRANSPORT.png"
+import hotellerie from "@assets/images/HOTELLERIE.png";
+import industrie from "@assets/images/INDUSTRIE.png";
+import residential from "@assets/images/BATIMENTS-RESIDENTIELS-TERTIAIRES-OU-MIXTES.png";
+import shoppingMall from "@assets/images/CENTRES-COMMERCIAUX.png";
+import sante from "@assets/images/SANTE.png";
+import publicFacility from "@assets/images/EQUIPEMENTS-PUBLICS.png";
+import highRise from "@assets/images/IMMEUBLE-DE-GRANDE-HAUTEUR.png";
+import transport from "@assets/images/TRANSPORT.png";
 
 import { REACT_APP_MAP_API_KEY, REACT_DEFAULT_IMAGE_URL } from "@config";
 
 import "./index.css";
 
-mapboxgl.accessToken = REACT_APP_MAP_API_KEY
+mapboxgl.accessToken = REACT_APP_MAP_API_KEY;
 
 export const categoryIcons: Record<string, string> = {
   "Centres commerciaux": shoppingMall,
   "Immeuble de Grande Hauteur": highRise,
   "Equipements publics": publicFacility,
-  "Santé": sante,
+  Santé: sante,
   "Bâtiments résidentiels, tertiaires ou mixtes": residential,
-  "Hôtellerie": hotellerie,
-  "Industrie": industrie,
-  "Transport": transport
+  Hôtellerie: hotellerie,
+  Industrie: industrie,
+  Transport: transport,
 };
 
 interface IMapComponent {
   pins: IProject[];
   selectedProject?: IProject | null;
   setSelectedProject: (project: IProject | null) => void;
-  scrollToProject: (projectId: number) => void
+  scrollToProject: (projectId: number) => void;
 }
 
 const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelectedProject, scrollToProject }) => {
@@ -187,20 +187,25 @@ const MapComponent: React.FC<IMapComponent> = ({ pins, selectedProject, setSelec
 };
 
 // Function to add popup (only for desktop)
-const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (project: IProject | null) => void, scrollToProject: (projectId: number) => void) => {
+const addPopup = (
+  map: mapboxgl.Map,
+  project: IProject,
+  setSelectedProject: (project: IProject | null) => void,
+  scrollToProject: (projectId: number) => void
+) => {
   const { coordinates, name, photos, category, city, region } = project;
 
   // Remove existing popups
   document.querySelectorAll(".mapboxgl-popup").forEach((popup) => popup.remove());
 
-  const categoryIcon = categoryIcons[category]
+  const categoryIcon = categoryIcons[category];
 
   const popupContainer = document.createElement("div");
   const popupContent = `    
   <div style="display: flex; font-family: Helvetica, Arial, sans-serif; background-color:white" >
     <div id="popup-slider-container" style="width: 260px; flex-shrink: 0;"></div>
       <div style="cursor: pointer; padding-left:15px;  color:#272C64; padding-top:12px;  width: 270px;    flex-shrink: 0;   overflow: hidden;   white-space: normal;  word-wrap: break-word; " >
-        <h5 style="font-size: 25px; font-weight: 500; color: #272C64; line-height: 1.0">${name}</h5>
+        <h5 style="font-size: 18px; font-weight: 500; color: #272C64; line-height: 1.0">${name}</h5>
          <div style="margin-top: 20px; flex-grow: 1;">
           <div style="display: flex; align-items: center; font-size: 14px; color: #272C64; margin-bottom: 10px;">
             <img src="${luseoPin}" alt="City" style="width: 20px; height: 30px; margin-right: 10px;">
@@ -248,19 +253,22 @@ const addPopup = (map: mapboxgl.Map, project: IProject, setSelectedProject: (pro
       const adjustedPhotoHeight = Math.max(textHeight, 200) + "px"; // Ensure minimum height
 
       const sliderRoot = ReactDOM.createRoot(sliderContainer);
-      sliderRoot.render(
-        <ImageSlider photos={photos?.length > 0 ? photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight={adjustedPhotoHeight} />
-      );
+      sliderRoot.render(<ImageSlider photos={photos?.length > 0 ? photos : [REACT_DEFAULT_IMAGE_URL]} photoHeight={adjustedPhotoHeight} />);
     }
 
     document.getElementById("popup-button")?.addEventListener("click", () => {
       console.log("Button Clicked!");
-      scrollToProject(project.id)
+      scrollToProject(project.id);
     });
   }, 0);
 };
 
-const flyToProject = (map: mapboxgl.Map | null, project: IProject, setSelectedProject: (project: IProject | null) => void, scrollToProject: (projectId: number) => void) => {
+const flyToProject = (
+  map: mapboxgl.Map | null,
+  project: IProject,
+  setSelectedProject: (project: IProject | null) => void,
+  scrollToProject: (projectId: number) => void
+) => {
   if (!map) return;
   const { coordinates } = project;
 

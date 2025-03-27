@@ -46,7 +46,7 @@ const Filters: React.FC<IFilters> = ({
             .filter((pin) => pin.category && pin.category.trim() !== "") // Remove empty/undefined categories
             .map((pin) => [pin.category, { label: startCase(toLower(pin.category)), value: pin.category }])
         ).values()
-      ),
+      ).sort((a, b) => a.label.localeCompare(b.label)),
       { label: "SÉLECTION BW", value: "oui" },
     ],
     [projects]
