@@ -94,7 +94,7 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView
       </nav>
       {showScrollButton && (
         <button className="top-button" onClick={scrollToTop}>
-          Scroll to Top
+          Faire défiler vers le haut
         </button>
       )}
     </>
