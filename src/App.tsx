@@ -26,7 +26,7 @@ function App() {
         // Custom filter for BIM = yes
         // It'll be moved to a separate filter in v2
         // @ts-ignore
-        (selectedCategory === "oui" && selectedCategory === String(pin.bim)?.toLowerCase());
+        (selectedCategory === "oui" && selectedCategory === String(pin.selection_bw)?.toLowerCase());
       const matchLocation = selectedLocation === "all" || pin.region === selectedLocation;
       const matchSearch =
         searchQuery === "" ||
