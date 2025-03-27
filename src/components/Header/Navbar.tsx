@@ -80,11 +80,11 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView
                   target="_blank"
                   rel="noopener noreferrer"
                   className="navbar-item"
-                  title="Contact"
+                  title="Nous Contacter"
                 >
                   <img src={contact} alt="" className="navbar-options" />
                 </a>
-                <div className="navbar-item">
+                <div className="navbar-item" title="Français">
                   <img src={france} alt="Company Logo" className="navbar-options" />
                 </div>
               </div>
