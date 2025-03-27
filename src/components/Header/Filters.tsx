@@ -21,7 +21,7 @@ const Filters: React.FC<IFilters> = ({
   selectedLocation,
   setSelectedLocation,
   setSearchQuery,
-  className = '',
+  className = "",
 }) => {
   const locations = useMemo<{ label: string; value: string }[]>(
     () => [
@@ -40,6 +40,7 @@ const Filters: React.FC<IFilters> = ({
   const categories = useMemo<{ label: string; value: string }[]>(
     () => [
       { label: "TYPE DE PROJET", value: "all" }, // "Type De Projet" is the display label for "all"
+      { label: "SÉLECTION BW", value: "bim:yes" },
       ...Array.from(
         new Map(
           projects
@@ -72,7 +73,8 @@ const Filters: React.FC<IFilters> = ({
           id="category-select"
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
-          className="filter-dropdown">
+          className="filter-dropdown"
+        >
           {categories.map(({ label, value }) => (
             <option key={value} value={value}>
               {label}
@@ -83,7 +85,8 @@ const Filters: React.FC<IFilters> = ({
           id="location-select"
           value={selectedLocation}
           onChange={(e) => setSelectedLocation(e.target.value)}
-          className="filter-dropdown">
+          className="filter-dropdown"
+        >
           {locations.map(({ label, value }) => (
             <option key={value} value={value}>
               {label}

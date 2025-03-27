@@ -20,7 +20,13 @@ function App() {
 
   const filteredPins = useMemo(() => {
     return projects.filter((pin) => {
-      const matchCategory = selectedCategory === "all" || pin.category === selectedCategory;
+      const matchCategory =
+        selectedCategory === "all" ||
+        pin.category === selectedCategory ||
+        // Custom filter for BIM = yes
+        // It'll be moved to a separate filter in v2
+        // @ts-ignore
+        (selectedCategory === "bim:yes" && String(pin.bim)?.toLowerCase() === "yes");
       const matchLocation = selectedLocation === "all" || pin.region === selectedLocation;
       const matchSearch = searchQuery === "" || pin.name.toLowerCase().includes(searchQuery.toLowerCase());
 
