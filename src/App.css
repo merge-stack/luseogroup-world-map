@@ -19,7 +19,7 @@
 .projects-div {
   width: 100%;
   background-color: #fff;
-  padding: 0 12px 12px 12px;
+  padding: 0 20px 12px 20px;
 }
 
 @media screen and (max-width: 767px) {

@@ -40,7 +40,6 @@ const Filters: React.FC<IFilters> = ({
   const categories = useMemo<{ label: string; value: string }[]>(
     () => [
       { label: "TYPE DE PROJET", value: "all" }, // "Type De Projet" is the display label for "all"
-      { label: "SÉLECTION BW", value: "bim:yes" },
       ...Array.from(
         new Map(
           projects
@@ -48,6 +47,7 @@ const Filters: React.FC<IFilters> = ({
             .map((pin) => [pin.category, { label: startCase(toLower(pin.category)), value: pin.category }])
         ).values()
       ),
+      { label: "SÉLECTION BW", value: "oui" },
     ],
     [projects]
   );

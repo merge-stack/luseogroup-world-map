@@ -26,9 +26,13 @@ function App() {
         // Custom filter for BIM = yes
         // It'll be moved to a separate filter in v2
         // @ts-ignore
-        (selectedCategory === "bim:yes" && String(pin.bim)?.toLowerCase() === "yes");
+        (selectedCategory === "oui" && selectedCategory === String(pin.bim)?.toLowerCase());
       const matchLocation = selectedLocation === "all" || pin.region === selectedLocation;
-      const matchSearch = searchQuery === "" || pin.name.toLowerCase().includes(searchQuery.toLowerCase());
+      const matchSearch =
+        searchQuery === "" ||
+        pin.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        pin.architect.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        String(pin.bim).toLowerCase().includes(searchQuery.toLowerCase());
 
       return matchCategory && matchLocation && matchSearch;
     }) as IProject[];
