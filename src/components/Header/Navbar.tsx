@@ -9,6 +9,7 @@ import mapActive from "@assets/images/map-on.png";
 import reset from "@assets/images/reset.png";
 import list from "@assets/images/list-off.png";
 import listActive from "@assets/images/list-on.png";
+import backToTop from "@assets/images/back-to-top.png";
 
 import "./index.css";
 import { ViewType } from "@src/constants";
@@ -93,9 +94,9 @@ const Navbar: React.FC<FooterProps> = ({ resetFilters, toggleView, setToggleView
         </div>
       </nav>
       {showScrollButton && (
-        <button className="top-button" onClick={scrollToTop}>
-          Faire défiler vers le haut
-        </button>
+        <div className="top-button" onClick={scrollToTop}>
+          <img src={backToTop} alt="" style={{ width: "50px", height: "50px" }} />
+        </div>
       )}
     </>
   );

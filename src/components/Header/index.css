@@ -310,11 +310,6 @@
 }
 
 .top-button {
-  background: #272c64;
-  color: white;
-  border-radius: 0;
-  border: 1px solid #d3d1d1;
-  padding: 4px 24px;
   position: fixed;
   bottom: 13px;
   right: 23px;
@@ -323,7 +318,7 @@
 }
 
 .top-button:hover {
-  border: 1px solid #959393;
+  border: none;
 }
 
 .top-button:focus {
