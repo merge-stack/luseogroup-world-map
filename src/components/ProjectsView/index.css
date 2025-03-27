@@ -124,7 +124,7 @@
 }
 
 .project-name {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   color: #272c64;
   line-height: 1;
@@ -343,5 +343,4 @@
   .location-card-content {
     padding: 0 14px;
   }
-
 }
