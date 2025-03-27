@@ -541,7 +541,7 @@
     height: 25px;
   }
 
-  */ .navbar-right {
+  .navbar-right {
     gap: 5px;
   }
 
@@ -568,7 +568,6 @@
   .filters-mobile-wrapper {
     top: 45px;
   }
-
 }
 
 @media screen and (max-width: 375px) {
@@ -594,5 +593,4 @@
   .filters-mobile-wrapper {
     top: 41px;
   }
-
 }
