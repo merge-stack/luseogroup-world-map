@@ -50,11 +50,11 @@
 }
 
 .selected {
-  border: 2px solid black;
+  border: 2px solid #fdb82d;
 }
 
 .location-card:hover {
-  border: 2px solid black;
+  border: 2px solid #fdb82d;
 }
 
 .location-card-image {
@@ -124,9 +124,35 @@
 }
 
 .project-name {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #272c64;
+  line-height: 1;
+}
+
+.card-detail-portion {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #272c64;
+  margin-bottom: 10px;
+}
+
+.card-icons {
+  width: 25px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.detail-title {
   font-weight: 600;
-  color: #fdb82d;
+  color: #272c64;
+  font-size: 15px;
+}
+
+.detail-value {
+  color: gray;
+  font-weight: 500;
 }
 
 .project-region {
