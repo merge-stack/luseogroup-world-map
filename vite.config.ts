@@ -9,4 +9,15 @@ export default defineConfig({
   server: {
     allowedHosts: ["1005-2a09-bac5-5041-16a0-00-241-6d.ngrok-free.app"],
   },
+  define: {
+    "process.env": {}, // Prevents "process is not defined" error
+  },
+  build: {
+    lib: {
+      entry: "./src/main.tsx",
+      name: "MyViteApp",
+      fileName: "bundle",
+      formats: ["umd", "es"],
+    },
+  },
 });
