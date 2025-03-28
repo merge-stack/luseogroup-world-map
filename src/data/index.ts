@@ -1,99 +1,6 @@
 export const projects = [
   {
     "id": 1,
-    "name": "AUCHAN SOKOLNIKY",
-    "coordinates": [
-      37.68134807183681,
-      55.79025514001904
-    ],
-    "mission": "Etudes d’exécutions pour le lot électricité & la réception du lot Fluide",
-    "city": "MOSCOU",
-    "region": "RUSSIE",
-    "area": "144 900M²",
-    "architect": "-",
-    "category": "Centres commerciaux",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 6001,
-    "photos": [
-      "https://luseogroup.com/luseomap/06001-1.jpg"
-    ]
-  },
-  {
-    "id": 2,
-    "name": "AUCHAN LENINSKY",
-    "coordinates": [
-      37.72515313462843,
-      55.58453794538671
-    ],
-    "mission": "Etudes d’exécutions pour le lot électricité",
-    "city": "MOSCOU",
-    "region": "RUSSIE",
-    "area": "17 200m²",
-    "architect": "-",
-    "category": "Centres commerciaux",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 6017,
-    "photos": [
-      "https://luseogroup.com/luseomap/06017-2.jpg"
-    ]
-  },
-  {
-    "id": 3,
-    "name": "VELIZY CAMPUS",
-    "coordinates": [
-      2.2110599837637244,
-      48.78649538010394
-    ],
-    "mission": "Métré & Quantitatif pour le lot Electicité",
-    "city": "VELIZY",
-    "region": "FRANCE",
-    "area": "63 000m²",
-    "architect": "arte charpentier",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 7005,
-    "photos": [
-      "https://luseogroup.com/luseomap/07005-1.jpg",
-      "https://luseogroup.com/luseomap/07005-2.jpg",
-      "https://luseogroup.com/luseomap/07005-.pg",
-      "https://luseogroup.com/luseomap/07005-3.jpg",
-      "https://luseogroup.com/luseomap/07005-4",
-      "jpg",
-      "https://luseogroup.com/luseomap/07005-5",
-      "jpg",
-      "https://luseogroup.com/luseomap/07005-6.jpg",
-      ""
-    ]
-  },
-  {
-    "id": 4,
-    "name": "TOUR STRAJURAL",
-    "coordinates": [
-      60.61547869009653,
-      56.841924188276295
-    ],
-    "mission": "Métré & Quantitatif pour le Lot Electricité",
-    "city": "EKATERINBOURG",
-    "region": "RUSSIE",
-    "area": "145m 195000m²",
-    "architect": "Valode & Pistre",
-    "category": "Immeuble de Grande Hauteur",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 7016,
-    "photos": [
-      "https://luseogroup.com/luseomap/07005-1.jpg"
-    ]
-  },
-  {
-    "id": 5,
     "name": "SINGAPORE SPORTS HUB",
     "coordinates": [
       103.87482890740698,
@@ -123,103 +30,28 @@ export const projects = [
     ]
   },
   {
-    "id": 6,
-    "name": "SIEGE France TELECOM",
+    "id": 2,
+    "name": "LINCOLN",
     "coordinates": [
-      20.999583048198858,
-      52.232448751557875
+      -7.612074360586206,
+      33.594423863108354
     ],
-    "mission": "Etude de Conception phase APS pour les lots Electricité & Fluides",
-    "city": "VARSOVIE",
-    "region": "POLOGNE",
-    "area": "43 115m²",
-    "architect": "FISZER ATELIER 41",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 920,
-    "photos": [
-      "https://luseogroup.com/luseomap/09020-2.jpg"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "COMPLEXE LAAICO",
-    "coordinates": [
-      9.43689957735227,
-      0.40089261862924586
-    ],
-    "mission": "Etude de Conception phase APS& APD pour les lots Electricité, Fluide & VRD",
-    "city": "Libreville",
-    "region": "GABON",
-    "area": "107 000m²\nHotel 230 Chambres\n35 boutiques\n46 appartements",
-    "architect": "KOFFI & DIABATTE",
+    "mission": "Étude d’Exécution pour le lot Structure - Post-Tension",
+    "city": "CASABLANCA",
+    "region": "MAROC",
+    "area": "13 000m²",
+    "architect": "OUALALOU + CHOI",
     "category": "Hôtellerie",
-    "bim": "",
-    "certification": "-",
+    "bim": 2,
+    "certification": "HQE niveau Excellent",
     "selection_bw": "oui",
-    "businessName": 930,
+    "businessName": "23MA001",
     "photos": [
-      "https://luseogroup.com/luseomap//06022-1.jpg",
-      "https://luseogroup.com/luseomap/06022-10.jpg",
-      "https://luseogroup.com/luseomap/06022-3.jpg",
-      "https://luseogroup.com/luseomap/06022-2.jpg",
-      "https://luseogroup.com/luseomap/06022-4.jpg",
-      "https://luseogroup.com/luseomap/06022-5.jpg",
-      "https://luseogroup.com/luseomap/06022-6.jpg",
-      "https://luseogroup.com/luseomap/06022-7.jpg",
-      "https://luseogroup.com/luseomap/06022-8.jpg",
-      "https://luseogroup.com/luseomap/06022-9.jpg",
-      ""
+      "https://luseogroup.com/luseomap/19051 - LINCOLN.jpg"
     ]
   },
   {
-    "id": 8,
-    "name": "ONOMO",
-    "coordinates": [
-      -3.937420697059324,
-      5.257909936754697
-    ],
-    "mission": "Etude de Conception phase DCE pour les lots Electricité, Fluide et Voiries/Réseaux/Divers",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "118 chambres",
-    "architect": "KOFFI & DIABATTE",
-    "category": "Hôtellerie",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 10003,
-    "photos": [
-      "https://luseogroup.com/luseomap/10003 - onomo.jpg",
-      "https://luseogroup.com/luseomap/10003 - Hotel ONOMO - ABIDJAN - Cote d'Ivoire.jpg"
-    ]
-  },
-  {
-    "id": 10,
-    "name": "TAKAU PLAZA",
-    "coordinates": [
-      -149.58606213198235,
-      -17.545206511138964
-    ],
-    "mission": "Etude de Conception pour les lots Electricité, Fluide & Suivi de Travaux",
-    "city": "PAPPETE",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "60 000m²",
-    "architect": "Philippe GRANDOU",
-    "category": "Centres commerciaux",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 10022,
-    "photos": [
-      "https://luseogroup.com/luseomap/10022 - takau plaza.jpg",
-      "https://luseogroup.com/luseomap/10022 - takau plaza.jpg"
-    ]
-  },
-  {
-    "id": 11,
+    "id": 3,
     "name": "BEACH COMBER",
     "coordinates": [
       -151.72360803033465,
@@ -241,7 +73,229 @@ export const projects = [
     ]
   },
   {
+    "id": 4,
+    "name": "HOPITAL POINTE A PITRE",
+    "coordinates": [
+      -61.5254169153194,
+      16.241043903487544
+    ],
+    "mission": "Métré, Quantitatif et Chiffrage pour le Lot Electricité",
+    "city": "POINT A PITRE",
+    "region": "GUADELOUPE",
+    "area": "82 500m² - 672 lits",
+    "architect": "Architecte Studio / Babel l'Agence",
+    "category": "Santé",
+    "bim": 2,
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 17051,
+    "photos": [
+      "https://luseogroup.com/luseomap/17051 - CHU pointe a pritre (3).jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "CHALLENGER",
+    "coordinates": [
+      2.0720688077629106,
+      48.785637395177474
+    ],
+    "mission": "Etude d’Exécution pour le lot Electricité",
+    "city": "St QUENTIN en YVELINES",
+    "region": "FRANCE",
+    "area": "",
+    "architect": "SRA - Architectes",
+    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
+    "bim": "-",
+    "certification": "-",
+    "selection_bw": "TBC",
+    "businessName": 11032,
+    "photos": [
+      "https://luseogroup.com/luseomap/11032 - CHALLENGER .jpg"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "AUCHAN SOKOLNIKY",
+    "coordinates": [
+      37.68134807183681,
+      55.79025514001904
+    ],
+    "mission": "Etudes d’exécutions pour le lot électricité & la réception du lot Fluide",
+    "city": "MOSCOU",
+    "region": "RUSSIE",
+    "area": "144 900M²",
+    "architect": "-",
+    "category": "Centres commerciaux",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 6001,
+    "photos": [
+      "https://luseogroup.com/luseomap/06001-1.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "AUCHAN LENINSKY",
+    "coordinates": [
+      37.72515313462843,
+      55.58453794538671
+    ],
+    "mission": "Etudes d’exécutions pour le lot électricité",
+    "city": "MOSCOU",
+    "region": "RUSSIE",
+    "area": "17 200m²",
+    "architect": "-",
+    "category": "Centres commerciaux",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 6017,
+    "photos": [
+      "https://luseogroup.com/luseomap/06017-2.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "VELIZY CAMPUS",
+    "coordinates": [
+      2.2110599837637244,
+      48.78649538010394
+    ],
+    "mission": "Métré & Quantitatif pour le lot Electicité",
+    "city": "VELIZY",
+    "region": "FRANCE",
+    "area": "63 000m²",
+    "architect": "arte charpentier",
+    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 7005,
+    "photos": [
+      "https://luseogroup.com/luseomap/07005-1.jpg",
+      "https://luseogroup.com/luseomap/07005-2.jpg",
+      "https://luseogroup.com/luseomap/07005-.pg",
+      "https://luseogroup.com/luseomap/07005-3.jpg",
+      "https://luseogroup.com/luseomap/07005-4",
+      "jpg",
+      "https://luseogroup.com/luseomap/07005-5",
+      "jpg",
+      "https://luseogroup.com/luseomap/07005-6.jpg",
+      ""
+    ]
+  },
+  {
+    "id": 9,
+    "name": "TOUR STRAJURAL",
+    "coordinates": [
+      60.61547869009653,
+      56.841924188276295
+    ],
+    "mission": "Métré & Quantitatif pour le Lot Electricité",
+    "city": "EKATERINBOURG",
+    "region": "RUSSIE",
+    "area": "145m 195000m²",
+    "architect": "Valode & Pistre",
+    "category": "Immeuble de Grande Hauteur",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 7016,
+    "photos": [
+      "https://luseogroup.com/luseomap/07016 - tour strajura - Valode & Pistre tours jumelles 145m 195000m².jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "SIEGE France TELECOM",
+    "coordinates": [
+      20.999583048198858,
+      52.232448751557875
+    ],
+    "mission": "Etude de Conception phase APS pour les lots Electricité & Fluides",
+    "city": "VARSOVIE",
+    "region": "POLOGNE",
+    "area": "43 115m²",
+    "architect": "FISZER ATELIER 41",
+    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 920,
+    "photos": [
+      "https://luseogroup.com/luseomap/09020-2.jpg"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "COMPLEXE LAAICO",
+    "coordinates": [
+      9.43689957735227,
+      0.40089261862924586
+    ],
+    "mission": "Etude de Conception phase APS& APD pour les lots Electricité, Fluide & VRD",
+    "city": "Libreville",
+    "region": "GABON",
+    "area": "107 000m²\nHotel 230 Chambres\n35 boutiques\n46 appartements",
+    "architect": "KOFFI & DIABATTE",
+    "category": "Hôtellerie",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 930,
+    "photos": [
+      "https://luseogroup.com/luseomap/09030 - Hotel Laaico - Libreville - Gabon (1).jpg",
+      "https://luseogroup.com/luseomap/09030 - Hotel Laaico - Libreville - Gabon (2).jpg"
+    ]
+  },
+  {
     "id": 12,
+    "name": "ONOMO",
+    "coordinates": [
+      -3.937420697059324,
+      5.257909936754697
+    ],
+    "mission": "Etude de Conception phase DCE pour les lots Electricité, Fluide et Voiries/Réseaux/Divers",
+    "city": "ABIDJAN",
+    "region": "COTE D'IVOIRE",
+    "area": "118 chambres",
+    "architect": "KOFFI & DIABATTE",
+    "category": "Hôtellerie",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 10003,
+    "photos": [
+      "https://luseogroup.com/luseomap/10003 - onomo.jpg",
+      "https://luseogroup.com/luseomap/10003 - Hotel ONOMO - ABIDJAN - Cote d'Ivoire.jpg"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "TAKAU PLAZA",
+    "coordinates": [
+      -149.58606213198235,
+      -17.545206511138964
+    ],
+    "mission": "Etude de Conception pour les lots Electricité,  Fluide & Suivi de Travaux",
+    "city": "PAPEETE",
+    "region": "POLYNESIE FRANCAISE",
+    "area": "60 000m²",
+    "architect": "Philippe GRANDOU",
+    "category": "Centres commerciaux",
+    "bim": "",
+    "certification": "-",
+    "selection_bw": "oui",
+    "businessName": 10022,
+    "photos": [
+      "https://luseogroup.com/luseomap/10022 - takau plaza.jpg",
+      "https://luseogroup.com/luseomap/10022 - takau plaza.jpg"
+    ]
+  },
+  {
+    "id": 15,
     "name": "ROYAL PAPWORTH HOSPITAL",
     "coordinates": [
       0.136351465390656,
@@ -265,7 +319,7 @@ export const projects = [
     ]
   },
   {
-    "id": 13,
+    "id": 16,
     "name": "RITZ CARLTON",
     "coordinates": [
       -6.840996937874491,
@@ -287,7 +341,7 @@ export const projects = [
     ]
   },
   {
-    "id": 14,
+    "id": 17,
     "name": "NOS NOBOS HOSPITAL",
     "coordinates": [
       -68.93972135373733,
@@ -304,11 +358,11 @@ export const projects = [
     "selection_bw": "oui",
     "businessName": 12027,
     "photos": [
-      "https://luseogroup.com/luseomap/12007 & 12057 -CCIA modelise.JPG"
+      "https://luseogroup.com/luseomap/12027 Nos Hospitals NOBOS.jpg"
     ]
   },
   {
-    "id": 15,
+    "id": 18,
     "name": "RIDGE HOSPITAL",
     "coordinates": [
       -0.198567060363779,
@@ -325,12 +379,14 @@ export const projects = [
     "selection_bw": "oui",
     "businessName": 12053,
     "photos": [
+      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg",
+      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg",
       "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg"
     ]
   },
   {
-    "id": 16,
-    "name": "NOVOTEL ABIDJAN",
+    "id": 19,
+    "name": "RADISSON BLUE LAGOS AIRPORT",
     "coordinates": [
       -4.016369700334223,
       5.316200961875266
@@ -346,13 +402,13 @@ export const projects = [
     "selection_bw": "oui",
     "businessName": 13034,
     "photos": [
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg",
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg",
-      "https://luseogroup.com/luseomap/12053 Ridge Hospital.jpg"
+      "https://luseogroup.com/luseomap/13034 Radissons abidjan.jpg",
+      "https://luseogroup.com/luseomap/13034-2 Radissons abidjan.jpg",
+      "https://luseogroup.com/luseomap/13034-3 Radissons abidjan.jpg"
     ]
   },
   {
-    "id": 17,
+    "id": 20,
     "name": "PERTH  EVOLUTION STADIUM",
     "coordinates": [
       115.86926053080185,
@@ -373,7 +429,7 @@ export const projects = [
     ]
   },
   {
-    "id": 18,
+    "id": 21,
     "name": "TOUR POSTEL",
     "coordinates": [
       -4.016506387936877,
@@ -396,7 +452,7 @@ export const projects = [
     ]
   },
   {
-    "id": 19,
+    "id": 22,
     "name": "STADE TIM HORTONS",
     "coordinates": [
       -79.83081397352925,
@@ -413,11 +469,11 @@ export const projects = [
     "selection_bw": "oui",
     "businessName": "14021-A",
     "photos": [
-      "https://luseogroup.com/luseomap/14021 - Milton Velodrome-Mattamy National Cycling Centre.jpg"
+      "https://luseogroup.com/luseomap/14021 - Hamilton soccer stadium.jpg"
     ]
   },
   {
-    "id": 20,
+    "id": 23,
     "name": "MILTON VELODROME",
     "coordinates": [
       -79.87649010812135,
@@ -438,7 +494,7 @@ export const projects = [
     ]
   },
   {
-    "id": 21,
+    "id": 24,
     "name": "YORK STADIUM",
     "coordinates": [
       -79.49654004018775,
@@ -459,7 +515,7 @@ export const projects = [
     ]
   },
   {
-    "id": 22,
+    "id": 25,
     "name": "AEROPORT LEON MBA",
     "coordinates": [
       9.410439437722413,
@@ -486,28 +542,7 @@ export const projects = [
     ]
   },
   {
-    "id": 23,
-    "name": "UNIVERSITE DE SAN PEDRO",
-    "coordinates": [
-      -6.698213013481272,
-      4.785622020079659
-    ],
-    "mission": "Etude de Conception et d’Exécutions Tout Corps d’Etat",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "29417 m²\n+ 8768 m²",
-    "architect": "GROUPE 6",
-    "category": "Equipements publics",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 15019,
-    "photos": [
-      "https://luseogroup.com/luseomap/15019 université san pedro.jpg"
-    ]
-  },
-  {
-    "id": 24,
+    "id": 26,
     "name": "AKWA",
     "coordinates": [
       9.700061253764256,
@@ -529,7 +564,7 @@ export const projects = [
     ]
   },
   {
-    "id": 25,
+    "id": 27,
     "name": "TOUR BANQUE CENTRALE POPULAIRE",
     "coordinates": [
       -7.659849377068919,
@@ -550,7 +585,7 @@ export const projects = [
     ]
   },
   {
-    "id": 26,
+    "id": 28,
     "name": "IMMEUBLE ODYSSEE",
     "coordinates": [
       9.445696324809882,
@@ -571,7 +606,7 @@ export const projects = [
     ]
   },
   {
-    "id": 27,
+    "id": 29,
     "name": "PULLMAN",
     "coordinates": [
       -4.013618984454206,
@@ -592,7 +627,7 @@ export const projects = [
     ]
   },
   {
-    "id": 28,
+    "id": 30,
     "name": "FAIRMONT",
     "coordinates": [
       -6.829945109272517,
@@ -613,7 +648,7 @@ export const projects = [
     ]
   },
   {
-    "id": 29,
+    "id": 31,
     "name": "MUSEE YVES SAINT LAURENT",
     "coordinates": [
       -8.003914899519227,
@@ -636,17 +671,17 @@ export const projects = [
     ]
   },
   {
-    "id": 30,
-    "name": "UNIVERSITE SAN PEDRO \n &\n UINIVERSITE KORHOGO",
+    "id": 32,
+    "name": "UNIVERSITE SAN PEDRO",
     "coordinates": [
       -5.6288150842447,
       9.426826087755321
     ],
     "mission": "Etude APS Tout Corps d’Etat",
-    "city": "SAN PEDRO \n& \nKOROGO",
+    "city": "SAN PEDRO",
     "region": "COTE D'IVOIRE",
-    "area": "200 000m²\n\n200 000m²",
-    "architect": "ACA ARCHITECTE\n\nYOLANDE DOUKOURE",
+    "area": "200 000m²",
+    "architect": "ACA ARCHITECTE",
     "category": "Equipements publics",
     "bim": "",
     "certification": "-",
@@ -659,7 +694,28 @@ export const projects = [
     ]
   },
   {
-    "id": 31,
+    "id": 33,
+    "name": "UINIVERSITE KORHOGO",
+    "coordinates": [
+      -5.62894379467617,
+      9.426738043130905
+    ],
+    "mission": "Etude APS Tout Corps d’Etat",
+    "city": "KOROGO",
+    "region": "COTE D'IVOIRE",
+    "area": "200 000m²",
+    "architect": "YOLANDE DOUKOURE",
+    "category": "Equipements publics",
+    "bim": "",
+    "certification": "",
+    "selection_bw": "oui",
+    "businessName": 17001,
+    "photos": [
+      "https://luseogroup.com/luseomap/17001- UNI korhogo.jpg"
+    ]
+  },
+  {
+    "id": 34,
     "name": "PHARMA 5",
     "coordinates": [
       -3.970136955354259,
@@ -680,7 +736,7 @@ export const projects = [
     ]
   },
   {
-    "id": 32,
+    "id": 35,
     "name": "HOTEL NOOM",
     "coordinates": [
       -4.015177018591496,
@@ -701,7 +757,7 @@ export const projects = [
     ]
   },
   {
-    "id": 33,
+    "id": 36,
     "name": "ONOMO - EXTENTION",
     "coordinates": [
       -3.937505515316945,
@@ -722,7 +778,7 @@ export const projects = [
     ]
   },
   {
-    "id": 34,
+    "id": 37,
     "name": "MAISON D'ARRET DE BASSE TERRE",
     "coordinates": [
       -61.7273998234684,
@@ -743,7 +799,7 @@ export const projects = [
     ]
   },
   {
-    "id": 35,
+    "id": 38,
     "name": "UNIVERSITE ODIENNE",
     "coordinates": [
       -7.564367127233364,
@@ -760,7 +816,6 @@ export const projects = [
     "selection_bw": "oui",
     "businessName": "21CI001",
     "photos": [
-      "https://luseogroup.com/luseomap/20036 prison Basse terre.jpg",
       "https://luseogroup.com/luseomap/21CI001-1 - BUREAU 4.jpg",
       "https://luseogroup.com/luseomap/21CI001-1 - BUREAU RECTIFIE 2 .jpg",
       "https://luseogroup.com/luseomap/21CI001-1 - centre médical.jpg",
@@ -776,7 +831,7 @@ export const projects = [
     ]
   },
   {
-    "id": 36,
+    "id": 39,
     "name": "CENTRE AFFAIRES MARITIMES",
     "coordinates": [
       2.4263743109170473,
@@ -814,7 +869,7 @@ export const projects = [
     ]
   },
   {
-    "id": 38,
+    "id": 40,
     "name": "MARCHE  REGIONAL",
     "coordinates": [
       2.6081098080211955,
@@ -836,7 +891,7 @@ export const projects = [
     ]
   },
   {
-    "id": 39,
+    "id": 41,
     "name": "MARCHE ZOCA",
     "coordinates": [
       2.4216759635787746,
@@ -859,7 +914,7 @@ export const projects = [
     ]
   },
   {
-    "id": 40,
+    "id": 42,
     "name": "SIEGE PFO",
     "coordinates": [
       -4.00342214108575,
@@ -882,7 +937,7 @@ export const projects = [
     ]
   },
   {
-    "id": 41,
+    "id": 43,
     "name": "IMMEUBLE OGL",
     "coordinates": [
       2.3932841231811866,
@@ -903,15 +958,15 @@ export const projects = [
     ]
   },
   {
-    "id": 42,
+    "id": 44,
     "name": "YYLDYZ HOTEL",
     "coordinates": [
       58.331655841529745,
       37.93427558723677
     ],
     "mission": "Conception CET.",
-    "city": "Ashgabat",
-    "region": "Turkmenistan",
+    "city": "ASHGABAT",
+    "region": "TURKMENISTAN",
     "area": "85,000 m ²",
     "architect": "Bouygues",
     "category": "Hôtellerie",
@@ -924,29 +979,7 @@ export const projects = [
     ]
   },
   {
-    "id": 43,
-    "name": "MAISON DE L'ART DE GRAND BASSAM",
-    "coordinates": [
-      -3.7342845567757,
-      5.195278090509617
-    ],
-    "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
-    "city": "Abijan",
-    "region": "Côte d'Ivoire",
-    "area": "2 830m²",
-    "architect": "Koffi & Diabate",
-    "category": "Equipements publics",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": "21CI005",
-    "photos": [
-      "https://luseogroup.com/luseomap/22FR015-SIEGE PFO-1.jpg",
-      "https://luseogroup.com/luseomap/21CI005-maison de l'art.jpg"
-    ]
-  },
-  {
-    "id": 44,
+    "id": 45,
     "name": "CENTRE COMMERCIAL GREEN SHOPS",
     "coordinates": [
       -3.738471835492599,
@@ -954,7 +987,7 @@ export const projects = [
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Bassam",
-    "region": "Côte d'Ivoire",
+    "region": "COTE D'IVOIRE",
     "area": "12 640m²",
     "architect": "TUO",
     "category": "Centres commerciaux",
@@ -967,7 +1000,7 @@ export const projects = [
     ]
   },
   {
-    "id": 45,
+    "id": 46,
     "name": "MUSÉE NATIONAL DES ARTS D'ABIDJAN",
     "coordinates": [
       -4.017776252650221,
@@ -975,7 +1008,7 @@ export const projects = [
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Abijan",
-    "region": "Côte d'Ivoire",
+    "region": "COTE D'IVOIRE",
     "area": "5 300m²",
     "architect": "PFO",
     "category": "Equipements publics",
@@ -994,25 +1027,6 @@ export const projects = [
     ]
   },
   {
-    "id": 46,
-    "name": "MARCHÉ RÉGIONAL COVE",
-    "coordinates": [
-      2.3399547673744054,
-      7.21938600574137
-    ],
-    "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
-    "city": "Covè",
-    "region": "Bénin",
-    "area": "5 830m²",
-    "architect": "BA Architecture",
-    "category": "Equipements publics",
-    "bim": "",
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": "22BJ003",
-    "photos": []
-  },
-  {
     "id": 47,
     "name": "RÉSIDENCES OFFICIELLES DU PRÉSIDENT DE LA RÉPUBLIQUE",
     "coordinates": [
@@ -1021,7 +1035,7 @@ export const projects = [
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Cotonou",
-    "region": "Bénin",
+    "region": "BENIN",
     "area": "4 000m²",
     "architect": "Koffi & Diabate",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1052,8 +1066,8 @@ export const projects = [
       -17.57641481989577
     ],
     "mission": "Conception CET, études d’exécution et suivi des travaux. Mission  HQE",
-    "city": "Faa'a",
-    "region": "Polynésie Française",
+    "city": "FAA'A",
+    "region": "POLYNESIE FRANCAISE",
     "area": "2750 m²",
     "architect": "Bertrand PORTIER Architecte",
     "category": "Equipements publics",
@@ -1069,14 +1083,14 @@ export const projects = [
   },
   {
     "id": 49,
-    "name": "CONSTRUCTION D'UN BÂTIMENT ADMINISTRATIF POUR LES BESOINS DU SEAC PF (ETUDE ET SUIVI TRAVAUX)",
+    "name": "SERVICE D'ETAT DE L'AVIATION CIVILE",
     "coordinates": [
       -149.59787262838483,
       -17.561808419123878
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux. Mission HQE",
-    "city": "Faa'a",
-    "region": "Polynésie Française",
+    "city": "FAA'A",
+    "region": "POLYNESIE FRANCAISE",
     "area": "2000 m²",
     "architect": "Island Architecture",
     "category": "Equipements publics",
@@ -1090,14 +1104,14 @@ export const projects = [
   },
   {
     "id": 50,
-    "name": "RÉNOVATION EXTENSION HÔTEL HILTON TAHITI",
+    "name": "HÔTEL HILTON TAHITI",
     "coordinates": [
       -149.5858999017016,
       -17.545373689187553
     ],
     "mission": "Conception gros oeuvre, études d’exécution et suivi des travaux TCE.",
-    "city": "Faa'a",
-    "region": "Polynésie Française",
+    "city": "FAA'A",
+    "region": "POLYNESIE FRANCAISE",
     "area": "15000m²",
     "architect": "Tropical Architecture",
     "category": "Hôtellerie",
@@ -1111,14 +1125,14 @@ export const projects = [
   },
   {
     "id": 51,
-    "name": "CONSTRUCTION D'UN SYSTÈME DE PRODUCTION DE FRIGORIES À PARTIR D'UN PUISAGE OCÉANIQUE EN EAU PROFONDE (SWAC) POUR LA CLIMATISATION DU CENTRE HOSPITALIER DE POLYNÉSIE-FRANCÇAISE",
+    "name": "CENTRE HOSPITALIER DE POLYNÉSIE-FRANÇAISE",
     "coordinates": [
       -149.5465110369314,
       -17.528399249830414
     ],
     "mission": "Conception CET, études d’exécution et suivi des travaux.",
     "city": "Pirae",
-    "region": "Polynesie Française",
+    "region": "POLYNESIE FRANCAISE",
     "area": "600m²",
     "architect": "SO",
     "category": "Industrie",
@@ -1189,7 +1203,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild residental 8-storry, 55- unit building",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Modis Architects",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1210,7 +1224,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild 13-story, 126-unit condo building",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Built Form",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1231,7 +1245,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild residential 12-story 316-unit building, and two commercial buildings.",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Related Urban",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1252,7 +1266,7 @@ export const projects = [
     ],
     "mission": "MEP/FP Design of Comprehensive 1940’s iconic 16-story hotel renovation",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "EoA Group",
     "category": "Hôtellerie",
@@ -1273,7 +1287,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild high-end 3-story + rooftop residential building.",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Kobi Karp Architecture & ID",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1294,7 +1308,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild 50-unit, 4-story residential building.",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Studio McG Architecture",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1315,7 +1329,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild high-end 5-story + rooftop residential building.",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Kobi Karp Architecture & ID",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1336,7 +1350,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for newbuild religious mixed-use building. Includes offices, classrooms, common areas and prayer spaces.",
     "city": "Miami",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Modis Architects",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1357,7 +1371,7 @@ export const projects = [
     ],
     "mission": "MEP for newbuild commercial building featuring shops and restaurants",
     "city": "Miami Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Touzet Studio",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1378,7 +1392,7 @@ export const projects = [
     ],
     "mission": "MEP engineering for the renovation of the F&B and common areas of a golf resort.",
     "city": "Orlando",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "RAD Architecture",
     "category": "Hôtellerie",
@@ -1399,7 +1413,7 @@ export const projects = [
     ],
     "mission": "MEP Design for 120,000 SF VLT Gaming casino",
     "city": "Mashpee",
-    "region": "MA",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Southport Engineering Associates",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1441,7 +1455,7 @@ export const projects = [
     ],
     "mission": "MEP engineering for the renovation of beach resort.",
     "city": "Eleuthera",
-    "region": "Bahamas",
+    "region": "BAHAMAS",
     "area": "",
     "architect": "RAD Architecture",
     "category": "Hôtellerie",
@@ -1462,7 +1476,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for 21,000 sf oceanfront ultra-high-end home.",
     "city": "Golden Beach",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Sabal Development",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1483,7 +1497,7 @@ export const projects = [
     ],
     "mission": "MEP Engineering for 13,000 SF ultra-high-end home",
     "city": "Coral Gables",
-    "region": "Florida",
+    "region": "ETATS-UNIS",
     "area": "",
     "architect": "Mocca Construction",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1518,27 +1532,6 @@ export const projects = [
   },
   {
     "id": 70,
-    "name": "HOPITAL POINTE A PITRE",
-    "coordinates": [
-      -61.5254169153194,
-      16.241043903487544
-    ],
-    "mission": "Métré, Quantitatif et Chiffrage pour le Lot Electricité",
-    "city": "POINT A PITRE",
-    "region": "GUADELOUPE",
-    "area": "82 500m² - 672 lits",
-    "architect": "Architecte Studio / Babel l'Agence",
-    "category": "Santé",
-    "bim": 2,
-    "certification": "-",
-    "selection_bw": "oui",
-    "businessName": 17051,
-    "photos": [
-      "https://luseogroup.com/luseomap/17051 - CHU pointe a pritre (3).jpg"
-    ]
-  },
-  {
-    "id": 71,
     "name": "TOUR MOHAMED VI",
     "coordinates": [
       -6.80518459084931,
@@ -1559,7 +1552,7 @@ export const projects = [
     ]
   },
   {
-    "id": 72,
+    "id": 71,
     "name": "TOUR SENELEC",
     "coordinates": [
       -17.469242476798907,
@@ -1580,7 +1573,7 @@ export const projects = [
     ]
   },
   {
-    "id": 73,
+    "id": 72,
     "name": "COLLEGE ANDREE CHEDID",
     "coordinates": [
       -0.6721291999999911,
@@ -1604,7 +1597,7 @@ export const projects = [
     ]
   },
   {
-    "id": 74,
+    "id": 73,
     "name": "SIEGE SOCIETE  IVOIRIENNE DE BANQUE",
     "coordinates": [
       -3.9832578157981016,
@@ -1630,8 +1623,8 @@ export const projects = [
     ]
   },
   {
-    "id": 75,
-    "name": "LE CARROUSSEL PHASE II",
+    "id": 74,
+    "name": "LE CARROUSSEL PHASE I",
     "coordinates": [
       -6.89348625001056,
       33.98214162438535
@@ -1661,7 +1654,7 @@ export const projects = [
     ]
   },
   {
-    "id": 76,
+    "id": 75,
     "name": "TOUR CONTI 26",
     "coordinates": [
       47.5184779064448,
@@ -1682,8 +1675,8 @@ export const projects = [
     ]
   },
   {
-    "id": 77,
-    "name": "CENTRE HOSPITALIER UNIVERISTAIRE & FACULTE DE MEDECINE DE L’UNIVERISTE INTERNATIONAL DE RABAT",
+    "id": 76,
+    "name": "CHU & FACULTÉ DE MEDECINE RABAT",
     "coordinates": [
       -6.727533921645129,
       33.986273508949225
@@ -1703,28 +1696,7 @@ export const projects = [
     ]
   },
   {
-    "id": 78,
-    "name": "LINCOLN",
-    "coordinates": [
-      -7.612074360586206,
-      33.594423863108354
-    ],
-    "mission": "Étude d’Exécution pour le lot Structure - Post-Tension",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "13 000m²",
-    "architect": "OUALALOU + CHOI",
-    "category": "Hôtellerie",
-    "bim": 2,
-    "certification": "HQE niveau Excellent",
-    "selection_bw": "oui",
-    "businessName": "23MA001",
-    "photos": [
-      "https://luseogroup.com/luseomap/19051 - LINCOLN.jpg"
-    ]
-  },
-  {
-    "id": 79,
+    "id": 77,
     "name": "CENTRE HOSPITALIER UIVERSITAIRE FONDATION MOHAMED VI",
     "coordinates": [
       -6.856591606831632,
@@ -1745,8 +1717,8 @@ export const projects = [
     ]
   },
   {
-    "id": 80,
-    "name": "CENTRE HOSPITALIER UNIVERSITAIRE FONDATION MOHAMED VI\n DAKHLA",
+    "id": 78,
+    "name": "CENTRE HOSPITALIER UNIVERSITAIRE FONDATION MOHAMED VI",
     "coordinates": [
       -15.955640401811449,
       23.686084116870525
@@ -1762,19 +1734,19 @@ export const projects = [
     "selection_bw": "oui",
     "businessName": "23MA034",
     "photos": [
-      "https://luseogroup.com/luseomap/23MA034 CHU DAKHLA_.jpg"
+      "https://luseogroup.com/luseomap/23MA034 CHU DAKHLA_1.jpg"
     ]
   },
   {
-    "id": 81,
-    "name": "COMPLEXE OPÉRATIONNEL ET SCIENTIFIQUE (COS) – LES TOURS BLEUES",
+    "id": 79,
+    "name": "COMPLEXE OPÉRATIONNEL ET SCIENTIFIQUE LES TOURS BLEUES",
     "coordinates": [
       -17.034718092283807,
       20.946313983942677
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Nouadhibou",
-    "region": "Mauritanie",
+    "region": "MAURITANIE",
     "area": "",
     "architect": "Segond Guyon",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -1791,15 +1763,15 @@ export const projects = [
     ]
   },
   {
-    "id": 82,
-    "name": "CONSTRUCTION DE LA 4ÈME COMPAGNIE DU RSMA",
+    "id": 80,
+    "name": "4ÈME COMPAGNIE DU RSMA",
     "coordinates": [
       -149.53083880354865,
       -17.528619192892208
     ],
     "mission": "Conception Tous Corps d’Etats, études d’exécution et suivi des travaux.",
     "city": "Hao",
-    "region": "Polynésie Française",
+    "region": "POLYNESIE FRANCAISE",
     "area": "10000m²",
     "architect": "SO",
     "category": "Equipements publics",
@@ -1820,7 +1792,7 @@ export const projects = [
     ]
   },
   {
-    "id": 83,
+    "id": 81,
     "name": "CASA FINANCE CITY - lot 58",
     "coordinates": [
       -7.6596706300594555,
@@ -1841,7 +1813,7 @@ export const projects = [
     ]
   },
   {
-    "id": 84,
+    "id": 82,
     "name": "AEROPORT JOSE MARTI",
     "coordinates": [
       -82.40748384139445,
@@ -1864,7 +1836,7 @@ export const projects = [
     ]
   },
   {
-    "id": 85,
+    "id": 83,
     "name": "ANFA 212",
     "coordinates": [
       -7.66352998063588,
@@ -1885,8 +1857,8 @@ export const projects = [
     ]
   },
   {
-    "id": 86,
-    "name": "Ecole JULES VERNES",
+    "id": 84,
+    "name": "ECOLE JULES VERNES",
     "coordinates": [
       2.267850642469868,
       48.7670614399637
@@ -1909,7 +1881,7 @@ export const projects = [
     ]
   },
   {
-    "id": 87,
+    "id": 85,
     "name": "IBIS CASA VOAYGEURS",
     "coordinates": [
       -7.591792289174477,
@@ -1930,7 +1902,7 @@ export const projects = [
     ]
   },
   {
-    "id": 88,
+    "id": 86,
     "name": "DAR AL DIYAFA",
     "coordinates": [
       -6.8149976095471905,
@@ -1951,7 +1923,7 @@ export const projects = [
     ]
   },
   {
-    "id": 91,
+    "id": 89,
     "name": "ATLAS GOLF RESORT",
     "coordinates": [
       -8.015765161745676,
@@ -1975,7 +1947,7 @@ export const projects = [
     ]
   },
   {
-    "id": 92,
+    "id": 90,
     "name": "ECOLE MONTESQUIEU",
     "coordinates": [
       -0.26898927510901416,
@@ -1998,7 +1970,7 @@ export const projects = [
     ]
   },
   {
-    "id": 93,
+    "id": 91,
     "name": "CARREFOUR GRAND LITTORAL",
     "coordinates": [
       5.34979729728723,
@@ -2020,7 +1992,7 @@ export const projects = [
     ]
   },
   {
-    "id": 94,
+    "id": 92,
     "name": "BROOMFIELD HOSPITAL",
     "coordinates": [
       0.4663099825834906,
@@ -2043,7 +2015,7 @@ export const projects = [
     ]
   },
   {
-    "id": 95,
+    "id": 93,
     "name": "LE LAMENTIN",
     "coordinates": [
       -60.989162219432615,
@@ -2064,7 +2036,7 @@ export const projects = [
     ]
   },
   {
-    "id": 96,
+    "id": 94,
     "name": "CENTRE HOPITALIER DE LA TIMONE",
     "coordinates": [
       5.402220339609319,
@@ -2086,7 +2058,7 @@ export const projects = [
     ]
   },
   {
-    "id": 97,
+    "id": 95,
     "name": "ROYAL MANSOUR",
     "coordinates": [
       -7.997501961111763,
@@ -2110,7 +2082,7 @@ export const projects = [
     ]
   },
   {
-    "id": 98,
+    "id": 96,
     "name": "EXXON MOBIL",
     "coordinates": [
       142.0542714533769,
@@ -2133,7 +2105,7 @@ export const projects = [
     ]
   },
   {
-    "id": 99,
+    "id": 97,
     "name": "HOTEL DU GOLF",
     "coordinates": [
       -0.710590221652918,
@@ -2159,7 +2131,7 @@ export const projects = [
     ]
   },
   {
-    "id": 100,
+    "id": 98,
     "name": "LYCEE BORDA",
     "coordinates": [
       -1.0557027026888652,
@@ -2183,7 +2155,7 @@ export const projects = [
     ]
   },
   {
-    "id": 101,
+    "id": 99,
     "name": "AUCHAN CLUJ",
     "coordinates": [
       23.629198882190767,
@@ -2204,7 +2176,7 @@ export const projects = [
     ]
   },
   {
-    "id": 102,
+    "id": 100,
     "name": "HOPITAL PERIGUEUX",
     "coordinates": [
       0.7313645135966456,
@@ -2228,7 +2200,7 @@ export const projects = [
     ]
   },
   {
-    "id": 103,
+    "id": 101,
     "name": "CHAIS CANTENAC",
     "coordinates": [
       -0.6787114756113471,
@@ -2249,7 +2221,7 @@ export const projects = [
     ]
   },
   {
-    "id": 104,
+    "id": 102,
     "name": "CHÂTEAU MONTROSE",
     "coordinates": [
       -0.7628163332680529,
@@ -2270,7 +2242,7 @@ export const projects = [
     ]
   },
   {
-    "id": 105,
+    "id": 103,
     "name": "HOTEL LOTTI",
     "coordinates": [
       2.3282758400238364,
@@ -2294,7 +2266,7 @@ export const projects = [
     ]
   },
   {
-    "id": 106,
+    "id": 104,
     "name": "COLLEGE GERARD PHILIPPE",
     "coordinates": [
       -0.6224678179553373,
@@ -2320,7 +2292,7 @@ export const projects = [
     ]
   },
   {
-    "id": 107,
+    "id": 105,
     "name": "SALLE DE SPECTACLE BRUNOY",
     "coordinates": [
       2.5054210823380476,
@@ -2341,7 +2313,7 @@ export const projects = [
     ]
   },
   {
-    "id": 108,
+    "id": 106,
     "name": "CHÂTEAU FAUGERE",
     "coordinates": [
       -0.08692294678579217,
@@ -2362,26 +2334,7 @@ export const projects = [
     ]
   },
   {
-    "id": 109,
-    "name": "FONDATION FELIX HOUPHOUET BOIGNY",
-    "coordinates": [
-      -5.264389397440605,
-      6.797323927953106
-    ],
-    "mission": "Etude Avant-Projet Sommaire pour le lot Electricité",
-    "city": "YAMOUSSOUKRO",
-    "region": "FRANCE",
-    "area": "78 829M²",
-    "architect": "-",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 10333,
-    "photos": []
-  },
-  {
-    "id": 110,
+    "id": 107,
     "name": "PELVISZY VILLAGE VACANCES ULVF",
     "coordinates": [
       1.216572566713238,
@@ -2402,7 +2355,7 @@ export const projects = [
     ]
   },
   {
-    "id": 111,
+    "id": 108,
     "name": "LYCEE GRAND AIR",
     "coordinates": [
       -1.1657500044748568,
@@ -2425,7 +2378,7 @@ export const projects = [
     ]
   },
   {
-    "id": 112,
+    "id": 109,
     "name": "BIRMINGHAM HOSPITAL",
     "coordinates": [
       -1.9430964087606264,
@@ -2452,7 +2405,7 @@ export const projects = [
     ]
   },
   {
-    "id": 113,
+    "id": 110,
     "name": "GRAND STADE DE MARRAKECH",
     "coordinates": [
       -7.980275084564864,
@@ -2473,7 +2426,7 @@ export const projects = [
     ]
   },
   {
-    "id": 114,
+    "id": 111,
     "name": "LYCEE LA RUCHE",
     "coordinates": [
       -0.5584978137327302,
@@ -2497,7 +2450,7 @@ export const projects = [
     ]
   },
   {
-    "id": 115,
+    "id": 112,
     "name": "LYCEE PHILADELPHE  DE GERDE",
     "coordinates": [
       -0.6523333467924569,
@@ -2518,7 +2471,7 @@ export const projects = [
     ]
   },
   {
-    "id": 116,
+    "id": 113,
     "name": "BART'S HOSPITAL",
     "coordinates": [
       -0.09970069838346803,
@@ -2540,14 +2493,14 @@ export const projects = [
     ]
   },
   {
-    "id": 117,
+    "id": 114,
     "name": "SURREY MEMORIAL HOSPITAL CRITICAL CARE  TOWER",
     "coordinates": [
       -122.84248227682976,
       49.17578868956261
     ],
     "mission": "Conception du lot Electricité",
-    "city": "Vancouver",
+    "city": "VANCOUVER",
     "region": "CANADA",
     "area": "39020m²-151 lits",
     "architect": "CEI Architecture and Parkin Architects",
@@ -2563,52 +2516,8 @@ export const projects = [
     ]
   },
   {
-    "id": 118,
-    "name": "HOPITAL XAVIER ARNOZAN",
-    "coordinates": [
-      -0.6594776278288272,
-      44.79872960368231
-    ],
-    "mission": "Etudes d’Exécutions du lot Electricité",
-    "city": "Pessac",
-    "region": "FRANCE",
-    "area": "1325 lits",
-    "architect": "-",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 7053,
-    "photos": []
-  },
-  {
-    "id": 119,
-    "name": "STADE VELODROME",
-    "coordinates": [
-      2.0349559247830147,
-      48.78820440667269
-    ],
-    "mission": "Phase APS/APD pour le lot Électricité",
-    "city": "St QUENTIN en YVELINES",
-    "region": "FRANCE",
-    "area": "6043 places",
-    "architect": "Chabanne & Partenaires",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 802,
-    "photos": [
-      "https://luseogroup.com/luseomap/08002 - velodrome-national-de-saint-quentin-en-yvelines.jpg",
-      "https://luseogroup.com/luseomap/08002 - velodrome-national-de-saint-quentin-en-yvelines.jpg",
-      "https://luseogroup.com/luseomap/08002 saint-quentin-velodrome-2.jpg",
-      "https://luseogroup.com/luseomap/08002 velodrome-stquentin (1).jpg",
-      "https://luseogroup.com/luseomap/08002 velodrome-stquentin (2).jpg"
-    ]
-  },
-  {
-    "id": 120,
-    "name": "FAURECIA PHASE I",
+    "id": 115,
+    "name": "FAURECIA  -PHASE I",
     "coordinates": [
       -6.505421091656119,
       34.29293732195536
@@ -2628,7 +2537,7 @@ export const projects = [
     ]
   },
   {
-    "id": 121,
+    "id": 116,
     "name": "MAISON VIGNE ET TERROIRS",
     "coordinates": [
       -0.30587436393795053,
@@ -2650,26 +2559,7 @@ export const projects = [
     ]
   },
   {
-    "id": 122,
-    "name": "LAFARGE",
-    "coordinates": [
-      -0.4697411381665991,
-      44.959037764587904
-    ],
-    "mission": "Etude d'Exécution pour le lot Electrcité",
-    "city": "SAINT LOUBES",
-    "region": "FRANCE",
-    "area": "2140m²",
-    "architect": "archi concept",
-    "category": "Industrie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 810,
-    "photos": []
-  },
-  {
-    "id": 123,
+    "id": 117,
     "name": "HOTEL CUB BORDEAUX",
     "coordinates": [
       -0.585422946788963,
@@ -2692,7 +2582,7 @@ export const projects = [
     ]
   },
   {
-    "id": 124,
+    "id": 118,
     "name": "ECOLE GAMBETTA",
     "coordinates": [
       -0.5345962877937347,
@@ -2715,7 +2605,7 @@ export const projects = [
     ]
   },
   {
-    "id": 125,
+    "id": 119,
     "name": "LYCEE PROFESSIONNELLE EMILE COMBE",
     "coordinates": [
       -0.5522168094405956,
@@ -2736,26 +2626,7 @@ export const projects = [
     ]
   },
   {
-    "id": 126,
-    "name": "SOPPEC",
-    "coordinates": [
-      0.07469201081530985,
-      45.631017729354404
-    ],
-    "mission": "Etude d'Exécution pour les lots Electricité & Fluide",
-    "city": "NERSAC",
-    "region": "FRANCE",
-    "area": "2600m²",
-    "architect": "atelier centre joel nissou",
-    "category": "Industrie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 815,
-    "photos": []
-  },
-  {
-    "id": 127,
+    "id": 120,
     "name": "SOFITEL MOGADOR",
     "coordinates": [
       -9.767423931215369,
@@ -2778,14 +2649,14 @@ export const projects = [
     ]
   },
   {
-    "id": 128,
+    "id": 121,
     "name": "HYATT",
     "coordinates": [
       60.59208691061229,
       56.84290350153071
     ],
     "mission": "Etudes d’Exécutions pour le lot Electricité",
-    "city": "EKATERINBOUREKATERINBOURG",
+    "city": "EKATERINBOURG",
     "region": "RUSSIE",
     "area": "296 Chambres",
     "architect": "VALODE  & PISTRE",
@@ -2799,7 +2670,7 @@ export const projects = [
     ]
   },
   {
-    "id": 129,
+    "id": 122,
     "name": "MAZAGAN RESORT",
     "coordinates": [
       -8.3838854021591,
@@ -2820,7 +2691,7 @@ export const projects = [
     ]
   },
   {
-    "id": 130,
+    "id": 123,
     "name": "LYCEE ALFRED KASTLER",
     "coordinates": [
       -0.5991437937013809,
@@ -2841,26 +2712,7 @@ export const projects = [
     ]
   },
   {
-    "id": 131,
-    "name": "Centre de vacances CCAS",
-    "coordinates": [
-      0.23425175489748656,
-      47.181295467061
-    ],
-    "mission": "Etudes d’Exécutions pour les lots Electricité & Fluide",
-    "city": "CHINON\nlieu LES FONTENILS (37)",
-    "region": "FRANCE",
-    "area": "Salle  spectacle\nRestauration \n1300m²",
-    "architect": "ANDRE FOURNIER \nSI TU SAVAIS",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 838,
-    "photos": []
-  },
-  {
-    "id": 132,
+    "id": 124,
     "name": "LYCEE JACQUES BREL",
     "coordinates": [
       -0.5138659583444805,
@@ -2885,7 +2737,7 @@ export const projects = [
     ]
   },
   {
-    "id": 133,
+    "id": 125,
     "name": "CASASHORE DELL",
     "coordinates": [
       -7.642354762863058,
@@ -2906,7 +2758,7 @@ export const projects = [
     ]
   },
   {
-    "id": 134,
+    "id": 126,
     "name": "POLE EQUIPEMENT SERVICE PUBLIC, CRECHE-MATERNELLE-PRIMAIRE CENTRE DE LOISIRS",
     "coordinates": [
       -0.5931627041410491,
@@ -2929,7 +2781,7 @@ export const projects = [
     ]
   },
   {
-    "id": 135,
+    "id": 127,
     "name": "CENTRE HOPSITALIER UNIVERSITAIRE",
     "coordinates": [
       2.2532644895508196,
@@ -2953,7 +2805,7 @@ export const projects = [
     ]
   },
   {
-    "id": 136,
+    "id": 128,
     "name": "FOUR SEASONS",
     "coordinates": [
       -8.017424989285452,
@@ -2977,7 +2829,7 @@ export const projects = [
     ]
   },
   {
-    "id": 137,
+    "id": 129,
     "name": "SALLE DE SPECTACLE",
     "coordinates": [
       0.23521462230281714,
@@ -2998,7 +2850,7 @@ export const projects = [
     ]
   },
   {
-    "id": 138,
+    "id": 130,
     "name": "SOFITEL MOGADOR - SPA",
     "coordinates": [
       -9.76737933605956,
@@ -3022,7 +2874,7 @@ export const projects = [
     ]
   },
   {
-    "id": 139,
+    "id": 131,
     "name": "SIEGE CFG BANK",
     "coordinates": [
       -7.660332693937392,
@@ -3044,7 +2896,7 @@ export const projects = [
     ]
   },
   {
-    "id": 140,
+    "id": 132,
     "name": "LES VILLAS D' ORNAMO",
     "coordinates": [
       -0.594806157612644,
@@ -3065,7 +2917,7 @@ export const projects = [
     ]
   },
   {
-    "id": 141,
+    "id": 133,
     "name": "MAIRIE DE BEGLES",
     "coordinates": [
       -0.5431137245091278,
@@ -3086,7 +2938,7 @@ export const projects = [
     ]
   },
   {
-    "id": 142,
+    "id": 134,
     "name": "Mr Bricolage",
     "coordinates": [
       -149.61438923754056,
@@ -3107,7 +2959,7 @@ export const projects = [
     ]
   },
   {
-    "id": 143,
+    "id": 135,
     "name": "SOFITEL",
     "coordinates": [
       8.906764894657968,
@@ -3128,7 +2980,7 @@ export const projects = [
     ]
   },
   {
-    "id": 144,
+    "id": 136,
     "name": "CAMPUS UNIVERSITAIRE DU GAZ ET DU PETROLE",
     "coordinates": [
       58.38877345319954,
@@ -3145,11 +2997,11 @@ export const projects = [
     "selection_bw": "TBC",
     "businessName": 917,
     "photos": [
-      "https://luseogroup.com/luseomap/09012 Malabo - Guinée equatorial.jpg"
+      "https://luseogroup.com/luseomap/09017 campus universitaire du gaz et du petrole.jpg"
     ]
   },
   {
-    "id": 145,
+    "id": 137,
     "name": "COMPLEXE ANFA PLACE",
     "coordinates": [
       -7.665503810154257,
@@ -3178,14 +3030,14 @@ export const projects = [
     ]
   },
   {
-    "id": 146,
+    "id": 138,
     "name": "ECOLE MATERNELLE ET PRIMAIRE DE TEAVARO",
     "coordinates": [
       -149.76939308954357,
       -17.510491453667694
     ],
     "mission": "Etude de Conception phase PRO pour le lot Electricité",
-    "city": "",
+    "city": "TEAVARO",
     "region": "POLYNESIE FRANCAISE",
     "area": "300 élèves",
     "architect": "CHAUVIN ARICHITECTE",
@@ -3199,14 +3051,14 @@ export const projects = [
     ]
   },
   {
-    "id": 147,
+    "id": 139,
     "name": "MINISTERE DU TOURISME",
     "coordinates": [
       -149.5651939047236,
       -17.539455822193904
     ],
     "mission": "Etude d’Exécutions Lot Electricité",
-    "city": "tahiti",
+    "city": "TAHIITI",
     "region": "POLYNESIE FRANCAISE",
     "area": "3 500m²",
     "architect": "-",
@@ -3220,26 +3072,7 @@ export const projects = [
     ]
   },
   {
-    "id": 148,
-    "name": "HOTEL DES FAMILLES HOPITAL DE TAHITI",
-    "coordinates": [
-      -149.54651153571723,
-      -17.53032852750339
-    ],
-    "mission": "Etudes de Conception et d’Exécutions pour les lots Electricité & Fluide",
-    "city": "TAHIITI",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "",
-    "architect": "-",
-    "category": "Hôtellerie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 935,
-    "photos": []
-  },
-  {
-    "id": 149,
+    "id": 140,
     "name": "CREDIT AGRICOLE",
     "coordinates": [
       5.401173983757692,
@@ -3260,29 +3093,7 @@ export const projects = [
     ]
   },
   {
-    "id": 150,
-    "name": "Hôpitaux Universitaires de Marseille Timone",
-    "coordinates": [
-      5.4020744301228625,
-      43.290533935576285
-    ],
-    "mission": "Etude d'Exécution pour le lot Electrcité",
-    "city": "MARSEILLE",
-    "region": "FRANCE",
-    "area": "80 000m²\n247 lits",
-    "architect": "AART FARAH ARCHITETCE",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 941,
-    "photos": [
-      "https://luseogroup.com/luseomap/09041 - la timone 1.jpg",
-      "https://luseogroup.com/luseomap/09041 - la timone.jpg"
-    ]
-  },
-  {
-    "id": 151,
+    "id": 141,
     "name": "GARE MARITIME",
     "coordinates": [
       -149.5690334327815,
@@ -3303,14 +3114,14 @@ export const projects = [
     ]
   },
   {
-    "id": 152,
+    "id": 142,
     "name": "RESIDENCE PRESIDENTIELLE",
     "coordinates": [
       11.284965176841137,
       1.6112080939913829
     ],
     "mission": "Etude d’Exécution pour les lots Electricité & Fluide",
-    "city": "Mogomo",
+    "city": "MOGOMO",
     "region": "GUINEE EQUATORIALE",
     "area": "2 000m²",
     "architect": "KNOw DESIGN",
@@ -3324,14 +3135,14 @@ export const projects = [
     ]
   },
   {
-    "id": 153,
+    "id": 143,
     "name": "SOFITEL ESSAOUIRA MOGADOR\nCLUB HOUSE",
     "coordinates": [
       -9.767349928176595,
       31.470053214155165
     ],
     "mission": "Etude de Conception pour le lot Fluide",
-    "city": "Essaouira",
+    "city": "ESSAOUIRA",
     "region": "MAROC",
     "area": "",
     "architect": "RACHID ANDALOUSSI BENBRAHIM & EDUARDO GAGGIANO",
@@ -3345,7 +3156,7 @@ export const projects = [
     ]
   },
   {
-    "id": 154,
+    "id": 144,
     "name": "MAIRIE DE HIENGENE",
     "coordinates": [
       164.94573884360926,
@@ -3368,7 +3179,7 @@ export const projects = [
     ]
   },
   {
-    "id": 155,
+    "id": 145,
     "name": "VELODROME",
     "coordinates": [
       2.034926121036266,
@@ -3391,7 +3202,7 @@ export const projects = [
     ]
   },
   {
-    "id": 156,
+    "id": 146,
     "name": "CENTRE COMMERCIAL  TARAVAO",
     "coordinates": [
       -149.30925499062644,
@@ -3413,7 +3224,7 @@ export const projects = [
     ]
   },
   {
-    "id": 157,
+    "id": 147,
     "name": "MINISTERE TRAVAUX PUBLICS & DES INFRASTRUCTURES",
     "coordinates": [
       8.760578803208823,
@@ -3434,7 +3245,7 @@ export const projects = [
     ]
   },
   {
-    "id": 158,
+    "id": 148,
     "name": "LEAR  PHASE I",
     "coordinates": [
       -6.715551950427157,
@@ -3455,7 +3266,7 @@ export const projects = [
     ]
   },
   {
-    "id": 159,
+    "id": 149,
     "name": "GORO NICKEL",
     "coordinates": [
       166.49014513977548,
@@ -3476,7 +3287,7 @@ export const projects = [
     ]
   },
   {
-    "id": 160,
+    "id": 150,
     "name": "CONFEDERATION GENERALE DES ENTREPRISES DE COTE D'IVOIRE",
     "coordinates": [
       -4.019070950592898,
@@ -3497,7 +3308,7 @@ export const projects = [
     ]
   },
   {
-    "id": 161,
+    "id": 151,
     "name": "CENTRE HOSPITALIER UNIVERSITAIRE",
     "coordinates": [
       2.253686470783852,
@@ -3519,50 +3330,7 @@ export const projects = [
     ]
   },
   {
-    "id": 162,
-    "name": "Centre Commercial ZAC EIFFEL",
-    "coordinates": [
-      2.282329109648391,
-      48.84842967362595
-    ],
-    "mission": "Etude d’Exécution pour le lot Electricité",
-    "city": "LEVALLOIS",
-    "region": "FRANCE",
-    "area": "84 000M²",
-    "architect": "cabinet glaiman",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 10057,
-    "photos": [
-      "https://luseogroup.com/luseomap/10057 ZAC eiffel.jpg"
-    ]
-  },
-  {
-    "id": 163,
-    "name": "MATAWAI",
-    "coordinates": [
-      -149.5861447137333,
-      -17.545427112947593
-    ],
-    "mission": "Etude Conception pour les lots Electricité & Fluide",
-    "city": "PAPEETE - TAHITI",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "14 000m²",
-    "architect": "ARTEMIS - EDIFICOM \nPHILIPPE TILLIET",
-    "category": "Centres commerciaux",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 10061,
-    "photos": [
-      "https://luseogroup.com/luseomap/10061 - matavai - Tahiti - PF.BMP",
-      ""
-    ]
-  },
-  {
-    "id": 164,
+    "id": 152,
     "name": "COMPLEXE PORT LIXUS",
     "coordinates": [
       -6.134409693877859,
@@ -3585,7 +3353,7 @@ export const projects = [
     ]
   },
   {
-    "id": 165,
+    "id": 153,
     "name": "HOTEL TCHANDYBIL",
     "coordinates": [
       58.33946330851267,
@@ -3606,7 +3374,7 @@ export const projects = [
     ]
   },
   {
-    "id": 166,
+    "id": 154,
     "name": "NOVOTEL & IBIS CASANEARSHORE",
     "coordinates": [
       -7.6351896913020445,
@@ -3630,7 +3398,7 @@ export const projects = [
     ]
   },
   {
-    "id": 167,
+    "id": 155,
     "name": "PROJET HOTEL 4 ETOILES",
     "coordinates": [
       9.449283728926584,
@@ -3651,7 +3419,7 @@ export const projects = [
     ]
   },
   {
-    "id": 168,
+    "id": 156,
     "name": "Stade d'Angondjé",
     "coordinates": [
       9.39330991543622,
@@ -3659,7 +3427,7 @@ export const projects = [
     ],
     "mission": "Étude de Conception pour les lots Électricité, Fluide, Protection Incendie\n& VRD",
     "city": "LIBREVILLE",
-    "region": "Gabon",
+    "region": "GABON",
     "area": "40 000 places",
     "architect": "-",
     "category": "Equipements publics",
@@ -3674,7 +3442,7 @@ export const projects = [
     ]
   },
   {
-    "id": 169,
+    "id": 157,
     "name": "MINISTERE DES FINANCES",
     "coordinates": [
       58.37790579546477,
@@ -3699,7 +3467,7 @@ export const projects = [
     ]
   },
   {
-    "id": 170,
+    "id": 158,
     "name": "MINISTERE : \n- DE L'ECONOMIE ET DU DEVELOPPEMENT\n- MINISTERE DES FINANCES  \n- MINISTERE DE LA SECURITE SOCIALE",
     "coordinates": [
       58.37791196819954,
@@ -3723,7 +3491,7 @@ export const projects = [
     ]
   },
   {
-    "id": 171,
+    "id": 159,
     "name": "BANK AL MAGHREB",
     "coordinates": [
       -6.840107868715385,
@@ -3745,7 +3513,7 @@ export const projects = [
     ]
   },
   {
-    "id": 172,
+    "id": 160,
     "name": "VILLA MHE",
     "coordinates": [
       -7.966565491061902,
@@ -3767,28 +3535,7 @@ export const projects = [
     ]
   },
   {
-    "id": 173,
-    "name": "CHALLENGER",
-    "coordinates": [
-      2.0720688077629106,
-      48.785637395177474
-    ],
-    "mission": "Etude d’Exécution pour le lot Electricité",
-    "city": "St QUENTIN en YVELINES",
-    "region": "FRANCE",
-    "area": "",
-    "architect": "SRA - Architectes",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 11032,
-    "photos": [
-      "https://luseogroup.com/luseomap/11032 - CHALLENGER .jpg"
-    ]
-  },
-  {
-    "id": 174,
+    "id": 161,
     "name": "LYCEE AGRICOLE BLANQUEFORT",
     "coordinates": [
       -0.6329229452376004,
@@ -3811,7 +3558,7 @@ export const projects = [
     ]
   },
   {
-    "id": 175,
+    "id": 162,
     "name": "BEAUGRENELLE",
     "coordinates": [
       2.2824179768605557,
@@ -3836,7 +3583,7 @@ export const projects = [
     ]
   },
   {
-    "id": 176,
+    "id": 163,
     "name": "PALAIS PRESIDENTIEL  - GRAND PALAIS",
     "coordinates": [
       -4.022864089463468,
@@ -3857,7 +3604,7 @@ export const projects = [
     ]
   },
   {
-    "id": 177,
+    "id": 164,
     "name": "L'ORANGERAIE",
     "coordinates": [
       -6.847134687111526,
@@ -3880,7 +3627,7 @@ export const projects = [
     ]
   },
   {
-    "id": 178,
+    "id": 165,
     "name": "ECOLE CHENIER",
     "coordinates": [
       -6.822430623411576,
@@ -3906,7 +3653,7 @@ export const projects = [
     ]
   },
   {
-    "id": 179,
+    "id": 166,
     "name": "ECOLE MOLIERE",
     "coordinates": [
       -7.626491803822486,
@@ -3932,7 +3679,7 @@ export const projects = [
     ]
   },
   {
-    "id": 180,
+    "id": 167,
     "name": "LYCEE LYAUTEY",
     "coordinates": [
       -7.634778932509817,
@@ -3959,28 +3706,7 @@ export const projects = [
     ]
   },
   {
-    "id": 181,
-    "name": "MINISTERE DES TRAVAUX PUBLIC",
-    "coordinates": [
-      8.761355937501838,
-      3.73642835396811
-    ],
-    "mission": "APS, Room by Room, Coordination pour le lot Fluide",
-    "city": "malabo",
-    "region": "GUINEE EQUATORIALE",
-    "area": "7 092M²",
-    "architect": "ARCHITTETURA + ART DESIGN",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 11047,
-    "photos": [
-      "https://luseogroup.com/luseomap/11047 ministère travaux publics.jpg"
-    ]
-  },
-  {
-    "id": 182,
+    "id": 168,
     "name": "BIO IMAGERIE",
     "coordinates": [
       -0.6078412464441763,
@@ -4001,7 +3727,7 @@ export const projects = [
     ]
   },
   {
-    "id": 183,
+    "id": 169,
     "name": "CENTRE PENITENTIAIRE",
     "coordinates": [
       -149.33884497140906,
@@ -4022,26 +3748,7 @@ export const projects = [
     ]
   },
   {
-    "id": 184,
-    "name": "NYONIE",
-    "coordinates": [
-      9.340600948547047,
-      -0.0393382863322525
-    ],
-    "mission": "Etude de faisabilité, Chiffrage et Quantitatif Tout Corps d’Etat",
-    "city": "NYONIE",
-    "region": "GABON",
-    "area": "300 Chambres",
-    "architect": "LEISURE & HOSPITALITY DESIGN Inte ????r",
-    "category": "Hôtellerie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 11099,
-    "photos": []
-  },
-  {
-    "id": 185,
+    "id": 170,
     "name": "MEDIPOLE KOUTIO",
     "coordinates": [
       166.4538241231077,
@@ -4062,7 +3769,7 @@ export const projects = [
     ]
   },
   {
-    "id": 186,
+    "id": 171,
     "name": "TOUR CCIA",
     "coordinates": [
       -4.021897609414884,
@@ -4084,7 +3791,7 @@ export const projects = [
     ]
   },
   {
-    "id": 187,
+    "id": 172,
     "name": "UNISERSITE V",
     "coordinates": [
       58.387620589327256,
@@ -4105,7 +3812,7 @@ export const projects = [
     ]
   },
   {
-    "id": 188,
+    "id": 173,
     "name": "POLE SANTE DU VILLENEUVOIS",
     "coordinates": [
       0.7461733581705672,
@@ -4127,7 +3834,7 @@ export const projects = [
     ]
   },
   {
-    "id": 189,
+    "id": 174,
     "name": "ELEPHANT VERT",
     "coordinates": [
       -5.468164141715604,
@@ -4151,7 +3858,7 @@ export const projects = [
     ]
   },
   {
-    "id": 190,
+    "id": 175,
     "name": "AL HOUARA",
     "coordinates": [
       -5.965869109459601,
@@ -4172,7 +3879,7 @@ export const projects = [
     ]
   },
   {
-    "id": 191,
+    "id": 176,
     "name": "MINISTERE DE LA JUSTICE",
     "coordinates": [
       58.29660877113539,
@@ -4193,28 +3900,7 @@ export const projects = [
     ]
   },
   {
-    "id": 192,
-    "name": "AERODROME DE TAHITI FAA'A",
-    "coordinates": [
-      -149.608981525151,
-      -17.559318313777712
-    ],
-    "mission": "Études de conception & Exécution pour le lot Fluide – Tour de Contrôle",
-    "city": "TAHITI",
-    "region": "POLYNESIE FRANCAISE",
-    "area": "",
-    "architect": "-",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 12034,
-    "photos": [
-      "voir si photo aeroport tahiti"
-    ]
-  },
-  {
-    "id": 194,
+    "id": 178,
     "name": "VILLA DE ASSINIE",
     "coordinates": [
       -3.3208265186326393,
@@ -4237,7 +3923,7 @@ export const projects = [
     ]
   },
   {
-    "id": 195,
+    "id": 179,
     "name": "BANQUE AFRICIANE DE DEVELLOPPEMENT",
     "coordinates": [
       -4.0167985896449885,
@@ -4258,14 +3944,14 @@ export const projects = [
     ]
   },
   {
-    "id": 196,
+    "id": 180,
     "name": "PALAIS PRESIDENTIEL",
     "coordinates": [
       -5.294835211693065,
       6.810613548554749
     ],
     "mission": "Etude de Conception pour le lot Electrique",
-    "city": "YAMASUKRO",
+    "city": "YAMOUSSOUKRO",
     "region": "COTE D'IVOIRE",
     "area": "12485 m²",
     "architect": "Dufau-Lafon Architecte DPLG",
@@ -4280,7 +3966,7 @@ export const projects = [
     ]
   },
   {
-    "id": 197,
+    "id": 181,
     "name": "La pinède",
     "coordinates": [
       -6.829607274087902,
@@ -4301,14 +3987,14 @@ export const projects = [
     ]
   },
   {
-    "id": 198,
+    "id": 182,
     "name": "DISPENSAIRE FONDATION DROGBA",
     "coordinates": [
       -4.018929859348272,
       5.542942444964922
     ],
     "mission": "Maîtrise d’Œuvre Conception et Exécution Technique Tout Corps d’Etat",
-    "city": "",
+    "city": "ABIDJAN",
     "region": "COTE D'IVOIRE",
     "area": "1 599m²",
     "architect": "Pierre Fakhoury",
@@ -4322,7 +4008,7 @@ export const projects = [
     ]
   },
   {
-    "id": 199,
+    "id": 183,
     "name": "NEMOTEK",
     "coordinates": [
       -6.713378583030816,
@@ -4344,7 +4030,7 @@ export const projects = [
     ]
   },
   {
-    "id": 200,
+    "id": 184,
     "name": "Centre Hospitalier Bergerac",
     "coordinates": [
       0.49690906167604865,
@@ -4365,7 +4051,7 @@ export const projects = [
     ]
   },
   {
-    "id": 201,
+    "id": 185,
     "name": "MARRIOTT",
     "coordinates": [
       -6.844871082145193,
@@ -4386,7 +4072,7 @@ export const projects = [
     ]
   },
   {
-    "id": 202,
+    "id": 186,
     "name": "RESIDENCE CHOCOLAT",
     "coordinates": [
       -3.9558184207742966,
@@ -4394,7 +4080,7 @@ export const projects = [
     ],
     "mission": "Concours d’Architecture",
     "city": "ABIDJAN",
-    "region": "GABON",
+    "region": "COTE D'IVOIRE",
     "area": "complexe Immoblier luxe 14 villas/18appart",
     "architect": "Koffi & Diabatté",
     "category": "Bâtiments résidentiels, tertiaires ou mixtes",
@@ -4407,7 +4093,7 @@ export const projects = [
     ]
   },
   {
-    "id": 203,
+    "id": 187,
     "name": "TULIPIN HOTEL",
     "coordinates": [
       -5.776109684772901,
@@ -4432,7 +4118,7 @@ export const projects = [
     ]
   },
   {
-    "id": 204,
+    "id": 188,
     "name": "BOUSTANE SAHEL",
     "coordinates": [
       -7.59021569519166,
@@ -4453,7 +4139,7 @@ export const projects = [
     ]
   },
   {
-    "id": 205,
+    "id": 189,
     "name": "NORTHMIDLLESEX",
     "coordinates": [
       -0.07454265655763252,
@@ -4476,30 +4162,7 @@ export const projects = [
     ]
   },
   {
-    "id": 206,
-    "name": "RADISSON BLUE LAGOS AIRPORT",
-    "coordinates": [
-      3.361026799525545,
-      6.588088316252628
-    ],
-    "mission": "Étude de Conception pour le lot Fluide\nMétré & Quantitatif  pour les lots Électricité et Fluide\n Étude d’Exécution pour les lots Électricité et Fluide",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "261 ch -",
-    "architect": "S.A.R.L D'Architecture ADOU(A+A)",
-    "category": "Hôtellerie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 13034,
-    "photos": [
-      "https://luseogroup.com/luseomap/13034 Radissons abidjan.jpg",
-      "https://luseogroup.com/luseomap/13034-2 Radissons abidjan.jpg",
-      "https://luseogroup.com/luseomap/13034-3 Radissons abidjan.jpg"
-    ]
-  },
-  {
-    "id": 207,
+    "id": 190,
     "name": "NOVOTEL / IBIS",
     "coordinates": [
       15.02369048750953,
@@ -4522,7 +4185,7 @@ export const projects = [
     ]
   },
   {
-    "id": 208,
+    "id": 191,
     "name": "TECHNIP ANGOFLEX",
     "coordinates": [
       13.362605134978324,
@@ -4544,7 +4207,7 @@ export const projects = [
     ]
   },
   {
-    "id": 209,
+    "id": 192,
     "name": "FACULTE  DE MEDECINE & DE PHARMACIE",
     "coordinates": [
       -5.9219412643465565,
@@ -4565,8 +4228,8 @@ export const projects = [
     ]
   },
   {
-    "id": 210,
-    "name": "ELEPHANT VERT - Mali",
+    "id": 193,
+    "name": "ELEPHANT VERT",
     "coordinates": [
       -6.1974004396803215,
       13.452137575408745
@@ -4591,7 +4254,7 @@ export const projects = [
     ]
   },
   {
-    "id": 211,
+    "id": 194,
     "name": "IKEA",
     "coordinates": [
       -7.436126569672198,
@@ -4616,7 +4279,7 @@ export const projects = [
     ]
   },
   {
-    "id": 212,
+    "id": 195,
     "name": "CHRIFIA",
     "coordinates": [
       -8.021301201306427,
@@ -4637,7 +4300,7 @@ export const projects = [
     ]
   },
   {
-    "id": 213,
+    "id": 196,
     "name": "TOUR CASA FINANCE CITY AUDA",
     "coordinates": [
       -7.659597819279235,
@@ -4658,14 +4321,14 @@ export const projects = [
     ]
   },
   {
-    "id": 214,
+    "id": 197,
     "name": "Universite de la polynesie francaise",
     "coordinates": [
       -149.610006891736,
       -17.576312540255735
     ],
     "mission": "Etude Conception phase PRO, pour les lots Fluides & Electricité",
-    "city": "Tahiti",
+    "city": "TAHIITI",
     "region": "POLYNESIE FRANCAISE",
     "area": "",
     "architect": "-",
@@ -4675,11 +4338,11 @@ export const projects = [
     "selection_bw": "TBC",
     "businessName": 14002,
     "photos": [
-      "https://luseogroup.com/luseomap/20015 aeroport tahiti-1.jpg"
+      "https://luseogroup.com/luseomap/14002 - Universite_de_la_Polynesie_francaise.jpg"
     ]
   },
   {
-    "id": 215,
+    "id": 198,
     "name": "VILLAS NOVOTEL",
     "coordinates": [
       -6.835216027449072,
@@ -4704,7 +4367,7 @@ export const projects = [
     ]
   },
   {
-    "id": 216,
+    "id": 199,
     "name": "Clinique Périnatale Mohammed VI",
     "coordinates": [
       -8.06778579175816,
@@ -4725,26 +4388,7 @@ export const projects = [
     ]
   },
   {
-    "id": 217,
-    "name": "LE BOIS MIRAIL",
-    "coordinates": [
-      1.3979710697235557,
-      43.56520869610509
-    ],
-    "mission": "Étude de Conception phase DCE pour le lot Electricité",
-    "city": "BELLEFONTAINE\nTOULOUSE",
-    "region": "FRANCE",
-    "area": "48 logement\n4 450m²",
-    "architect": "ESPAGNO  MILANI",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 14017,
-    "photos": []
-  },
-  {
-    "id": 218,
+    "id": 200,
     "name": "CONSULAT DE France",
     "coordinates": [
       -6.847204963348492,
@@ -4766,7 +4410,7 @@ export const projects = [
     ]
   },
   {
-    "id": 219,
+    "id": 201,
     "name": "LE DOMAINE DE MALENA",
     "coordinates": [
       -0.4284277585046548,
@@ -4787,7 +4431,7 @@ export const projects = [
     ]
   },
   {
-    "id": 220,
+    "id": 202,
     "name": "CLINIQUE PSYCHIATRIQUE",
     "coordinates": [
       8.780371477613684,
@@ -4808,7 +4452,7 @@ export const projects = [
     ]
   },
   {
-    "id": 221,
+    "id": 203,
     "name": "DAHER",
     "coordinates": [
       -5.911662935909408,
@@ -4829,7 +4473,7 @@ export const projects = [
     ]
   },
   {
-    "id": 222,
+    "id": 204,
     "name": "CENTRE NATIONAL DE RADIOTHERAPIE ET\nD’ONCOLOGIE MEDICALE",
     "coordinates": [
       -3.99278953856356,
@@ -4853,7 +4497,7 @@ export const projects = [
     ]
   },
   {
-    "id": 223,
+    "id": 205,
     "name": "LE MERIDIEN MANDJI",
     "coordinates": [
       8.78882289008982,
@@ -4875,7 +4519,7 @@ export const projects = [
     ]
   },
   {
-    "id": 224,
+    "id": 206,
     "name": "IBIS AGDAL",
     "coordinates": [
       -6.858733389005541,
@@ -4896,7 +4540,7 @@ export const projects = [
     ]
   },
   {
-    "id": 225,
+    "id": 207,
     "name": "GARE FERROVIERE D'OUJDA",
     "coordinates": [
       -1.9249974052788967,
@@ -4917,14 +4561,14 @@ export const projects = [
     ]
   },
   {
-    "id": 226,
+    "id": 208,
     "name": "BANQUE CENTRALE DES ETATS DE L'AFRIQUE DE L'OUEST",
     "coordinates": [
       -17.26255066314285,
       15.815384904306754
     ],
     "mission": "Etude de Conception d’Exécutions pour les lots Electricité et Fluide",
-    "city": "abengourou",
+    "city": "ABENGOUROU",
     "region": "COTE D'IVOIRE",
     "area": "",
     "architect": "-",
@@ -4934,11 +4578,11 @@ export const projects = [
     "selection_bw": "TBC",
     "businessName": 14052,
     "photos": [
-      "https://luseogroup.com/luseomap/"
+      "https://luseogroup.com/luseomap/14052 BCEAO.jpg"
     ]
   },
   {
-    "id": 227,
+    "id": 209,
     "name": "COLLEGE BEAULIEU",
     "coordinates": [
       -7.635278215071242,
@@ -4946,7 +4590,7 @@ export const projects = [
     ],
     "mission": "Etude de Conception & Suivi de Travaux Tout Corps d’Etat",
     "city": "CASABLANCA",
-    "region": "Maroc",
+    "region": "MAROC",
     "area": "11 000m²",
     "architect": "Nicolas Michelin  & Associés",
     "category": "Equipements publics",
@@ -4959,7 +4603,7 @@ export const projects = [
     ]
   },
   {
-    "id": 228,
+    "id": 210,
     "name": "AEROPORT ORLY BATIMENT DE JONCTION SUD & OUEST",
     "coordinates": [
       2.372918832748344,
@@ -4981,7 +4625,7 @@ export const projects = [
     ]
   },
   {
-    "id": 229,
+    "id": 211,
     "name": "GROUPE SCOLAIRE UNIFIE HONORE DE BALZAC",
     "coordinates": [
       -6.578976208872689,
@@ -5002,7 +4646,7 @@ export const projects = [
     ]
   },
   {
-    "id": 230,
+    "id": 212,
     "name": "LOTISSEMENT AVOBRAM",
     "coordinates": [
       9.40533036760113,
@@ -5023,7 +4667,7 @@ export const projects = [
     ]
   },
   {
-    "id": 231,
+    "id": 213,
     "name": "SIEGE TOTAL",
     "coordinates": [
       7.468311225428039,
@@ -5044,7 +4688,7 @@ export const projects = [
     ]
   },
   {
-    "id": 232,
+    "id": 214,
     "name": "RICHBOND",
     "coordinates": [
       -4.092987824357645,
@@ -5065,7 +4709,7 @@ export const projects = [
     ]
   },
   {
-    "id": 233,
+    "id": 215,
     "name": "IMMEUBLE AFEIZ",
     "coordinates": [
       -6.862478340115488,
@@ -5086,7 +4730,7 @@ export const projects = [
     ]
   },
   {
-    "id": 234,
+    "id": 216,
     "name": "RESIDENCE INTERGENERATIONNELLE",
     "coordinates": [
       -1.0678639784662494,
@@ -5107,7 +4751,7 @@ export const projects = [
     ]
   },
   {
-    "id": 235,
+    "id": 217,
     "name": "PROVIDENCE WHARF TOWER  - GYM",
     "coordinates": [
       -0.004990353937884696,
@@ -5128,7 +4772,7 @@ export const projects = [
     ]
   },
   {
-    "id": 236,
+    "id": 218,
     "name": "ECOLE BERCHET",
     "coordinates": [
       -5.8117323470201505,
@@ -5149,7 +4793,7 @@ export const projects = [
     ]
   },
   {
-    "id": 237,
+    "id": 219,
     "name": "SUNCITY",
     "coordinates": [
       -6.866359119403334,
@@ -5170,7 +4814,7 @@ export const projects = [
     ]
   },
   {
-    "id": 238,
+    "id": 220,
     "name": "MULTIPURPOSE BANQUET CENTRE TRANSCORP HILTON",
     "coordinates": [
       7.495020958039255,
@@ -5187,11 +4831,11 @@ export const projects = [
     "selection_bw": "TBC",
     "businessName": 15041,
     "photos": [
-      "https://luseogroup.com/luseomap/"
+      "https://luseogroup.com/luseomap/15041 MPBC TRANSCORP HILTON .jpg"
     ]
   },
   {
-    "id": 239,
+    "id": 221,
     "name": "AMENAGEMENT DE LA CITE ATALAYOUN",
     "coordinates": [
       -2.906165366964446,
@@ -5212,28 +4856,7 @@ export const projects = [
     ]
   },
   {
-    "id": 240,
-    "name": "FAURECIA",
-    "coordinates": [
-      -6.505125626081376,
-      34.292580351048755
-    ],
-    "mission": "Étude de Conception et d’Exécution Tout Corps d’État & Ordonnancement, Pilotage & Coordination & Assistance à Maîtrise d’Ouvrage",
-    "city": "RABAT-SALE",
-    "region": "MAROC",
-    "area": "12 211m²",
-    "architect": "Cabinet ROBAIE – Assoufi Robaie",
-    "category": "Industrie",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 15043,
-    "photos": [
-      "https://luseogroup.com/luseomap/15043 faurecia phase II.png"
-    ]
-  },
-  {
-    "id": 241,
+    "id": 222,
     "name": "PALAIS JAMAI",
     "coordinates": [
       -4.974119998768966,
@@ -5254,7 +4877,7 @@ export const projects = [
     ]
   },
   {
-    "id": 242,
+    "id": 223,
     "name": "MUSE NATIONAL ARCHEOLOGIE DU PEROU",
     "coordinates": [
       -77.06178841125151,
@@ -5281,7 +4904,7 @@ export const projects = [
     ]
   },
   {
-    "id": 243,
+    "id": 224,
     "name": "PALAIS TAZI",
     "coordinates": [
       -6.837844740117668,
@@ -5302,7 +4925,7 @@ export const projects = [
     ]
   },
   {
-    "id": 244,
+    "id": 225,
     "name": "CENTRE DE FORMATION",
     "coordinates": [
       -4.085497533030383,
@@ -5324,8 +4947,8 @@ export const projects = [
     ]
   },
   {
-    "id": 245,
-    "name": "TOURS BALZAC",
+    "id": 226,
+    "name": "TOUR BALZAC",
     "coordinates": [
       -7.637697458358937,
       33.59083838218385
@@ -5345,7 +4968,7 @@ export const projects = [
     ]
   },
   {
-    "id": 246,
+    "id": 227,
     "name": "QATAR DIAR \nPARCELLE 7",
     "coordinates": [
       -5.960777825182381,
@@ -5370,7 +4993,7 @@ export const projects = [
     ]
   },
   {
-    "id": 247,
+    "id": 228,
     "name": "SIEGE BGFI",
     "coordinates": [
       9.44279472650113,
@@ -5391,7 +5014,7 @@ export const projects = [
     ]
   },
   {
-    "id": 248,
+    "id": 229,
     "name": "RESIDENCE MORLASS",
     "coordinates": [
       -0.2642729473104202,
@@ -5412,7 +5035,7 @@ export const projects = [
     ]
   },
   {
-    "id": 249,
+    "id": 230,
     "name": "GREEN TECH VALLEY",
     "coordinates": [
       -6.819229845857795,
@@ -5433,7 +5056,7 @@ export const projects = [
     ]
   },
   {
-    "id": 250,
+    "id": 231,
     "name": "HOTEL DE LA PLAGE",
     "coordinates": [
       -81.25675347003316,
@@ -5454,7 +5077,7 @@ export const projects = [
     ]
   },
   {
-    "id": 251,
+    "id": 232,
     "name": "GRAN HOTEL",
     "coordinates": [
       -82.35773234668318,
@@ -5475,7 +5098,7 @@ export const projects = [
     ]
   },
   {
-    "id": 252,
+    "id": 233,
     "name": "NSIA BANQUE",
     "coordinates": [
       -3.9897926363904532,
@@ -5496,7 +5119,7 @@ export const projects = [
     ]
   },
   {
-    "id": 253,
+    "id": 234,
     "name": "PHYTO PROD",
     "coordinates": [
       -4.664049954166199,
@@ -5517,7 +5140,7 @@ export const projects = [
     ]
   },
   {
-    "id": 254,
+    "id": 235,
     "name": "CNIE",
     "coordinates": [
       -6.723903059429695,
@@ -5538,8 +5161,8 @@ export const projects = [
     ]
   },
   {
-    "id": 255,
-    "name": "PALAIS PRESIDENTIEL libreville",
+    "id": 236,
+    "name": "PALAIS PRESIDENTIEL",
     "coordinates": [
       9.442229992765578,
       0.39232849941067766
@@ -5553,15 +5176,15 @@ export const projects = [
     "bim": "-",
     "certification": "-",
     "selection_bw": "TBC",
-    "businessName": 13001,
+    "businessName": "13001\n13018",
     "photos": [
       "https://luseogroup.com/luseomap/13018 - palais-presidentiel-1.jpg",
       "https://luseogroup.com/luseomap/13018 - palais-presidentiel.jpg"
     ]
   },
   {
-    "id": 256,
-    "name": "ONOMO - LOME",
+    "id": 237,
+    "name": "ONOMO",
     "coordinates": [
       1.2445938919953412,
       6.130781524631092
@@ -5588,7 +5211,7 @@ export const projects = [
     ]
   },
   {
-    "id": 257,
+    "id": 238,
     "name": "DAKAR SPHERE MINISTERIELLE",
     "coordinates": [
       -17.204307575460355,
@@ -5609,7 +5232,7 @@ export const projects = [
     ]
   },
   {
-    "id": 258,
+    "id": 239,
     "name": "NATIONAL LIBRARY OF ARCHIVES \n&\nHOUSE OF ARTS AND CULTURE",
     "coordinates": [
       -6.81571922235232,
@@ -5631,7 +5254,7 @@ export const projects = [
     ]
   },
   {
-    "id": 259,
+    "id": 240,
     "name": "NEXANS",
     "coordinates": [
       -3.948176538933638,
@@ -5655,7 +5278,7 @@ export const projects = [
     ]
   },
   {
-    "id": 260,
+    "id": 241,
     "name": "TOUR TRINITY",
     "coordinates": [
       2.24117375101062,
@@ -5676,7 +5299,7 @@ export const projects = [
     ]
   },
   {
-    "id": 261,
+    "id": 242,
     "name": "EHPAD",
     "coordinates": [
       5.698227394671488,
@@ -5697,7 +5320,7 @@ export const projects = [
     ]
   },
   {
-    "id": 262,
+    "id": 243,
     "name": "PARKING GARE RABAT VILLE",
     "coordinates": [
       -6.835668821453722,
@@ -5720,7 +5343,7 @@ export const projects = [
     ]
   },
   {
-    "id": 263,
+    "id": 244,
     "name": "SIEGE PARFUM CHRISTIN DIOR\nCHARLES DE GAULLES 192",
     "coordinates": [
       2.2573567731700277,
@@ -5741,7 +5364,7 @@ export const projects = [
     ]
   },
   {
-    "id": 264,
+    "id": 245,
     "name": "MOVENPICK",
     "coordinates": [
       -4.018457329631778,
@@ -5762,7 +5385,7 @@ export const projects = [
     ]
   },
   {
-    "id": 265,
+    "id": 246,
     "name": "BAHIA RESORT",
     "coordinates": [
       -7.203523508945834,
@@ -5785,7 +5408,7 @@ export const projects = [
     ]
   },
   {
-    "id": 266,
+    "id": 247,
     "name": "IBIS MARCORY",
     "coordinates": [
       -3.9734965946750247,
@@ -5807,7 +5430,7 @@ export const projects = [
     ]
   },
   {
-    "id": 267,
+    "id": 248,
     "name": "APPOLON – TERRAIN FOOT TOITURE + \nFITNESS CLUB",
     "coordinates": [
       9.71348536120121,
@@ -5832,8 +5455,8 @@ export const projects = [
     ]
   },
   {
-    "id": 268,
-    "name": "FAURECIA PHASE  II",
+    "id": 249,
+    "name": "FAURECIA  -PHASE  II",
     "coordinates": [
       -6.505969621543292,
       34.29153841127284
@@ -5853,7 +5476,7 @@ export const projects = [
     ]
   },
   {
-    "id": 269,
+    "id": 250,
     "name": "CIH - AGENCE REGIONAL",
     "coordinates": [
       -6.827901484336835,
@@ -5874,7 +5497,7 @@ export const projects = [
     ]
   },
   {
-    "id": 270,
+    "id": 251,
     "name": "TIBAR BAY PORT",
     "coordinates": [
       125.47126910308978,
@@ -5895,7 +5518,7 @@ export const projects = [
     ]
   },
   {
-    "id": 271,
+    "id": 252,
     "name": "AMBASSADE  DE France",
     "coordinates": [
       9.447001033084819,
@@ -5916,7 +5539,7 @@ export const projects = [
     ]
   },
   {
-    "id": 272,
+    "id": 253,
     "name": "FREETOWN TERMINAL",
     "coordinates": [
       -13.212308039360964,
@@ -5938,8 +5561,8 @@ export const projects = [
     ]
   },
   {
-    "id": 273,
-    "name": "ONOMO KAMPALA",
+    "id": 254,
+    "name": "ONOMO",
     "coordinates": [
       32.579121790581645,
       0.3279298752470862
@@ -5960,7 +5583,7 @@ export const projects = [
     ]
   },
   {
-    "id": 274,
+    "id": 255,
     "name": "CAPITAINERIE PORT TANGER MED",
     "coordinates": [
       -5.486203403394461,
@@ -5981,7 +5604,7 @@ export const projects = [
     ]
   },
   {
-    "id": 275,
+    "id": 256,
     "name": "MAROCLEAR",
     "coordinates": [
       -7.644686316057249,
@@ -6003,7 +5626,7 @@ export const projects = [
     ]
   },
   {
-    "id": 276,
+    "id": 257,
     "name": "KOICA -  CENTRE SPORTIF ET CULTUREL IVOIRO-COREEN",
     "coordinates": [
       -4.010688576923516,
@@ -6024,7 +5647,7 @@ export const projects = [
     ]
   },
   {
-    "id": 277,
+    "id": 258,
     "name": "RABAT SQUARE",
     "coordinates": [
       -6.841184962420309,
@@ -6045,7 +5668,7 @@ export const projects = [
     ]
   },
   {
-    "id": 278,
+    "id": 259,
     "name": "CENTRE DE TRAITEMENT FIDUCIAIRE - BCEAO",
     "coordinates": [
       -4.622697938117876,
@@ -6066,7 +5689,7 @@ export const projects = [
     ]
   },
   {
-    "id": 279,
+    "id": 260,
     "name": "LEAR  PHASE II",
     "coordinates": [
       -6.71680621957514,
@@ -6087,7 +5710,7 @@ export const projects = [
     ]
   },
   {
-    "id": 280,
+    "id": 261,
     "name": "BUREAUX CASA FINANCE CITY  - PWC",
     "coordinates": [
       -7.660654651312519,
@@ -6108,28 +5731,7 @@ export const projects = [
     ]
   },
   {
-    "id": 281,
-    "name": "LYCEE LYAUTEY - COLLEGE BEAULIEU",
-    "coordinates": [
-      -7.636784918424575,
-      33.59596158376517
-    ],
-    "mission": "Étude de Conception & Suivi de Travaux Tout Corps d’État",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "14 080m²",
-    "architect": "NICOLAS MICHELIN",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18018,
-    "photos": [
-      "DOUBLON"
-    ]
-  },
-  {
-    "id": 282,
+    "id": 262,
     "name": "RESIDENCE SENIORS BELFORT",
     "coordinates": [
       6.85410352437922,
@@ -6151,7 +5753,7 @@ export const projects = [
     ]
   },
   {
-    "id": 283,
+    "id": 263,
     "name": "EPYCENTRE",
     "coordinates": [
       -17.159026613584977,
@@ -6172,7 +5774,7 @@ export const projects = [
     ]
   },
   {
-    "id": 284,
+    "id": 264,
     "name": "CINEMA PATHE GAUMONT",
     "coordinates": [
       -7.639741970562654,
@@ -6193,7 +5795,7 @@ export const projects = [
     ]
   },
   {
-    "id": 285,
+    "id": 265,
     "name": "AMBASSADE COTE D'IVOIRE",
     "coordinates": [
       7.480783039369612,
@@ -6218,7 +5820,7 @@ export const projects = [
     ]
   },
   {
-    "id": 286,
+    "id": 266,
     "name": "CASA FINANCE CITY  LOT 65.1",
     "coordinates": [
       -7.660470815092162,
@@ -6239,53 +5841,15 @@ export const projects = [
     ]
   },
   {
-    "id": 287,
-    "name": "CFG - AGENCE HASSAN",
-    "coordinates": [
-      -6.826038020088914,
-      34.01753248650664
-    ],
-    "mission": "Clé en Mains Tout Corps d’Etat",
-    "city": "RABAT",
-    "region": "MAROC",
-    "area": "170m²",
-    "architect": "B jerome",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18032,
-    "photos": []
-  },
-  {
-    "id": 288,
-    "name": "CFG - AGENCE CORPORATE",
-    "coordinates": [
-      -7.625678230603089,
-      33.58261173350157
-    ],
-    "mission": "Clé en Mains Tout Corps d’Etat",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "",
-    "architect": "-",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18033,
-    "photos": []
-  },
-  {
-    "id": 289,
+    "id": 267,
     "name": "CENTRE HOPSITALIER REGIONAL",
     "coordinates": [
       -12.859992261823532,
       10.048552763169377
     ],
-    "mission": "Avant-Projet Sommaire, Métré, Quantitatif et Chiffrage Tout Corps d’Etat",
-    "city": "KINDIA/LABE",
-    "region": "GUINEE CONAKRY",
+    "mission": "Avant-Projet Sommaire, Métré, Quantitatif et Chiffrage Tout Corps d’Etat\nEtude de Conception et d’Exécution Tout Corps d’Etat",
+    "city": "KINDIA",
+    "region": "GUINEE",
     "area": "12652m²\n697 LITS",
     "architect": "ENIA ARCHITECTES",
     "category": "Santé",
@@ -6294,11 +5858,12 @@ export const projects = [
     "selection_bw": "TBC",
     "businessName": 18035,
     "photos": [
-      "https://luseogroup.com/luseomap/18035 - centre hospitalier regional kinida FASEP conakry réduit.jpg"
+      "https://luseogroup.com/luseomap/18035 - centre hospitalier regional kinida FASEP conakry réduit.jpg",
+      "https://luseogroup.com/luseomap/20047 kindia centre hospitalier.jpg"
     ]
   },
   {
-    "id": 290,
+    "id": 268,
     "name": "HOTEL YAAS REPUBLIQUE",
     "coordinates": [
       -17.520251540794913,
@@ -6320,7 +5885,7 @@ export const projects = [
     ]
   },
   {
-    "id": 291,
+    "id": 269,
     "name": "LAC DE RETENTION DES EAUX PLUVIALES\nLEISURE PARK",
     "coordinates": [
       -17.173041176362986,
@@ -6341,30 +5906,7 @@ export const projects = [
     ]
   },
   {
-    "id": 292,
-    "name": "DIAM BUSINESS - EPYCENTRE",
-    "coordinates": [
-      -17.450197848788974,
-      14.730509423814079
-    ],
-    "mission": "Etude de Conception pour les lots Electricité & Fluide",
-    "city": "DIAMNIADIO",
-    "region": "SENEGAL",
-    "area": "Immeuble R+11",
-    "architect": "LUV . Architecture & Design S.L",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 18041,
-    "photos": [
-      "https://luseogroup.com/luseomap/18041 - epycentre 1.jpg",
-      "https://luseogroup.com/luseomap/18041 - epycentre 2.jpg",
-      "https://luseogroup.com/luseomap/18041 - epycentre immeuble.jpg"
-    ]
-  },
-  {
-    "id": 293,
+    "id": 270,
     "name": "NOVOTEL  - RABAT",
     "coordinates": [
       -6.858765439981771,
@@ -6386,7 +5928,7 @@ export const projects = [
     ]
   },
   {
-    "id": 294,
+    "id": 271,
     "name": "CINEMA PATHE GAUMONT",
     "coordinates": [
       -6.8522948282466105,
@@ -6407,7 +5949,7 @@ export const projects = [
     ]
   },
   {
-    "id": 295,
+    "id": 272,
     "name": "WATER FRONT",
     "coordinates": [
       -17.48537341983007,
@@ -6429,7 +5971,7 @@ export const projects = [
     ]
   },
   {
-    "id": 296,
+    "id": 273,
     "name": "BAB EZZOUAR  SIEGE MAAZOUZ",
     "coordinates": [
       3.220082354341569,
@@ -6457,7 +5999,7 @@ export const projects = [
     ]
   },
   {
-    "id": 297,
+    "id": 274,
     "name": "RESIDENCE DES BOIS",
     "coordinates": [
       3.055601210385917,
@@ -6478,7 +6020,7 @@ export const projects = [
     ]
   },
   {
-    "id": 298,
+    "id": 275,
     "name": "AEROPORT SAN ANTONIO DE LOS BANOS",
     "coordinates": [
       -82.5048234085559,
@@ -6500,7 +6042,7 @@ export const projects = [
     ]
   },
   {
-    "id": 299,
+    "id": 276,
     "name": "DATA CENTER OCP",
     "coordinates": [
       -7.927862087981508,
@@ -6526,7 +6068,7 @@ export const projects = [
     ]
   },
   {
-    "id": 301,
+    "id": 277,
     "name": "HOTEL PESTANA \nM AVENUE",
     "coordinates": [
       -8.016995621175626,
@@ -6549,7 +6091,7 @@ export const projects = [
     ]
   },
   {
-    "id": 302,
+    "id": 278,
     "name": "HOTEL THALES",
     "coordinates": [
       -8.005118379434236,
@@ -6570,7 +6112,7 @@ export const projects = [
     ]
   },
   {
-    "id": 303,
+    "id": 279,
     "name": "SEEN HOTEL",
     "coordinates": [
       -4.018771254799682,
@@ -6591,7 +6133,7 @@ export const projects = [
     ]
   },
   {
-    "id": 304,
+    "id": 280,
     "name": "BRANSON ULTRASONICS HEADQUARTERS",
     "coordinates": [
       -73.4042403587726,
@@ -6612,7 +6154,7 @@ export const projects = [
     ]
   },
   {
-    "id": 305,
+    "id": 281,
     "name": "COMPLEXE OMNISPORT",
     "coordinates": [
       -6.8290891848981445,
@@ -6633,7 +6175,7 @@ export const projects = [
     ]
   },
   {
-    "id": 306,
+    "id": 282,
     "name": "RESIDENCE SENIORS UZES",
     "coordinates": [
       4.4131586397562454,
@@ -6654,7 +6196,7 @@ export const projects = [
     ]
   },
   {
-    "id": 307,
+    "id": 283,
     "name": "SECRETS SAINT MARTIN RESORT & SPA",
     "coordinates": [
       -63.039905939952384,
@@ -6678,7 +6220,7 @@ export const projects = [
     ]
   },
   {
-    "id": 308,
+    "id": 284,
     "name": "PUMA C8",
     "coordinates": [
       -8.39758904192708,
@@ -6700,7 +6242,7 @@ export const projects = [
     ]
   },
   {
-    "id": 309,
+    "id": 285,
     "name": "ECOLES VERTES",
     "coordinates": [
       -7.468529700406677,
@@ -6717,11 +6259,14 @@ export const projects = [
     "selection_bw": "TBC",
     "businessName": 19012,
     "photos": [
-      "https://luseogroup.com/luseomap/"
+      "https://luseogroup.com/luseomap/19012 Ecoles vertes zenata (1).JPG",
+      "https://luseogroup.com/luseomap/19012 Ecoles vertes zenata (2).JPG",
+      "https://luseogroup.com/luseomap/19012 Ecoles vertes zenata (3).JPG",
+      ""
     ]
   },
   {
-    "id": 310,
+    "id": 286,
     "name": "CENTRE HOPSPITALIER UNIVERSITAIRE",
     "coordinates": [
       -61.52541632529428,
@@ -6743,7 +6288,7 @@ export const projects = [
     ]
   },
   {
-    "id": 311,
+    "id": 287,
     "name": "VALEO",
     "coordinates": [
       -5.6634393046354425,
@@ -6751,7 +6296,7 @@ export const projects = [
     ],
     "mission": "Rédaction Cahier de Charges, Assistance à Maîtrise d’Ouvrage, Étude de Faisabilité & Étude de Conception et d’Exécution Tout Corps d’État",
     "city": "TANGER",
-    "region": "Maroc",
+    "region": "MAROC",
     "area": "19100 m² H.O.",
     "architect": "Med Hicham EL Ajmi",
     "category": "Industrie",
@@ -6764,8 +6309,8 @@ export const projects = [
     ]
   },
   {
-    "id": 312,
-    "name": "ALAIA BEACH CLUB HOTEL - Alaia Autograph Collection By Marriott",
+    "id": 288,
+    "name": "ALAIA AUTOGRAPH COLLECTION BY MARRIOTT",
     "coordinates": [
       -87.97451275262804,
       17.90634056714038
@@ -6793,15 +6338,15 @@ export const projects = [
     ]
   },
   {
-    "id": 313,
+    "id": 289,
     "name": "DESCARTES",
     "coordinates": [
       -6.845808262592084,
       33.99075406689288
     ],
     "mission": "Étude de Conception et d’Exécution Tout Corps d’État & Assistance Technique",
-    "city": "rabat",
-    "region": "maroc",
+    "city": "RABAT",
+    "region": "MAROC",
     "area": "",
     "architect": "-",
     "category": "Equipements publics",
@@ -6814,7 +6359,7 @@ export const projects = [
     ]
   },
   {
-    "id": 315,
+    "id": 291,
     "name": "AEROPORT DE MARSEILLE PROVENCE",
     "coordinates": [
       5.215338561009127,
@@ -6838,7 +6383,7 @@ export const projects = [
     ]
   },
   {
-    "id": 316,
+    "id": 292,
     "name": "LINCOLN",
     "coordinates": [
       -7.612117264391184,
@@ -6859,7 +6404,7 @@ export const projects = [
     ]
   },
   {
-    "id": 319,
+    "id": 295,
     "name": "AUDA LOT 19",
     "coordinates": [
       -7.6607105570167,
@@ -6882,7 +6427,7 @@ export const projects = [
     ]
   },
   {
-    "id": 320,
+    "id": 296,
     "name": "ACADEMIE DE LUTTE CONTRE LE TERRORISME",
     "coordinates": [
       -3.9226845041497134,
@@ -6903,7 +6448,7 @@ export const projects = [
     ]
   },
   {
-    "id": 321,
+    "id": 297,
     "name": "SOFITEL HOTEL & APPARTEMENTS",
     "coordinates": [
       -5.328795829224219,
@@ -6924,7 +6469,7 @@ export const projects = [
     ]
   },
   {
-    "id": 322,
+    "id": 298,
     "name": "LOT 107",
     "coordinates": [
       -7.66567117762361,
@@ -6945,7 +6490,7 @@ export const projects = [
     ]
   },
   {
-    "id": 323,
+    "id": 299,
     "name": "SOFITEL COTONOU Marina Hotel & Spa",
     "coordinates": [
       2.3936541525380486,
@@ -6967,7 +6512,7 @@ export const projects = [
     ]
   },
   {
-    "id": 324,
+    "id": 300,
     "name": "K HOTEL BANA",
     "coordinates": [
       10.277358515976848,
@@ -6988,7 +6533,7 @@ export const projects = [
     ]
   },
   {
-    "id": 325,
+    "id": 301,
     "name": "ANCFCC",
     "coordinates": [
       -6.885279454900805,
@@ -7009,7 +6554,7 @@ export const projects = [
     ]
   },
   {
-    "id": 326,
+    "id": 302,
     "name": "COOPER JACK BAY",
     "coordinates": [
       -72.23982438244241,
@@ -7030,7 +6575,7 @@ export const projects = [
     ]
   },
   {
-    "id": 327,
+    "id": 303,
     "name": "SIEGE MOBILE TELEPHONE NETWORK",
     "coordinates": [
       -3.995558948371033,
@@ -7051,7 +6596,7 @@ export const projects = [
     ]
   },
   {
-    "id": 328,
+    "id": 304,
     "name": "CAMPUS ESCA",
     "coordinates": [
       -7.662178531503763,
@@ -7075,7 +6620,7 @@ export const projects = [
     ]
   },
   {
-    "id": 329,
+    "id": 305,
     "name": "AKWABA BUSINESS PARK - LOT 20",
     "coordinates": [
       -3.956457799505109,
@@ -7096,8 +6641,8 @@ export const projects = [
     ]
   },
   {
-    "id": 330,
-    "name": "LE CAROUSEL -LOGEMENTS",
+    "id": 306,
+    "name": "LE CAROUSEL - PHASE II",
     "coordinates": [
       -6.893046744148259,
       33.98063009154901
@@ -7117,7 +6662,7 @@ export const projects = [
     ]
   },
   {
-    "id": 331,
+    "id": 307,
     "name": "VILLAS OLIVER PALM",
     "coordinates": [
       -7.910239049691355,
@@ -7139,7 +6684,7 @@ export const projects = [
     ]
   },
   {
-    "id": 332,
+    "id": 308,
     "name": "GROUPE SCOLAIRE  LA RESIDENCE",
     "coordinates": [
       -7.618772943422715,
@@ -7160,7 +6705,7 @@ export const projects = [
     ]
   },
   {
-    "id": 333,
+    "id": 309,
     "name": "SEVEN SQUARE",
     "coordinates": [
       -7.651209142058165,
@@ -7181,7 +6726,7 @@ export const projects = [
     ]
   },
   {
-    "id": 334,
+    "id": 310,
     "name": "LYCEE  POLYVALENT TAAONE",
     "coordinates": [
       -149.54943759961836,
@@ -7202,29 +6747,8 @@ export const projects = [
     ]
   },
   {
-    "id": 335,
-    "name": "HOPITAL REGIONAL FASEP",
-    "coordinates": [
-      -12.860334212799664,
-      10.048595137248412
-    ],
-    "mission": "Étude de Conception et d’Exécution Tout Corps d’État",
-    "city": "KINDIA",
-    "region": "REPUBLIQUE GUINEE",
-    "area": "12 600 m²",
-    "architect": "ENIA",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": 20047,
-    "photos": [
-      "https://luseogroup.com/luseomap/20041 lycée taaone.jpg"
-    ]
-  },
-  {
-    "id": 336,
-    "name": "CENTRE HOPSPITALIER UNIVERSITAIRE DE LENS",
+    "id": 311,
+    "name": "CENTRE HOPSPITALIER UNIVERSITAIRE",
     "coordinates": [
       2.817864931046971,
       50.439220339560904
@@ -7246,7 +6770,7 @@ export const projects = [
     ]
   },
   {
-    "id": 337,
+    "id": 312,
     "name": "CITE ADMINISTRATIVE",
     "coordinates": [
       2.3168390162387973,
@@ -7269,7 +6793,7 @@ export const projects = [
     ]
   },
   {
-    "id": 338,
+    "id": 313,
     "name": "SOFITEL HOTEL IVOIRE",
     "coordinates": [
       -4.004446500335855,
@@ -7290,7 +6814,7 @@ export const projects = [
     ]
   },
   {
-    "id": 339,
+    "id": 314,
     "name": "QUARTIER GENERAL DE LA POLICE REPUBLICANE",
     "coordinates": [
       2.43259994353264,
@@ -7314,7 +6838,7 @@ export const projects = [
     ]
   },
   {
-    "id": 340,
+    "id": 315,
     "name": "SATURNE",
     "coordinates": [
       2.428593850154695,
@@ -7335,7 +6859,7 @@ export const projects = [
     ]
   },
   {
-    "id": 341,
+    "id": 316,
     "name": "MAISON DE L'ART",
     "coordinates": [
       -3.735322944751352,
@@ -7357,7 +6881,7 @@ export const projects = [
     ]
   },
   {
-    "id": 342,
+    "id": 317,
     "name": "COMPLEXE SPORTIF UNAFRICA",
     "coordinates": [
       2.4214553957706717,
@@ -7378,26 +6902,7 @@ export const projects = [
     ]
   },
   {
-    "id": 343,
-    "name": "RESIDENCE 77",
-    "coordinates": [
-      1.2252732824197758,
-      6.1494720055458805
-    ],
-    "mission": "Etude de Dossier Consultation des Entreprises pour les lots Electricité, Structure & VRD, et Suivi de Travaux",
-    "city": "LOME",
-    "region": "TOGO",
-    "area": "1 000 m²",
-    "architect": "LUSEO CI",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "21CI008",
-    "photos": []
-  },
-  {
-    "id": 344,
+    "id": 318,
     "name": "SIEGE  MANUTENTION AFRICAINE",
     "coordinates": [
       -4.102261067377037,
@@ -7418,7 +6923,7 @@ export const projects = [
     ]
   },
   {
-    "id": 345,
+    "id": 319,
     "name": "RESIDENCE AMBASSADEUR DE France",
     "coordinates": [
       1.2189058120626772,
@@ -7441,7 +6946,7 @@ export const projects = [
     ]
   },
   {
-    "id": 347,
+    "id": 321,
     "name": "Résidence Services Seniors DOMITYS - Cybèle",
     "coordinates": [
       6.853707757872839,
@@ -7462,7 +6967,7 @@ export const projects = [
     ]
   },
   {
-    "id": 348,
+    "id": 322,
     "name": "LES ROCHES CARBON BLANC",
     "coordinates": [
       -0.5002876338624584,
@@ -7486,7 +6991,7 @@ export const projects = [
     ]
   },
   {
-    "id": 349,
+    "id": 323,
     "name": "LYCEE  STEPHANE HESSEL",
     "coordinates": [
       1.4755169545197064,
@@ -7509,7 +7014,7 @@ export const projects = [
     ]
   },
   {
-    "id": 350,
+    "id": 324,
     "name": "CENTRE AQUATIQUE",
     "coordinates": [
       -0.4372486077035784,
@@ -7535,7 +7040,7 @@ export const projects = [
     ]
   },
   {
-    "id": 351,
+    "id": 325,
     "name": "HOPITAL GENERAL",
     "coordinates": [
       11.510566339758867,
@@ -7556,7 +7061,7 @@ export const projects = [
     ]
   },
   {
-    "id": 352,
+    "id": 326,
     "name": "GROUPE SCOLAIRE FITII",
     "coordinates": [
       -151.03217408877234,
@@ -7590,7 +7095,7 @@ export const projects = [
     ]
   },
   {
-    "id": 353,
+    "id": 327,
     "name": "CENTRE PENITENTIAIRE  DES BEAUMETTES III",
     "coordinates": [
       5.414857348062631,
@@ -7611,7 +7116,7 @@ export const projects = [
     ]
   },
   {
-    "id": 354,
+    "id": 328,
     "name": "Spa Deep Ocean Bora Bora",
     "coordinates": [
       -151.70162373064719,
@@ -7632,7 +7137,7 @@ export const projects = [
     ]
   },
   {
-    "id": 355,
+    "id": 329,
     "name": "SONACOS",
     "coordinates": [
       -6.827369980005593,
@@ -7653,7 +7158,7 @@ export const projects = [
     ]
   },
   {
-    "id": 356,
+    "id": 330,
     "name": "PATRIMONIA",
     "coordinates": [
       -7.62112170356936,
@@ -7674,47 +7179,7 @@ export const projects = [
     ]
   },
   {
-    "id": 357,
-    "name": "INSITUT Français DE KENITRA \nDETECTION INCENDIE",
-    "coordinates": [
-      -6.576896023574835,
-      34.2639465186594
-    ],
-    "mission": "Etude de conception pour la Détection Incendie",
-    "city": "RABAT",
-    "region": "MAROC",
-    "area": "200 m²",
-    "architect": "AAZ",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "21MA004",
-    "photos": []
-  },
-  {
-    "id": 358,
-    "name": "TOUR BALZAC",
-    "coordinates": [
-      -7.637394416024497,
-      33.590053077952525
-    ],
-    "mission": "Etude de Conception et d’Exécution pour les lots Electricité et Fluide",
-    "city": "CASABLANCA",
-    "region": "MAROC",
-    "area": "8 000m²",
-    "architect": "CHAOUI",
-    "category": "Bâtiments résidentiels, tertiaires ou mixtes",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "21MA011\n16008",
-    "photos": [
-      "https://luseogroup.com/luseomap/16008 TOURS BALZAC.jpg"
-    ]
-  },
-  {
-    "id": 359,
+    "id": 331,
     "name": "LES RESIDENCE BLEUES VAL D’OR",
     "coordinates": [
       -6.986764166109079,
@@ -7735,7 +7200,7 @@ export const projects = [
     ]
   },
   {
-    "id": 360,
+    "id": 332,
     "name": "LES PORTES DE RABAT",
     "coordinates": [
       -6.936180391257448,
@@ -7757,7 +7222,7 @@ export const projects = [
     ]
   },
   {
-    "id": 361,
+    "id": 333,
     "name": "WAVE GHANDOURI",
     "coordinates": [
       -5.755755810974256,
@@ -7782,7 +7247,7 @@ export const projects = [
     ]
   },
   {
-    "id": 362,
+    "id": 334,
     "name": "SOCRATE",
     "coordinates": [
       -7.646962764792772,
@@ -7803,7 +7268,7 @@ export const projects = [
     ]
   },
   {
-    "id": 363,
+    "id": 335,
     "name": "BURJ ATTIJARI",
     "coordinates": [
       -7.6614509033272284,
@@ -7825,8 +7290,8 @@ export const projects = [
     ]
   },
   {
-    "id": 364,
-    "name": "NOUVEL HOPITAL IBN SINA",
+    "id": 336,
+    "name": "HOPITAL IBN SINA",
     "coordinates": [
       -6.852269352549596,
       33.98305913435011
@@ -7849,7 +7314,7 @@ export const projects = [
     ]
   },
   {
-    "id": 365,
+    "id": 337,
     "name": "TEMARA SQUARE",
     "coordinates": [
       -6.923211945301384,
@@ -7871,7 +7336,7 @@ export const projects = [
     ]
   },
   {
-    "id": 366,
+    "id": 338,
     "name": "CLINIQUE ZAHRAT",
     "coordinates": [
       -6.832886405446627,
@@ -7897,8 +7362,8 @@ export const projects = [
     ]
   },
   {
-    "id": 368,
-    "name": "la Cite des metiers et des Compétences de rabat\nOFPPT",
+    "id": 339,
+    "name": "la Cite des metiers et des Compétences - OFPPT",
     "coordinates": [
       -6.935824623387261,
       33.84166446750577
@@ -7918,7 +7383,7 @@ export const projects = [
     ]
   },
   {
-    "id": 369,
+    "id": 340,
     "name": "AUTO HALL",
     "coordinates": [
       -6.532881408198826,
@@ -7939,7 +7404,7 @@ export const projects = [
     ]
   },
   {
-    "id": 370,
+    "id": 341,
     "name": "NOUVEAU CENTRE HOSPITALIER DE POLYNESIE FRANCAISE",
     "coordinates": [
       -149.54649561872162,
@@ -7964,7 +7429,7 @@ export const projects = [
     ]
   },
   {
-    "id": 371,
+    "id": 342,
     "name": "CAMP GUEZO",
     "coordinates": [
       2.410135602819017,
@@ -7985,7 +7450,7 @@ export const projects = [
     ]
   },
   {
-    "id": 372,
+    "id": 343,
     "name": "VILLAGE ABATTA",
     "coordinates": [
       -3.917497516720774,
@@ -8010,7 +7475,7 @@ export const projects = [
     ]
   },
   {
-    "id": 373,
+    "id": 344,
     "name": "CENTRE DE CONNAISSANCE ET DE LA CULTURE - LYCEE BLAISE PASCAL",
     "coordinates": [
       -3.9517425224169878,
@@ -8040,7 +7505,7 @@ export const projects = [
     ]
   },
   {
-    "id": 374,
+    "id": 345,
     "name": "COMPLEXE SPORTIF GRAND BASSAM",
     "coordinates": [
       -3.7353140587180005,
@@ -8061,7 +7526,7 @@ export const projects = [
     ]
   },
   {
-    "id": 375,
+    "id": 346,
     "name": "INSTITUT NATIONAL STATISTIQUE",
     "coordinates": [
       2.40053388393836,
@@ -8082,7 +7547,7 @@ export const projects = [
     ]
   },
   {
-    "id": 376,
+    "id": 347,
     "name": "LYCEE AGRICOLE OPUNOHU",
     "coordinates": [
       -149.8342966046696,
@@ -8106,7 +7571,7 @@ export const projects = [
     ]
   },
   {
-    "id": 377,
+    "id": 348,
     "name": "LES ARCHIVES\nPOLE DE RECHERHCE ET DE CONVERSATION DU PATRIMOINE VAUCLUSIEN",
     "coordinates": [
       4.887534255927413,
@@ -8128,7 +7593,7 @@ export const projects = [
     ]
   },
   {
-    "id": 378,
+    "id": 349,
     "name": "CENTRE ADMINISTRATIF D’ÉTAT",
     "coordinates": [
       4.854695435244514,
@@ -8150,7 +7615,7 @@ export const projects = [
     ]
   },
   {
-    "id": 379,
+    "id": 350,
     "name": "EYRE'BASSIN",
     "coordinates": [
       -0.7712580870582427,
@@ -8171,7 +7636,7 @@ export const projects = [
     ]
   },
   {
-    "id": 380,
+    "id": 351,
     "name": "IZON LOG",
     "coordinates": [
       -0.36178810280317136,
@@ -8194,7 +7659,7 @@ export const projects = [
     ]
   },
   {
-    "id": 381,
+    "id": 352,
     "name": "ECOLES DES METIERS",
     "coordinates": [
       2.0926068655439676,
@@ -8218,8 +7683,8 @@ export const projects = [
     ]
   },
   {
-    "id": 382,
-    "name": "FAIRMONT  - GENEVE",
+    "id": 353,
+    "name": "FAIRMONT",
     "coordinates": [
       6.1507998225345,
       46.21020033387861
@@ -8239,7 +7704,7 @@ export const projects = [
     ]
   },
   {
-    "id": 383,
+    "id": 354,
     "name": "TOUR C",
     "coordinates": [
       -4.023246717083079,
@@ -8260,26 +7725,7 @@ export const projects = [
     ]
   },
   {
-    "id": 384,
-    "name": "MUSÉE NATIONAL D’ART AFRICAIN ET\nCONTEMPORAIN",
-    "coordinates": [
-      -3.964567665522786,
-      5.284381018942551
-    ],
-    "mission": "Études de conception Tout Corps d’État",
-    "city": "ABIDJAN",
-    "region": "COTE D'IVOIRE",
-    "area": "12 000 m²",
-    "architect": "PFO",
-    "category": "Equipements publics",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "22FR017",
-    "photos": []
-  },
-  {
-    "id": 385,
+    "id": 355,
     "name": "VILLA TAHITI",
     "coordinates": [
       9.467173599046555,
@@ -8302,7 +7748,7 @@ export const projects = [
     ]
   },
   {
-    "id": 386,
+    "id": 356,
     "name": "HOTEL  & APPARTEMENTS UNIVERSITE MOHAMED VI",
     "coordinates": [
       -7.933269218475865,
@@ -8323,7 +7769,7 @@ export const projects = [
     ]
   },
   {
-    "id": 387,
+    "id": 357,
     "name": "ECOLE GREEN WOOD",
     "coordinates": [
       -7.610418606255366,
@@ -8349,7 +7795,7 @@ export const projects = [
     ]
   },
   {
-    "id": 388,
+    "id": 358,
     "name": "UNIVERSITE PIERRE ET MARIE CURIE",
     "coordinates": [
       2.35742132092774,
@@ -8371,7 +7817,7 @@ export const projects = [
     ]
   },
   {
-    "id": 389,
+    "id": 359,
     "name": "OULFA YAMED",
     "coordinates": [
       -7.66989159127643,
@@ -8393,7 +7839,7 @@ export const projects = [
     ]
   },
   {
-    "id": 390,
+    "id": 360,
     "name": "YAAS AKWABA",
     "coordinates": [
       -3.9810446029550692,
@@ -8401,7 +7847,7 @@ export const projects = [
     ],
     "mission": "Étude de Conception &  d’Exécution pour les lots Électricité & Fluide",
     "city": "ABIDJAN",
-    "region": "CôTE D'IVOIRE",
+    "region": "COTE D'IVOIRE",
     "area": "13 000 m²",
     "architect": "MANGALIS",
     "category": "Hôtellerie",
@@ -8418,7 +7864,7 @@ export const projects = [
     ]
   },
   {
-    "id": 391,
+    "id": 361,
     "name": "QUARTIER CULTUREL",
     "coordinates": [
       2.422906632202392,
@@ -8440,7 +7886,7 @@ export const projects = [
     ]
   },
   {
-    "id": 393,
+    "id": 363,
     "name": "CENTRE MEDICAL",
     "coordinates": [
       9.691051347239151,
@@ -8462,7 +7908,7 @@ export const projects = [
     ]
   },
   {
-    "id": 394,
+    "id": 364,
     "name": "NEVERLAND",
     "coordinates": [
       7.431722868786946,
@@ -8496,7 +7942,7 @@ export const projects = [
     ]
   },
   {
-    "id": 395,
+    "id": 365,
     "name": "EPHAD BALCONS DE TIVOLIS",
     "coordinates": [
       -0.5947667300254822,
@@ -8517,7 +7963,7 @@ export const projects = [
     ]
   },
   {
-    "id": 397,
+    "id": 367,
     "name": "AEROPORT DE NANTES ATLANTIQUE",
     "coordinates": [
       -1.6061314734130212,
@@ -8539,8 +7985,8 @@ export const projects = [
     ]
   },
   {
-    "id": 398,
-    "name": "AUTO HALL TANGER",
+    "id": 368,
+    "name": "AUTO HALL",
     "coordinates": [
       -5.8052227250298944,
       35.77248987031203
@@ -8560,7 +8006,7 @@ export const projects = [
     ]
   },
   {
-    "id": 400,
+    "id": 369,
     "name": "PARKING BAB FES",
     "coordinates": [
       -6.818906168688848,
@@ -8581,7 +8027,7 @@ export const projects = [
     ]
   },
   {
-    "id": 401,
+    "id": 370,
     "name": "RESIDENCE MASHER LIVING",
     "coordinates": [
       -6.832403106184884,
@@ -8603,7 +8049,7 @@ export const projects = [
     ]
   },
   {
-    "id": 402,
+    "id": 371,
     "name": "PARKING CENTRE DES AFFAIRES MARITIME",
     "coordinates": [
       2.4264383233102027,
@@ -8624,7 +8070,7 @@ export const projects = [
     ]
   },
   {
-    "id": 403,
+    "id": 372,
     "name": "MUSEE VODUN",
     "coordinates": [
       2.3373051737550123,
@@ -8645,7 +8091,7 @@ export const projects = [
     ]
   },
   {
-    "id": 404,
+    "id": 373,
     "name": "ARCHIPEL",
     "coordinates": [
       -5.790724882765611,
@@ -8666,7 +8112,7 @@ export const projects = [
     ]
   },
   {
-    "id": 405,
+    "id": 374,
     "name": "HILTON",
     "coordinates": [
       -8.061793790951466,
@@ -8687,7 +8133,7 @@ export const projects = [
     ]
   },
   {
-    "id": 406,
+    "id": 375,
     "name": "KIA ORA RESORT AND SPA",
     "coordinates": [
       -147.63651498322147,
@@ -8695,7 +8141,7 @@ export const projects = [
     ],
     "mission": "Étude de Conception\n& d’Exécution Tout Corps d’État",
     "city": "ATOLL DE RANGIROA",
-    "region": "POLYNéSIE FRANçAISE",
+    "region": "POLYNESIE FRANCAISE",
     "area": "103 586 m²",
     "architect": "Rochet Wenish Architectes",
     "category": "Hôtellerie",
@@ -8708,28 +8154,7 @@ export const projects = [
     ]
   },
   {
-    "id": 407,
-    "name": "CENTRES HOSPITALIERS REGIONAUX",
-    "coordinates": [
-      -12.859988715832507,
-      10.04855068251092
-    ],
-    "mission": "Etude de Conception et d’Exécution Tout Corps d’Etat",
-    "city": "KINDIA",
-    "region": "GUINEE",
-    "area": "10 000 m²",
-    "architect": "ENIA ARCHITECTE",
-    "category": "Santé",
-    "bim": "-",
-    "certification": "-",
-    "selection_bw": "TBC",
-    "businessName": "24FR002",
-    "photos": [
-      "https://luseogroup.com/luseomap/20047 kindia centre hospitalier.jpg"
-    ]
-  },
-  {
-    "id": 408,
+    "id": 376,
     "name": "SKY TOWER",
     "coordinates": [
       -7.661380160926443,
@@ -8755,7 +8180,7 @@ export const projects = [
     ]
   },
   {
-    "id": 409,
+    "id": 377,
     "name": "VILLAS & APPARTEMENTS RITZ CARLTON",
     "coordinates": [
       -5.340130456817235,
@@ -8780,7 +8205,7 @@ export const projects = [
     ]
   },
   {
-    "id": 410,
+    "id": 378,
     "name": "CASA FINANCE CITY LOT 34.1",
     "coordinates": [
       -7.660566015908062,
@@ -8801,7 +8226,7 @@ export const projects = [
     ]
   },
   {
-    "id": 411,
+    "id": 379,
     "name": "COLLEGE SAINT EXUPERY",
     "coordinates": [
       -6.827081072007981,
@@ -8811,12 +8236,24 @@ export const projects = [
     "city": "RABAT",
     "region": "MAROC",
     "area": "8 000 m2",
-    "architect": "G3A +LT2A",
-    "category": "Equipements publics",
+    "architect": "G3A & LT2A",
+    "category": "ENSEIGNEMENT",
     "bim": "-",
     "certification": "-",
     "selection_bw": "TBC",
-    "businessName": "",
-    "photos": []
+    "businessName": "24MA033",
+    "photos": [
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (1).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (2).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (3).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (4).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (5).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (6).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (7).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (8).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (9).jpg",
+      "https://luseogroup.com/luseomap/24MA033 ST EXUPERY- (10).jpg",
+      ""
+    ]
   }
 ];
