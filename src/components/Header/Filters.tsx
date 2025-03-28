@@ -26,15 +26,22 @@ const Filters: React.FC<IFilters> = ({
   const locations = useMemo<{ label: string; value: string }[]>(
     () => [
       { label: "PAYS", value: "all" }, // "Pays" is the display label for "all"
-      ...Array.from(
-        new Map(
-          projects
-            .filter((pin) => pin.region && pin.region.trim() !== "") // Remove empty/undefined regions
-            .map((pin) => [pin.region, { label: startCase(toLower(pin.region)), value: pin.region }])
-        ).values()
-      ),
+      ...projects
+        .filter((pin) => pin.region && pin.region.trim() !== "") // Remove empty/undefined regions
+        .reduce((acc, pin) => {
+          const location = {
+            label: startCase(toLower(pin.region)),
+            value: pin.region,
+          };
+          // Only add if this label doesn't exist yet
+          if (!acc.some((item) => item.label === location.label)) {
+            acc.push(location);
+          }
+          return acc;
+        }, [] as { label: string; value: string }[])
+        .sort((a, b) => a.label.localeCompare(b.label)),
     ],
-    [projects]
+    []
   );
 
   const categories = useMemo<{ label: string; value: string }[]>(
@@ -49,7 +56,7 @@ const Filters: React.FC<IFilters> = ({
       ).sort((a, b) => a.label.localeCompare(b.label)),
       { label: "SÉLECTION BW", value: "oui" },
     ],
-    [projects]
+    []
   );
 
   const debouncedSetSearchQuery = useCallback(
